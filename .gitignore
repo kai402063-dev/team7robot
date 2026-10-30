@@ -1,0 +1,9 @@
+# MATLAB and Simulink generated files
+**/slprj/
+**/codegen/
+**/*_ert_rtw/
+*.slxc
+*.asv
+*.m~
+*.autosave
+*.mex*
