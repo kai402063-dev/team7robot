@@ -6,3 +6,7 @@ A 2D robot soccer example for learning the model structure, simulation parameter
 
 - [English setup and simulation guide](robot-soccer-starter/README.md)
 - [中文安装与仿真运行说明](robot-soccer-starter/README_zh-CN.md)
+
+## ROS 2 / Webots Development
+
+- [ROS 2 and Webots Development Guide](ROS2_Webots_Guide.md)
