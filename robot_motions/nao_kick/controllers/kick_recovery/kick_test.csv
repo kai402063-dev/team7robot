@@ -1,0 +1,2 @@
+kick,strength,trial,peak_speed_mps,distance_m,direction_error_deg,fell,recovered,recovery_s
+custom,0.2,1,0.796,2.045,2.0,False,,

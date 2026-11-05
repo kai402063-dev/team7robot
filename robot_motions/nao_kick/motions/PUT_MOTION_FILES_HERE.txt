@@ -1,0 +1,1 @@
+Copy Webots' NAO .motion files into this folder (see README).

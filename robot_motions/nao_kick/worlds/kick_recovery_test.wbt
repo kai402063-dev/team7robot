@@ -1,0 +1,70 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/Nao.proto"
+
+WorldInfo {
+  info [
+    "ENG5325 kicking and recovery test: NAO V5, 14 cm ball, 9 m x 6 m floor"
+  ]
+  title "NAO kick and recovery"
+  basicTimeStep 20
+  FPS 20
+  contactProperties [
+    ContactProperties {
+      material1 "NAO foot material"
+      coulombFriction [
+        7
+      ]
+      bounce 0.3
+      bounceVelocity 0.003
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.11348833596941119 -0.1690568841625036 0.9790506460424607 5.0811271240275335
+  position -0.8174632798875968 2.2483838066564497 0.8208695053939618
+  follow "NAO"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 9 6
+}
+DEF NAO Nao {
+  controller "kick_recovery"
+  controllerArgs [
+    "play"
+  ]
+  supervisor TRUE
+}
+DEF BALL Solid {
+  translation 0.6 -0.05 0.07
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.45 0
+        roughness 0.6
+        metalness 0
+      }
+      geometry DEF BALL_GEOM Sphere {
+        radius 0.07
+        subdivision 3
+      }
+    }
+  ]
+  name "ball"
+  boundingObject USE BALL_GEOM
+  physics Physics {
+    density -1
+    mass 0.15
+    damping Damping {
+      linear 0.2
+      angular 0.2
+    }
+  }
+}
