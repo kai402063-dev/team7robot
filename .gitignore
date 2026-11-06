@@ -7,3 +7,10 @@
 *.m~
 *.autosave
 *.mex*
+
+# Webots per-user UI layout and generated controller output
+**/.*.wbproj
+**/__pycache__/
+*.py[cod]
+robot_motions/nao_kick/controllers/kick_recovery/kick_test.csv
+robot_motions/nao_kick/controllers/kick_recovery/getup_test.csv
