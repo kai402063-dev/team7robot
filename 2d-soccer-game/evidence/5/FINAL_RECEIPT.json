@@ -1,0 +1,18 @@
+{
+  "status": "PASS_SINGLE_V5_AVAILABLE_GATES",
+  "pitch": "pitch-build-02.log",
+  "closedLoop": "analysis-v2.json",
+  "fullRun": "closed-02/receipt.json",
+  "replay": "replay-01/replay-receipt.json",
+  "camera": "replay-01/camera-receipt.json",
+  "motionOnly": "motion-02/webots-receipt.json",
+  "clockCli": "closed-02/clock-info.txt",
+  "mutations": [
+    "mutation-executor-01/receipt.json",
+    "mutation-camera-01/receipt.json",
+    "mutation-trace-01/receipt.json"
+  ],
+  "nativeRosToolboxReadImage": "BLOCKED: product absent and ALLOW_INSTALL=no",
+  "modelValidation": "NOT_ESTABLISHED: V5, read-only truth localization, uncalibrated ball/contact/motion parameters",
+  "scope": "one NAO and one physical ball; no Supervisor ball velocity writes"
+}

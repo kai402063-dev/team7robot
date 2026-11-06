@@ -1,0 +1,57 @@
+{
+  "names": [
+    "test_v1_tactics/testFixedRolesAndOpening",
+    "test_v1_tactics/testGoalCoverageAndOpenWing",
+    "test_v1_tactics/testBoundaryAndHysteresis",
+    "test_v1_tactics/testDefendAndDesignatedLooseBall",
+    "test_v1_tactics/testUnknownDoesNotLeakBall",
+    "test_v1_tactics/testSelectFreshLocalSource",
+    "test_v1_tactics/testFeedbackCorrelationAndDuplicates",
+    "test_v1_tactics/testPendingKickMustReleaseBeforeRecovery",
+    "test_v1_tactics/testUnavailableAndPause",
+    "test_v1_tactics/testMirrorAndAuthorizationAcrossPitch",
+    "test_v1_tactics/testConfigAndWindowShapes"
+  ],
+  "passed": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "elapsedSeconds": 38.126495000001043,
+  "randomMirroredWorlds": 1000,
+  "matlabVersion": "26.2.0.3386108 (R2026b)"
+}

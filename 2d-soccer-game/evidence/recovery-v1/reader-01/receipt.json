@@ -1,0 +1,74 @@
+{
+  "status": "PASS_WITH_READER_NOTES",
+  "clone": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-reader-01",
+  "commit": "0c22951d812277f3471e7ce82205c3bb7708a627",
+  "read_docs": [
+    "README.md",
+    "docs/chapters/live_animation.md",
+    "docs/chapters/recovery_experiment.md",
+    "docs/DEV_MANUAL.md"
+  ],
+  "source_files_read": false,
+  "existing_user_matlab_used": false,
+  "user_desktop_used": false,
+  "tracked_files_changed": false,
+  "executed": {
+    "entry": "./scripts/run_matlab.sh",
+    "capture": "eval(fileread(...)) using exact fenced source",
+    "example_sha256": "066630b8c9a456e0645675fe7d9bc9932538a55b99509ce2d78f188a424d99cf",
+    "code": "manual-example.txt",
+    "exit_code": 0,
+    "elapsed_wall_seconds": 217.9,
+    "duration_sim_seconds": 8.0,
+    "dt_sim_seconds": 0.05,
+    "blue_4_localization_outage_seconds": [
+      2,
+      4
+    ],
+    "cache": "build/cache/reader_01",
+    "preferences": "build/matlab-prefs",
+    "log": "example-execution.log",
+    "rows": [
+      {
+        "tSim": 0.05,
+        "takeover": 0,
+        "chaser": 4,
+        "protectedId": 0
+      },
+      {
+        "tSim": 2.0,
+        "takeover": 1,
+        "chaser": 3,
+        "protectedId": 0
+      },
+      {
+        "tSim": 4.5,
+        "takeover": 0,
+        "chaser": 0,
+        "protectedId": 0
+      }
+    ]
+  },
+  "previous_attempts": [
+    {
+      "mode": "sandbox native launch",
+      "exit_code": 1,
+      "observed": "empty output; no evidence of successful match"
+    },
+    {
+      "mode": "literal multiline shell batch argument",
+      "exit_code": 0,
+      "observed": "empty output; no evidence of successful match"
+    }
+  ],
+  "reader_claims": [
+    "Installed desktop launchers: START_2D.desktop default V1, START_2D_RECOVERY.desktop automatic recovery.",
+    "Moved clone: navigate to its root in MATLAB Current Folder, open start_2d.m or start_2d_recovery.m; Run; select Change Folder if prompted.",
+    "Compiling model... can show a stationary pitch. Wait for the match clock to advance. Document discovery only; no GUI launched.",
+    "2.00 s takeover changes to 1 with blue MF 3. At 4.50 s takeover clears and chaser is 0: release to normal allocation, no current chase authorization at that sample. No protected kick ID was observed in this short example."
+  ],
+  "reader_notes": [
+    "README only links the exercise via full comparison; an 8-second exercise anchor next to launch options would distinguish it from 80 matches.",
+    "Work through 4.50 s / takeover=0 / chaser=0 explicitly: takeover cleared, currently no chase authorization. The table alone does not establish why chaser=0 or a physical kick."
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "mode": "probe",
+  "error": "RuntimeError('Private Wayland startup failed; see compositor.log')",
+  "elapsedSeconds": 0.10202759999810951
+}

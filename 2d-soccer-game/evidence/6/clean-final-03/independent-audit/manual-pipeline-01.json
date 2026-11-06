@@ -1,0 +1,21 @@
+{
+  "status": "PAUSED",
+  "startUtc": "2026-11-05T23:01:16.065381+00:00",
+  "commands": [
+    {
+      "label": "ros-build-01",
+      "returnCode": 0,
+      "commandReceipt": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/ros-build-01/command.json"
+    },
+    {
+      "label": "scalar-command-01",
+      "returnCode": 0,
+      "commandReceipt": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/scalar-command-01/command.json"
+    }
+  ],
+  "current": "ros-online-01",
+  "pauseUtc": "2026-11-05T23:03:01.628494+00:00",
+  "pausedDuring": "ros-online-01",
+  "reason": "Explicit user pause; incomplete ROS manual run is not PASS; no subsequent Webots manual command started.",
+  "cleanupRecord": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/PAUSE_STOP_RECORD.json"
+}

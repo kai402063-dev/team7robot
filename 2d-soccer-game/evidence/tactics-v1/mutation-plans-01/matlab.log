@@ -1,0 +1,46 @@
+Running test_v1_tactics
+.....
+================================================================================
+Verification failed in test_v1_tactics/testFeedbackCorrelationAndDuplicates.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-tactics-v1-feedback-correlation/tests/test_v1_tactics.m (testFeedbackCorrelationAndDuplicates) at 125
+================================================================================
+
+================================================================================
+Verification failed in test_v1_tactics/testFeedbackCorrelationAndDuplicates.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-tactics-v1-feedback-correlation/tests/test_v1_tactics.m (testFeedbackCorrelationAndDuplicates) at 126
+================================================================================
+.....
+Done test_v1_tactics
+__________
+
+Failure Summary:
+
+     Name                                                  Failed  Incomplete  Reason(s)
+    ===================================================================================================
+     test_v1_tactics/testFeedbackCorrelationAndDuplicates    X                 Failed by verification.

@@ -1,0 +1,21 @@
+Running test_validation_receipts
+......Running test_camera
+..
+Done test_camera
+__________
+
+..
+Done test_validation_receipts
+__________
+
+Running test_algorithms
+..........
+Done test_algorithms
+__________
+
+              status: 'PASS'
+    casesPerFunction: 1000
+           tolerance: 1.0000e-12
+           functions: {1×11 cell}
+           screening: [1×11 struct]
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=TDP Football 2D
+Name[zh_CN]=TDP 二维足球仿真
+Comment=Open the live 4v4 football pitch in a separate MATLAB process
+Comment[zh_CN]=在独立 MATLAB 进程中打开实时 4v4 足球动画
+Exec="/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/start_2d.sh"
+Path=/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1
+Icon=applications-games
+Terminal=true
+Categories=Education;Science;

@@ -1,0 +1,533 @@
+[
+  {
+    "parameter": "L",
+    "value": 9,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "W",
+    "value": 6,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "goalD",
+    "value": 0.6,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "goalW",
+    "value": 2.6,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "goalAreaL",
+    "value": 1,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "goalAreaW",
+    "value": 3,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "penMark",
+    "value": 1.5,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "centreD",
+    "value": 1.5,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "border",
+    "value": 1,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "penAreaL",
+    "value": 2,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "penAreaW",
+    "value": 5,
+    "unit": "m",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "ballR",
+    "value": 0.07,
+    "unit": "m",
+    "category": "课程要求（近似派生）",
+    "source": "约 14 cm 直径 / 2；不是精确实测值",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "ballDecel",
+    "value": 0.4,
+    "unit": "m/s²",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "ballRestit",
+    "value": 0.5,
+    "unit": "1 / enum",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "ballRobotE",
+    "value": 0.3,
+    "unit": "1 / enum",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "robotR",
+    "value": 0.15,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "vFwd",
+    "value": 0.25,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "vBack",
+    "value": 0.12,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "vSide",
+    "value": 0.15,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "wMax",
+    "value": 0.7853981633974483,
+    "unit": "rad/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "估计/简化，待实测"
+  },
+  {
+    "parameter": "Kp",
+    "value": 0.8,
+    "unit": "s⁻¹",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "Kw",
+    "value": 2,
+    "unit": "s⁻¹",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "avoidR",
+    "value": 0.7,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "avoidGain",
+    "value": 0.6,
+    "unit": "heuristic gain",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "ballAvoidR",
+    "value": 0.35,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "approachDist",
+    "value": 0.45,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickRange",
+    "value": 0.28,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "stepInSpeed",
+    "value": 0.1,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickAlign",
+    "value": 0.3490658503988659,
+    "unit": "rad",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "behindTol",
+    "value": 0.5235987755982988,
+    "unit": "rad",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickNoise",
+    "value": 0.10471975511965978,
+    "unit": "rad",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickCooldown",
+    "value": 1,
+    "unit": "s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "shotSpeed",
+    "value": 1.8,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "dribbleSpeed",
+    "value": 0.6,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "maxKickSpeed",
+    "value": 2.2,
+    "unit": "m/s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "roleHyst",
+    "value": 0.4,
+    "unit": "weighted cost",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "shootDist",
+    "value": 3,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "defDist",
+    "value": 1.8,
+    "unit": "m",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "nPerTeam",
+    "value": 4,
+    "unit": "1 / enum",
+    "category": "课程要求",
+    "source": "课程规格 PDF 第 3 页（人数见项目说明）",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "dt",
+    "value": 0.05,
+    "unit": "s",
+    "category": "现有行为/工程配置",
+    "source": "A 默认 0.05；另验收 0.04",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "Tmatch",
+    "value": 600,
+    "unit": "s",
+    "category": "教学设定",
+    "source": "harness 覆盖 A 练习值 5 s",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "restartPause",
+    "value": 2,
+    "unit": "s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "outPause",
+    "value": 1,
+    "unit": "s",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "drawEvery",
+    "value": 4,
+    "unit": "1 / enum",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "保留 A 字段；新离线模型不使用显示节拍或实时等待"
+  },
+  {
+    "parameter": "realtime",
+    "value": false,
+    "unit": "1 / enum",
+    "category": "教学设定",
+    "source": "无画面 harness 覆盖 true",
+    "status": "保留 A 字段；新离线模型不使用显示节拍或实时等待"
+  },
+  {
+    "parameter": "dirSign",
+    "value": [
+      1,
+      -1
+    ],
+    "unit": "1 / enum",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "seed",
+    "value": 1,
+    "unit": "1 / enum",
+    "category": "现有行为",
+    "source": "A simParams.m",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "mode",
+    "value": "Compat",
+    "unit": "1 / enum",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "rulesProfile",
+    "value": "ACompat",
+    "unit": "1 / enum",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "maxObservationAge",
+    "value": 0.5,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "walkValidity",
+    "value": 0.1,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickPreparation",
+    "value": 0.2,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "kickTimeout",
+    "value": 1,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "recoverTime",
+    "value": 0.5,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "alignEnter",
+    "value": 0.35,
+    "unit": "m",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "alignExit",
+    "value": 0.45,
+    "unit": "m",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "searchTurnRate",
+    "value": 0.3,
+    "unit": "rad/s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "fieldOfView",
+    "value": 6.283185307179586,
+    "unit": "rad",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "observationDelay",
+    "value": 0,
+    "unit": "s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已实现于 sensorReplay；runMatch 非零时明确报错"
+  },
+  {
+    "parameter": "observationNoise",
+    "value": 0,
+    "unit": "m",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已实现于 sensorReplay；runMatch 非零时明确报错"
+  },
+  {
+    "parameter": "fixedStriker",
+    "value": false,
+    "unit": "1 / enum",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "tapSpeed",
+    "value": 0.3,
+    "unit": "m/s",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "freezeDuringPause",
+    "value": false,
+    "unit": "1 / enum",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "contactIterations",
+    "value": 256,
+    "unit": "1 / enum",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "restartOpponentDistance",
+    "value": 0.75,
+    "unit": "m",
+    "category": "RoboCup 参考 + 教学简化",
+    "source": "R2025 自由球距离规则；本版仅重开瞬间中心点投影",
+    "status": "已采用；非实测标定"
+  },
+  {
+    "parameter": "contactTolerance",
+    "value": 1e-10,
+    "unit": "m",
+    "category": "拟议设计/教学设定",
+    "source": "本工程 defaultConfig",
+    "status": "已采用；非实测标定"
+  }
+]

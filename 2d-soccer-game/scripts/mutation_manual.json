@@ -1,0 +1,8 @@
+{
+  "id": "manual-v2",
+  "file": "docs/generated/manual_numbers.json",
+  "old": "\"firstRobot4X\": -0.9875",
+  "new": "\"firstRobot4X\": -0.98",
+  "suite": "tests/test_manual_numbers.m",
+  "evidence": "evidence/6/mutation-manual-02"
+}

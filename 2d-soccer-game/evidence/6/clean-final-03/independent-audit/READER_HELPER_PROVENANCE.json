@@ -1,0 +1,23 @@
+[
+  {
+    "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/build/independent-audit-02/manual_paths_02.m",
+    "sourceSha256": "75a883748bea12c3c5a98c0ab3c47065ced85d3fbe368e8b7ba89cb5293cf5eb",
+    "destination": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/manual_paths_03.m",
+    "destinationSha256": "884c12c1241867e5f68a36c26486548ef30654dd19760145294a463de1e5077d",
+    "provenance": "New helper authored by this independent reader during this same task; never executed in prior clones; path/function rename only. No historical audit results or runtime caches copied."
+  },
+  {
+    "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/build/independent-audit-02/manual_scalar_02.py",
+    "sourceSha256": "94ff1788e110e3712aa3f306349fde5587f647d5b6878912c0fb0f11f2681de5",
+    "destination": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/manual_scalar_03.py",
+    "destinationSha256": "a51615e9eee65039a702cecdfda94379c0c364056d3ed760919ae893def0dea8",
+    "provenance": "New helper authored by this independent reader during this same task; never executed in prior clones; path/function rename only. No historical audit results or runtime caches copied."
+  },
+  {
+    "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/build/independent-audit-02/run_logged.py",
+    "sourceSha256": "70d05abe53476d30a4ef77b03c6878d9cb342b7d6074159f36fc02639567ea3d",
+    "destination": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/run_logged.py",
+    "destinationSha256": "70d05abe53476d30a4ef77b03c6878d9cb342b7d6074159f36fc02639567ea3d",
+    "provenance": "New helper authored by this independent reader during this same task; never executed in prior clones; path/function rename only. No historical audit results or runtime caches copied."
+  }
+]

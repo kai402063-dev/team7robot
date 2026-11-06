@@ -1,0 +1,57 @@
+            matlab: '26.2.0.3386108 (R2026b)'
+           release: '2026b'
+              root: '/home/fayne/Applications/MATLAB/R2026b'
+          products: [1×6 struct]
+    installAllowed: 0
+       pushAllowed: 0
+          licenses: [1×1 struct]
+              ros2: ''
+          screener: '/home/fayne/Applications/MATLAB/R2026b/toolbox/mlcoder/screener/core/ml/+coder/screener.p'
+         rosOnline: 'BLOCKED_ROS_TOOLBOX_NOT_INSTALLED'
+        standalone: 'BLOCKED_CODERS_NOT_INSTALLED'
+
+{Error using functiontests (line 33)
+Unable to find any test functions. Test functions are local functions in the
+test file whose names start or end with the word "test", which is case
+insensitive.
+
+Error in test_baseline (line 2)
+tests=functiontests(localfunctions);
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.FunctionTestFactory/createSuite (line 39)
+            suite = feval(factory.TestFunctionName);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.MATLABCodeTestFactory/createSuiteExplicitly (line 20)
+            suite = factory.createSuite(modifier, parameters, varargin{:});
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.services.fileextension.MATLABCodeFileExtensionService/createSuiteExplicitly (line 38)
+                suite = factory.createSuiteExplicitly(modifier, externalParameters, varargin{:}, "FileExtensionLiaison", liaison);
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestSuite.fromFileCore_ (line 187)
+            suite = supportingService.createSuiteExplicitly(liaison, modifier, externalParameters);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.services.informalsuite.MATLABCodeFileHandler/createSuiteForSingleTest (line 24)
+            suite = TestSuite.fromFileCore_(file, rejector, options.ExternalParameters);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.services.informalsuite.SingleTestHandler/createSuite (line 19)
+                suites{idx} = handler.createSuiteForSingleTest(tests(idx), rejector, options);
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.createTestSuite (line 28)
+    suites{k} = uniqueHandlersToUse(k).createSuite(testsForHandler, options);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in testsuite (line 8)
+suite = matlab.unittest.internal.createTestSuite(tests, options);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.testoutputviewhandlers.TestOutputHandler/createSuite (line 19)
+            suite = suiteCreatorFcn(suiteInputs{:});
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.runtestsParser (line 52)
+    suite = results.Options.TestViewHandler_.createSuite(testsuiteCreatorFcn, results.TestsuiteInputs);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in runtests (line 6)
+[parseResults, suite] = matlab.unittest.internal.runtestsParser(@testsuite, varargin{:});
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in validate_stage0 (line 6)
+check_environment(outDir);results=runtests('tests/test_baseline.m');assertSuccess(results);
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

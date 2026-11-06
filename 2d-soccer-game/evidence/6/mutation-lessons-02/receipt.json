@@ -1,0 +1,35 @@
+{
+  "spec": {
+    "id": "lessons-v2",
+    "file": "scripts/build_lessons.m",
+    "old": "'Gain','0.8'",
+    "new": "'Gain','0.7'",
+    "suite": "tests/test_lessons.m",
+    "evidence": "evidence/6/mutation-lessons-02",
+    "setup": "build_lessons;"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_lessons/testClosedLoopUnitDelay",
+      "test_lessons/testFlatStates",
+      "test_lessons/testLearningHarnessUsesItsOwnChart"
+    ],
+    "passed": [
+      false,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

@@ -1,0 +1,9 @@
+{Error using build_single (line 13)
+UnitDelay block does not have a parameter named 'OutDataTypeStr'
+} 
+[Warning: Unable to close the model 'tdpSingleRobot' because it has been
+changed. To save changes, use close_system('tdpSingleRobot',1). To discard
+changes, use close_system('tdpSingleRobot',0).] 
+[Warning: Save contents of model workspace before closing?
+
+ The model workspace's data source is file "".] 

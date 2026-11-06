@@ -1,0 +1,209 @@
+Running test_animation
+.
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 26
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 28
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyError failed.
+    --> The function did not throw any exception.
+        
+        Expected Exception:
+            'TDP:AnimationControlTimeout'
+    
+    Evaluated Function:
+      function_handle with value:
+    
+        @()v.checkPauseTimeout(0)
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 29
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 32
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The character arrays are not equal.
+    
+    Actual char:
+        Pause
+    Expected char:
+        Resume
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 33
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 35
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 36
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The character arrays are not equal.
+    
+    Actual char:
+        Pausing...
+    Expected char:
+        Resuming...
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 37
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 38
+================================================================================
+
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Sizes do not match.
+        
+        Actual size:
+             1     5
+        Expected size:
+             1     6
+    
+    Actual Value:
+      1×5 cell array
+    
+        {'started'}    {'pauseRequested'}    {'resumeRequested'}    {'speed'}    {'pauseRequested'}
+    Expected Value:
+      1×6 cell array
+    
+        {'started'}    {'pauseRequested'}    {'paused'}    {'speed'}    {'resumeRequested'}    {'resumed'}
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-v1-pause-before-ack/tests/test_animation.m (testPauseSpeedStopAndClose) at 39
+================================================================================
+..[Warning: Graphics acceleration hardware is unavailable. Graphics quality and
+performance might be diminished. See <a
+href="https://www.mathworks.com/support/requirements/matlab-system-requirements.html">MATLAB
+System Requirements</a>.] 
+[> In LiveViewer2D/beginRun (line 143)
+In runAnimatedMatch (line 8)
+In test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 60)]
+...
+Done test_animation
+__________
+
+Failure Summary:
+
+     Name                                       Failed  Incomplete  Reason(s)
+    ========================================================================================
+     test_animation/testPauseSpeedStopAndClose    X                 Failed by verification.

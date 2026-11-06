@@ -1,0 +1,22 @@
+{
+  "command": [
+    "./scripts/run_ros.sh",
+    "colcon",
+    "--log-base",
+    "build/colcon/log",
+    "build",
+    "--base-paths",
+    "ros2",
+    "--build-base",
+    "build/colcon/build",
+    "--install-base",
+    "build/colcon/install"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+  "startUtc": "2026-11-05T23:01:16.179307+00:00",
+  "status": "PASS",
+  "childPid": 277410,
+  "exitCode": 0,
+  "endUtc": "2026-11-05T23:01:21.657157+00:00",
+  "wallSeconds": 5.477843704997213
+}

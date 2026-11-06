@@ -1,0 +1,43 @@
+{
+  "robotModel": "Webots Nao H25 V5 red",
+  "basicTimeStepMs": 20,
+  "controlPeriodSeconds": 0.04,
+  "graphBootstrapRepublishSeconds": 0.25,
+  "graphBootstrapTimeoutSeconds": 90.0,
+  "cameraWidth": 160,
+  "cameraHeight": 120,
+  "ballRadiusMetres": 0.07,
+  "ballMassKg": 0.15,
+  "ballMassSource": "explicit teaching assumption; course/source unknown; measurement required",
+  "ballDisplacementThresholdMetres": 0.05,
+  "robotInitialPosition": [
+    -0.7,
+    0.0,
+    0.334
+  ],
+  "ballInitialPosition": [
+    0.0,
+    0.0,
+    0.075
+  ],
+  "kickTimeoutSeconds": 12.0,
+  "recoverTimeSeconds": 2.0,
+  "settleSeconds": 2.0,
+  "controlFrames": 1001,
+  "footFriction": 7.0,
+  "footFrictionSource": "Webots nao_demo.wbt reference, not measured NAO6",
+  "localization": "Supervisor read-only ground truth; not perception validation",
+  "motionMapping": "dominant velocity sign selects finite prerecorded motion; magnitude is not a calibrated velocity",
+  "footBounce": 0.3,
+  "footBounceVelocityMetresPerSecond": 0.003,
+  "uprightMinimumZMetres": 0.15,
+  "uprightMinimumUpZ": 0.5,
+  "walkSelectionReference": [
+    0.25,
+    0.15,
+    0.7853981633974483
+  ],
+  "ballStationarySpeedTolerance": 0.01,
+  "ballMotionSpeedThreshold": 0.05,
+  "minimumApproachProgressMetres": 0.2
+}

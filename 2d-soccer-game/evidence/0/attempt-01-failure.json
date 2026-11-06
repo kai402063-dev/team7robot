@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "exitCode": 1,
+  "stdoutBytes": 0,
+  "context": "Sandbox MATLAB process exited without a diagnostic. No license conclusion inferred.",
+  "nextAttempt": "attempt-02: independent host batch with isolated preferences"
+}

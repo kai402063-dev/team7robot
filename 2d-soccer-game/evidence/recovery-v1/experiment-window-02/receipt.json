@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "command": "'/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/start_2d.sh' --recovery",
+  "duration": 5,
+  "speed": "Inf",
+  "startupTimeoutSeconds": 900,
+  "desktopExecSource": "START_2D_RECOVERY.desktop",
+  "desktopSha256": "b8aa786c374e9b6e4fb4e8f8760b05997da9c6a624392929467268217bccc4b4",
+  "desktopScope": "Exec and Path verified; shell directly executes entry argv, no file-manager click",
+  "scope": "Private authenticated Xvfb; one target window; real default MATLAB",
+  "launcherSha256": "861a594b256e67b7f199da88a8e4fcb94c03e9789b92e869faef9d49d49b1fb6",
+  "display": ":1",
+  "privateServerPid": 496889,
+  "launcherPid": 496908,
+  "frames": 100,
+  "traceShape": [
+    100,
+    98
+  ],
+  "tacticsShape": [
+    100,
+    171
+  ],
+  "fixedRoles": true,
+  "autoRecovery": true,
+  "recoveryShape": [
+    100,
+    53
+  ],
+  "numericalSha256": {
+    "trace": "85027fab4f9081336943e265e65ce8ca7b5d4e427a8f15a413bbd1137db68d9a",
+    "tactics": "3a3696f282b1704654c04be78a96187ff88a3bf2aa72977f9abc0b999c4b88b6",
+    "recovery": "c54840f3a59dacff6d71698d7d19ba79351c010639b3ef6343aadcbcdf0dd138"
+  },
+  "ballTravelMetres": 0.1577545903308415,
+  "robotsMoving": 8,
+  "actualKickSteps": 2,
+  "matchReceipt": "build/animation-20261106-104818-841/receipt.json",
+  "traceSha256": "84e2b8bd49b5e74faac91af21ec866bf6e86a16fcb00a5eaebc9044488610b8e",
+  "matchReceiptSha256": "e4c792aaaaa7b6d603b4321443328d73fe4486991e0bd8745bbc2cc19b3b7570",
+  "lastSimulationTime": 5.0,
+  "window": "0x600010",
+  "windowTitle": "TDP Football - Live 2D",
+  "windowViewable": true,
+  "closeEvent": "WM_DELETE_WINDOW",
+  "exitCode": 0,
+  "naturalExitAfterClose": true,
+  "ownedLauncherExited": true,
+  "ownedServerExited": true,
+  "elapsedSeconds": 275.9100369999942
+}

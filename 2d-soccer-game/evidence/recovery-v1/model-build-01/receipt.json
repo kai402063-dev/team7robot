@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "physicalShape": [
+    160,
+    98
+  ],
+  "tacticsShape": [
+    160,
+    171
+  ],
+  "healthShape": [
+    160,
+    53
+  ],
+  "totalKicks": 8
+}

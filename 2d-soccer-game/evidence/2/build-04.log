@@ -1,0 +1,127 @@
+[Warning: The model name 'ControllerCore' is shadowing another name in the
+MATLAB workspace or path. Type "which -all ControllerCore" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_controller (line 5)] 
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 4)] 
+[Warning: The model name 'tdpSingleRobot' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpSingleRobot" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_single (line 4)] 
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In construct_module (line 81)
+In generate_code_for_charts_and_machine (line 142)
+In sfc (line 168)
+In targetman>code_method (line 320)
+In targetman>method_nag_wrapper (line 133)
+In targetman (line 69)
+In autobuild_kernel>autobuild_local (line 173)
+In autobuild_kernel (line 53)
+In autobuild_driver (line 118)
+In slsf (line 140)
+In sfprivate (line 13)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)] 
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In construct_module (line 81)
+In generate_code_for_charts_and_machine (line 142)
+In sfc (line 168)
+In targetman>code_method (line 320)
+In targetman>method_nag_wrapper (line 133)
+In targetman (line 69)
+In autobuild_kernel>autobuild_local (line 173)
+In autobuild_kernel (line 53)
+In autobuild_driver (line 118)
+In slsf (line 140)
+In sfprivate (line 13)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)] 
+
+data = 
+
+  Data with properties:
+
+                  Id: 179
+                Path: 'ControllerCore/Core/SkillStages'
+                Name: 'requestId'
+         Description: ''
+     SaveToWorkspace: 0
+            DataType: 'uint32'
+               Props: [1×1 Stateflow.DataProps]
+                 Tag: []
+            Document: ''
+               Scope: 'Output'
+               Debug: [1×1 Stateflow.DataDebug]
+    InitializeMethod: 'Expression'
+        UpdateMethod: 'Discrete'
+         LoggingInfo: [1×1 Stateflow.SigLoggingInfo]
+          SSIdNumber: 6
+        CompiledSize: '1'
+        CompiledType: 'uint32'
+             Machine: [1×1 Stateflow.Machine]
+         OutputState: []
+                Port: 2
+           TestPoint: 0
+             Tunable: 1
+
+{Error using runReplay (line 6)
+The data <a
+href="matlab:Stateflow.Debug.Runtime.open_data_or_event('tdpReplay/ControllerCore/SkillStages',
+6);">requestId</a> was read before being written to. This error will stop the
+simulation.
+
+State '<a
+href="matlab:Stateflow.Debug.Runtime.open_object('tdpReplay/ControllerCore/SkillStages',
+11);">Idle</a>' in Chart '<a
+href="matlab:Stateflow.Debug.Runtime.open_object('tdpReplay/ControllerCore/SkillStages',
+0);">tdpReplay/ControllerCore/SkillStages</a>':
+
+     requestId=<strong>requestId</strong>+uint32(1);
+} 

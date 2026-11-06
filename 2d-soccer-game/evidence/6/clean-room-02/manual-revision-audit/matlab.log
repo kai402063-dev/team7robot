@@ -1,0 +1,142 @@
+[Warning: The model name 'ControllerCore' is shadowing another name in the
+MATLAB workspace or path. Type "which -all ControllerCore" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_controller (line 5)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 7)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpSingleRobot' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpSingleRobot" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_single (line 4)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpMatch' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpMatch" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_match (line 4)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpDelayLesson' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpDelayLesson" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_lessons (line 5)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpFlatLesson' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpFlatLesson" at the command line to find
+the other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_lessons (line 17)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: The model name 'tdpLearningReplay' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpLearningReplay" at the command
+line to find the other uses of this name. You should change the name of the
+model to avoid problems.] 
+[> In build_replay (line 7)
+In build_learning_replay (line 10)
+In build_all (line 3)
+In run_revision_audit (line 12)] 
+[Warning: Graphics acceleration hardware is unavailable. Graphics quality and
+performance might be diminished. See <a
+href="https://www.mathworks.com/support/requirements/matlab-system-requirements.html">MATLAB
+System Requirements</a>.] 
+Running test_lessons
+...
+Done test_lessons
+__________
+
+Running test_extensions
+..........
+Done test_extensions
+__________
+
+Running test_manual_numbers
+...
+Done test_manual_numbers
+__________
+
+Running test_controller
+........
+Done test_controller
+__________
+
+Running test_laneClearLesson
+....
+Done test_laneClearLesson
+__________
+
+Running test_laneClearLesson
+.
+================================================================================
+Verification failed in test_laneClearLesson/testBeyondEndpoint.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-02-handson/build/learning/test_laneClearLesson.m (testBeyondEndpoint) at 8
+================================================================================
+..
+================================================================================
+Verification failed in test_laneClearLesson/testExactMargin.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-02-handson/build/learning/test_laneClearLesson.m (testExactMargin) at 14
+================================================================================
+.
+Done test_laneClearLesson
+__________
+
+Failure Summary:
+
+     Name                                     Failed  Incomplete  Reason(s)
+    ======================================================================================
+     test_laneClearLesson/testBeyondEndpoint    X                 Failed by verification.
+    --------------------------------------------------------------------------------------
+     test_laneClearLesson/testExactMargin       X                 Failed by verification.
+Running test_laneClearLesson
+....
+Done test_laneClearLesson
+__________
+
+{Error using assert
+Assertion failed.
+
+Error in run_revision_audit (line 56)
+    assert(isempty(find(chart,'-isa','Stateflow.State')));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+[Warning: Unable to close the model 'myKickReplay' because it has been changed.
+To save changes, use close_system('myKickReplay',1). To discard changes, use
+close_system('myKickReplay',0).] 

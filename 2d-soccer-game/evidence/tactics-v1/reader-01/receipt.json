@@ -1,0 +1,61 @@
+{
+  "status": "PASS_READER_SHORT_AND_LONG_EVIDENCE_RECONSTRUCTION",
+  "sourceCommit": "ca87cb149cf7b71e5ad5ae1ea7396dd64f981b2c",
+  "readManualFrom": "working tree",
+  "manualFilesReadSha256": {
+    "docs/DEV_MANUAL.md": "a68605cc6883661359bd6cab21bd8d152eb72066da26bd5df3b47de2ea73c309",
+    "docs/chapters/tactics_v1_design.md": "662ccddec0139285a44f770a036974e2577bab2011b9a7d6d585546f1a2f7486",
+    "docs/chapters/v1_model_interface.md": "fd7d2b4a012cca44f3ca3cf921823c406b58d7fbd59edd2e36efea6d1260ef9a",
+    "docs/chapters/testing.md": "a67064a60618a3873839c7e50201dfd85aa85b97b6d0595cddd39a768d48bc87",
+    "docs/chapters/live_animation.md": "1086de74c4ee8bfdec0b0b062c465f75743433aa9481814cdbf2437c43b374a8",
+    "docs/generated/v1_results.md": "f02d3a8cc99d0550b7c485b8f2d3725bfe9e0ac5e0d59aaab61ff61db270dbf1",
+    "docs/generated/v1_columns.json": "4041375e2c5f2f66cf69b4c14417e0052ffb2a9498997a9adbb740c8f095faf1"
+  },
+  "cloneCleanBeforeAndAfter": true,
+  "freshClone": "build/v1-reader-01",
+  "sandboxExit": 1,
+  "firstHostExit": 0,
+  "namedHostExit": 0,
+  "runtime": "26.2.0.3386108 (R2026b)",
+  "independentShortRuns": 2,
+  "officialLongSimulationsRepeatedByReader": 0,
+  "tenSecondDt": 0.05,
+  "physicalShape": [
+    200,
+    98
+  ],
+  "tacticalShape": [
+    200,
+    171
+  ],
+  "firstKick": [
+    3.95,
+    4
+  ],
+  "physicalEvents": 9,
+  "numericDigestsEqualBetweenShortRuns": true,
+  "shortNumericDigests": {
+    "traceNumericSha256": "a9ef961df829cacb5ba336bdc1c631d78b34780a1d51bc9a89d760dfdc81d048",
+    "tacticsNumericSha256": "d93894719739f5e34ec7ef356eb10a599d77a607c21f23d713529d1d0bfc5f01"
+  },
+  "originalFortyMsIndependentRecord": {
+    "path": "evidence/tactics-v1/handson-01/receipt.json",
+    "sha256": "0ee3e027282c338048d9d31e4897f29014d592b31326141727febe2996f6ff27",
+    "physicalShape": [
+      250,
+      98
+    ],
+    "tacticsShape": [
+      250,
+      171
+    ]
+  },
+  "longSummaryPureReconstruction": {
+    "status": "PASS_40_V1_MATCHES",
+    "comparedFileSha256": "06981da4eae217f928376a9bce7a9f0deb1b8da383181a3a6a785d8d3f74c453",
+    "matchesReindexed": 40,
+    "reportedSteps": 540000,
+    "extraFullReplays": 2
+  },
+  "visualScope": "Instructions and published isolated-GUI evidence read. No graphical desktop opened by this reader."
+}

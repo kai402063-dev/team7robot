@@ -1,0 +1,10 @@
+Warning: Session DBus not running.
+Warning: Application will not react to setting changes.
+ Check your DBus installation.
+System: Linux 7.0.0-42-generic x86_64
+Processor: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+Number of cores: 12
+OpenAL device: 
+OpenGL vendor: Mesa
+OpenGL renderer: llvmpipe (LLVM 20.1.2, 256 bits)
+OpenGL version: 4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.4

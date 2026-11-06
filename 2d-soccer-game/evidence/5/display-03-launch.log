@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/probe_webots_display.py", line 16, in <module>
+    assert p.returncode==0
+           ^^^^^^^^^^^^^^^
+AssertionError

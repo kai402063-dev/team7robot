@@ -1,0 +1,65 @@
+Running test_match
+....
+Done test_match
+__________
+
+noise=0 seed=1 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=2 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=3 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=4 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=5 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=6 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=7 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=8 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=9 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=10 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=11 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=12 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=13 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=14 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=15 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=16 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=17 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=18 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=19 first=0 max=5.153e-14 goals=[6 0]
+noise=0 seed=20 first=0 max=5.153e-14 goals=[6 0]
+noise=0.10472 seed=1 first=965 max=1.34337e-06 goals=[3 1]
+noise=0.10472 seed=2 first=438 max=7.64643e-05 goals=[2 5]
+noise=0.10472 seed=3 first=6635 max=2.00687e-10 goals=[1 3]
+noise=0.10472 seed=4 first=2024 max=1.83751e-09 goals=[3 3]
+noise=0.10472 seed=5 first=1025 max=9.48293e-08 goals=[2 5]
+noise=0.10472 seed=6 first=2294 max=2.34759e-08 goals=[4 2]
+noise=0.10472 seed=7 first=9869 max=2.42206e-10 goals=[5 3]
+noise=0.10472 seed=8 first=3770 max=6.52482e-07 goals=[1 4]
+noise=0.10472 seed=9 first=5044 max=6.92123e-08 goals=[2 2]
+noise=0.10472 seed=10 first=2556 max=4.01005e-10 goals=[5 2]
+noise=0.10472 seed=11 first=2490 max=1.56409e-09 goals=[5 1]
+noise=0.10472 seed=12 first=1227 max=3.07461e-11 goals=[1 3]
+noise=0.10472 seed=13 first=670 max=0.0246225 goals=[2 3]
+noise=0.10472 seed=14 first=2683 max=7.00423e-08 goals=[5 3]
+noise=0.10472 seed=15 first=5115 max=2.46732e-09 goals=[2 3]
+noise=0.10472 seed=16 first=1137 max=6.83293e-07 goals=[3 2]
+noise=0.10472 seed=17 first=3237 max=2.08063e-09 goals=[4 2]
+noise=0.10472 seed=18 first=3801 max=1.24261e-07 goals=[5 0]
+noise=0.10472 seed=19 first=1377 max=3.68577e-10 goals=[6 3]
+noise=0.10472 seed=20 first=2352 max=5.97679e-08 goals=[2 6]
+Running test_actuator
+.......
+Done test_actuator
+__________
+
+Running test_controller
+........
+Done test_controller
+__________
+
+Running test_source_defects
+.......
+Done test_source_defects
+__________
+
+Running test_repairs
+.......
+Done test_repairs
+__________
+

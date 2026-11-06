@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Actual V1 launcher saved rows, first through last observed frame",
+  "timeSeconds": [
+    0.05,
+    5.0
+  ],
+  "robotTravelMetres": [
+    0.057619046202380814,
+    0.8341704831022491,
+    1.1603632081426385,
+    0.7617662231345153,
+    0.057619046202380814,
+    0.8200596238477584,
+    1.1605997020873526,
+    0.7667662231345151
+  ],
+  "robotsMoving": 8,
+  "ballTravelMetres": 0.1577545903308415,
+  "actualKickSteps": 2,
+  "traceSha256": "6a62b2a0bd5d61bd0253a548b16b81792f8453d50abb63232f1543513a7eee49",
+  "sameNumericalRecordsAsLauncher01": true
+}

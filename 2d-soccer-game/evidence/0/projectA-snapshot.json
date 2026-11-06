@@ -1,0 +1,62 @@
+{
+  "drawPitch.m": {
+    "sha256": "d79c83e1f61e8338cc30bb2fc33928d2a809305cc40dfc5ee842828d8fc0c819",
+    "lines": 29
+  },
+  "main_robocup2d.m": {
+    "sha256": "631f20eba0be7fa745ef8f7c0830662fc7c7d8643e18d5013c160069a6af534c",
+    "lines": 84
+  },
+  "angWrap.m": {
+    "sha256": "7ae7856fc578d058cf655ad6ae4fb7bd85724786f21176bb21d6583bf0f49112",
+    "lines": 4
+  },
+  "initState.m": {
+    "sha256": "d22826f088a3b31192ff0fc8786d2ea39c2762693450c24e930330d17d11656f",
+    "lines": 21
+  },
+  "initGraphics.m": {
+    "sha256": "3f3f0f21ac1d41b01c45bbbba5fa60dc1cc06214e93cf32edecdc2f014114cdd",
+    "lines": 20
+  },
+  "ballModel.m": {
+    "sha256": "8bfabb75eacceb0454417ae8384ec0d98f7320ef4219f0e9d445b955134b9347",
+    "lines": 21
+  },
+  "kickSkill.m": {
+    "sha256": "aea35794b01b2880bb9fb0b03dea7c2ea1e2729f9137b3448dd8aa8e823ad407",
+    "lines": 38
+  },
+  "kickoffReset.m": {
+    "sha256": "ce8a75f53d4643ed9a3970855ff8c2c5bca4e13c5208c7f88f7a560f8d526d57",
+    "lines": 16
+  },
+  "collisions.m": {
+    "sha256": "21de9ba10170fd471a9bb5c4dc2d1885b4eab5d1fbb85f8d8a69173cd00fa28d",
+    "lines": 34
+  },
+  "teamBehaviour.m": {
+    "sha256": "480662691f2485d462c1a6062216ce61d6453cfb71a17bd227a6cc5e3b42c980",
+    "lines": 117
+  },
+  "goToPose.m": {
+    "sha256": "9f8a4c9f51164d33f10170f67ca6c3268cff766d08cee5606d42bdf8e4102766",
+    "lines": 36
+  },
+  "rulesCheck.m": {
+    "sha256": "8df865f3d92ecf6d9002f5cc03594afb589b76e17bc5fc3417416116e9366071",
+    "lines": 40
+  },
+  "updateGraphics.m": {
+    "sha256": "b8e925e6fa414a33f72952f56a836ad8f872832f1a6dfd3a93407bdd6d858a26",
+    "lines": 16
+  },
+  "robotModel.m": {
+    "sha256": "160a80491983665386ad3fe3a18e965b99464ba1f24330b92e00ff9539c5d71a",
+    "lines": 25
+  },
+  "simParams.m": {
+    "sha256": "4b8082fed01d7cf5241f9c72eaae9dcffcfa89c272c25fad1d788ac77ff34bee",
+    "lines": 67
+  }
+}

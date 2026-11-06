@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "id": "manual-v1",
+    "file": "docs/generated/manual_numbers.json",
+    "old": "\"firstRobot4X\": -0.9875",
+    "new": "\"firstRobot4X\": -0.98",
+    "suite": "tests/test_manual_numbers.m",
+    "evidence": "evidence/6/mutation-manual-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_manual_numbers/testNumbersMatchExecutableResults",
+      "test_manual_numbers/testRenderedManualContainsActualNumbers",
+      "test_manual_numbers/testParameterTableMatchesCurrentConfiguration"
+    ],
+    "passed": [
+      false,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

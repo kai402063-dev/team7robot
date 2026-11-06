@@ -1,0 +1,78 @@
+[Warning: The model name 'tdpFrameReplay' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpFrameReplay" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_ros_adapter (line 7)
+In validate_ros_adapter (line 4)] 
+[Warning: The model name 'tdpRosProxy' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpRosProxy" at the command line to find
+the other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_ros_adapter (line 7)
+In validate_ros_adapter (line 4)] 
+Running test_ros_adapter
+....{<a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4:::held')">'held'</a>
+is inferred as a variable-size matrix, but its size is specified as inherited
+or fixed. Verify <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4:::held')">'held'</a>
+is defined in terms of non-tunable parameters, or select the "Variable Size"
+check box and specify the upper bounds in the Size box.
+} 
+{Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4')">'tdpFrameReplay/Decode'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 
+
+================================================================================
+Error occurred in test_ros_adapter/testActualCoreReplay and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using runFrameReplay (line 9)
+    Error due to multiple causes.
+    
+    Error in test_ros_adapter>testActualCoreReplay (line 27)
+    [a,q]=runFrameReplay(P,f);b=runFrameReplay(P,f);verifyEqual(t,a,b);verifyTrue(t,any(q(:,3)==1));verifyTrue(t,any(a(:,3)==double(TdpPhase.Kick)));
+          ^^^^^^^^^^^^^^^^^^^
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper
+        Simulink is unable to determine sizes and/or types of the outputs for
+        block
+        <a
+        href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4')">'tdpFrameReplay/Decode'</a>
+        due to errors in the block body, or limitations of the underlying
+        analysis.
+        The errors might be inaccurate. Fix the indicated errors, or explicitly
+        specify sizes and/or types for all block outputs.
+    
+    
+        Error using Simulink.Simulation.internal.DesktopSimHelper
+        Error in port widths or dimensions. 'Output Port 1' of
+        'tdpFrameReplay/Decode/frame' is a [1x20] matrix.
+================================================================================
+.
+Done test_ros_adapter
+__________
+
+Failure Summary:
+
+     Name                                   Failed  Incomplete  Reason(s)
+    ======================================================================
+     test_ros_adapter/testActualCoreReplay    X         X       Errored.
+{Error using assert
+At least one test failed in the test session.
+
+Error in matlab.unittest.internal.BaseTestResult/assertSuccess (line 126)
+             assert(~any([resultArray.Failed]),message('MATLAB:unittest:TestResult:UnsuccessfulRun'));
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in validate_ros_adapter (line 6)
+writeJson(fullfile(outDir,'adapter-receipt.json'),receipt);assertSuccess(r);
+                                                           ^^^^^^^^^^^^^^^^
+} 

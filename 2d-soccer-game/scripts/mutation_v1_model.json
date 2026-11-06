@@ -1,0 +1,8 @@
+{
+  "id": "v1-model-revocation-final",
+  "file": "environment/V1AuthorizeRequests.m",
+  "old": "revoke=revoke || i~=owner || ~ballFresh",
+  "new": "revoke=revoke || ~ballFresh",
+  "suite": "tests/test_v1_model.m",
+  "evidence": "evidence/tactics-v1/model-mutation-02"
+}

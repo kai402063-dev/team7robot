@@ -1,0 +1,27 @@
+{
+  "status": "SUPERSEDED_BY_VALIDATION_FIX",
+  "provenance": "Recorded from tool outputs and existing unmodified process wrapper receipt",
+  "attempts": [
+    {
+      "number": 1,
+      "result": "NO_SIGNAL_SENT",
+      "error": "AssertionError: /proc/210306/cwd was not equal to clone root",
+      "reason": "MATLAB runtests had changed cwd to the clone tests directory"
+    },
+    {
+      "number": 2,
+      "verifiedPid": 210306,
+      "verifiedCwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-01/tests",
+      "verifiedCommand": "/home/fayne/Applications/MATLAB/R2026b/bin/glnxa64/MATLAB -batch tdpSetup; reproduce_all;",
+      "signal": "SIGTERM",
+      "requestedUtc": "2026-11-05T21:35:25.052511+00:00",
+      "result": "PROCESS_EXITED",
+      "returnCode": -15,
+      "endUtc": "2026-11-05T21:35:25.586461+00:00"
+    }
+  ],
+  "commandReceipt": "build/clean-final-01/build/independent-audit-01/command.json",
+  "rawMatlabLog": "build/clean-final-01/build/independent-audit-01/matlab.log",
+  "wallSeconds": 1279.742189441,
+  "overallPass": false
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Idle",
+    "label": "Idle\nen,du:\n phase=TdpPhase.Idle;\n requestId=requestId+uint32(1);",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages",
+    "id": 237
+  },
+  {
+    "name": "Active",
+    "label": "Active\nen,du:\n if P.mode==TdpMode.Compat || phase~=TdpPhase.Kick\n     requestId=requestId+uint32(1);\n end",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages",
+    "id": 238
+  },
+  {
+    "name": "Search",
+    "label": "Search\nen: phase=TdpPhase.Search;",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages/Active",
+    "id": 239
+  },
+  {
+    "name": "Approach",
+    "label": "Approach\nen: phase=TdpPhase.Approach;",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages/Active",
+    "id": 240
+  },
+  {
+    "name": "Align",
+    "label": "Align\nen: phase=TdpPhase.Align;",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages/Active",
+    "id": 241
+  },
+  {
+    "name": "Kick",
+    "label": "Kick\nen:\n phase=TdpPhase.Kick;\n requestId=requestId+uint32(1);\n kickStart=tSim;\n kickTarget=g.target;\n kickSpeed=g.speed;",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages/Active",
+    "id": 242
+  },
+  {
+    "name": "Recover",
+    "label": "Recover\nen:\n phase=TdpPhase.Recover;\n recoverStart=tSim;",
+    "path": "myKickReplayRetry01/ControllerCore/SkillStages/Active",
+    "id": 243
+  }
+]

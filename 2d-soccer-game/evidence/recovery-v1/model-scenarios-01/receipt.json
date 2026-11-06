@@ -1,0 +1,46 @@
+{
+  "names": [
+    "test_recovery_model/testHandoverDuringApproach",
+    "test_recovery_model/testNaturalGeometryFailureRecovers",
+    "test_recovery_model/testLegalKickFinishesBeforeHandback",
+    "test_recovery_model/testUnsafePendingKickIsCanceled",
+    "test_recovery_model/testNoTerminalKeepsBothDisarmed",
+    "test_recovery_model/testFaultAndHeartbeatInterruptRecovery",
+    "test_recovery_model/testOnlyCurrentTerminalReleasesLock",
+    "test_recovery_model/testExpiredPendingKickIsCanceled",
+    "test_recovery_model/testRecoveryWhileBallUnknown"
+  ],
+  "passed": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

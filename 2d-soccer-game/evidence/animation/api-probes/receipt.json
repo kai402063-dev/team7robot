@@ -1,0 +1,103 @@
+{
+  "schema": "tdp-api-probe-receipt-v1",
+  "recordedAtUtc": "2026-11-06T00:18:04.967943+00:00",
+  "runtime": "MATLAB R2026b, independent -batch processes",
+  "source": "Execution tool stdout excerpts; not original redirected stdout files",
+  "sourceChanges": false,
+  "userMatlabProcessesTouched": false,
+  "probeCacheIds": [
+    "animation_api_review",
+    "animation_api_mini"
+  ],
+  "probes": [
+    {
+      "session": "47767",
+      "case": "real ToWorkspace RTO default optimization",
+      "exitCode": 1,
+      "result": "FAILED_NO_RUNTIME_OBJECT"
+    },
+    {
+      "session": "21448",
+      "case": "minimal ToWorkspace RTO default optimization",
+      "exitCode": 1,
+      "result": "FAILED_NO_RUNTIME_OBJECT"
+    },
+    {
+      "session": "95539",
+      "case": "real ToWorkspace RTO BlockReduction off",
+      "exitCode": 1,
+      "result": "FAILED_NO_RUNTIME_OBJECT"
+    },
+    {
+      "session": "48127",
+      "case": "minimal ToWorkspace RTO BlockReduction off",
+      "exitCode": 1,
+      "result": "FAILED_NO_RUNTIME_OBJECT"
+    },
+    {
+      "session": "19147",
+      "case": "real model step and live SimulationOutput getter",
+      "exitCode": 0,
+      "result": "PASS",
+      "steps": 40,
+      "columns": 98,
+      "simulatedSeconds": 2,
+      "stepLoopSeconds": 3.913,
+      "baselineExactEqual": true,
+      "maxAbsoluteDifference": 0,
+      "configurationOverride": "BlockReduction off"
+    },
+    {
+      "session": "75228",
+      "case": "minimal Gain listener after initialize and step getter",
+      "exitCode": 0,
+      "result": "PASS",
+      "steps": 40,
+      "stepLoopSeconds": 2.0568,
+      "loggedTraceExactEqual": true
+    },
+    {
+      "session": "89879",
+      "case": "real Record listener with native pacing lifecycle",
+      "exitCode": 130,
+      "result": "PARTIAL_INTERRUPTED",
+      "recordListenerRegistered": true,
+      "optimizationOverride": null,
+      "startReturnSeconds": 0.4954,
+      "pausedTimeBefore": 0.45,
+      "pausedTimeAfter": 0.45,
+      "pausedCallbackCountBefore": 9,
+      "pausedCallbackCountAfter": 9,
+      "pauseWaitSeconds": 0.2,
+      "completeTraceCompared": false,
+      "reason": "No completion after pause-stability output; owned probe interrupted for bounded diagnosis; exact blocking statement not identified"
+    },
+    {
+      "session": "3128",
+      "case": "minimal Gain listener native pacing pause change resume",
+      "exitCode": 0,
+      "result": "PASS",
+      "outerYieldSeconds": 0.05,
+      "callbacks": 40,
+      "recordRows": 40,
+      "resumeToCompletionSeconds": 2.0352,
+      "finalStatus": "inactive",
+      "dynamicPacingRate": "2"
+    },
+    {
+      "session": "39935",
+      "case": "bounded real Record listener retry",
+      "exitCode": 130,
+      "result": "CANCELLED",
+      "reason": "Parent instructed no further probes; interrupted owned process during initialization"
+    }
+  ],
+  "unproven": [
+    "Complete real-model continuous-listener trace equality",
+    "Precise wall-clock speed multiplier",
+    "GUI rendering and UI click behavior"
+  ],
+  "recommendedTarget": "tdpMatch/Record",
+  "recommendedPort": "RuntimeObject.OutputPort(1).Data",
+  "rejectedTarget": "tdpMatch/Records"
+}

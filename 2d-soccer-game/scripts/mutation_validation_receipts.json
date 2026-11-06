@@ -1,0 +1,8 @@
+{
+  "id": "validation-receipt-status-v1",
+  "file": "scripts/validate_camera.m",
+  "old": "if ErrorCode~=0,receipt.status='FAIL';end",
+  "new": "",
+  "suite": "tests/test_validation_receipts.m",
+  "evidence": "evidence/6/audit-receipts-mutation-01"
+}

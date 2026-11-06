@@ -1,0 +1,22 @@
+{
+  "names": [
+    "test_v1_matrix/testStationaryReference",
+    "test_v1_matrix/testUnownedEffectiveRequest",
+    "test_v1_matrix/testDuplicatePhysicalKick"
+  ],
+  "passed": [
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false
+  ]
+}

@@ -1,0 +1,152 @@
+[
+  {
+    "module": "tdp.goToPose",
+    "source": "reference/projectA/goToPose.m",
+    "lines": [
+      1,
+      36
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.kickSkill",
+    "source": "reference/projectA/kickSkill.m",
+    "lines": [
+      1,
+      38
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.robotModel",
+    "source": "reference/projectA/robotModel.m",
+    "lines": [
+      1,
+      25
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.ballModel",
+    "source": "reference/projectA/ballModel.m",
+    "lines": [
+      1,
+      21
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.collisions",
+    "source": "reference/projectA/collisions.m",
+    "lines": [
+      1,
+      34
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.rulesCheck",
+    "source": "reference/projectA/rulesCheck.m",
+    "lines": [
+      1,
+      40
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.angWrap",
+    "source": "reference/projectA/angWrap.m",
+    "lines": [
+      1,
+      4
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.kickoffReset",
+    "source": "reference/projectA/kickoffReset.m",
+    "lines": [
+      1,
+      16
+    ],
+    "relation": "等价提取；踢球函数的噪声改为显式注入"
+  },
+  {
+    "module": "tdp.roleAssignment",
+    "source": "reference/projectA/teamBehaviour.m",
+    "lines": [
+      21,
+      44
+    ],
+    "relation": "角色代价与前锋记忆"
+  },
+  {
+    "module": "tdp.actionSelection",
+    "source": "reference/projectA/teamBehaviour.m",
+    "lines": [
+      45,
+      97
+    ],
+    "relation": "按角色选择计划；动作结构构造函数紧随其后"
+  },
+  {
+    "module": "tdp.laneClear",
+    "source": "reference/projectA/teamBehaviour.m",
+    "lines": [
+      107,
+      117
+    ],
+    "relation": "线段距离检验"
+  },
+  {
+    "module": "tdp.initialState / tdpTemplates",
+    "source": "reference/projectA/initState.m",
+    "lines": [
+      1,
+      21
+    ],
+    "relation": "数值初态对应；类型总线为新设计"
+  },
+  {
+    "module": "baseline.runA / MatchPlant2D / Plant2D",
+    "source": "reference/projectA/main_robocup2d.m",
+    "lines": [
+      15,
+      67
+    ],
+    "relation": "无画面执行顺序对应；环境分层为新设计"
+  },
+  {
+    "module": "TeamCoordinator",
+    "source": "reference/projectA/teamBehaviour.m",
+    "lines": [
+      1,
+      97
+    ],
+    "relation": "拆分角色与计划；两份延迟记忆为新设计"
+  },
+  {
+    "module": "Contact2D / Referee2D",
+    "source": "reference/projectA/collisions.m + rulesCheck.m",
+    "lines": [],
+    "relation": "按配置启用修复；先运行原缺陷复现测试"
+  },
+  {
+    "module": "Observation2D / ObservationChannel / CoreGeometry / EmitRequest / Actuator2D",
+    "source": "本次新设计",
+    "lines": [],
+    "relation": "新接口与时序设计，不继承 B 行为"
+  },
+  {
+    "module": "ControllerCore / learning charts",
+    "source": "B soccerRobotLib.slx (SoccerBehavior), examples/soccer/datatypes/*.m",
+    "lines": [],
+    "relation": "仅参考状态图/总线/枚举组织，阶段逻辑为新设计"
+  },
+  {
+    "module": "Viewer2D",
+    "source": "reference/projectA/initGraphics.m, reference/projectA/updateGraphics.m",
+    "lines": [],
+    "relation": "只参考显示约定，离线日志渲染为新设计"
+  }
+]

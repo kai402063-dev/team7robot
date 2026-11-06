@@ -1,0 +1,22 @@
+{
+  "names": [
+    "test_animation/testCoordinatesAndPersistentGraphics",
+    "test_animation/testPauseSpeedStopAndClose",
+    "test_animation/testAnimatedTrajectoryMatchesNormalSimulation"
+  ],
+  "passed": [
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false
+  ]
+}

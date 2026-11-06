@@ -1,0 +1,441 @@
+{
+  "retrievedAtUtc": "2026-11-06T00:13:24Z",
+  "spreadsheetMetadata": {
+    "spreadsheetId": "1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q",
+    "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q/edit",
+    "properties": {
+      "title": "T7 Stage 1 Behaviours & Tactics (Draft v1.1)",
+      "locale": "en_GB",
+      "timeZone": "Etc/GMT"
+    },
+    "sheets": [
+      {
+        "properties": {
+          "sheetId": 712509474,
+          "title": "Sheet1",
+          "index": 0,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 997,
+            "columnCount": 26,
+            "frozenRowCount": 2,
+            "hideGridlines": true
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 2083935040,
+          "title": "Sheet2",
+          "index": 1,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 1000,
+            "columnCount": 26,
+            "frozenRowCount": 2,
+            "hideGridlines": true
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 1105001,
+          "title": "Sheet3 — v1.1 EN",
+          "index": 2,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 160,
+            "columnCount": 6,
+            "frozenRowCount": 2,
+            "hideGridlines": true
+          }
+        }
+      },
+      {
+        "properties": {
+          "sheetId": 1105002,
+          "title": "Sheet4 — v1.1 中文",
+          "index": 3,
+          "sheetType": "GRID",
+          "gridProperties": {
+            "rowCount": 160,
+            "columnCount": 6,
+            "frozenRowCount": 2,
+            "hideGridlines": true
+          }
+        }
+      }
+    ]
+  },
+  "fileMetadata": {
+    "id": "1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q",
+    "title": "T7 Stage 1 Behaviours & Tactics (Draft v1.1)",
+    "mime_type": "application/vnd.google-apps.spreadsheet",
+    "size": null,
+    "url": "https://docs.google.com/spreadsheets/d/1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q/edit?usp=drivesdk",
+    "display_url": "https://docs.google.com/spreadsheets/d/1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q/edit?usp=drivesdk",
+    "file_or_folder": "file",
+    "created_time": null,
+    "modified_time": "2026-11-05T16:23:28.446Z",
+    "parent_ids": null,
+    "drive_id": null,
+    "current_user_can_share": null,
+    "has_augmented_permissions": null,
+    "shared": null,
+    "permissions": null,
+    "source_visibility_status": "access_not_verified"
+  },
+  "reads": [
+    {
+      "range": "Sheet1!A1:Z40",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "ENG5325 | TEAM 7 — STAGE 1 BEHAVIOURS & TACTICS"
+        ],
+        [
+          "Draft v1 · 2D MATLAB/Simulink/Stateflow → 3D Webots/ROS 2  · Fixed roles + FSM"
+        ],
+        [],
+        [
+          "1 — PLAYER ROLES"
+        ],
+        [
+          "Role",
+          "Main focus",
+          "Primary behaviour",
+          "Constraint / coordination"
+        ],
+        [
+          "Goalkeeper (GK)",
+          "Goal protection",
+          "Track the threat and adjust defensive position to block shots.",
+          "Prioritise the goal; apply relevant goalkeeper rules."
+        ],
+        [
+          "Defender (DF)",
+          "Defensive coverage",
+          "Intercept dangerous attacks in own half; protect space in front of goal.",
+          "Avoid unnecessary forward pursuit that leaves defence exposed."
+        ],
+        [
+          "Midfielder (MF)",
+          "Flexible midfield support (attack ↔ defence)",
+          "During attack, advance into space behind/alongside ST; during defence, recover towards own goal and close dangerous lanes, contesting a loose ball only when selected.",
+          "Keep MF identity fixed in v1, but switch its behaviour by team phase. Avoid multiple robots pursuing the ball at once."
+        ],
+        [
+          "Striker (ST)",
+          "Scoring",
+          "Search for the ball, approach it, align and attempt a shot.",
+          "Fixed attacker for v1; passing and role switching deferred."
+        ],
+        [],
+        [
+          "2 — BASIC GAME SITUATIONS"
+        ],
+        [
+          "Situation",
+          "Team mode",
+          "Main response",
+          "Supporting behaviour / trigger"
+        ],
+        [
+          "Ball in own half",
+          "DEFEND",
+          "MF tracks back to screen central space or challenges the ball when selected; DF protects the defensive zone.",
+          "ST stays available for counterattack; GK guards the goal. MF must not duplicate DF/ST ball pursuit."
+        ],
+        [
+          "Ball in opponent half",
+          "ATTACK",
+          "ST attacks; MF advances into a supporting position to recover loose balls and maintain attacking pressure.",
+          "DF stays behind for defensive cover; GK protects the goal. MF is not a second ball chaser."
+        ],
+        [
+          "Ball location unknown",
+          "SEARCH / HOLD",
+          "ST searches; MF recovers to a sensible central position or searches its assigned area if requested.",
+          "DF and GK hold defensive shape; no unverified assumptions about the ball position."
+        ],
+        [
+          "Striker unavailable",
+          "FALLBACK",
+          "MF temporarily takes over the active attacker task.",
+          "DF continues protection; GK guards goal. Trigger: striker unavailable or confirmed failure."
+        ],
+        [],
+        [
+          "3 — 2D → 3D BEHAVIOUR VALIDATION & ROS 2 INTEGRATION"
+        ],
+        [
+          "Component",
+          "Responsibility",
+          "Input",
+          "Output / initial verification"
+        ],
+        [
+          "World state",
+          "Simulation / perception",
+          "Ball & robot poses, validity and game phase.",
+          "2D: use modelled/known state for rapid tactical trials. 3D: use timestamped, consistent state in Webots; initial tests may use simulator ground truth."
+        ],
+        [
+          "Team tactics + FSM",
+          "D — Behaviours & Tactics",
+          "World state and robot availability.",
+          "Prototype and iterate tactical modes, player decisions and action requests in MATLAB + Simulink + Stateflow (2D); test scenarios and transitions before 3D validation."
+        ],
+        [
+          "Motion / navigation",
+          "C — Control & Navigation",
+          "Requested target pose or football action.",
+          "For selected 2D-tested behaviours, execute feasible navigation/motion in Webots + ROS 2 and return success/failure; 3D tuning depends on Kai's usable NAO6 model and motion interface."
+        ],
+        [
+          "First integrated MVP",
+          "D + C + simulation team",
+          "One striker, one ball and an agreed command interface.",
+          "After 2D testing, validate one striker + ball in Webots: SEARCH → APPROACH → correlated feedback. Record differences between idealised 2D behaviour and 3D execution."
+        ]
+      ]
+    },
+    {
+      "range": "Sheet2!A1:Z40",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "ENG5325｜第7组 — 第一阶段：机器人行为与战术"
+        ],
+        [
+          "初版 v1 · 2D MATLAB/Simulink/Stateflow → 3D Webots/ROS 2（已批准）· 固定角色 + FSM · 2026-10-27 更新"
+        ],
+        [],
+        [
+          "1 — 球员角色与职责"
+        ],
+        [
+          "角色",
+          "主要定位",
+          "核心行为",
+          "约束及团队协调"
+        ],
+        [
+          "守门员（GK）",
+          "保护球门",
+          "观察进攻威胁，调整防守位置以阻挡射门。",
+          "优先守护球门，并遵守相关守门员规则。"
+        ],
+        [
+          "后卫（DF）",
+          "防守区域保护",
+          "拦截己方半场的危险进攻，保护球门前方空间。",
+          "避免无必要地向前追球，导致后防空虚。"
+        ],
+        [
+          "中场（MF）",
+          "灵活支援进攻与防守",
+          "进攻时移动到前锋身后或侧方的空当；防守时向己方球门回撤、封堵危险路线，仅在被指定时争抢自由球。",
+          "初版保持中场角色不变，但根据球队攻防状态调整行为；避免多名机器人同时追球。"
+        ],
+        [
+          "前锋（ST）",
+          "争取进球",
+          "搜索足球、接近足球、调整射门方向并尝试射门。",
+          "初版固定为主要进攻球员；复杂传球和完整动态角色切换留待后续。"
+        ],
+        [],
+        [
+          "2 — 基本比赛情景与战术切换"
+        ],
+        [
+          "比赛情景",
+          "球队状态",
+          "主要响应",
+          "协同动作／触发说明"
+        ],
+        [
+          "足球在己方半场",
+          "防守（DEFEND）",
+          "中场回撤、封堵中央危险空间，或在被指定时争抢足球；后卫保护防守区域。",
+          "前锋准备反击；守门员保护球门。中场不得与后卫或前锋重复追球。"
+        ],
+        [
+          "足球在对方半场",
+          "进攻（ATTACK）",
+          "前锋发起进攻；中场前移到支援位置，准备争抢第二落点并持续施压。",
+          "后卫留在后方提供防守保障；守门员保护球门。中场不充当第二名盲目追球者。"
+        ],
+        [
+          "无法确定足球位置",
+          "搜索／保持阵型（SEARCH / HOLD）",
+          "前锋搜索足球；中场回到合理的中央位置，或在收到任务时搜索指定区域。",
+          "后卫和守门员维持防守阵型；不得假定未经确认的球位置。"
+        ],
+        [
+          "前锋无法继续执行任务",
+          "临时接管（FALLBACK）",
+          "中场暂时承担主要抢球和进攻任务。",
+          "后卫继续防守；守门员守护球门。触发条件：前锋不可用，或已确认其执行失败。"
+        ],
+        [],
+        [
+          "3 — 二维到三维的行为验证及 ROS 2 系统集成"
+        ],
+        [
+          "模块",
+          "职责分工",
+          "输入",
+          "输出／初步验证"
+        ],
+        [
+          "比赛状态（World State）",
+          "仿真／感知模块",
+          "足球与机器人位姿、数据有效性、比赛阶段。",
+          "2D：使用建模或已知状态快速尝试战术。3D：在 Webots 中使用带时间戳、统一的状态；初期可使用仿真真值。"
+        ],
+        [
+          "球队战术 + FSM",
+          "D — 行为与战术",
+          "比赛状态、机器人可用状态。",
+          "先在 MATLAB + Simulink + Stateflow（2D）中反复尝试战术模式、球员决策和动作请求，并测试场景与状态切换，再进入 3D 验证。"
+        ],
+        [
+          "运动与导航",
+          "C — 控制与导航",
+          "目标位姿或足球动作请求。",
+          "对已在 2D 测试的行为，在 Webots + ROS 2 中执行可行的导航／运动并反馈结果；3D 参数整定依赖 Kai 提供可用的 NAO6 模型与运动接口。"
+        ],
+        [
+          "首个集成最小原型（MVP）",
+          "D + C + 仿真组",
+          "一名前锋、一个足球、约定好的命令接口。",
+          "完成 2D 测试后，在 Webots 验证一名前锋和一个足球的 SEARCH → APPROACH → 对应反馈，并记录理想化 2D 与实际 3D 执行之间的差异。"
+        ],
+        [],
+        [
+          "设计假设与待确认事项"
+        ],
+        [
+          "初步方案：1 名守门员（GK）+ 1 名后卫（DF）+ 1 名中场（MF）+ 1 名前锋（ST）。初版角色固定，但中场根据确认的球队状态在进攻支援与防守保护之间灵活切换。初期以足球所在半场作为简化攻防判断依据，并加入稳定性条件，防止频繁切换。同一时刻仅允许一名主要追球者。前锋不可用时，可由中场临时接管抢球／进攻。复杂传球、完整动态阵型和强化学习暂不实施。编码前需要商定感知数据、时间戳、坐标系、动作反馈和 RoboCup 规则限制。"
+        ],
+        [
+          "资料来源：ENG5325 项目规格说明（2026年10月），第1–3页；RTDPM 课程介绍第4–6、34页。2026年10月27日确认：Manager 建议先使用 MATLAB + Simulink + Stateflow 进行大量 2D 行为／战术仿真，再使用导师已批准的 Webots + ROS 2 进行 3D 验证。NAO6 机器人模型及运动基础动作的可行性仍需 Kai 与 Ritika 实测。课程允许将 AI 用于战术构思，但禁止 AI 编写仿真或硬件代码。"
+        ]
+      ]
+    },
+    {
+      "range": "'Sheet3 — v1.1 EN'!A1:F12",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "ENG5325 | TEAM 7 — STAGE 1 BEHAVIOURS & TACTICS v1.1 (PROPOSED)"
+        ],
+        [
+          "Draft v1.1 · Builds on approved v1 (Sheet1/Sheet2) · Fills the three open gaps + Stateflow design draft · Proposed 2026-11-05 · Pending team review, not yet approved"
+        ],
+        [],
+        [
+          "0 — WHAT CHANGES IN v1.1"
+        ],
+        [
+          "Item",
+          "v1 (approved)",
+          "v1.1 proposal",
+          "Defined in"
+        ],
+        [
+          "Gap 1 — Who chases the ball",
+          "MF contests a loose ball only “when selected”, and only one robot should chase at a time, but the selection rule is not defined.",
+          "A single chaser token, assigned by a team-level arbiter to the eligible robot with the lowest estimated time-to-ball, with a hand-over margin and a commit-to-kick lock.",
+          "§4, §7–§8"
+        ],
+        [
+          "Gap 2 — Stable attack/defence switching",
+          "Team phase follows the half the ball is in, with a “stability condition” that is not specified.",
+          "A hysteresis band around the halfway line, a dwell time, a minimum phase-hold time, and a danger override near our own goal.",
+          "§5, §8"
+        ],
+        [
+          "Gap 3 — When the MF takes over",
+          "Fallback triggers on “striker unavailable or confirmed failure”, which is not quantified.",
+          "Four measurable triggers (removed, fallen/silent, no progress, repeated action failure) and a safe hand-back rule.",
+          "§6, §8"
+        ],
+        [
+          "Model structure",
+          "FALLBACK is listed as a fourth team mode next to DEFEND / ATTACK / SEARCH.",
+          "FALLBACK becomes a parallel (AND) region, so the team can be in DEFEND and FALLBACK at the same time; phase logic and striker status no longer interfere.",
+          "§7"
+        ],
+        [],
+        [
+          "1 — PLAYER ROLES (updated)"
+        ],
+        [
+          "Role",
+          "Main focus",
+          "Primary behaviour",
+          "Constraint / coordination"
+        ]
+      ]
+    },
+    {
+      "range": "'Sheet4 — v1.1 中文'!A1:F12",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "ENG5325｜第7组 — 第一阶段：机器人行为与战术 v1.1（提案）"
+        ],
+        [
+          "v1.1 草案 · 基于已批准的 v1（Sheet1/Sheet2）· 补全三个待定缺口，并附 Stateflow 设计草案 · 2026-11-05 提出 · 待团队讨论，尚未批准"
+        ],
+        [],
+        [
+          "0 — v1.1 改了什么"
+        ],
+        [
+          "项目",
+          "v1（已批准）",
+          "v1.1 提案",
+          "详见"
+        ],
+        [
+          "缺口 1：由谁追球",
+          "中场“仅在被指定时”争抢自由球，同一时刻只允许一人追球，但没有规定由谁指定、按什么规则指定。",
+          "引入唯一的“追球令牌”：由球队层的仲裁器分配给预计到球时间最短的合格球员，并设置交接余量和“射门锁定”。",
+          "§4、§7–§8"
+        ],
+        [
+          "缺口 2：攻防切换不抖动",
+          "按足球所在半场判断攻防，并加入“稳定性条件”，但条件没有具体化。",
+          "在中线两侧设置滞回带，配合驻留时间、最短保持时间，以及己方球门附近的危险区强制切换。",
+          "§5、§8"
+        ],
+        [
+          "缺口 3：中场何时接管",
+          "触发条件是“前锋不可用或已确认执行失败”，没有量化。",
+          "定义四类可测量的触发条件（被罚下、摔倒或失联、无进展、动作连续失败），以及安全的交还规则。",
+          "§6、§8"
+        ],
+        [
+          "模型结构",
+          "FALLBACK 与 DEFEND / ATTACK / SEARCH 并列，作为第四种球队状态。",
+          "FALLBACK 改为并行（AND）区域，球队可以同时处于 DEFEND 和 FALLBACK，攻防判断与前锋状态互不干扰。",
+          "§7"
+        ],
+        [],
+        [
+          "1 — 球员角色与职责（更新）"
+        ],
+        [
+          "角色",
+          "主要定位",
+          "核心行为",
+          "约束及团队协调"
+        ]
+      ]
+    }
+  ],
+  "scope": "Read-only connector snapshot. V1 Sheet1 and Sheet2; V1.1 headers read only to distinguish proposed version."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "exitCode": 0,
+  "invocation": "tdpSetup; build_recovery_match; P=tdp.recoveryConfig(); P.Tmatch=8; [trace,tactics,recovery]=runMatch(P);",
+  "frozenOriginalRevision": "9892bdc",
+  "unchangedBinarySha256": {
+    "models/tdpV1Match.slx": "99ecfc19871ccdfe931aaf320c58d2a3e0bc445d8b94a618c61e7719e1162044",
+    "models/TdpV1Types.sldd": "c18b78e296402a98540c079dc74356091debef15cd5a41a6684f1976f436979d",
+    "models/ControllerCore.slx": "495a73d525e3090803f2d428db47ffdbeb6eb5ac5e7ad10ae4ee565930948eb4",
+    "models/TdpTypes.sldd": "bcf4c6f1b143a946bfc9c1b7d8c9c2011a1c7d7c2a282b7ddf580f66849288c3",
+    "models/tdpMatch.slx": "169c80de173f8e338936e4b41090f636a41c462faf89c8dae9e85a853b0d03ca"
+  },
+  "experimentalModels": {
+    "models/tdpRecoveryMatch.slx": "3bf7127f17075f6f6ff1382d72096fc86cc3f30e81624a7e767034086a59c196",
+    "models/TdpRecoveryTypes.sldd": "0d2073a7950bbbbe970699cc7dbcc80864baf505d05205b526094120b57ad0d4"
+  },
+  "response": "receipt.json"
+}

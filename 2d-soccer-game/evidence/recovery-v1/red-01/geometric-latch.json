@@ -1,0 +1,32 @@
+{
+  "observation": "Nominal archive; no injected subsystem failure, no recovery event",
+  "originalCommit": "9892bdc337ca0d2759fa1245d7f973af17155fd5",
+  "cases": [
+    {
+      "periodMs": 50,
+      "seed": 5,
+      "striker": 8,
+      "requestId": 119,
+      "failureAt": 6.5,
+      "takeoverAt": 6.550000000000001,
+      "lastTime": 600.0,
+      "takeoverRemainingSeconds": 593.5,
+      "remainedAvailable": true,
+      "parametersSource": "evidence/tactics-v1/matrix-final-01/matches/dt50-seed05/receipt.json",
+      "arrayFileSha256": "689225468b944ec436e12d96d19cbe78398ec0516e0af3a90c2facda367b9f41"
+    },
+    {
+      "periodMs": 40,
+      "seed": 11,
+      "striker": 8,
+      "requestId": 209,
+      "failureAt": 9.32,
+      "takeoverAt": 9.36,
+      "lastTime": 600.0,
+      "takeoverRemainingSeconds": 590.68,
+      "remainedAvailable": true,
+      "parametersSource": "evidence/tactics-v1/matrix-final-01/matches/dt40-seed11/receipt.json",
+      "arrayFileSha256": "b1967531227ce8bbbc03e8c7118c76fa4edd330b4735ca6573bbc62481ed2885"
+    }
+  ]
+}

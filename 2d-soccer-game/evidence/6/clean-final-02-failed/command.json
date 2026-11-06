@@ -1,0 +1,16 @@
+{
+  "commit": "3334d3c42f239f60fbfe72dad4c663d5559f231f",
+  "command": [
+    "./scripts/run_matlab.sh",
+    "tdpSetup; reproduce_all;"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02",
+  "startUtc": "2026-11-05T21:35:54.645533+00:00",
+  "status": "FAIL",
+  "freshClone": true,
+  "reusedBuildCaches": false,
+  "childPid": 231728,
+  "exitCode": 1,
+  "endUtc": "2026-11-05T22:07:57.976493+00:00",
+  "wallSeconds": 1923.3309456050047
+}

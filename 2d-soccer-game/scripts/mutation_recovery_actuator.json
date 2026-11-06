@@ -1,0 +1,8 @@
+{
+  "id": "recovery-stop-correlation",
+  "file": "environment/Actuator2D.m",
+  "old": "if strict && obs.gameRunning && req.kind==TdpAction.Stop && req.requestId~=memory.seenId",
+  "new": "if false && strict && obs.gameRunning && req.kind==TdpAction.Stop && req.requestId~=memory.seenId",
+  "suite": "tests/test_recovery_actuator.m",
+  "evidence": "evidence/recovery-v1/mutation-actuator-01"
+}

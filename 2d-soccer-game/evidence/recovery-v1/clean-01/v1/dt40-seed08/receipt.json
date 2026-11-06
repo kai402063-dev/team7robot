@@ -1,0 +1,442 @@
+{
+  "status": "PASS",
+  "model": "tdpV1Match",
+  "parameters": {
+    "L": 9,
+    "W": 6,
+    "goalD": 0.6,
+    "goalW": 2.6,
+    "goalAreaL": 1,
+    "goalAreaW": 3,
+    "penMark": 1.5,
+    "centreD": 1.5,
+    "border": 1,
+    "penAreaL": 2,
+    "penAreaW": 5,
+    "ballR": 0.07,
+    "ballDecel": 0.4,
+    "ballRestit": 0.5,
+    "ballRobotE": 0.3,
+    "robotR": 0.15,
+    "vFwd": 0.25,
+    "vBack": 0.12,
+    "vSide": 0.15,
+    "wMax": 0.78539816339744828,
+    "Kp": 0.8,
+    "Kw": 2,
+    "avoidR": 0.7,
+    "avoidGain": 0.6,
+    "ballAvoidR": 0.35,
+    "approachDist": 0.45,
+    "kickRange": 0.28,
+    "stepInSpeed": 0.1,
+    "kickAlign": 0.3490658503988659,
+    "behindTol": 0.52359877559829882,
+    "kickNoise": 0.10471975511965978,
+    "kickCooldown": 1,
+    "shotSpeed": 1.8,
+    "dribbleSpeed": 0.6,
+    "maxKickSpeed": 2.2,
+    "roleHyst": 0.4,
+    "shootDist": 3,
+    "defDist": 1.8,
+    "nPerTeam": 4,
+    "dt": 0.04,
+    "Tmatch": 600,
+    "restartPause": 2,
+    "outPause": 1,
+    "drawEvery": 4,
+    "realtime": false,
+    "dirSign": [
+      1,
+      -1
+    ],
+    "seed": 8,
+    "mode": "Delayed",
+    "rulesProfile": "CourseSimplified",
+    "maxObservationAge": 0.5,
+    "walkValidity": 0.1,
+    "kickPreparation": 0.2,
+    "kickTimeout": 1,
+    "recoverTime": 0.5,
+    "alignEnter": 0.35,
+    "alignExit": 0.45,
+    "searchTurnRate": 0.3,
+    "fieldOfView": 6.2831853071795862,
+    "observationDelay": 0,
+    "observationNoise": 0,
+    "fixedStriker": false,
+    "tapSpeed": 0.3,
+    "freezeDuringPause": true,
+    "contactIterations": 256,
+    "restartOpponentDistance": 0.75,
+    "contactTolerance": 1E-10,
+    "v1Enabled": true,
+    "v1MidlineBand": 0.15,
+    "v1SupportTrail": 0.7,
+    "v1SupportWidth": 0.8,
+    "v1LooseRange": 1.2,
+    "v1LooseSpeed": 0.35,
+    "v1OpponentClearance": 0.6,
+    "v1KeeperInset": 0.35,
+    "v1ScreenDepth": 1.4,
+    "v1CounterDepth": 0.4,
+    "v1UnavailableWindow": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "v1BlindWindow": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "v1StaleWindow": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "v1StopWindow": [
+      0,
+      0
+    ],
+    "v1RecoveryWindow": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "v1FailWindow": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "sourceFingerprint": "d5a166da105c73291104675e12947e038eb9a3705eb02c7afe527de98eefd9b1",
+  "revision": "703099dce808f45c887642ddf05ddcb6bde46a9d",
+  "startedAtUtc": "2026-11-06T10:57:40.052Z",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "artifact": "build/v1-matrix/tpe4eb6c6f_ffc8_4ad2_846c_7beeb0e2bd67/dt40-seed08.mat",
+  "metrics": {
+    "goals": [
+      0,
+      0
+    ],
+    "shots": [
+      118,
+      0
+    ],
+    "firstTouchSeconds": 3.92,
+    "steps": 15000,
+    "overlapSteps": 0,
+    "overlapPairSamples": 0,
+    "maximumPenetrationMetres": 0,
+    "outsidePitchRobotSamples": 2034,
+    "outsideBorderRobotSamples": 0,
+    "translationRequests": 95261,
+    "blockedTranslationSamples": 198,
+    "blockedTranslationRatio": 0.0020785001207209667,
+    "finite": true,
+    "period": 0.04,
+    "simulationSeconds": 600,
+    "roleChangesByRobot": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "actualKicksByRobot": [
+      0,
+      0,
+      52,
+      78,
+      0,
+      0,
+      1,
+      4
+    ],
+    "actualKicksByTeam": [
+      130,
+      5
+    ],
+    "actualShotsByRobot": [
+      0,
+      0,
+      50,
+      68,
+      0,
+      0,
+      0,
+      0
+    ],
+    "midfielderShots": [
+      50,
+      0
+    ],
+    "kickRequestSamples": [
+      0,
+      0,
+      312,
+      474,
+      0,
+      0,
+      6,
+      24
+    ],
+    "kickRequestIds": [
+      0,
+      0,
+      52,
+      79,
+      0,
+      0,
+      1,
+      4
+    ],
+    "executionStartsByRobot": [
+      0,
+      0,
+      52,
+      79,
+      0,
+      0,
+      1,
+      4
+    ],
+    "revokedRawKickSamples": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "phaseSwitches": [
+      29,
+      29
+    ],
+    "basePhaseSwitches": [
+      0,
+      1
+    ],
+    "phaseSampleCounts": [
+      [
+        336,
+        0,
+        8402,
+        0,
+        6262
+      ],
+      [
+        336,
+        14435,
+        229,
+        0,
+        0
+      ]
+    ],
+    "fallbackEntries": [
+      13,
+      0
+    ],
+    "takeoverEntries": [
+      1,
+      0
+    ],
+    "takeoverSeconds": [
+      262,
+      0
+    ],
+    "regularMfChaseSamples": [
+      0,
+      500
+    ],
+    "searchSamples": [
+      0,
+      0
+    ],
+    "failedStrikerSamples": [
+      6550,
+      0
+    ],
+    "doneActionsByRobot": [
+      0,
+      0,
+      52,
+      78,
+      0,
+      0,
+      1,
+      4
+    ],
+    "failedActionsByRobot": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "rejectedActionsByRobot": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "runningActionsByRobot": [
+      0,
+      0,
+      52,
+      79,
+      0,
+      0,
+      1,
+      4
+    ],
+    "chaserChanges": [
+      29,
+      17
+    ],
+    "physicalKickStepsWithBallMotion": 135,
+    "maximumBallDisplacementOnKickMetres": 1.3808107982669615,
+    "observedBallTravelMetresIncludingResets": 127.55595437205073,
+    "robotsWithMotion": 8,
+    "geometryPassed": true,
+    "passed": true
+  },
+  "violations": [],
+  "elapsedSeconds": 6.384957,
+  "finishedAtUtc": "2026-11-06T10:57:46.439Z"
+}

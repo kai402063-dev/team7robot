@@ -1,0 +1,175 @@
+{
+  "targetCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
+  "run": "one-key",
+  "all22FieldsExactlyEqual": true,
+  "maximumAbsoluteDifference": 0.0,
+  "comparison": [
+    {
+      "field": "scalarInput",
+      "committedGeneratedValue": 3.5,
+      "newActualValue": 3.5,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "scalarOutput",
+      "committedGeneratedValue": 4.5,
+      "newActualValue": 4.5,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "rosReplayFrames",
+      "committedGeneratedValue": 101,
+      "newActualValue": 101,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "webotsFrames",
+      "committedGeneratedValue": 1001,
+      "newActualValue": 1001,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "clockPublishers",
+      "committedGeneratedValue": 1,
+      "newActualValue": 1,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "initialDistanceMetres",
+      "committedGeneratedValue": 0.696698991074647,
+      "newActualValue": 0.696698991074647,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "distanceAtShootMetres",
+      "committedGeneratedValue": 0.21801091276296672,
+      "newActualValue": 0.21801091276296672,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "requestId",
+      "committedGeneratedValue": 438,
+      "newActualValue": 438,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "motionStartSeconds",
+      "committedGeneratedValue": 20.78,
+      "newActualValue": 20.78,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "motionEndSeconds",
+      "committedGeneratedValue": 25.580000000000002,
+      "newActualValue": 25.580000000000002,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "motionDurationSeconds",
+      "committedGeneratedValue": 4.800000000000001,
+      "newActualValue": 4.800000000000001,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "motionEventBallDisplacementMetres",
+      "committedGeneratedValue": 0.1928937307098642,
+      "newActualValue": 0.1928937307098642,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "sampledBallDisplacementMetres",
+      "committedGeneratedValue": 0.19552818220887058,
+      "newActualValue": 0.19552818220887058,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "ballEvaluationTimeSeconds",
+      "committedGeneratedValue": 25.6,
+      "newActualValue": 25.6,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "sampledBallPeakSpeedMetresPerSecond",
+      "committedGeneratedValue": 0.13172547569918086,
+      "newActualValue": 0.13172547569918086,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "duplicateDeliveries",
+      "committedGeneratedValue": 154,
+      "newActualValue": 154,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "physicalExecutions",
+      "committedGeneratedValue": 1,
+      "newActualValue": 1,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "motionOnlyBallDisplacementMetres",
+      "committedGeneratedValue": 0,
+      "newActualValue": 0.0,
+      "newMinusGenerated": 0.0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "cameraErrorCode",
+      "committedGeneratedValue": 0,
+      "newActualValue": 0,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "cameraWidth",
+      "committedGeneratedValue": 160,
+      "newActualValue": 160,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "cameraHeight",
+      "committedGeneratedValue": 120,
+      "newActualValue": 120,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    },
+    {
+      "field": "cameraBytes",
+      "committedGeneratedValue": 76800,
+      "newActualValue": 76800,
+      "newMinusGenerated": 0,
+      "exactlyEqual": true
+    }
+  ],
+  "webotsTraceSHA256": "cd914eb6c3640f75b7cc9afe87af761dc76d95a8f6b0271d573607200635d9b8",
+  "cameraSHA256": "b1a20bc743853ca3b1afd182cb34a651b5b112cc0855910a6e44e1dcc319dbb9",
+  "motionBootstrapRepublishes": 34,
+  "closedBootstrapRepublishes": 70,
+  "cameraVisualInspection": "Actual decoded 160x120 image shows green field, field markings and opposite goal; no ball recognition/localization claim.",
+  "cameraImage": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/camera/camera.png",
+  "sourcePaths": [
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/webots-analysis.json",
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/ros/receipt.json",
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/motion/webots-receipt.json",
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/camera/camera-receipt.json",
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/reproduce-20261105-221653-643/m2/webots/webots-receipt.json"
+  ]
+}

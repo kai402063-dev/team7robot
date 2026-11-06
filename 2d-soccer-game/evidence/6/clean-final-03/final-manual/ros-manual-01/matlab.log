@@ -1,0 +1,5 @@
+[Warning: The model name 'tdpFrameReplay' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpFrameReplay" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_ros_adapter (line 7)] 

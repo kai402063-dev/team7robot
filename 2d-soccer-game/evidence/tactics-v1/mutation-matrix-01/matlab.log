@@ -1,0 +1,33 @@
+Running test_v1_matrix
+.
+================================================================================
+Verification failed in test_v1_matrix/testUnownedEffectiveRequest.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          1         -1           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-tactics-v1-matrix-owner-audit/tests/test_v1_matrix.m (testUnownedEffectiveRequest) at 40
+================================================================================
+..
+Done test_v1_matrix
+__________
+
+Failure Summary:
+
+     Name                                        Failed  Incomplete  Reason(s)
+    =========================================================================================
+     test_v1_matrix/testUnownedEffectiveRequest    X                 Failed by verification.

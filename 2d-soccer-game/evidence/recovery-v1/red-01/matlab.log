@@ -1,0 +1,124 @@
+Running test_original_handover
+REPRO dt=0.05 first=0.25 request=6 actualMFkicks=0
+
+================================================================================
+Verification failed in test_original_handover/testHealthyReturnWhileMfPrepares.
+    ----------------
+    Test Diagnostic:
+    ----------------
+    A legal in-flight kick should finish before handback.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          1         -1           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-red-01/tests/test_original_handover.m (testHealthyReturnWhileMfPrepares) at 16
+================================================================================
+REPRO dt=0.04 first=0.2 request=6 actualMFkicks=0
+
+================================================================================
+Verification failed in test_original_handover/testHealthyReturnWhileMfPrepares.
+    ----------------
+    Test Diagnostic:
+    ----------------
+    A legal in-flight kick should finish before handback.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          1         -1           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-red-01/tests/test_original_handover.m (testHealthyReturnWhileMfPrepares) at 16
+================================================================================
+.REPRO dt=0.05 owners after 0.92 s: 3
+
+================================================================================
+Verification failed in test_original_handover/testReturnWithoutInFlightKick.
+    ----------------
+    Test Diagnostic:
+    ----------------
+    A healthy striker should regain eligibility automatically.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              3          4         -1          -0.25    
+    
+    Actual Value:
+         3
+    Expected Value:
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-red-01/tests/test_original_handover.m (testReturnWithoutInFlightKick) at 27
+================================================================================
+REPRO dt=0.04 owners after 0.92 s: 3
+
+================================================================================
+Verification failed in test_original_handover/testReturnWithoutInFlightKick.
+    ----------------
+    Test Diagnostic:
+    ----------------
+    A healthy striker should regain eligibility automatically.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              3          4         -1          -0.25    
+    
+    Actual Value:
+         3
+    Expected Value:
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-red-01/tests/test_original_handover.m (testReturnWithoutInFlightKick) at 27
+================================================================================
+.
+Done test_original_handover
+__________
+
+Failure Summary:
+
+     Name                                                     Failed  Incomplete  Reason(s)
+    ======================================================================================================
+     test_original_handover/testHealthyReturnWhileMfPrepares    X                 Failed by verification.
+    ------------------------------------------------------------------------------------------------------
+     test_original_handover/testReturnWithoutInFlightKick       X                 Failed by verification.

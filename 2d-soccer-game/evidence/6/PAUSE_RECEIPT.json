@@ -1,0 +1,121 @@
+{
+  "status": "PAUSED_AT_USER_REQUEST",
+  "interruptedRun": "build/m2-integrated-02",
+  "roots": [
+    203344,
+    206050
+  ],
+  "signals": [
+    {
+      "pid": 207030,
+      "name": "matlab_helper",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206611,
+      "name": "python3",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206523,
+      "name": "ibus-engine-sim",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206405,
+      "name": "MathWorksServic",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206209,
+      "name": "fluxbox",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206191,
+      "name": "ibus-extension-",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206189,
+      "name": "ibus-memconf",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206180,
+      "name": "Xvfb",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206145,
+      "name": "ibus-daemon",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206053,
+      "name": "webots-bin",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206052,
+      "name": "python3",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206051,
+      "name": "python3",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206050,
+      "name": "MATLAB",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206023,
+      "name": "gnome-shell",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206022,
+      "name": "dbus-daemon",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206021,
+      "name": "dbus-run-sessio",
+      "signal": "TERM"
+    },
+    {
+      "pid": 206011,
+      "name": "python3",
+      "signal": "TERM"
+    },
+    {
+      "pid": 203756,
+      "name": "matlab_helper",
+      "signal": "TERM"
+    },
+    {
+      "pid": 203563,
+      "name": "MathWorksServic",
+      "signal": "TERM"
+    },
+    {
+      "pid": 203428,
+      "name": "fluxbox",
+      "signal": "TERM"
+    },
+    {
+      "pid": 203420,
+      "name": "Xvfb",
+      "signal": "TERM"
+    },
+    {
+      "pid": 203344,
+      "name": "MATLAB",
+      "signal": "TERM"
+    }
+  ],
+  "note": "Incomplete verification is not a pass; no final clone or completion hash was started."
+}

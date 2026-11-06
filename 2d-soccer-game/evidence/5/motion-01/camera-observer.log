@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/ros2/tdp_webots_bridge/tdp_webots_bridge/camera_observer.py", line 35, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/ros2/tdp_webots_bridge/tdp_webots_bridge/camera_observer.py", line 30, in main
+    assert result.returncode==0,result.stderr
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Unknown topic '/clock'
+

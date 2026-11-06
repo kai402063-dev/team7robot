@@ -1,0 +1,10 @@
+[Warning: Unrecognized command line option: nosplash.] 
+{Invalid field name: 'Real-Time_Workshop'.
+
+Error in check_environment (line 7)
+ report.licenses.(features{i})=license('test',features{i});
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in validate_stage0 (line 6)
+check_environment(outDir);results=runtests('tests/test_baseline.m');assertSuccess(results);
+^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

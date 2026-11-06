@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "linkedEvidencePaths": [
+    "evidence/6/clean-final-03/artifacts/receipt.json",
+    "evidence/6/clean-final-03/final-manual/independent-audit-03/FINAL_AUDIT.json",
+    "evidence/0/inputs-before.json",
+    "evidence/6/inputs-after.json",
+    "evidence/6/input-hash-comparison.log",
+    "evidence/6/audit-receipts-mutation-audit.json",
+    "evidence/6/ros-bootstrap-race-mutation-02/receipt.json",
+    "docs/chapters/course_mapping.md",
+    "evidence/0/FINAL_RECEIPT_v2.json",
+    "evidence/6/clean-final-03/artifacts/stage1/receipt.json",
+    "evidence/6/clean-final-03/artifacts/stage2/receipt.json",
+    "evidence/6/clean-final-03/artifacts/stage3/receipt.json",
+    "evidence/6/clean-final-03/final-manual/ros-manual-03/receipt.json",
+    "evidence/6/clean-final-03/final-manual/webots-closed-manual-01/analysis.json",
+    "evidence/6/clean-final-03/final-manual/independent-audit-03/FINAL_AUDIT.json"
+  ],
+  "readOnlyInputsEqual": true,
+  "executableFilesUnchangedSinceValidatedCommit": true,
+  "manualStaticAudit": {
+    "command": "python3 scripts/audit_manual.py",
+    "exitCode": 0,
+    "errors": []
+  },
+  "finalIndependentAuditSha256": "61d8afefd4aec6ec812d7b73dbdc2f7f95521780723453580838f3604a8ecc33",
+  "independentFinalSummaryReview": {
+    "status": "PASS",
+    "reviewer": "manual_final_resume",
+    "files": [
+      "docs/DEV_MANUAL.md",
+      "docs/PROGRESS.md",
+      "docs/AI_PROVENANCE.md",
+      "evidence/6/FINAL_RECEIPT.json"
+    ],
+    "testsRerun": false,
+    "findings": []
+  }
+}

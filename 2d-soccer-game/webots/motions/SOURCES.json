@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Forwards.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/Forwards.motion",
+    "sha256": "19d0ceaf6bc437a8783edb022e32cf6bbf65da2919e18450fc13f28d3923888b",
+    "durationSeconds": 2.6
+  },
+  {
+    "name": "Forwards50.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/Forwards50.motion",
+    "sha256": "f4ce52683c178ed6eb81d2dc1e197a5b1e3751cda38fd45826a12641861a9a61",
+    "durationSeconds": 6.76
+  },
+  {
+    "name": "Backwards.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/Backwards.motion",
+    "sha256": "a46f71a8371ae57f2a7bf2f66a2866ddf51b99e570a1be1ed153ec701f41c9cc",
+    "durationSeconds": 2.6
+  },
+  {
+    "name": "SideStepLeft.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/SideStepLeft.motion",
+    "sha256": "272169dc169644578b1bc374c32544edd3b6e3bd24dcde5196064b068d0ebdea",
+    "durationSeconds": 4.92
+  },
+  {
+    "name": "SideStepRight.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/SideStepRight.motion",
+    "sha256": "d6fa0f078c0bafc7ae187c5574edd92c28df89c854b066c8828d2a32d3c4698f",
+    "durationSeconds": 5.76
+  },
+  {
+    "name": "TurnLeft40.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/TurnLeft40.motion",
+    "sha256": "9a5c922f040026b305ecbe09608150e0288fbed5418f91ef00c9ea4e17ca2c79",
+    "durationSeconds": 2.88
+  },
+  {
+    "name": "TurnRight40.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/TurnRight40.motion",
+    "sha256": "29890045f61d0b2108b0f4abb4c70a9164a721a35465018658a45d72db3e1f18",
+    "durationSeconds": 2.84
+  },
+  {
+    "name": "Shoot.motion",
+    "source": "/home/fayne/.ros/webotsR2025a/webots/projects/robots/softbank/nao/motions/Shoot.motion",
+    "sha256": "80d17d1eda96be7ee77e63aa5fcbe5470941103f82bcf147decf2e42e0c82443",
+    "durationSeconds": 4.8
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "pitchLength": 9.0,
+  "pitchWidth": 6.0,
+  "goalClearWidth": 2.6000000000000005,
+  "goalClearHeight": 1.2,
+  "grassSize": [
+    11.0,
+    8.0,
+    0.1
+  ],
+  "groundZ": 0.0,
+  "basicTimeStepMs": 20.0,
+  "sha256": "28f4f8f439cee35cac9225bc97bfd7cc1d260b304f83a8ed76997b3691a6cf02"
+}

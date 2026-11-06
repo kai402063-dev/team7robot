@@ -1,0 +1,46 @@
+dbus-daemon[257516]: Cannot initialize inotify: Too many open files
+libmutter-Message: 22:20:35.130: Running GNOME Shell (using mutter 46.2) as a Wayland display server
+libmutter-Message: 22:20:35.245: Made thread 'KMS thread' realtime scheduled
+libmutter-Message: 22:20:35.265: Added device '/dev/dri/card1' (i915) using no mode setting.
+libmutter-Message: 22:20:35.269: Created gbm renderer for '/dev/dri/card1'
+libmutter-Message: 22:20:35.269: Boot VGA GPU /dev/dri/card1 selected as primary
+** Message: 22:20:35.273: Obtained a high priority EGL context
+** Message: 22:20:35.279: Obtained a high priority EGL context
+libmutter-Message: 22:20:35.299: Added virtual monitor Meta-0
+libmutter-Message: 22:20:35.305: Using Wayland display name '/proc/257505/fd/3/w'
+Window manager warning: Failed to set environment variable WAYLAND_DISPLAY for gnome-session: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.gnome.SessionManager" does not exist
+
+** (gnome-shell:257517): WARNING **: 22:20:36.224: Could not issue 'GetUnit' systemd call
+
+(gnome-shell:257517): libmutter-WARNING **: 22:20:36.249: Failed to monitor ICC profile directory '/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/w257505/d/icc': Unable to find default local file monitor type
+
+(gnome-shell:257517): GNOME Shell-CRITICAL **: 22:20:36.286: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+  @resource:///org/gnome/shell/ui/init.js:21:20
+  
+
+(gnome-shell:257517): GNOME Shell-CRITICAL **: 22:20:36.286: Gio.DBusError: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.Shell.CalendarServer was not provided by any .service files
+
+Stack trace:
+  asyncCallback@resource:///org/gnome/gjs/modules/core/overrides/Gio.js:114:23
+  @resource:///org/gnome/shell/ui/init.js:21:20
+  
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.UDisks2VolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.UDisks2VolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+
+(gnome-shell:257517): GLib-GIO-WARNING **: 22:20:36.300: Error creating IO channel for /proc/self/mountinfo: Too many open files (g-io-error-quark, 31)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.GPhoto2VolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.GPhoto2VolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.MTPVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.MTPVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.GoaVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.GoaVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+invoking IsSupported() failed for remote volume monitor with dbus name org.gtk.vfs.AfcVolumeMonitor:: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gtk.vfs.AfcVolumeMonitor was not provided by any .service files (g-dbus-error-quark, 2)
+GNOME Shell-Message: 22:20:36.334: Failed to register AuthenticationAgent
+** Message: 22:20:36.448: Failed to start camera monitor
+/usr/share/ibus-table/engine/main.py:232: DeprecationWarning: Testing an element's truth value will raise an exception in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if element:
+portal is not running: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.portal.IBus was not provided by any .service files
+GNOME Shell-Message: 22:20:37.317: GNOME Shell started at Thu Nov 05 2026 22:20:36 GMT+0000 (Greenwich Mean Time)
+GNOME Shell-Message: 22:20:37.320: Registering session with GDM
+GNOME Shell-Message: 22:20:37.353: Error registering session with GDM: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.DisplayManager was not provided by any .service files
+
+(gnome-shell:257517): libmutter-WARNING **: 22:21:04.748: Lost or failed to acquire name org.gnome.Mutter.ServiceChannel

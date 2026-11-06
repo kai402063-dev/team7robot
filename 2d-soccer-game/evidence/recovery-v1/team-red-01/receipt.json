@@ -1,0 +1,8 @@
+{
+  "names": [
+    "test_recovery_tactics/testReplacementIdCannotTakeOverDrainingKick"
+  ],
+  "passed": false,
+  "failed": true,
+  "incomplete": false
+}

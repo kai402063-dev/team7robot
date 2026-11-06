@@ -1,0 +1,8 @@
+{
+  "id": "manual-m2-v1",
+  "file": "docs/generated/m2_numbers.json",
+  "old": "\"motionEventBallDisplacementMetres\": 0.19289373070986421",
+  "new": "\"motionEventBallDisplacementMetres\": 999",
+  "suite": "tests/test_manual_numbers.m",
+  "evidence": "evidence/6/mutation-manual-m2-01"
+}

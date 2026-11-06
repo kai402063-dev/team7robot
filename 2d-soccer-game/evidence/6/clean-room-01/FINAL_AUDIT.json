@@ -1,0 +1,390 @@
+{
+  "status": "PASS_2D_AND_AUTOMATED_MANUAL_PATHS_WITH_DOCUMENTED_BLOCKERS",
+  "commit": "be3fc7c6dd4bf7fb919a020db030b4738fd615f1",
+  "cloneDirectory": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01",
+  "matlab": "26.2.0.3386108 (R2026b)",
+  "release": "2026b",
+  "oneKey": {
+    "status": "PASS_2D_WITH_DOCUMENTED_NOISY_TRACE_DIFFERENCES",
+    "exitCode": 0,
+    "started": "2026-11-05T19:35:04+00:00",
+    "ended": "2026-11-05T20:05:38+00:00",
+    "elapsedMatlabSeconds": 1805.768497999996,
+    "elapsedWallSeconds": 1834.0,
+    "receipt": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/build/reproduce-20261105-193522-777/receipt.json"
+  },
+  "manual": {
+    "status": "PASS_AUTOMATED_MANUAL_PATHS_WITH_DOCUMENTED_BLOCKERS",
+    "exitCode": 0,
+    "started": "2026-11-05T20:07:13+00:00",
+    "ended": "2026-11-05T20:08:54+00:00",
+    "elapsedMatlabSeconds": 74.290844,
+    "elapsedWallSeconds": 101.0,
+    "receipt": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/build/manual-reproduction-audit/manual-receipt.json"
+  },
+  "stage0": {
+    "status": "PASS",
+    "matches": 80,
+    "combinations": 40,
+    "allIdentical": true
+  },
+  "stage1": {
+    "status": "PASS",
+    "functions": 11,
+    "casesPerFunction": 1000,
+    "allZeroScreenerDiagnostics": true
+  },
+  "stage2": {
+    "status": "PASS",
+    "tests": 15,
+    "allPassed": true
+  },
+  "stage3": {
+    "rawStatus": "DIVERGENCE",
+    "interpretation": "PASS_WITH_DOCUMENTED_NOISY_TRACE_DIFFERENCES",
+    "comparisons": 40,
+    "maxZeroDifference": 5.1529960853891055e-14,
+    "maxNoisyDifference": 0.024622509687048044,
+    "allMetricsEqual": true,
+    "elapsedSeconds": 687.8992929999978
+  },
+  "repairs": {
+    "status": "PASS",
+    "tests": 14,
+    "longRuns": {
+      "long-run-40ms.json": {
+        "goals": [
+          2,
+          1
+        ],
+        "shots": [
+          28,
+          11
+        ],
+        "firstTouchSeconds": 3.64,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1330,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 119723,
+        "blockedTranslationSamples": 0,
+        "blockedTranslationRatio": 0,
+        "finite": true
+      },
+      "long-run-50ms.json": {
+        "goals": [
+          2,
+          3
+        ],
+        "shots": [
+          18,
+          15
+        ],
+        "firstTouchSeconds": 3.6500000000000004,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1098,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 95709,
+        "blockedTranslationSamples": 65,
+        "blockedTranslationRatio": 0.0006791419824676886,
+        "finite": true
+      }
+    }
+  },
+  "teaching": {
+    "status": "PASS",
+    "tests": 10
+  },
+  "manualNumberTests": {
+    "tests": 3,
+    "allPassed": true
+  },
+  "mutationAudit": {
+    "status": "PASS",
+    "scope": "Checks committed qualified receipts; does not rerun all historical mutants",
+    "details": {
+      "qualified": {
+        "test_baseline.m": "evidence/0/mutation-02/receipt.json",
+        "test_controller.m": "evidence/2/mutation-controller-02/receipt.json",
+        "test_actuator.m": "evidence/2/mutation-actuator-01/receipt.json",
+        "test_source_defects.m": "evidence/3/mutation-source-01/receipt.json",
+        "test_match.m": "evidence/3/mutation-01/receipt.json",
+        "test_repairs.m": "evidence/3/mutation-repairs-02/receipt.json",
+        "test_algorithms.m": "evidence/1/mutation-01/receipt.json",
+        "test_extensions.m": "evidence/6/mutation-extensions-01/receipt.json",
+        "test_manual_numbers.m": "evidence/6/mutation-manual-01/receipt.json",
+        "test_lessons.m": "evidence/6/mutation-lessons-01/receipt.json"
+      },
+      "missing": []
+    }
+  },
+  "manualPaths": {
+    "quickExample": {
+      "request": 0.44000000000000006,
+      "robot4X": -0.9875,
+      "elapsedSeconds": 0.502518
+    },
+    "path1": {
+      "status": "PASS",
+      "baseline": {
+        "names": [
+          "test_laneClearLesson/testObstacleNearSegment",
+          "test_laneClearLesson/testObstacleBeyondEndpoint",
+          "test_laneClearLesson/testDegenerateSegmentUsesLinkedSourcePolicy",
+          "test_laneClearLesson/testExactMarginIsClear"
+        ],
+        "passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "failed": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "incomplete": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "durations": [
+          0.036097,
+          0.011044000000000002,
+          0.002355,
+          0.005987
+        ]
+      },
+      "mutant": {
+        "names": [
+          "test_laneClearLesson/testObstacleNearSegment",
+          "test_laneClearLesson/testObstacleBeyondEndpoint",
+          "test_laneClearLesson/testDegenerateSegmentUsesLinkedSourcePolicy",
+          "test_laneClearLesson/testExactMarginIsClear"
+        ],
+        "passed": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "failed": [
+          false,
+          true,
+          false,
+          true
+        ],
+        "incomplete": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "durations": [
+          0.009102,
+          1.077264,
+          0.003827,
+          0.24887800000000002
+        ]
+      },
+      "restored": {
+        "names": [
+          "test_laneClearLesson/testObstacleNearSegment",
+          "test_laneClearLesson/testObstacleBeyondEndpoint",
+          "test_laneClearLesson/testDegenerateSegmentUsesLinkedSourcePolicy",
+          "test_laneClearLesson/testExactMarginIsClear"
+        ],
+        "passed": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "failed": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "incomplete": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "durations": [
+          0.004054,
+          0.002364,
+          0.000728,
+          0.001554
+        ]
+      },
+      "elapsedSeconds": 7.800335
+    },
+    "path2": {
+      "status": "PASS_AUTOMATED_EQUIVALENT",
+      "records": [
+        0,
+        0.04000000000000001,
+        0.07840000000000001,
+        0.115264,
+        0.15065344
+      ]
+    },
+    "path3": {
+      "status": "PASS_AUTOMATED_EQUIVALENT",
+      "records": [
+        0,
+        1,
+        2,
+        2,
+        2
+      ]
+    },
+    "path4": {
+      "status": "PASS_AUTOMATED_EQUIVALENT",
+      "tests": {
+        "names": [
+          "test_controller/testReplayAndTruthIsolation",
+          "test_controller/testNormalFeedback",
+          "test_controller/testTimeout",
+          "test_controller/testFailedAndRejectedFeedback",
+          "test_controller/testLateFeedbackIgnored",
+          "test_controller/testLostBallAndStop",
+          "test_controller/testStaleObservation",
+          "test_controller/testSingleClosedLoop"
+        ],
+        "passed": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "failed": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "incomplete": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "durations": [
+          2.561376,
+          2.7086799999999998,
+          0.890326,
+          2.357619,
+          1.4658440000000001,
+          1.2659070000000001,
+          0.617751,
+          3.9679079999999995
+        ]
+      },
+      "copyPasteExercise": "BLOCKED_DOCUMENTATION_HTML_ENTITIES_IN_CODE_SPANS"
+    },
+    "path5": {
+      "status": "PASS",
+      "deterministic": true,
+      "recordSize": [
+        41,
+        11
+      ],
+      "elapsedSeconds": 21.608809
+    },
+    "path6": {
+      "status": "BLOCKED",
+      "reason": "ROS Toolbox/Coders absent; M2 CLI path not implemented in this commit"
+    },
+    "path7": {
+      "status": "BLOCKED",
+      "reason": "M2 Webots path not implemented in this commit; no scene or action command in this manual"
+    },
+    "extensionExample": {
+      "status": "PASS",
+      "recordSize": [
+        41,
+        11
+      ],
+      "elapsedSeconds": 0.946979
+    },
+    "guiDragging": "NOT_RUN: automated generation is not human GUI construction"
+  },
+  "documentFindings": [
+    {
+      "id": "DOC-1",
+      "status": "BLOCKED_DIRECT_COPY",
+      "file": "docs/generated/stateflow.md",
+      "description": "Transition conditions are inline code containing literal &#124;&#124;; path 4 promises directly copyable conditions."
+    },
+    {
+      "id": "DOC-2",
+      "status": "FAIL_NAVIGATION",
+      "file": "docs/chapters/stateflow.md",
+      "description": "References test_controller/testNormalCompletion, but actual linked suite has testNormalFeedback."
+    },
+    {
+      "id": "DOC-3",
+      "status": "BLOCKED_SELF_BUILT_CHART_REPLAY",
+      "file": "docs/chapters/handson.md",
+      "description": "Path 4 step 6 does not explain connecting the hand-built GeometryBus/FeedbackBus chart to the generated tdpReplay ControllerCore. runReplay is fixed to tdpReplay, so it would continue testing the generated chart."
+    }
+  ],
+  "sourceDiffPaths": [],
+  "generatedDiffPaths": [
+    "docs/generated/match_snapshot.png",
+    "models/ControllerCore.slx",
+    "models/TdpTypes.sldd",
+    "models/tdpDelayLesson.slx",
+    "models/tdpFlatLesson.slx",
+    "models/tdpMatch.slx",
+    "models/tdpReplay.slx",
+    "models/tdpSingleRobot.slx"
+  ],
+  "resolutionEvidence": {
+    "root": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01",
+    "runAResolution": [
+      "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/baseline/runA.m"
+    ],
+    "controllerResolution": [
+      "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/models/ControllerCore.slx"
+    ],
+    "replayResolution": [
+      "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/scripts/runReplay.m"
+    ]
+  },
+  "scope": "No installation, remote access, pushing, source-worktree implementation changes, or connection to existing MATLAB desktop.",
+  "evidenceSHA256": {
+    "build/reproduce-20261105-193522-777/receipt.json": "d3329766b93004f5e399d768448dca26cdca17125e08b49f2e1511f292121777",
+    "build/manual-reproduction-audit/manual-receipt.json": "e90dcee96b596292af89aa22627b1f142ed20e860493fdcf304d8eab0c21e607",
+    "build/manual-reproduction-audit/one-key.log": "67774baa8a13b141c8512b31a9074aa996cf52e4d3497cbf702625fab5a225e0",
+    "build/manual-reproduction-audit/manual.log": "9e41fd04bc47542418dd9d64d2cfe6e17bc3c8c5695480608abf3b567445f07c",
+    "build/manual-reproduction-audit/reader-observations.json": "a69bbef6297d49b0ab02b56647d1c4390d4ecb14a30fb3a2bec61f711475c16e",
+    "build/manual-reproduction-audit/stateflow-rendered.html": "087f3eb5ce1ba1a8962c987fdba5da189d7812161683a9d7f1eceb8c04fb0e4e",
+    "build/learning/laneClearLesson.m": "fecd57255bba7296bb8548bff8ca6a2aa922ada841659425b4f15ccbc8843be1",
+    "build/learning/test_laneClearLesson.m": "3a35551bfce7b7522fa0bda73eb7355aaad29fffe85a6baf2d57e2e291c1fba6",
+    "build/manual-reproduction-audit/run_manual_audit.m": "096984d0397a7afc000be1e64b95c36d28b3968e7f6ad731452e46271ca252ce"
+  }
+}

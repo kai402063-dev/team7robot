@@ -1,0 +1,13 @@
+{
+  "command": [
+    "./scripts/run_matlab.sh",
+    "tdpSetup;validate_camera('build/webots-camera-manual-01','build/webots-camera-manual-01/decoded');"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+  "startUtc": "2026-11-05T23:24:54.898779+00:00",
+  "status": "PASS",
+  "childPid": 298773,
+  "exitCode": 0,
+  "endUtc": "2026-11-05T23:25:23.517124+00:00",
+  "wallSeconds": 28.618355897000583
+}

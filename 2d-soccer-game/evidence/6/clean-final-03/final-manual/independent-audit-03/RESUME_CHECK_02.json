@@ -1,0 +1,13 @@
+{
+  "checkedUtc": "2026-11-05T23:24:12.786615+00:00",
+  "targetCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
+  "priorAttemptsPreserved": {
+    "ros-online-01": "INTERRUPTED_BY_USER_PAUSE; see PAUSE_STOP_RECORD.json",
+    "ros-online-02": "NO_FINAL_RECEIPT; parent verified original coordinator/validator absent before restart; stale RUNNING is not PASS"
+  },
+  "currentCommand": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/independent-audit-03/ros-online-03/command.json",
+  "currentOutput": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/ros-manual-03",
+  "monitoring": "Supervised unified exec session 38530; actively monitored; no detached pipeline",
+  "domain": 97,
+  "socketPort": 29741
+}

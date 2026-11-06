@@ -1,0 +1,5533 @@
+{
+  "title_zh": "Robotics TDP 仿真建模参数提取",
+  "extracted_date": "2026-10-28",
+  "scope_zh": "课程PDF + NAO V6官方NAOqi2.8.7.4 + 制造商2026-06手册 + 指定2025-04-14 RoboCup规则；仅参数目录，不是已标定的运行配置。规则Physical/Virtual子条款均保留适用范围。",
+  "sources": {
+    "S": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/Resource/ENG5325 Robotics TDP M -Spec Doc 2026 2027.pdf",
+      "pages": 10,
+      "sha256": "7f9babf35c6cc50de55787b670e6497bfcf31b2223473b4be724d54780a2a354"
+    },
+    "P": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/Resource/RTDPM Introductory Presentation 2026 2027.pdf",
+      "pages": 33,
+      "sha256": "c138e385a0912aade966f640edf86684d4d03d6ab13866cb6c63381af5c6e10a"
+    },
+    "R2025": {
+      "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/RC-HL-2025-Rules.pdf",
+      "revision_date": "2025-04-14",
+      "pages": 76,
+      "sha256": "2b121471f2fa018964986f65a2d13ce30329f17a1dc1705c36d7c01ad43ec7bf"
+    },
+    "D2026": {
+      "url": "https://maxtronics.com/wp-content/uploads/nao-v6-datasheet-en-20260605-maxtronics_v5.pdf",
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/NAO6_Datasheet_Maxtronics_2026_06.pdf",
+      "version": "2026-06; H25600",
+      "pages": 8,
+      "sha256": "d452b3e2ca0cd0e6d92a3946ba34504432b4daf1a47fcf141ad0edc31e127d9f"
+    },
+    "H_dimensions": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/dimensions_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "f28eef0a5f6dc45122b24df3af9101f38f36173b9d016b0d8f25e7650fe69c8f"
+    },
+    "H_joints": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/joints_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "e86e3e3c6fc430d3467edacf5de17d103c0b82347321640f6a9635928db0f5b4"
+    },
+    "H_links": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/links_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "6e1058ca1cbcf70f45f0cc4e80e5175cf6cd8bfa5c8ef1a9bdff8ef985e56016"
+    },
+    "H_body_frames": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/masses_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "6065890d7ece58d004ce168233f3afa45f1255b470e64a738fc6aa5a598d71a6"
+    },
+    "H_video": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/video_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "86fb75e9c8ef4d7ee52c773903c306e991385c1f039581fc841cb264cf1c0a09"
+    },
+    "H_kinematics": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/kinematics_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "9b51645cc5a8792a492ce3e8fa489a40592ce64a42eb7319b98bf3851213d30e"
+    },
+    "H_motors": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/motors_naov6.html",
+      "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+      "sha256": "91c911d7fc2c5b5c8480e7cbaa0bbcd0d09eb9542bddba4a1f042f5c3b8be166"
+    },
+    "H_datasheet_2026": {
+      "url": "https://maxtronics.com/wp-content/uploads/nao-v6-datasheet-en-20260605-maxtronics_v5.pdf",
+      "version": "2026-06; H25600; filename 20260605 maxtronics_v5",
+      "sha256": "d452b3e2ca0cd0e6d92a3946ba34504432b4daf1a47fcf141ad0edc31e127d9f",
+      "pages_relevant_1_based": [
+        2,
+        4,
+        6
+      ],
+      "note": "文件名含_v5；手册产品标题为NAO6，不能把文件名中的v5当作机器人V5版本。"
+    },
+    "H_datasheet_2025": {
+      "url": "https://maxtronics.com/wp-content/uploads/nao-v6-datasheet_en_2025.pdf",
+      "version": "10/2025; H25600",
+      "pages_relevant_1_based": [
+        2,
+        3,
+        5
+      ],
+      "note": "直接网页核实；相机和外形数值与2026版一致。"
+    },
+    "H_manufacturer_product": {
+      "url": "https://maxtronics.com/en/nao6/",
+      "note": "当前官方产品页链接到2026-06 datasheet；页面说明25DOF。"
+    },
+    "M_official_index": {
+      "url": "https://doc.aldebaran.com/",
+      "applies_to": "Entry identifies NAOqi2.8 as NAO V6"
+    },
+    "M_walk": {
+      "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-walk.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-walk.html",
+      "sha256": "235fd2346ab3a1b3378a0a61fc2438101a4f44aad2195e9674fff211b0ff9a2f"
+    },
+    "M_walk_api": {
+      "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-walk-api.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-walk-api.html",
+      "sha256": "6f7f904ae76e36b893692bf4f4da67724958a50bc046753d3c6c79386ea5e381"
+    },
+    "M_motion": {
+      "url": "https://doc.aldebaran.com/2-8/naoqi/motion/almotion.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/almotion.html",
+      "sha256": "8cf06f9f1759fd1daec39810ddd63241d06026630bcd19096a2a48415d8116c0"
+    },
+    "M_joint_api": {
+      "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-joint-api.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-joint-api.html",
+      "sha256": "ea138df10e609af93bd5fff7e12cf51f8f0ba8d25fc57ce883803a81d8f7aae5"
+    },
+    "M_limits": {
+      "url": "https://doc.aldebaran.com/2-8/naoqi/motion/tools-general-api.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/tools-general-api.html",
+      "sha256": "1f000b0f6abf2e1f5caa062d419347cc49a31b0e0ef11b1c17910c173c2ad9f8"
+    },
+    "M_sonar": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/sonar_naov6.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/sonar_naov6.html",
+      "sha256": "d428b48e7e1562e2842356fcf88785b8151710ccde5cae8f3a5773ac293901a4"
+    },
+    "M_inertial": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/inertial_naov6.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/inertial_naov6.html",
+      "sha256": "3ef5835a8c930f48993d929d9106b24f7dbd751d1284f736f35a7bd4ccb79a3a"
+    },
+    "M_fsr": {
+      "url": "https://doc.aldebaran.com/2-8/family/nao_technical/fsr_naov6.html",
+      "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/fsr_naov6.html",
+      "sha256": "1bbdee0d0d0ec7a1865b240c2693477b7a5414de4ec5e70b214a40ddf196d42f"
+    }
+  },
+  "status_legend": {
+    "explicit": "原文明示",
+    "explicit_approximate": "原文近似",
+    "schematic_label": "结构示意图标注",
+    "explicit_reference": "仅明确引用，未确认采用",
+    "derived": "由明示数值推导",
+    "requires_clarification": "需确认解释",
+    "not_specified_in_local_resources": "本地资料未给定",
+    "official_hardware_spec": "官方硬件资料；仍需匹配实机版本",
+    "official_software_reference": "官方软件配置/周期，不是实测性能",
+    "official_rule_reference": "官方规则参考；按Physical/Virtual范围采用，课程最终配置仍待确认",
+    "unresolved_after_official_source_review": "官方资料核查后仍未解决；按resolution_actions实测/实机读取/导师或厂商确认。"
+  },
+  "null_handling_zh": "null表示未确认，不得静默转成0或任意默认值；官方表中未支持项、未提供配置上下限、光学无穷远等null均有各自字段注释，应按语义处理。",
+  "source_parameters": [
+    {
+      "id": "match.team_count",
+      "value": 2,
+      "unit": "count",
+      "status": "explicit",
+      "sources": [
+        "P4",
+        "P6",
+        "P25"
+      ]
+    },
+    {
+      "id": "match.robots_per_team",
+      "value": 4,
+      "unit": "count",
+      "status": "explicit",
+      "sources": [
+        "S1",
+        "P5",
+        "P25"
+      ]
+    },
+    {
+      "id": "robot.platform",
+      "value": "NAO6",
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S1",
+        "P5",
+        "P25"
+      ]
+    },
+    {
+      "id": "robot.external_dimensions_hdw",
+      "value": [
+        0.574,
+        0.311,
+        0.275
+      ],
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "P5",
+        "H_dimensions",
+        "D2026 p2"
+      ],
+      "note_zh": "课程数值574×311×275mm；官方V6网页与2026手册已确认轴顺序为高度、深度、宽度。"
+    },
+    {
+      "id": "robot.dimension_axis_mapping",
+      "value": [
+        "height",
+        "depth",
+        "width"
+      ],
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_dimensions",
+        "D2026 p2"
+      ],
+      "note_zh": "轴序已从官方V6资料确认；外形包络不等于各姿态碰撞体。"
+    },
+    {
+      "id": "control.autonomous_without_external_operator",
+      "value": true,
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S2"
+      ]
+    },
+    {
+      "id": "team.role_types",
+      "value": [
+        "striker",
+        "defender",
+        "goalkeeper"
+      ],
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S2",
+        "P5"
+      ]
+    },
+    {
+      "id": "team.role_allocation_options",
+      "value": [
+        "fixed",
+        "dynamic"
+      ],
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S2"
+      ],
+      "note_zh": "固定分工或动态分配均为允许的团队设计。"
+    },
+    {
+      "id": "robot.required_soccer_actions",
+      "value": [
+        "kick",
+        "dribble",
+        "pass",
+        "run",
+        "intercept"
+      ],
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S1"
+      ],
+      "note_zh": "功能要求，没有给动作性能值。"
+    },
+    {
+      "id": "field.length",
+      "value": 9,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 A"
+    },
+    {
+      "id": "field.width",
+      "value": 6,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 B"
+    },
+    {
+      "id": "field.goal_depth",
+      "value": 0.6,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 C"
+    },
+    {
+      "id": "field.goal_width",
+      "value": 2.6,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 D"
+    },
+    {
+      "id": "field.goal_height",
+      "value": 1.2,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中没有字母代码。"
+    },
+    {
+      "id": "field.goal_area_length",
+      "value": 1,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 E"
+    },
+    {
+      "id": "field.goal_area_width",
+      "value": 3,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 F"
+    },
+    {
+      "id": "field.penalty_mark_distance_from_goal_line",
+      "value": 1.5,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 G"
+    },
+    {
+      "id": "field.centre_circle_diameter",
+      "value": 1.5,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 H"
+    },
+    {
+      "id": "field.border_strip_width",
+      "value": 1,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 I"
+    },
+    {
+      "id": "field.penalty_area_length",
+      "value": 2,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 J"
+    },
+    {
+      "id": "field.penalty_area_width",
+      "value": 5,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3 Figure 3",
+        "S3 Table 1"
+      ],
+      "note_zh": "表中代码 K"
+    },
+    {
+      "id": "ball.size_reference",
+      "value": "similar to FIFA Size 1",
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S3"
+      ],
+      "note_zh": "仅明确尺寸关系；不据此填入质量或材料。"
+    },
+    {
+      "id": "ball.circumference",
+      "value": 0.45,
+      "unit": "m",
+      "status": "explicit",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "ball.diameter_approx",
+      "value": 0.14,
+      "unit": "m",
+      "status": "explicit_approximate",
+      "sources": [
+        "S3"
+      ],
+      "note_zh": "原文为approximately 14 cm，不能当成精确尺寸。"
+    },
+    {
+      "id": "ball.colour_options",
+      "value": [
+        "black_and_white_hexagons",
+        "bright_orange"
+      ],
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "robot.schematic.camera_count",
+      "value": 2,
+      "unit": "count",
+      "status": "schematic_label",
+      "sources": [
+        "S2 Figure 2"
+      ],
+      "note_zh": "结构示意图标注；性能和规则使用权限待确认。"
+    },
+    {
+      "id": "robot.schematic.sonar_count",
+      "value": 2,
+      "unit": "count",
+      "status": "schematic_label",
+      "sources": [
+        "S2 Figure 2"
+      ],
+      "note_zh": "结构示意图标注；性能和规则使用权限待确认。"
+    },
+    {
+      "id": "robot.schematic.bumper_count",
+      "value": 2,
+      "unit": "count",
+      "status": "schematic_label",
+      "sources": [
+        "S2 Figure 2"
+      ],
+      "note_zh": "结构示意图标注。"
+    },
+    {
+      "id": "rules.league",
+      "value": "RoboCup Humanoid KidSize",
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S1",
+        "P4"
+      ]
+    },
+    {
+      "id": "rules.referenced_document_year",
+      "value": 2025,
+      "unit": "year",
+      "status": "explicit_reference",
+      "sources": [
+        "S6 Appendix A"
+      ],
+      "note_zh": "此为资料所链接文件年份，不代表已经确认课程采用该版本。"
+    },
+    {
+      "id": "rules.referenced_document_url",
+      "value": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+      "unit": null,
+      "status": "explicit_reference",
+      "sources": [
+        "S6 Appendix A"
+      ],
+      "note_zh": "仅记录本地引用，未将外部正文当作已核实规格。"
+    },
+    {
+      "id": "simulation.visualisation_required",
+      "value": true,
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S10",
+        "P6",
+        "P23"
+      ]
+    },
+    {
+      "id": "simulation.recommended_software",
+      "value": [
+        "MATLAB and associated packages (e.g. Simulink, Stateflow)",
+        "ROS"
+      ],
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "P6"
+      ],
+      "note_zh": "其他软件需与导师达成一致；没有指定版本。"
+    },
+    {
+      "id": "validation.simulation_review_before_hardware",
+      "value": true,
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "P7",
+        "P13",
+        "P25",
+        "S7"
+      ]
+    },
+    {
+      "id": "validation.hardware_behaviour_testing_required",
+      "value": true,
+      "unit": null,
+      "status": "explicit",
+      "sources": [
+        "S1",
+        "S8",
+        "P7",
+        "P25"
+      ]
+    }
+  ],
+  "derived_parameters": [
+    {
+      "id": "match.total_robot_count",
+      "value": 8,
+      "unit": "count",
+      "status": "derived",
+      "formula": "2 * 4",
+      "sources": [
+        "P25"
+      ]
+    },
+    {
+      "id": "field.centre_circle_radius",
+      "value": 0.75,
+      "unit": "m",
+      "status": "derived",
+      "formula": "1.5 / 2",
+      "sources": [
+        "S3 Table 1"
+      ]
+    },
+    {
+      "id": "ball.diameter_from_circumference",
+      "value": 0.1432394487827058,
+      "unit": "m",
+      "status": "derived",
+      "formula": "0.45 / pi",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "ball.radius_from_circumference",
+      "value": 0.0716197243913529,
+      "unit": "m",
+      "status": "derived",
+      "formula": "0.45 / (2*pi)",
+      "sources": [
+        "S3"
+      ]
+    },
+    {
+      "id": "ball.radius_from_approx_diameter",
+      "value": 0.07,
+      "unit": "m",
+      "status": "derived_approximate",
+      "formula": "0.14 / 2",
+      "sources": [
+        "S3"
+      ]
+    }
+  ],
+  "illustrative_coordinates": {
+    "status": "derived_under_explicit_model_convention",
+    "convention": {
+      "origin": "pitch centre",
+      "x": "along pitch length",
+      "y": "along pitch width",
+      "z": "up",
+      "ground_z_m": 0,
+      "line_width_m": 0.05,
+      "post_radius_m": null,
+      "line_width_qualification": "R2025约值；坐标表为排布参考，不是完整线边缘施工或裁判几何。"
+    },
+    "note_zh": "场心坐标为建模约定；门口范围为净开口，标线和门柱需按新增规则范围建模；缓冲带不是比赛区，不表示围墙。整球越线须考虑球半径和实际边缘基准。",
+    "sources": [
+      "S3 Figure 3",
+      "S3 Table 1"
+    ],
+    "pitch_xy_bounds_m": {
+      "x": [
+        -4.5,
+        4.5
+      ],
+      "y": [
+        -3,
+        3
+      ]
+    },
+    "centre_line_x_m": 0,
+    "centre_circle": {
+      "centre_xy_m": [
+        0,
+        0
+      ],
+      "radius_m": 0.75
+    },
+    "goal_openings": {
+      "x_m": [
+        -4.5,
+        4.5
+      ],
+      "y_bounds_m": [
+        -1.3,
+        1.3
+      ],
+      "z_bounds_m": [
+        0,
+        1.2
+      ]
+    },
+    "goal_back_x_m": [
+      -5.1,
+      5.1
+    ],
+    "left_goal_area_xy_bounds_m": {
+      "x": [
+        -4.5,
+        -3.5
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ]
+    },
+    "right_goal_area_xy_bounds_m": {
+      "x": [
+        3.5,
+        4.5
+      ],
+      "y": [
+        -1.5,
+        1.5
+      ]
+    },
+    "left_penalty_area_xy_bounds_m": {
+      "x": [
+        -4.5,
+        -2.5
+      ],
+      "y": [
+        -2.5,
+        2.5
+      ]
+    },
+    "right_penalty_area_xy_bounds_m": {
+      "x": [
+        2.5,
+        4.5
+      ],
+      "y": [
+        -2.5,
+        2.5
+      ]
+    },
+    "penalty_marks_xy_m": [
+      [
+        -3,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "outer_envelope_if_border_on_all_sides": {
+      "length_m": 11,
+      "width_m": 8,
+      "x_bounds_m": [
+        -5.5,
+        5.5
+      ],
+      "y_bounds_m": [
+        -4,
+        4
+      ]
+    },
+    "geometry_rule_reference": {
+      "line_width_approx_m": 0.05,
+      "post_section_width_depth_range_m": [
+        0.08,
+        0.12
+      ],
+      "artificial_surface_height_approx_m": 0.03,
+      "ground_reference_zh": "z=0取承托表面；草高不自动加到球/机器人高度上。"
+    }
+  },
+  "implementation_selections": {
+    "ball_collision_radius_m": null,
+    "ball_radius_basis": null,
+    "robot_dimension_axis_order": [
+      "height",
+      "depth",
+      "width"
+    ],
+    "adopted_rule_version": null,
+    "selected_ball_colour": null,
+    "rules_profile": null,
+    "sensor_policy": null,
+    "camera_resolution_px": null,
+    "camera_fps": null,
+    "multibody_model": null,
+    "friction_model": null,
+    "gravity_vector_mps2": null
+  },
+  "missing_parameter_groups": [
+    {
+      "id": "rules.adopted_baseline",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "course_physical_or_virtual_profile",
+        "course_overrides",
+        "interpretation_of_conflicting_clauses"
+      ],
+      "note_zh": "指定2025-04-14规则正文已核实，课程采用范围和冲突裁定仍需确认。",
+      "resolution_actions": [
+        "supervisor_confirmation"
+      ]
+    },
+    {
+      "id": "simulation.fidelity",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "dimensions_2d_or_3d",
+        "kinematic_or_rigid_body",
+        "gait_and_fall_scope"
+      ],
+      "resolution_actions": [
+        "supervisor_confirmation"
+      ],
+      "note_zh": "官方本体和运动学资料已补，验收保真度由课程决定。"
+    },
+    {
+      "id": "robot.translational_speed_limits",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "forward",
+        "backward",
+        "lateral"
+      ],
+      "unit": "m/s",
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "官方足步参数不是持续草地速度。"
+    },
+    {
+      "id": "robot.angular_speed_limit",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "stable_yaw_rate"
+      ],
+      "unit": "rad/s",
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "关节/IMU范围不是身体稳定转速。"
+    },
+    {
+      "id": "robot.motion_response",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "acceleration",
+        "deceleration",
+        "startup_time",
+        "stop_distance",
+        "turn_time",
+        "command_delay",
+        "coupled_velocity_constraints"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "device_query"
+      ],
+      "note_zh": "50Hz、预览和双支撑时间已补；实际总响应仍测。"
+    },
+    {
+      "id": "vision.field_of_view",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "calibrated_fov_per_selected_camera_and_output_mode"
+      ],
+      "unit": "deg",
+      "resolution_actions": [
+        "measurement",
+        "manufacturer_confirmation"
+      ],
+      "note_zh": "官方文字56.3H/43.7V/67.4D已补；图示冲突、裁剪模式与实机标定仍待定。"
+    },
+    {
+      "id": "vision.geometry_and_visibility",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "mount_position",
+        "mount_orientation",
+        "near_blind_zone",
+        "detection_range",
+        "occlusion"
+      ],
+      "resolution_actions": [
+        "official_model_or_device_query",
+        "measurement"
+      ],
+      "note_zh": "对焦距离不是目标识别距离；V6完整相机外参未取得。"
+    },
+    {
+      "id": "ball.ground_motion",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "rolling_resistance_model",
+        "rolling_resistance_parameter",
+        "sliding_friction",
+        "rolling_sliding_transition",
+        "mass"
+      ],
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "规则没有球质量或摩擦数值。"
+    },
+    {
+      "id": "robot.kick_model",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "contact_region",
+        "heading_tolerance",
+        "preparation_time",
+        "recovery_time",
+        "launch_speed_or_impulse",
+        "direction_error",
+        "cooldown"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "需要选定项目动作库后测量。"
+    },
+    {
+      "id": "control.information_permissions",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "course_sensor_policy",
+        "course_shared_information_policy",
+        "course_simplifications"
+      ],
+      "resolution_actions": [
+        "supervisor_confirmation"
+      ],
+      "note_zh": "官方禁remote brain和外部计算机传输、限制主动感知；如采用课程简化需明示。"
+    },
+    {
+      "id": "validation.acceptance",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P0",
+      "required_fields": [
+        "metrics",
+        "thresholds",
+        "hardware_reference_tests"
+      ],
+      "resolution_actions": [
+        "supervisor_confirmation",
+        "measurement"
+      ],
+      "note_zh": "需要课程认可的验收阈值。"
+    },
+    {
+      "id": "environment.surface",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_surface_material",
+        "hardness",
+        "slope",
+        "flatness"
+      ],
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "已补规则绿色人工表面约30mm，未补动力学系数。"
+    },
+    {
+      "id": "environment.gravity",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "vector"
+      ],
+      "unit": "m/s^2",
+      "note_zh": "显式建模选择，非文档规定值。",
+      "resolution_actions": [
+        "model_choice",
+        "supervisor_confirmation"
+      ]
+    },
+    {
+      "id": "contact.foot_ground",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "static_friction",
+        "kinetic_friction",
+        "stiffness",
+        "damping",
+        "actual_foot_contact_geometry"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "official_model"
+      ],
+      "note_zh": "官方规划包络不等于足底接触面。"
+    },
+    {
+      "id": "contact.other_material_pairs",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "ball_foot_friction",
+        "ball_ground_restitution",
+        "ball_body_restitution",
+        "ball_goal_frame_restitution",
+        "robot_robot_contact"
+      ],
+      "note_zh": "材料对分别建模。",
+      "resolution_actions": [
+        "measurement",
+        "model_choice"
+      ]
+    },
+    {
+      "id": "ball.rigid_body",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "mass",
+        "inertia",
+        "material",
+        "elasticity",
+        "inflation_condition"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "model_choice"
+      ],
+      "note_zh": "Size1不能唯一确定质量或惯量。"
+    },
+    {
+      "id": "ball.flight_and_spin",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "spin_model",
+        "air_drag",
+        "bounce_model",
+        "flight_scope"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "是否简化需与研究目标一致。"
+    },
+    {
+      "id": "robot.rigid_body",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "link_mass",
+        "link_com",
+        "link_inertia",
+        "full_v6_model"
+      ],
+      "resolution_actions": [
+        "official_model_or_device_query",
+        "measurement"
+      ],
+      "note_zh": "总重5.48kg、公开连杆与关节轴已补；完整V6刚体模型未取得。"
+    },
+    {
+      "id": "robot.actuation",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_joint_speed_limits",
+        "actual_joint_torque_limits",
+        "actuator_loaded_response",
+        "thermal_and_gear_efficiency"
+      ],
+      "resolution_actions": [
+        "device_query",
+        "measurement"
+      ],
+      "note_zh": "静态关节范围/耦合与电机轴规格已补；仍不能代替负载下驱动能力。"
+    },
+    {
+      "id": "robot.collision_geometry",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_foot",
+        "body",
+        "arms",
+        "head",
+        "effective_occupied_area"
+      ],
+      "resolution_actions": [
+        "official_model",
+        "measurement"
+      ],
+      "note_zh": "官方防碰撞规划多边形仅参考，不是全部实体碰撞模型。"
+    },
+    {
+      "id": "robot.gait_and_recovery",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_selected_gait",
+        "stability_limits",
+        "fall_detection",
+        "get_up_time",
+        "goalkeeper_save_model"
+      ],
+      "resolution_actions": [
+        "device_query",
+        "measurement"
+      ],
+      "note_zh": "足步配置与周期已补；起身等实际动作性能待测。"
+    },
+    {
+      "id": "vision.camera_model_and_timing",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "intrinsics",
+        "distortion",
+        "selected_resolution_and_frame_rate",
+        "sensing_delay",
+        "recognition_delay"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "device_query",
+        "manufacturer_confirmation"
+      ],
+      "note_zh": "多模式官方帧率表已补，保留官方内部差异。"
+    },
+    {
+      "id": "vision.recognition_errors",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "minimum_target_pixels",
+        "distance_error",
+        "miss_rate",
+        "false_positive_rate"
+      ],
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "目标与光照依赖性能。"
+    },
+    {
+      "id": "vision.head_and_dual_camera",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_head_speed_limits",
+        "camera_switching_or_simultaneity",
+        "rule_compliant_dual_camera_policy"
+      ],
+      "resolution_actions": [
+        "device_query",
+        "measurement",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "头部静态与耦合限位已补，规则pan/tilt另列。"
+    },
+    {
+      "id": "sensing.state_estimation",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "odometry",
+        "localisation",
+        "sensor_noise",
+        "sensor_drift",
+        "sampling_rates",
+        "allowed_input_selection"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "device_query",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "IMU/FSR/声呐硬件量程已补；地磁和主动感知限制另列。"
+    },
+    {
+      "id": "communication.model",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_message_content",
+        "frequency",
+        "latency",
+        "packet_loss",
+        "outage_model"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "model_choice",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "规则带宽1Mbit/s每机器人和信息限制已补。"
+    },
+    {
+      "id": "field.geometry_details",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_goal_post_section",
+        "mark_sizes",
+        "goal_net_model",
+        "actual_line_measurement_reference"
+      ],
+      "resolution_actions": [
+        "measurement",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "规则线宽约50mm、门柱横梁80–120mm、净距/净高已补。"
+    },
+    {
+      "id": "rules.executable_match_logic",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "course_profile",
+        "free_kick_positioning_time_conflict",
+        "virtual_goalkeeper_exception_conflict",
+        "penalty_trial_termination_ambiguity"
+      ],
+      "resolution_actions": [
+        "supervisor_confirmation"
+      ],
+      "note_zh": "基本比赛流程/65项事件参数已补，尚未实现裁判程序。"
+    },
+    {
+      "id": "match.initialisation",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "actual_initial_robot_poses",
+        "ball_state",
+        "reset_conditions",
+        "termination_config"
+      ],
+      "resolution_actions": [
+        "model_choice",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "规则约束与开球流程已补，具体实验状态需定义。"
+    },
+    {
+      "id": "team.strategy_configuration",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "role_counts",
+        "formation",
+        "role_switching",
+        "possession_test",
+        "shoot_pass_intercept_thresholds"
+      ],
+      "note_zh": "门将身份变更受停赛通知规则限制。",
+      "resolution_actions": [
+        "model_choice",
+        "supervisor_confirmation"
+      ]
+    },
+    {
+      "id": "simulation.numerics",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "solver",
+        "integration_step",
+        "collision_accuracy",
+        "sensor_period",
+        "communication_period",
+        "realtime_target"
+      ],
+      "resolution_actions": [
+        "model_choice",
+        "convergence_validation",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "ALMotion20ms为软件参考周期，不自动确定积分或感知周期。"
+    },
+    {
+      "id": "validation.reproducibility",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P1",
+      "required_fields": [
+        "random_seed",
+        "scenario_set",
+        "opponent_policy",
+        "repetitions",
+        "logging"
+      ],
+      "resolution_actions": [
+        "model_choice",
+        "supervisor_confirmation"
+      ],
+      "note_zh": "需可复现评估。"
+    },
+    {
+      "id": "environment.visual_appearance",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P2",
+      "required_fields": [
+        "selected_ball_colour",
+        "actual_grass_texture",
+        "actual_lighting",
+        "shadows",
+        "background"
+      ],
+      "note_zh": "已补规则场面/标线/球门和队标颜色，实际渲染场景仍需确定。",
+      "resolution_actions": [
+        "measurement",
+        "model_choice"
+      ]
+    },
+    {
+      "id": "robot.long_run_limits",
+      "value": null,
+      "status": "unresolved_after_official_source_review",
+      "priority": "P2",
+      "required_fields": [
+        "soccer_power_use",
+        "temperature_response",
+        "battery_dependent_performance"
+      ],
+      "resolution_actions": [
+        "measurement"
+      ],
+      "note_zh": "已补电池容量；宣传运行时间不能代替足球功耗模型。"
+    }
+  ],
+  "accompanying_report": "/home/fayne/Alpha/humanoid_football_robot/reports/tdp_modeling_specification_2026_2027.md",
+  "schema_version": "2.0",
+  "updated_date": "2026-10-28",
+  "catalogue_only": true,
+  "official_reference_parameters": [
+    {
+      "id": "robot.mass_nominal",
+      "value": 5.48,
+      "unit": "kg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p2"
+      ],
+      "note_zh": "H25600整机标称重量；电池附件组成未拆分，实际配置应称重。"
+    },
+    {
+      "id": "robot.independent_dof",
+      "value": 25,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p6",
+        "H_manufacturer_product"
+      ]
+    },
+    {
+      "id": "robot.listed_joint_names",
+      "value": 26,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_joints"
+      ],
+      "note_zh": "左右HipYawPitch同一电机，非26个独立驱动自由度。"
+    },
+    {
+      "id": "robot.head_yaw_static_range",
+      "value": [
+        -119.5,
+        119.5
+      ],
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_joints"
+      ],
+      "note_zh": "硬件静态范围，不是规则许可pan范围。"
+    },
+    {
+      "id": "robot.head_pitch_static_range",
+      "value": [
+        -38.5,
+        29.5
+      ],
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_joints"
+      ],
+      "note_zh": "另须满足随Yaw变化的防碰撞表。"
+    },
+    {
+      "id": "robot.hip_yaw_pitch_independent_control",
+      "value": false,
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_joints"
+      ]
+    },
+    {
+      "id": "vision.camera_count",
+      "value": 2,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video"
+      ]
+    },
+    {
+      "id": "vision.camera_sensor",
+      "value": "OV5640",
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ]
+    },
+    {
+      "id": "vision.nominal_horizontal_fov",
+      "value": 56.3,
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ],
+      "note_zh": "每个相机全角；原图另有不一致角度，须校准选定输出模式。"
+    },
+    {
+      "id": "vision.nominal_vertical_fov",
+      "value": 43.7,
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ],
+      "note_zh": "每个相机全角；原图另有不一致角度，须校准选定输出模式。"
+    },
+    {
+      "id": "vision.nominal_diagonal_fov",
+      "value": 67.4,
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ],
+      "note_zh": "每个相机全角；原图另有不一致角度，须校准选定输出模式。"
+    },
+    {
+      "id": "vision.sensor_active_pixels",
+      "value": [
+        2592,
+        1944
+      ],
+      "unit": "px",
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ]
+    },
+    {
+      "id": "vision.shutter",
+      "value": "rolling",
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ]
+    },
+    {
+      "id": "vision.autofocus_supported",
+      "value": true,
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ],
+      "note_zh": "支持不代表运行时自动对焦开启。"
+    },
+    {
+      "id": "vision.common_vga_output",
+      "value": {
+        "resolution_px": [
+          640,
+          480
+        ],
+        "advertised_max_fps": 30
+      },
+      "unit": null,
+      "status": "official_hardware_spec",
+      "sources": [
+        "H_video",
+        "D2026 p4"
+      ],
+      "note_zh": "能力值，非感知链保证帧率。"
+    },
+    {
+      "id": "vision.focus_near_distance_nominal",
+      "value": 0.1,
+      "unit": "m",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p4"
+      ],
+      "note_zh": "对焦近限不是目标检测近限或识别距离。"
+    },
+    {
+      "id": "robot.microphones_hardware_count",
+      "value": 4,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p4"
+      ],
+      "note_zh": "规则参考最多2个；不能默认全部启用。"
+    },
+    {
+      "id": "robot.sonar_range",
+      "value": [
+        0.2,
+        0.8
+      ],
+      "unit": "m",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_sonar"
+      ],
+      "note_zh": "严格Humanoid主动感知限制下不能因有此硬件而启用。"
+    },
+    {
+      "id": "robot.sonar_cone",
+      "value": 60,
+      "unit": "deg",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_sonar"
+      ]
+    },
+    {
+      "id": "robot.sonar_carrier_frequency",
+      "value": 40000,
+      "unit": "Hz",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_sonar"
+      ],
+      "note_zh": "载波不是测距采样频率。"
+    },
+    {
+      "id": "robot.sonar_resolution_range",
+      "value": [
+        0.01,
+        0.04
+      ],
+      "unit": "m",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_sonar"
+      ],
+      "note_zh": "随距离变化，制造商手册另明确50cm处约1cm。"
+    },
+    {
+      "id": "robot.gyroscope_axes",
+      "value": 3,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ]
+    },
+    {
+      "id": "robot.gyroscope_angular_range_approx",
+      "value": 500,
+      "unit": "deg/s",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ],
+      "note_zh": "量程，不是机器人转向能力。"
+    },
+    {
+      "id": "robot.accelerometer_axes",
+      "value": 3,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ]
+    },
+    {
+      "id": "robot.accelerometer_nominal_range_approx",
+      "value": 2,
+      "unit": "g",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ],
+      "note_zh": "量程，不是身体加速度能力。"
+    },
+    {
+      "id": "robot.fsr_count_per_foot",
+      "value": 4,
+      "unit": "count",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_fsr"
+      ]
+    },
+    {
+      "id": "robot.fsr_range_per_sensor",
+      "value": [
+        0,
+        25
+      ],
+      "unit": "N",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_fsr"
+      ]
+    },
+    {
+      "id": "robot.gyro_position_in_torso",
+      "value": [
+        -0.008,
+        0.006,
+        0.029
+      ],
+      "unit": "m",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ]
+    },
+    {
+      "id": "robot.accelerometer_position_in_torso",
+      "value": [
+        -0.008,
+        0.00606,
+        0.027
+      ],
+      "unit": "m",
+      "status": "official_hardware_spec",
+      "sources": [
+        "M_inertial"
+      ]
+    },
+    {
+      "id": "robot.battery_nominal_voltage",
+      "value": 21.6,
+      "unit": "V",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p3"
+      ]
+    },
+    {
+      "id": "robot.battery_capacity",
+      "value": 2.9,
+      "unit": "Ah",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p3"
+      ]
+    },
+    {
+      "id": "robot.battery_energy",
+      "value": 62.5,
+      "unit": "Wh",
+      "status": "official_hardware_spec",
+      "sources": [
+        "D2026 p3"
+      ]
+    },
+    {
+      "id": "motion.ALMotion_cycle",
+      "value": 0.02,
+      "unit": "s",
+      "status": "official_software_reference",
+      "sources": [
+        "M_motion"
+      ],
+      "note_zh": "软件模块周期，不等于数值积分或视觉周期。"
+    },
+    {
+      "id": "motion.walk_preview_horizon",
+      "value": 0.8,
+      "unit": "s",
+      "status": "official_software_reference",
+      "sources": [
+        "M_walk"
+      ]
+    },
+    {
+      "id": "motion.initial_double_support",
+      "value": 0.6,
+      "unit": "s",
+      "status": "official_software_reference",
+      "sources": [
+        "M_walk"
+      ],
+      "note_zh": "不是保证的总启动时延。"
+    },
+    {
+      "id": "motion.final_double_support",
+      "value": 0.6,
+      "unit": "s",
+      "status": "official_software_reference",
+      "sources": [
+        "M_walk"
+      ],
+      "note_zh": "不是保证的总刹停时延。"
+    },
+    {
+      "id": "motion.single_step_double_support_fraction",
+      "value": 0.3333333333333333,
+      "unit": "ratio",
+      "status": "official_software_reference",
+      "sources": [
+        "M_walk"
+      ]
+    },
+    {
+      "id": "motion.planner_foot_box_dimensions",
+      "value": [
+        0.157,
+        0.088
+      ],
+      "unit": "m",
+      "status": "official_software_reference",
+      "sources": [
+        "M_walk"
+      ],
+      "note_zh": "规划器示例的防碰撞包络，非已标定V6足底接触面；坐标参照仍需核实。"
+    },
+    {
+      "id": "field.line_width_approx",
+      "value": 0.05,
+      "unit": "m",
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p6-7"
+      ],
+      "note_zh": "标线属于其所围区域。"
+    },
+    {
+      "id": "field.artificial_surface_height_approx",
+      "value": 0.03,
+      "unit": "m",
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p6"
+      ],
+      "note_zh": "不得未经地面参考面定义就把球或机器人抬高3cm。"
+    },
+    {
+      "id": "field.border_strip_min_width",
+      "value": 1,
+      "unit": "m",
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p9"
+      ]
+    },
+    {
+      "id": "goal.post_crossbar_section_width_depth_range",
+      "value": [
+        0.08,
+        0.12
+      ],
+      "unit": "m",
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p7"
+      ],
+      "note_zh": "没有指定必须圆形，具体截面需确认。"
+    },
+    {
+      "id": "goal.post_crossbar_colour",
+      "value": "white",
+      "unit": null,
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p7"
+      ]
+    },
+    {
+      "id": "goal.net_forbidden_colours",
+      "value": [
+        "green",
+        "white"
+      ],
+      "unit": null,
+      "status": "official_rule_reference",
+      "sources": [
+        "R2025 p7"
+      ]
+    }
+  ],
+  "resolution_action_legend_zh": {
+    "measurement": "需要在实际NAO6/球/草地上实测",
+    "device_query": "需要读取实验室实机版本和官方运行配置",
+    "official_model_or_device_query": "向厂商/实验室取得匹配V6模型或读取官方模型数据",
+    "official_model": "向厂商/实验室取得匹配V6模型",
+    "supervisor_confirmation": "向导师确认课程规则、范围或验收要求",
+    "manufacturer_confirmation": "向厂商确认官方文档差异或型号适用性",
+    "model_choice": "团队显式定义建模或实验选择",
+    "convergence_validation": "用收敛性和稳定性检查选择数值设置"
+  },
+  "external_evidence": {
+    "nao6_hardware": {
+      "schema_version": "1.0",
+      "checked_on": "2026-10-28",
+      "scope": "NAO V6 / H25600 hardware, official manufacturer sources only; no measured or V5 parameters substituted",
+      "sources": {
+        "dimensions": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/dimensions_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "f28eef0a5f6dc45122b24df3af9101f38f36173b9d016b0d8f25e7650fe69c8f"
+        },
+        "joints": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/joints_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "e86e3e3c6fc430d3467edacf5de17d103c0b82347321640f6a9635928db0f5b4"
+        },
+        "links": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/links_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "6e1058ca1cbcf70f45f0cc4e80e5175cf6cd8bfa5c8ef1a9bdff8ef985e56016"
+        },
+        "body_frames": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/masses_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "6065890d7ece58d004ce168233f3afa45f1255b470e64a738fc6aa5a598d71a6"
+        },
+        "video": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/video_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "86fb75e9c8ef4d7ee52c773903c306e991385c1f039581fc841cb264cf1c0a09"
+        },
+        "kinematics": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/kinematics_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "9b51645cc5a8792a492ce3e8fa489a40592ce64a42eb7319b98bf3851213d30e"
+        },
+        "motors": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/motors_naov6.html",
+          "version": "Aldebaran NAOqi 2.8.7.4; V6 page suffix naov6",
+          "sha256": "91c911d7fc2c5b5c8480e7cbaa0bbcd0d09eb9542bddba4a1f042f5c3b8be166"
+        },
+        "datasheet_2026": {
+          "url": "https://maxtronics.com/wp-content/uploads/nao-v6-datasheet-en-20260605-maxtronics_v5.pdf",
+          "version": "2026-06; H25600; filename 20260605 maxtronics_v5",
+          "sha256": "d452b3e2ca0cd0e6d92a3946ba34504432b4daf1a47fcf141ad0edc31e127d9f",
+          "pages_relevant_1_based": [
+            2,
+            4,
+            6
+          ],
+          "note": "文件名含_v5；手册产品标题为NAO6，不能把文件名中的v5当作机器人V5版本。"
+        },
+        "datasheet_2025": {
+          "url": "https://maxtronics.com/wp-content/uploads/nao-v6-datasheet_en_2025.pdf",
+          "version": "10/2025; H25600",
+          "pages_relevant_1_based": [
+            2,
+            3,
+            5
+          ],
+          "note": "直接网页核实；相机和外形数值与2026版一致。"
+        },
+        "manufacturer_product": {
+          "url": "https://maxtronics.com/en/nao6/",
+          "note": "当前官方产品页链接到2026-06 datasheet；页面说明25DOF。"
+        }
+      },
+      "physical": {
+        "dimensions_m": {
+          "height": 0.574,
+          "depth": 0.311,
+          "width": 0.275,
+          "order_as_published": "HxDxW",
+          "source": [
+            "dimensions",
+            "datasheet_2026"
+          ]
+        },
+        "mass_kg": {
+          "value": 5.48,
+          "source": "datasheet_2026",
+          "page_1_based": 2,
+          "qualification": "manufacturer full robot weight; battery/accessory inclusion not explicitly broken down; as-built weigh-in still needed for precise dynamics"
+        },
+        "independent_dof": {
+          "value": 25,
+          "source": "manufacturer_product",
+          "partition": {
+            "head": 2,
+            "each_arm_excluding_hand": 5,
+            "pelvis_shared": 1,
+            "each_leg_excluding_shared_pelvis": 5,
+            "each_hand": 1
+          }
+        },
+        "listed_joint_names": 26
+      },
+      "coordinate_convention": {
+        "x_positive": "front",
+        "y_positive": "robot right to left",
+        "z_positive": "up",
+        "zero_pose": "straight arms pointing forward",
+        "torso_from_head_yaw_mm": [
+          0,
+          0,
+          -126.5
+        ],
+        "source": [
+          "links",
+          "body_frames"
+        ],
+        "joint_sign_convention": "Proximal part is fixed, distal part rotates. At zero pose all joint frames share orientation; nominal roll X / pitch Y / yaw Z, but actual joint axes follow named-joint tables."
+      },
+      "joint_limits": [
+        {
+          "name": "HeadYaw",
+          "motion_as_published": "Head joint twist (Z)",
+          "source": "joints",
+          "source_table_index_0_based": 0,
+          "range_type": "angular",
+          "range_deg": [
+            -119.5,
+            119.5
+          ],
+          "range_rad": [
+            -2.0857,
+            2.0857
+          ]
+        },
+        {
+          "name": "HeadPitch",
+          "motion_as_published": "Head joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 0,
+          "range_type": "angular",
+          "range_deg": [
+            -38.5,
+            29.5
+          ],
+          "range_rad": [
+            -0.672,
+            0.5149
+          ]
+        },
+        {
+          "name": "LShoulderPitch",
+          "motion_as_published": "Left shoulder joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "angular",
+          "range_deg": [
+            -119.5,
+            119.5
+          ],
+          "range_rad": [
+            -2.0857,
+            2.0857
+          ]
+        },
+        {
+          "name": "LShoulderRoll",
+          "motion_as_published": "Left shoulder joint right and left (Z)",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "angular",
+          "range_deg": [
+            -18.0,
+            76.0
+          ],
+          "range_rad": [
+            -0.3142,
+            1.3265
+          ]
+        },
+        {
+          "name": "LElbowYaw",
+          "motion_as_published": "Left shoulder joint twist (X)",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "angular",
+          "range_deg": [
+            -119.5,
+            119.5
+          ],
+          "range_rad": [
+            -2.0857,
+            2.0857
+          ]
+        },
+        {
+          "name": "LElbowRoll",
+          "motion_as_published": "Left elbow joint (Z)",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "angular",
+          "range_deg": [
+            -88.5,
+            -2.0
+          ],
+          "range_rad": [
+            -1.5446,
+            -0.0349
+          ]
+        },
+        {
+          "name": "LWristYaw",
+          "motion_as_published": "Left wrist joint (X)",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "angular",
+          "range_deg": [
+            -104.5,
+            104.5
+          ],
+          "range_rad": [
+            -1.8238,
+            1.8238
+          ]
+        },
+        {
+          "name": "LHand",
+          "motion_as_published": "Left hand",
+          "source": "joints",
+          "source_table_index_0_based": 2,
+          "range_type": "open_close",
+          "range_deg": null,
+          "range_rad": null
+        },
+        {
+          "name": "RShoulderPitch",
+          "motion_as_published": "Right shoulder joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "angular",
+          "range_deg": [
+            -119.5,
+            119.5
+          ],
+          "range_rad": [
+            -2.0857,
+            2.0857
+          ]
+        },
+        {
+          "name": "RShoulderRoll",
+          "motion_as_published": "Right shoulder joint right and left (Z)",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "angular",
+          "range_deg": [
+            -76.0,
+            18.0
+          ],
+          "range_rad": [
+            -1.3265,
+            0.3142
+          ]
+        },
+        {
+          "name": "RElbowYaw",
+          "motion_as_published": "Right shoulder joint twist (X)",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "angular",
+          "range_deg": [
+            -119.5,
+            119.5
+          ],
+          "range_rad": [
+            -2.0857,
+            2.0857
+          ]
+        },
+        {
+          "name": "RElbowRoll",
+          "motion_as_published": "Right elbow joint (Z)",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "angular",
+          "range_deg": [
+            2.0,
+            88.5
+          ],
+          "range_rad": [
+            0.0349,
+            1.5446
+          ]
+        },
+        {
+          "name": "RWristYaw",
+          "motion_as_published": "Right wrist joint (X)",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "angular",
+          "range_deg": [
+            -104.5,
+            104.5
+          ],
+          "range_rad": [
+            -1.8238,
+            1.8238
+          ]
+        },
+        {
+          "name": "RHand",
+          "motion_as_published": "Right hand",
+          "source": "joints",
+          "source_table_index_0_based": 3,
+          "range_type": "open_close",
+          "range_deg": null,
+          "range_rad": null
+        },
+        {
+          "name": "LHipYawPitch",
+          "motion_as_published": "Left hip joint twist (Y-Z 45°)",
+          "source": "joints",
+          "source_table_index_0_based": 4,
+          "range_type": "angular",
+          "range_deg": [
+            -65.62,
+            42.44
+          ],
+          "range_rad": [
+            -1.145303,
+            0.74081
+          ],
+          "shared_actuator": "LHipYawPitch and RHipYawPitch are physically one motor; simultaneous conflicting orders give LHipYawPitch priority."
+        },
+        {
+          "name": "RHipYawPitch",
+          "motion_as_published": "Right hip joint twist (Y-Z 45°)",
+          "source": "joints",
+          "source_table_index_0_based": 4,
+          "range_type": "angular",
+          "range_deg": [
+            -65.62,
+            42.44
+          ],
+          "range_rad": [
+            -1.145303,
+            0.74081
+          ],
+          "shared_actuator": "LHipYawPitch and RHipYawPitch are physically one motor; simultaneous conflicting orders give LHipYawPitch priority."
+        },
+        {
+          "name": "LHipRoll",
+          "motion_as_published": "Left hip joint right and left (X)",
+          "source": "joints",
+          "source_table_index_0_based": 5,
+          "range_type": "angular",
+          "range_deg": [
+            -21.74,
+            45.29
+          ],
+          "range_rad": [
+            -0.379472,
+            0.790477
+          ]
+        },
+        {
+          "name": "LHipPitch",
+          "motion_as_published": "Left hip joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 5,
+          "range_type": "angular",
+          "range_deg": [
+            -88.0,
+            27.73
+          ],
+          "range_rad": [
+            -1.535889,
+            0.48409
+          ]
+        },
+        {
+          "name": "LKneePitch",
+          "motion_as_published": "Left knee joint (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 5,
+          "range_type": "angular",
+          "range_deg": [
+            -5.29,
+            121.04
+          ],
+          "range_rad": [
+            -0.092346,
+            2.112528
+          ]
+        },
+        {
+          "name": "LAnklePitch",
+          "motion_as_published": "Left ankle joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 5,
+          "range_type": "angular",
+          "range_deg": [
+            -68.15,
+            52.86
+          ],
+          "range_rad": [
+            -1.189516,
+            0.922747
+          ]
+        },
+        {
+          "name": "LAnkleRoll",
+          "motion_as_published": "Left ankle joint right and left (X)",
+          "source": "joints",
+          "source_table_index_0_based": 5,
+          "range_type": "angular",
+          "range_deg": [
+            -22.79,
+            44.06
+          ],
+          "range_rad": [
+            -0.39788,
+            0.769001
+          ]
+        },
+        {
+          "name": "RHipRoll",
+          "motion_as_published": "Right hip joint right and left (X)",
+          "source": "joints",
+          "source_table_index_0_based": 7,
+          "range_type": "angular",
+          "range_deg": [
+            -45.29,
+            21.74
+          ],
+          "range_rad": [
+            -0.790477,
+            0.379472
+          ]
+        },
+        {
+          "name": "RHipPitch",
+          "motion_as_published": "Right hip joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 7,
+          "range_type": "angular",
+          "range_deg": [
+            -88.0,
+            27.73
+          ],
+          "range_rad": [
+            -1.535889,
+            0.48409
+          ]
+        },
+        {
+          "name": "RKneePitch",
+          "motion_as_published": "Right knee joint (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 7,
+          "range_type": "angular",
+          "range_deg": [
+            -5.9,
+            121.47
+          ],
+          "range_rad": [
+            -0.103083,
+            2.120198
+          ]
+        },
+        {
+          "name": "RAnklePitch",
+          "motion_as_published": "Right ankle joint front and back (Y)",
+          "source": "joints",
+          "source_table_index_0_based": 7,
+          "range_type": "angular",
+          "range_deg": [
+            -67.97,
+            53.4
+          ],
+          "range_rad": [
+            -1.186448,
+            0.932056
+          ]
+        },
+        {
+          "name": "RAnkleRoll",
+          "motion_as_published": "Right ankle joint right and left (X)",
+          "source": "joints",
+          "source_table_index_0_based": 7,
+          "range_type": "angular",
+          "range_deg": [
+            -44.06,
+            22.8
+          ],
+          "range_rad": [
+            -0.768992,
+            0.397935
+          ]
+        }
+      ],
+      "coupled_anti_collision_limits": [
+        {
+          "independent_joint": "HeadYaw",
+          "dependent_joint": "HeadPitch",
+          "points": [
+            {
+              "independent_deg": -119.52,
+              "dependent_min_deg": -25.73,
+              "dependent_max_deg": 18.91,
+              "independent_rad": -2.086017,
+              "dependent_min_rad": -0.449073,
+              "dependent_max_rad": 0.330041
+            },
+            {
+              "independent_deg": -87.49,
+              "dependent_min_deg": -18.91,
+              "dependent_max_deg": 11.46,
+              "independent_rad": -1.526988,
+              "dependent_min_rad": -0.330041,
+              "dependent_max_rad": 0.200015
+            },
+            {
+              "independent_deg": -62.45,
+              "dependent_min_deg": -24.64,
+              "dependent_max_deg": 17.19,
+              "independent_rad": -1.089958,
+              "dependent_min_rad": -0.430049,
+              "dependent_max_rad": 0.300022
+            },
+            {
+              "independent_deg": -51.74,
+              "dependent_min_deg": -27.5,
+              "dependent_max_deg": 18.91,
+              "independent_rad": -0.903033,
+              "dependent_min_rad": -0.479965,
+              "dependent_max_rad": 0.330041
+            },
+            {
+              "independent_deg": -43.32,
+              "dependent_min_deg": -31.4,
+              "dependent_max_deg": 21.2,
+              "independent_rad": -0.756077,
+              "dependent_min_rad": -0.548033,
+              "dependent_max_rad": 0.37001
+            },
+            {
+              "independent_deg": -27.85,
+              "dependent_min_deg": -38.5,
+              "dependent_max_deg": 24.18,
+              "independent_rad": -0.486074,
+              "dependent_min_rad": -0.671951,
+              "dependent_max_rad": 0.422021
+            },
+            {
+              "independent_deg": 0.0,
+              "dependent_min_deg": -38.5,
+              "dependent_max_deg": 29.51,
+              "independent_rad": 0.0,
+              "dependent_min_rad": -0.671951,
+              "dependent_max_rad": 0.515047
+            },
+            {
+              "independent_deg": 27.85,
+              "dependent_min_deg": -38.5,
+              "dependent_max_deg": 24.18,
+              "independent_rad": 0.486074,
+              "dependent_min_rad": -0.671951,
+              "dependent_max_rad": 0.422021
+            },
+            {
+              "independent_deg": 43.32,
+              "dependent_min_deg": -31.4,
+              "dependent_max_deg": 21.2,
+              "independent_rad": 0.756077,
+              "dependent_min_rad": -0.548033,
+              "dependent_max_rad": 0.37001
+            },
+            {
+              "independent_deg": 51.74,
+              "dependent_min_deg": -27.5,
+              "dependent_max_deg": 18.91,
+              "independent_rad": 0.903033,
+              "dependent_min_rad": -0.479965,
+              "dependent_max_rad": 0.330041
+            },
+            {
+              "independent_deg": 62.45,
+              "dependent_min_deg": -24.64,
+              "dependent_max_deg": 17.19,
+              "independent_rad": 1.089958,
+              "dependent_min_rad": -0.430049,
+              "dependent_max_rad": 0.300022
+            },
+            {
+              "independent_deg": 87.49,
+              "dependent_min_deg": -18.91,
+              "dependent_max_deg": 11.46,
+              "independent_rad": 1.526988,
+              "dependent_min_rad": -0.330041,
+              "dependent_max_rad": 0.200015
+            },
+            {
+              "independent_deg": 119.52,
+              "dependent_min_deg": -25.73,
+              "dependent_max_deg": 18.91,
+              "independent_rad": 2.086017,
+              "dependent_min_rad": -0.449073,
+              "dependent_max_rad": 0.330041
+            }
+          ],
+          "source": "joints",
+          "note": "Published anti-collision knots, retained verbatim. Static limits must also hold. Source does not specify interpolation policy."
+        },
+        {
+          "independent_joint": "LAnklePitch",
+          "dependent_joint": "LAnkleRoll",
+          "points": [
+            {
+              "independent_deg": -68.15,
+              "dependent_min_deg": -2.86,
+              "dependent_max_deg": 4.3,
+              "independent_rad": -1.189442,
+              "dependent_min_rad": -0.049916,
+              "dependent_max_rad": 0.075049
+            },
+            {
+              "independent_deg": -48.13,
+              "dependent_min_deg": -10.31,
+              "dependent_max_deg": 9.74,
+              "independent_rad": -0.840027,
+              "dependent_min_rad": -0.179943,
+              "dependent_max_rad": 0.169995
+            },
+            {
+              "independent_deg": -40.11,
+              "dependent_min_deg": -22.8,
+              "dependent_max_deg": 12.61,
+              "independent_rad": -0.700051,
+              "dependent_min_rad": -0.397935,
+              "dependent_max_rad": 0.220086
+            },
+            {
+              "independent_deg": -25.78,
+              "dependent_min_deg": -22.8,
+              "dependent_max_deg": 44.06,
+              "independent_rad": -0.449946,
+              "dependent_min_rad": -0.397935,
+              "dependent_max_rad": 0.768992
+            },
+            {
+              "independent_deg": 5.73,
+              "dependent_min_deg": -22.8,
+              "dependent_max_deg": 44.06,
+              "independent_rad": 0.100007,
+              "dependent_min_rad": -0.397935,
+              "dependent_max_rad": 0.768992
+            },
+            {
+              "independent_deg": 20.05,
+              "dependent_min_deg": -22.8,
+              "dependent_max_deg": 31.54,
+              "independent_rad": 0.349938,
+              "dependent_min_rad": -0.397935,
+              "dependent_max_rad": 0.550477
+            },
+            {
+              "independent_deg": 52.87,
+              "dependent_min_deg": 0.0,
+              "dependent_max_deg": 2.86,
+              "independent_rad": 0.922755,
+              "dependent_min_rad": -0.0,
+              "dependent_max_rad": 0.049916
+            }
+          ],
+          "source": "joints",
+          "note": "Published anti-collision knots, retained verbatim. Static limits must also hold. Source does not specify interpolation policy."
+        },
+        {
+          "independent_joint": "RAnklePitch",
+          "dependent_joint": "RAnkleRoll",
+          "points": [
+            {
+              "independent_deg": -68.15,
+              "dependent_min_deg": -4.3,
+              "dependent_max_deg": 2.86,
+              "independent_rad": -1.189442,
+              "dependent_min_rad": -0.075049,
+              "dependent_max_rad": 0.049916
+            },
+            {
+              "independent_deg": -48.13,
+              "dependent_min_deg": -9.74,
+              "dependent_max_deg": 10.31,
+              "independent_rad": -0.840027,
+              "dependent_min_rad": -0.169995,
+              "dependent_max_rad": 0.179943
+            },
+            {
+              "independent_deg": -40.11,
+              "dependent_min_deg": -12.61,
+              "dependent_max_deg": 22.8,
+              "independent_rad": -0.700051,
+              "dependent_min_rad": -0.220086,
+              "dependent_max_rad": 0.397935
+            },
+            {
+              "independent_deg": -25.78,
+              "dependent_min_deg": -44.06,
+              "dependent_max_deg": 22.8,
+              "independent_rad": -0.449946,
+              "dependent_min_rad": -0.768992,
+              "dependent_max_rad": 0.397935
+            },
+            {
+              "independent_deg": 5.73,
+              "dependent_min_deg": -44.06,
+              "dependent_max_deg": 22.8,
+              "independent_rad": 0.100007,
+              "dependent_min_rad": -0.768992,
+              "dependent_max_rad": 0.397935
+            },
+            {
+              "independent_deg": 20.05,
+              "dependent_min_deg": -31.54,
+              "dependent_max_deg": 22.8,
+              "independent_rad": 0.349938,
+              "dependent_min_rad": -0.550477,
+              "dependent_max_rad": 0.397935
+            },
+            {
+              "independent_deg": 52.87,
+              "dependent_min_deg": -2.86,
+              "dependent_max_deg": 0.0,
+              "independent_rad": 0.922755,
+              "dependent_min_rad": -0.049916,
+              "dependent_max_rad": 0.0
+            }
+          ],
+          "source": "joints",
+          "note": "Published anti-collision knots, retained verbatim. Static limits must also hold. Source does not specify interpolation policy."
+        }
+      ],
+      "main_link_lengths_mm": {
+        "values": {
+          "NeckOffsetZ": 126.5,
+          "ShoulderOffsetY": 98.0,
+          "ElbowOffsetY": 15.0,
+          "UpperArmLength": 105.0,
+          "LowerArmLength": 55.95,
+          "ShoulderOffsetZ": 100.0,
+          "HandOffsetX": 57.75,
+          "HandOffsetZ": 12.31,
+          "HipOffsetZ": 85.0,
+          "HipOffsetY": 50.0,
+          "ThighLength": 100.0,
+          "TibiaLength": 102.9,
+          "FootHeight": 45.19
+        },
+        "source": "links"
+      },
+      "published_joint_origin_offsets": [
+        {
+          "from": "Torso",
+          "to": "HeadYaw",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            126.5
+          ],
+          "source": "links"
+        },
+        {
+          "from": "HeadYaw",
+          "to": "HeadPitch",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "Torso",
+          "to": "LShoulderPitch",
+          "xyz_mm": [
+            0.0,
+            98.0,
+            100.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LShoulderPitch",
+          "to": "LShoulderRoll",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LShoulderRoll",
+          "to": "LElbowYaw",
+          "xyz_mm": [
+            105.0,
+            15.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LElbowYaw",
+          "to": "LElbowRoll",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LElbowRoll",
+          "to": "LWristYaw",
+          "xyz_mm": [
+            55.95,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LWristYaw",
+          "to": "LFinger11",
+          "xyz_mm": [
+            69.07,
+            11.57,
+            -3.04
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LFinger11",
+          "to": "LFinger12",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LFinger12",
+          "to": "LFinger13",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LWristYaw",
+          "to": "LFinger21",
+          "xyz_mm": [
+            69.07,
+            -11.57,
+            -3.04
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LFinger21",
+          "to": "LFinger22",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LFinger22",
+          "to": "LFinger23",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LWristYaw",
+          "to": "LThumb1",
+          "xyz_mm": [
+            48.95,
+            0.0,
+            -26.38
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LThumb1",
+          "to": "LThumb2",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RWristYaw",
+          "to": "RFinger11",
+          "xyz_mm": [
+            69.07,
+            11.57,
+            -3.04
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RFinger11",
+          "to": "RFinger12",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RFinger12",
+          "to": "RFinger13",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RWristYaw",
+          "to": "RFinger21",
+          "xyz_mm": [
+            69.07,
+            -11.57,
+            -3.04
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RFinger21",
+          "to": "RFinger22",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RFinger22",
+          "to": "RFinger23",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RWristYaw",
+          "to": "RThumb1",
+          "xyz_mm": [
+            48.95,
+            0.0,
+            -26.38
+          ],
+          "source": "links"
+        },
+        {
+          "from": "RThumb1",
+          "to": "RThumb2",
+          "xyz_mm": [
+            14.36,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "Torso",
+          "to": "LHipYawPitch",
+          "xyz_mm": [
+            0.0,
+            50.0,
+            -85.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LHipYawPitch",
+          "to": "LHipRoll",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LHipRoll",
+          "to": "LHipPitch",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LHipPitch",
+          "to": "LKneePitch",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            -100.0
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LKneePitch",
+          "to": "LAnklePitch",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            -102.9
+          ],
+          "source": "links"
+        },
+        {
+          "from": "LAnklePitch",
+          "to": "LAnkleRoll",
+          "xyz_mm": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "links"
+        }
+      ],
+      "finger_rotations_as_published": {
+        "LFinger11": "RotX(10.0)",
+        "LFinger21": "RotX(-10.0)",
+        "LThumb1": "RotX(180.0)*RotY(-60.0)",
+        "RFinger11": "RotX(10.0)",
+        "RFinger21": "RotX(-10.0)",
+        "RThumb1": "RotX(180.0)*RotY(-60.0)",
+        "angle_between_two_phalanges_deg": 57.29,
+        "source": "links"
+      },
+      "body_frame_origins": [
+        {
+          "body": "Torso",
+          "frame_origin": "Torso",
+          "source": "body_frames"
+        },
+        {
+          "body": "Neck",
+          "frame_origin": "HeadYaw",
+          "source": "body_frames"
+        },
+        {
+          "body": "Head",
+          "frame_origin": "HeadPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left  Shoulder",
+          "frame_origin": "LShoulderPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Biceps",
+          "frame_origin": "LShoulderRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left  Elbow",
+          "frame_origin": "LElbowYaw",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left ForeArm",
+          "frame_origin": "LElbowRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Hand",
+          "frame_origin": "LWristYaw",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Pelvis",
+          "frame_origin": "LHipYawPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Hip",
+          "frame_origin": "LHipRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Thigh",
+          "frame_origin": "LHipPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Tibia",
+          "frame_origin": "LKneePitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Ankle",
+          "frame_origin": "LAnklePitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Left Foot",
+          "frame_origin": "LAnkleRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Shoulder",
+          "frame_origin": "RShoulderPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Biceps",
+          "frame_origin": "RShoulderRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Elbow",
+          "frame_origin": "RElbowYaw",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right ForeArm",
+          "frame_origin": "RElbowRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Hand",
+          "frame_origin": "RWristYaw",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Pelvis",
+          "frame_origin": "RHipYawPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Hip",
+          "frame_origin": "RHipRoll",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Thigh",
+          "frame_origin": "RHipPitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Tibia",
+          "frame_origin": "RKneePitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Ankle",
+          "frame_origin": "RAnklePitch",
+          "source": "body_frames"
+        },
+        {
+          "body": "Right Foot",
+          "frame_origin": "RAnkleRoll",
+          "source": "body_frames"
+        }
+      ],
+      "rigid_body_mass_com_inertia": {
+        "link_masses_kg": null,
+        "link_com_m": null,
+        "link_inertia_kg_m2": null,
+        "status": "not_obtained_from_verified_official_v6_pages",
+        "reason": "V6 Body frames page provides coordinate-frame drawings, no numeric mass/COM/inertia tables. Official kinematics page displays NAO (V60) as code without a download href; no retrievable official V6 URDF was obtained.",
+        "urdf_entry_source": "kinematics",
+        "do_not_substitute": "V5/V4/old NAO generic URDF values are not verified V6 values."
+      },
+      "cameras": {
+        "count": 2,
+        "names_and_indexes": [
+          {
+            "name": "CameraTop",
+            "index": 0
+          },
+          {
+            "name": "CameraBottom",
+            "index": 1
+          }
+        ],
+        "sensor": "OV5640",
+        "sensor_active_pixels": [
+          2592,
+          1944
+        ],
+        "advertised_megapixels": 5,
+        "field_of_view_deg": {
+          "horizontal": 56.3,
+          "vertical": 43.7,
+          "diagonal": 67.4,
+          "source": [
+            "video",
+            "datasheet_2026"
+          ],
+          "qualification": "Full angles for each camera, not robot 360-degree visibility or a range specification; crop/output-mode/calibration effects require verification."
+        },
+        "shutter": "rolling",
+        "focus": {
+          "type": "autofocus capable",
+          "focus_range_m": [
+            0.1,
+            null
+          ],
+          "infinity_is_null": true,
+          "source": "datasheet_2026"
+        },
+        "pose": {
+          "camera_top_xyz_m": null,
+          "camera_top_rpy_rad": null,
+          "camera_bottom_xyz_m": null,
+          "camera_bottom_rpy_rad": null,
+          "status": "formal_parent_frame_transform_not_obtained",
+          "raw_2026_diagram_dimension_labels_mm": [
+            58.71,
+            63.64,
+            50.71,
+            17.74
+          ],
+          "qualification": "Diagram axes/reference poses are not sufficiently specified and angular labels conflict with V6 table; labels retained as diagram readings only, not accepted camera extrinsics."
+        },
+        "framerates_2026_datasheet": [
+          {
+            "resolution_px": [
+              320,
+              240
+            ],
+            "top_fps": [
+              15,
+              30
+            ],
+            "bottom_fps": [
+              15,
+              30
+            ]
+          },
+          {
+            "resolution_px": [
+              640,
+              480
+            ],
+            "top_fps": [
+              15,
+              30
+            ],
+            "bottom_fps": [
+              15,
+              30
+            ]
+          },
+          {
+            "resolution_px": [
+              1280,
+              960
+            ],
+            "top_fps": [
+              15,
+              30
+            ],
+            "bottom_fps": [
+              10,
+              15
+            ]
+          },
+          {
+            "resolution_px": [
+              1920,
+              1080
+            ],
+            "top_fps": [
+              15,
+              30
+            ],
+            "bottom_fps": null
+          },
+          {
+            "resolution_px": [
+              2560,
+              1920
+            ],
+            "top_fps": [
+              15
+            ],
+            "bottom_fps": null
+          }
+        ],
+        "framerate_conditions": "Manufacturer values depend on network, selected resolution and CPU use, measured with CPU fully dedicated to image gathering. None denotes a dash/not supported in that table, not zero FPS.",
+        "format_table_naoqi_2_8": [
+          {
+            "id": 4,
+            "name": "k16VGA",
+            "resolution_px": [
+              2560,
+              1920
+            ],
+            "fps_api_range": [
+              1,
+              15
+            ],
+            "cameras": "top only"
+          },
+          {
+            "id": 3,
+            "name": "k4VGA",
+            "resolution_px": [
+              1280,
+              960
+            ],
+            "fps_api_range": [
+              1,
+              30
+            ],
+            "cameras": "top and bottom"
+          },
+          {
+            "id": 2,
+            "name": "kVGA",
+            "resolution_px": [
+              640,
+              480
+            ],
+            "fps_api_range": [
+              1,
+              30
+            ],
+            "cameras": "top and bottom"
+          },
+          {
+            "id": 1,
+            "name": "kQVGA",
+            "resolution_px": [
+              320,
+              240
+            ],
+            "fps_api_range": [
+              1,
+              30
+            ],
+            "cameras": "top and bottom"
+          }
+        ],
+        "hardware_internal_framerate_note_2_8": "OV5640 internally runs at 15 or 30fps; 2560x1920 at 15fps only. Lower API requested FPS does not imply sensor internal FPS changes.",
+        "naoqi_2_8_intro_output_claim": {
+          "resolution_px": [
+            2560,
+            1920
+          ],
+          "fps": 1,
+          "status": "conflicts_with_same_page_supported_format_table"
+        },
+        "calibration_missing": [
+          "intrinsic_matrix_per_resolution",
+          "lens_distortion",
+          "per_camera_parent_frame_transform",
+          "extrinsic_pose_vs_head_joints",
+          "perception_latency",
+          "ball_detection_range_and_error",
+          "lighting_and_occlusion_performance"
+        ],
+        "source": [
+          "video",
+          "datasheet_2026"
+        ]
+      },
+      "motor_table_as_published": {
+        "rows": [
+          [
+            "",
+            "Motor Type 1",
+            "Motor Type 2",
+            "Motor Type 3",
+            "Motor Type 4",
+            "Motor Type 5"
+          ],
+          [
+            "Model",
+            "22NT Z13",
+            "17N",
+            "16GT",
+            "DCX 16S",
+            "22NT Z20"
+          ],
+          [
+            "No load speed",
+            "8 700 rpm ±10%",
+            "8 400 rpm ±12%",
+            "10 700 rpm ±10%",
+            "11 400 rpm ±10%",
+            "8 700 rpm ±10%"
+          ],
+          [
+            "Stall torque",
+            "65 mNm ±8%",
+            "9.4 mNm ±8%",
+            "14.3 mNm ±8%",
+            "22.4 mNm ±10%",
+            "65 mNm ±8%"
+          ],
+          [
+            "Nominal torque",
+            "17.8 mNm max",
+            "4.9 mNm max",
+            "6.2 mNm max",
+            "2.6 mNm max",
+            "17.8 mNm max"
+          ],
+          [
+            "",
+            "Speed Reduction Ratio A"
+          ],
+          [
+            "201.3",
+            "50.61",
+            "150.27",
+            "150.27",
+            "130.85"
+          ],
+          [
+            "HipYawPitch,\nHipRoll,\nAnkleRoll",
+            "WristYaw",
+            "HeadYaw,\nElbowYaw",
+            "ShoulderPitch",
+            "HipPitch,\nKneePitch,\nAnklePitch"
+          ],
+          [
+            "Speed Reduction Ratio B"
+          ],
+          [
+            "",
+            "36.24",
+            "173.22",
+            ""
+          ],
+          [
+            "",
+            "Hand",
+            "HeadPitch,\nShoulderRoll,\nElbowRoll",
+            ""
+          ]
+        ],
+        "source": "motors",
+        "qualification": "Rotor no-load speed and motor-shaft torque before gear transmission; not robot walking speed or guaranteed joint torque. Gear efficiency, joint load and thermal limits are not given here."
+      },
+      "conflicts_and_implementation_gates": [
+        {
+          "id": "C1",
+          "issue": "V6 2.8 camera intro says 2560x1920 1fps, same page supported-format table says API 1–15fps, hardware note 15fps; 2026 datasheet advertises top 15fps.",
+          "action": "Keep versioned values; benchmark selected resolution/CPU/network pipeline before choosing control update rate."
+        },
+        {
+          "id": "C2",
+          "issue": "2026 datasheet camera drawings show a 60.97-degree horizontal cone and 34.80-degree side cone, differing from V6 text 56.3H/43.7V.",
+          "action": "Do not reconstruct V6 calibrated camera model from these drawings; use text FOV as provisional manufacturer value and calibrate the actual robot."
+        },
+        {
+          "id": "C3",
+          "issue": "Right ankle simple range and anti-collision knot endpoints differ: simple pitch -67.97..53.40 degrees, knots -68.15..52.87; left endpoints also differ by rounding.",
+          "action": "Preserve both constraints; use their intersection pending actual getLimits/calibration, never expand a static limit to fit a knot."
+        },
+        {
+          "id": "C4",
+          "issue": "Exact V6 link mass/COM/inertia and formal camera poses were not obtained from verified official sources.",
+          "action": "Full multibody dynamics requires an official as-built model or measured identification; total mass alone is insufficient."
+        },
+        {
+          "id": "C5",
+          "issue": "Two pelvis joint names share one physical motor.",
+          "action": "Do not model them as independent actuators."
+        },
+        {
+          "id": "C6",
+          "issue": "The robot outer bounding box and camera focus range are not collision body geometry or target detection range.",
+          "action": "Keep separate parameters; identify foot/limb collision geometry and detection range independently."
+        }
+      ]
+    },
+    "nao6_motion": {
+      "research_date": "2026-10-28",
+      "scope": "Official NAOqi2.8.7.4 NAO locomotion and explicit NAO V6 sensor pages; external supplement, not course requirements",
+      "applicability": "Official documentation index identifies NAOqi2.8 as NAO V6; verify actual robot patch/configuration and ground; no legacy NAO/Pepper parameters substituted",
+      "sources": {
+        "official_index": {
+          "url": "https://doc.aldebaran.com/",
+          "applies_to": "Entry identifies NAOqi2.8 as NAO V6"
+        },
+        "walk": {
+          "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-walk.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-walk.html",
+          "sha256": "235fd2346ab3a1b3378a0a61fc2438101a4f44aad2195e9674fff211b0ff9a2f"
+        },
+        "walk_api": {
+          "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-walk-api.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-walk-api.html",
+          "sha256": "6f7f904ae76e36b893692bf4f4da67724958a50bc046753d3c6c79386ea5e381"
+        },
+        "motion": {
+          "url": "https://doc.aldebaran.com/2-8/naoqi/motion/almotion.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/almotion.html",
+          "sha256": "8cf06f9f1759fd1daec39810ddd63241d06026630bcd19096a2a48415d8116c0"
+        },
+        "joint_api": {
+          "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-joint-api.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/control-joint-api.html",
+          "sha256": "ea138df10e609af93bd5fff7e12cf51f8f0ba8d25fc57ce883803a81d8f7aae5"
+        },
+        "limits": {
+          "url": "https://doc.aldebaran.com/2-8/naoqi/motion/tools-general-api.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/tools-general-api.html",
+          "sha256": "1f000b0f6abf2e1f5caa062d419347cc49a31b0e0ef11b1c17910c173c2ad9f8"
+        },
+        "sonar": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/sonar_naov6.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/sonar_naov6.html",
+          "sha256": "d428b48e7e1562e2842356fcf88785b8151710ccde5cae8f3a5773ac293901a4"
+        },
+        "inertial": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/inertial_naov6.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/inertial_naov6.html",
+          "sha256": "3ef5835a8c930f48993d929d9106b24f7dbd751d1284f736f35a7bd4ccb79a3a"
+        },
+        "fsr": {
+          "url": "https://doc.aldebaran.com/2-8/family/nao_technical/fsr_naov6.html",
+          "local_research_copy": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/naoqi_2_8_7_4/fsr_naov6.html",
+          "sha256": "1bbdee0d0d0ec7a1865b240c2693477b7a5414de4ec5e70b214a40ddf196d42f"
+        }
+      },
+      "gait_parameters": [
+        {
+          "name": "MaxStepX",
+          "default": 0.04,
+          "config_min": 0.001,
+          "config_max": 0.08,
+          "unit": "m",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MinStepX",
+          "default": -0.04,
+          "config_min": null,
+          "config_max": null,
+          "unit": "m",
+          "user_settable": false,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MaxStepY",
+          "default": 0.14,
+          "config_min": 0.101,
+          "config_max": 0.16,
+          "unit": "m",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MaxStepTheta",
+          "default": 0.349,
+          "config_min": 0.001,
+          "config_max": 0.524,
+          "unit": "rad",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MaxStepFrequency",
+          "default": 1,
+          "config_min": 0,
+          "config_max": 1,
+          "unit": "unitless",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MinStepPeriod",
+          "default": 0.42,
+          "config_min": null,
+          "config_max": null,
+          "unit": "s",
+          "user_settable": false,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MaxStepPeriod",
+          "default": 0.6,
+          "config_min": null,
+          "config_max": null,
+          "unit": "s",
+          "user_settable": false,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "StepHeight",
+          "default": 0.02,
+          "config_min": 0.005,
+          "config_max": 0.035,
+          "unit": "m",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "TorsoWx",
+          "default": 0,
+          "config_min": -0.122,
+          "config_max": 0.122,
+          "unit": "rad",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "TorsoWy",
+          "default": 0,
+          "config_min": -0.122,
+          "config_max": 0.122,
+          "unit": "rad",
+          "user_settable": true,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "FootSeparation",
+          "default": 0.1,
+          "config_min": null,
+          "config_max": null,
+          "unit": "m",
+          "user_settable": false,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        },
+        {
+          "name": "MinFootSeparation",
+          "default": 0.088,
+          "config_min": null,
+          "config_max": null,
+          "unit": "m",
+          "user_settable": false,
+          "source": "walk",
+          "status": "official_software_configuration_not_measured_speed"
+        }
+      ],
+      "gait_notes": {
+        "recommended_MaxStepX_for_stability_m": 0.06,
+        "MaxStepX_0p080_condition": "only flat hard floor",
+        "MaxStepY_semantics": "foot placement relative to other foot; contains foot separation; not body lateral travel",
+        "single_step_period_formula": "MaxStepPeriod + Frequency*MaxStepFrequency*(MinStepPeriod-MaxStepPeriod)",
+        "Frequency_is_not_Hz": true,
+        "zero_Frequency_is_not_stop": true,
+        "combined_axes_clipped": true,
+        "mapping_snippet_has_variable_name_typos": true
+      },
+      "motion_timing": {
+        "ALMotion_cycle_s": 0.02,
+        "ALMotion_frequency_Hz": 50,
+        "preview_horizon_s": 0.8,
+        "single_step_double_support_fraction": 0.3333333333333333,
+        "initial_double_support_s": 0.6,
+        "final_double_support_s": 0.6,
+        "moveInit_duration_s": null,
+        "zero_velocity_stop_example_s_approx": 0.8,
+        "fixed_total_stop_time_guarantee": null
+      },
+      "command_interfaces": {
+        "move": {
+          "units": [
+            "m/s",
+            "m/s",
+            "rad/s"
+          ],
+          "frame": "FRAME_ROBOT",
+          "blocking": false
+        },
+        "moveToward": {
+          "units": [
+            "unitless",
+            "unitless",
+            "unitless"
+          ],
+          "normalized_range": [
+            -1,
+            1
+          ],
+          "frame": "FRAME_ROBOT",
+          "blocking": false,
+          "one_does_not_mean_one_mps": true
+        },
+        "moveTo": {
+          "units": [
+            "m",
+            "m",
+            "rad"
+          ],
+          "frame": "relative FRAME_ROBOT",
+          "blocking": true
+        },
+        "getRobotVelocity": {
+          "units": [
+            "m/s",
+            "m/s",
+            "rad/s"
+          ],
+          "frame": "FRAME_ROBOT",
+          "is_external_ground_truth": false
+        },
+        "getMoveConfig": {
+          "selectors": [
+            "Default",
+            "Min",
+            "Max"
+          ],
+          "is_measured_velocity": false
+        },
+        "getLimits": {
+          "outputs": [
+            "minAngle_rad",
+            "maxAngle_rad",
+            "maxVelocity_rad_per_s",
+            "maxTorque_Nm"
+          ],
+          "is_measured_walking_performance": false
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "emitters": 2,
+          "receivers": 2,
+          "carrier_frequency_Hz": 40000,
+          "detection_range_m": [
+            0.2,
+            0.8
+          ],
+          "distance_resolution_m": [
+            0.01,
+            0.04
+          ],
+          "effective_cone_deg": 60,
+          "below_range": "presence only, no distance information",
+          "above_range": "estimate",
+          "update_rate_Hz": null,
+          "source": "sonar"
+        },
+        "inertial": {
+          "gyro_axes": 3,
+          "gyro_angular_speed_deg_per_s_approx": 500,
+          "accelerometer_axes": 3,
+          "acceleration_g_approx": 2,
+          "gyro_position_in_Torso_m": [
+            -0.008,
+            0.006,
+            0.029
+          ],
+          "accelerometer_position_in_Torso_m": [
+            -0.008,
+            0.00606,
+            0.027
+          ],
+          "update_rate_Hz": null,
+          "noise_statistics": null,
+          "source": "inertial"
+        },
+        "fsr": {
+          "per_foot_count": 4,
+          "total_count": 8,
+          "per_sensor_working_range_N": [
+            0,
+            25
+          ],
+          "positions": "see official URDF",
+          "update_rate_Hz": null,
+          "source": "fsr"
+        }
+      },
+      "performance_to_measure": {
+        "forward_speed_mps": null,
+        "backward_speed_mps": null,
+        "lateral_speed_mps": null,
+        "stable_yaw_rate_radps": null,
+        "acceleration_mps2": null,
+        "deceleration_mps2": null,
+        "stop_distance_m": null,
+        "motion_response_s": null,
+        "kick_launch_speed_mps": null,
+        "kick_range_m": null,
+        "kick_impulse_Ns": null,
+        "kick_direction_error_rad": null,
+        "kick_preparation_s": null,
+        "kick_recovery_s": null,
+        "note": "No official guarantee found in the checked API/gait/V6 sensor pages; do not fill with step-limit quotients or joint maximum speeds"
+      },
+      "report_path": "/home/fayne/Alpha/humanoid_football_robot/reports/research/nao6_motion.md",
+      "footstep_planner_collision_envelopes": {
+        "source": "walk",
+        "url": "https://doc.aldebaran.com/2-8/naoqi/motion/control-walk.html#clip-to-avoid-collision",
+        "status": "official_planner_example_not_calibrated_v6_contact_geometry",
+        "unit": "m",
+        "vertex_order": [
+          "front_left",
+          "front_right",
+          "rear_right",
+          "rear_left"
+        ],
+        "right_foot_vertices_xy": [
+          [
+            0.11,
+            0.038
+          ],
+          [
+            0.11,
+            -0.05
+          ],
+          [
+            -0.047,
+            -0.05
+          ],
+          [
+            -0.047,
+            0.038
+          ]
+        ],
+        "left_foot_vertices_xy": [
+          [
+            0.11,
+            0.05
+          ],
+          [
+            0.11,
+            -0.038
+          ],
+          [
+            -0.047,
+            -0.038
+          ],
+          [
+            -0.047,
+            0.05
+          ]
+        ],
+        "derived_axis_aligned_dimensions_xy_m": [
+          0.157,
+          0.088
+        ],
+        "coordinate_reference": "Not explicitly mapped to V6 URDF link frame in the cited code; requires confirmation",
+        "physical_contact_geometry_default": null,
+        "note": "For interpreting/reproducing ALMath avoidFootCollision planner clipping only; do not substitute for measured sole contact, friction or pressure geometry."
+      }
+    },
+    "robocup2025_geometry_sensing": {
+      "source": {
+        "title": "RoboCup Soccer Humanoid League Laws of the Game 2025",
+        "date": "2025-04-14",
+        "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+        "pdf_total_pages": 76,
+        "page_numbering": "PDF 1-based; printed page number agrees for cited pages",
+        "reviewed_pages": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "visual_check_pages": [
+          9,
+          14,
+          15
+        ],
+        "downloaded_pdf": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/RC-HL-2025-Rules.pdf"
+      },
+      "facts": [
+        {
+          "key": "field.length",
+          "value": {
+            "KidSize": 9,
+            "AdultSize": 14
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "约值"
+        },
+        {
+          "key": "field.width",
+          "value": {
+            "KidSize": 6,
+            "AdultSize": 9
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "约值"
+        },
+        {
+          "key": "field.surface.height",
+          "value": 0.03,
+          "unit": "m",
+          "pdf_pages": [
+            6
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "人工表面约高30mm；可采用人工表面，并非动力学草模型参数"
+        },
+        {
+          "key": "field.surface.color",
+          "value": "green",
+          "unit": null,
+          "pdf_pages": [
+            6
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.line_width",
+          "value": 0.05,
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "约值；边界线属于所围区域"
+        },
+        {
+          "key": "field.center_circle_radius",
+          "value": {
+            "KidSize": 0.75,
+            "AdultSize": 1.5
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.goal_depth",
+          "value": 0.6,
+          "unit": "m",
+          "pdf_pages": [
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "Table1对两个Size共用值"
+        },
+        {
+          "key": "field.goal_post_spacing",
+          "value": 2.6,
+          "unit": "m",
+          "pdf_pages": [
+            7,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "两门柱之间距离；两个Size共用值"
+        },
+        {
+          "key": "field.goal_clear_height",
+          "value": {
+            "KidSize": 1.2,
+            "AdultSize": 1.8
+          },
+          "unit": "m",
+          "pdf_pages": [
+            7,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "横梁下沿到地面"
+        },
+        {
+          "key": "field.goal_area_depth",
+          "value": 1,
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.goal_area_width",
+          "value": {
+            "KidSize": 3,
+            "AdultSize": 4
+          },
+          "unit": "m",
+          "pdf_pages": [
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.goal_area_side_offset_from_inside_post",
+          "value": {
+            "KidSize": 0.2,
+            "AdultSize": 0.7
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.penalty_area_depth",
+          "value": {
+            "KidSize": 2,
+            "AdultSize": 3
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.penalty_area_width_table",
+          "value": {
+            "KidSize": 5,
+            "AdultSize": 6
+          },
+          "unit": "m",
+          "pdf_pages": [
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "AdultSize与正文offset可能不一致，见issues"
+        },
+        {
+          "key": "field.penalty_area_side_offset_from_inside_post",
+          "value": {
+            "KidSize": 1.2,
+            "AdultSize": 0.7
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "AdultSize正文offset计算宽4m，和表6m不一致；KidSize一致"
+        },
+        {
+          "key": "field.penalty_mark_distance_from_goal_line_midpoint",
+          "value": {
+            "KidSize": 1.5,
+            "AdultSize": 2.1
+          },
+          "unit": "m",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "field.border_strip_min_width",
+          "value": 1,
+          "unit": "m",
+          "pdf_pages": [
+            9
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "最小值，不是规定必须恰好1m"
+        },
+        {
+          "key": "goal.posts_crossbar.section_width_and_depth_range",
+          "value": [
+            0.08,
+            0.12
+          ],
+          "unit": "m",
+          "pdf_pages": [
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "两柱与横梁宽/深相同；截面可方、矩形、圆、椭圆；不得危险"
+        },
+        {
+          "key": "goal.posts_crossbar.color",
+          "value": "white",
+          "unit": null,
+          "pdf_pages": [
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "goal.posts_crossbar.material",
+          "value": "wood_metal_or_other_approved",
+          "unit": null,
+          "pdf_pages": [
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "goal.net.color_forbidden",
+          "value": [
+            "green",
+            "white"
+          ],
+          "unit": null,
+          "pdf_pages": [
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "允许挂网但不得干扰守门员"
+        },
+        {
+          "key": "goal.anchored",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            7
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "environment.lighting",
+          "value": "artificial_or_natural_like",
+          "unit": null,
+          "pdf_pages": [
+            8
+          ],
+          "section": "Law 1",
+          "scope": "both_competitions",
+          "note_zh": "没有lux、色温或均匀性数值"
+        },
+        {
+          "key": "ball.shape",
+          "value": "sphere",
+          "unit": null,
+          "pdf_pages": [
+            10
+          ],
+          "section": "Law 2 / Qualities and measurements",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "ball.size",
+          "value": {
+            "KidSize": "FIFA size 1",
+            "AdultSize": "FIFA size 5"
+          },
+          "unit": null,
+          "pdf_pages": [
+            10
+          ],
+          "section": "Law 2 / Qualities and measurements",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "ball.material_characteristics",
+          "value": "leather_or_other_suitable_material_or_resembles_its_weight_form_motion_appearance",
+          "unit": null,
+          "pdf_pages": [
+            10
+          ],
+          "section": "Law 2 / Qualities and measurements",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "ball.mass",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "ball.circumference",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "ball.color",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "ball_ground.friction",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "foot_ground.friction",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "ball.restitution",
+          "value": null,
+          "unit": null,
+          "pdf_pages": [
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "section": "Laws 1–2",
+          "scope": "both_competitions",
+          "note_zh": "该规则未给数值/颜色；周长与颜色仍可采用课程p3明示规格；摩擦等需实测或有依据的仿真假设"
+        },
+        {
+          "key": "team.max_players",
+          "value": {
+            "KidSize": 4,
+            "AdultSize": 3
+          },
+          "unit": "robots",
+          "pdf_pages": [
+            11
+          ],
+          "section": "Law 3 / Number of Players",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "team.min_players_to_start",
+          "value": 1,
+          "unit": "robots",
+          "pdf_pages": [
+            11
+          ],
+          "section": "Law 3 / Number of Players",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "team.designated_goalkeeper_required",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            11
+          ],
+          "section": "Law 3 / Number of Players",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "team.goalkeeper_role_change",
+          "value": "notify_referee_or_GameController_before_change_and_request_during_stoppage",
+          "unit": null,
+          "pdf_pages": [
+            11
+          ],
+          "section": "Law 3 / Changing the goalkeeper",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.body_plan",
+          "value": {
+            "legs": 2,
+            "arms": 2,
+            "head": 1,
+            "trunk": 1
+          },
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.locomotion_allowed",
+          "value": [
+            "bipedal_walk",
+            "run",
+            "jump"
+          ],
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "both_competitions",
+          "note_zh": "必须能直立/步行；KidSize需倒地起身能力；动作应与人形运动学等价"
+        },
+        {
+          "key": "robot.height_range",
+          "value": {
+            "KidSize": [
+              0.4,
+              1.0
+            ],
+            "AdultSize": [
+              1.0,
+              2.0
+            ]
+          },
+          "unit": "m",
+          "pdf_pages": [
+            13,
+            14
+          ],
+          "section": "Law 4 / Robot Height",
+          "scope": "both_competitions",
+          "note_zh": "Htop=膝完全伸直的直立高度，头姿按规则定义"
+        },
+        {
+          "key": "robot.BMI_range",
+          "value": [
+            5,
+            30
+          ],
+          "unit": "kg/m^2",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Weight Restrictions",
+          "scope": "both_competitions",
+          "note_zh": "BMI=M/Htop^2；是允许区间，非NAO实际质量"
+        },
+        {
+          "key": "robot.foot_max_enclosing_rectangle_area_formula",
+          "value": "(2.2*HCOM)^2/32",
+          "unit": "m^2",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.foot_enclosing_rectangle_aspect_ratio_range",
+          "value": [
+            1.2,
+            3.5
+          ],
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.enclosing_cylinder_max_diameter_formula",
+          "value": "0.55*Htop",
+          "unit": "m",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.max_extension_formula",
+          "value": "1.5*Htop",
+          "unit": "m",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.leg_length_range_formula",
+          "value": [
+            "0.35*Htop",
+            "0.7*Htop"
+          ],
+          "unit": "m",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.head_height_range_formula",
+          "value": [
+            "0.1*Htop",
+            "0.3*Htop"
+          ],
+          "unit": "m",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "robot.arm_min_length_formula",
+          "value": "Htop-Hleg-Hhead",
+          "unit": "m",
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Size Restrictions",
+          "scope": "both_competitions",
+          "note_zh": "站立时臂端不可低于膝关节"
+        },
+        {
+          "key": "robot.handle_required",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "physical_KidSize_only"
+        },
+        {
+          "key": "robot.emergency_stop_required",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "physical_only"
+        },
+        {
+          "key": "robot.extra_start_stop_buttons_max",
+          "value": 2,
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "physical_only"
+        },
+        {
+          "key": "robot.virtual_model_feet_and_arms_marked",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            13
+          ],
+          "section": "Law 4 / The Design of the Robots",
+          "scope": "virtual_only"
+        },
+        {
+          "key": "sensors.active_external_allowed",
+          "value": false,
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "virtual_only",
+          "note_zh": "active指主动发射并测反射；不是场外装置这个词义"
+        },
+        {
+          "key": "sensors.active_external_exception",
+          "value": "one_human_like_loudspeaker",
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "physical_only",
+          "note_zh": "扬声器可在头/颈/躯干；其他发射光/声/电磁波并测反射的主动传感器不允许，包含声呐推论"
+        },
+        {
+          "key": "sensors.external_sensor_location",
+          "value": "head_above_neck_joints",
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "相机/麦克风不得在腿、臂、躯干"
+        },
+        {
+          "key": "sensors.microphones_max",
+          "value": 2,
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "sensors.cameras_max",
+          "value": 2,
+          "unit": null,
+          "pdf_pages": [
+            14
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "单目允许；两个相机需大重叠的立体视觉设置"
+        },
+        {
+          "key": "sensors.camera_union_max_angular_separation_strict",
+          "value": 180,
+          "unit": "deg",
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "原文先写limited to180，后精确定义任意两点夹角必须less than180；不能当作相机实际HFOV"
+        },
+        {
+          "key": "sensors.camera_pan_range",
+          "value": [
+            -90,
+            90
+          ],
+          "unit": "deg",
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "规则范围；不是NAO机械关节范围"
+        },
+        {
+          "key": "sensors.camera_tilt_range",
+          "value": [
+            -90,
+            90
+          ],
+          "unit": "deg",
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "相对水平线；规则范围，非NAO实际限位"
+        },
+        {
+          "key": "sensors.goal_posts_visible_at_center_max",
+          "value": 2,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "中点、任意俯仰、站立或行走姿态都不能看到超过2根门柱"
+        },
+        {
+          "key": "sensors.touch_force_temperature_location",
+          "value": "anywhere",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "sensors.internal_local_state",
+          "value": "allowed",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions",
+          "note_zh": "包括电压、电流、力、运动、加速度、角速度等，可放内部任何位置"
+        },
+        {
+          "key": "sensors.earth_magnetic_field_measurements_in_software_allowed",
+          "value": false,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Sensors",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "control.autonomy_required",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "control.forbidden",
+          "value": [
+            "external_power",
+            "teleoperation",
+            "remote_control",
+            "remote_brain"
+          ],
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "communication.network",
+          "value": "organizer_provided_wireless_supporting_referee_box",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "communication.bandwidth_cap_per_robot",
+          "value": 1000000,
+          "unit": "bit/s",
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions",
+          "note_zh": "按原文字面是每个机器人，不是每队总和；并未定义具体包率和统计窗口"
+        },
+        {
+          "key": "communication.robot_to_robot",
+          "value": "allowed_at_any_time_during_game",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "communication.external_computer_to_playing_robot_allowed",
+          "value": false,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "communication.runtime_monitoring_debug",
+          "value": "not_available",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "virtual_only"
+        },
+        {
+          "key": "communication.low_quality_network_robustness_required",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "physical_only",
+          "note_zh": "未指定延迟、丢包、掉线数值"
+        },
+        {
+          "key": "communication.external_monitor",
+          "value": "receive_only_robot_UDP_over_tethered_LAN",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "physical_only"
+        },
+        {
+          "key": "communication.externally_supplied_game_relevant_information_allowed",
+          "value": false,
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions",
+          "note_zh": "对场内、服务中、服10s处罚中的机器人，禁止以通信降低自主感知需求，例球/球门/同伴/对手位置；实体赛口头交流例外"
+        },
+        {
+          "key": "communication.GameController_protocol",
+          "value": "UDP_broadcast",
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "communication.GameController_fields",
+          "value": [
+            "elapsed_time",
+            "score",
+            "game_state_READY_SET_PLAYING_FINISHED",
+            "robot_penalized_state"
+          ],
+          "unit": null,
+          "pdf_pages": [
+            15
+          ],
+          "section": "Law 4 / Communication and Control",
+          "scope": "both_competitions",
+          "note_zh": "例举字段，非完整报文schema；官方GC是规则许可输入，不等于允许全局位置真值"
+        },
+        {
+          "key": "appearance.team_markers",
+          "value": [
+            "red",
+            "blue"
+          ],
+          "unit": null,
+          "pdf_pages": [
+            16
+          ],
+          "section": "Law 4 / Colours",
+          "scope": "both_competitions",
+          "note_zh": "前后各一个纯色矩形标记，或等效可见面积球衣；实体开场左红右蓝，虚拟赛随机分配"
+        },
+        {
+          "key": "appearance.marker_min_area_formula",
+          "value": "0.03*Htop^2",
+          "unit": "m^2",
+          "pdf_pages": [
+            16
+          ],
+          "section": "Law 4 / Colours",
+          "scope": "both_competitions"
+        },
+        {
+          "key": "appearance.robot_id_unique",
+          "value": true,
+          "unit": null,
+          "pdf_pages": [
+            16
+          ],
+          "section": "Law 4 / Colours",
+          "scope": "both_competitions",
+          "note_zh": "号码或名字；守门员需独特可辨识标记"
+        },
+        {
+          "key": "appearance.body_color",
+          "value": "mostly_black_darkgrey_RAL7011_or_darker_nonreflective",
+          "unit": null,
+          "pdf_pages": [
+            16
+          ],
+          "section": "Law 4 / Colours",
+          "scope": "both_competitions",
+          "note_zh": "也允许银/灰/白但脚必须黑；避开场地色和对手标记近似色"
+        }
+      ],
+      "issues": [
+        {
+          "id": "course_alignment",
+          "summary_zh": "KidSize几何、FIFA size1与课程一致；课程每队4台是明确项目设计，规则是最多4台。门宽2.6m一致，无冲突。课程1m缓冲带与规则最小1m不是数值冲突。"
+        },
+        {
+          "id": "sensing_profile_must_be_chosen",
+          "summary_zh": "课程展示NAO6已有声呐/多麦克风硬件不代表RoboCup允许使用；如严格采用Law4，应屏蔽不合规传感输入。NAO实际双相机是否满足大重叠立体设置需单独核对，不因数量为2就自动合规。"
+        },
+        {
+          "id": "head_range",
+          "summary_zh": "规则pan/tilt上限不同于NAO机械限位；仿真用二者交集，并核对相机安装外参。"
+        },
+        {
+          "id": "actual_vs_regulatory_FOV",
+          "summary_zh": "180度是所有相机视域并集约束，非单相机实际视场；不能填成NAO HFOV。"
+        },
+        {
+          "id": "course_vs_virtual_tournament",
+          "summary_zh": "课程构建虚拟比赛是开发阶段，不自动等价于官方Virtual Competition。实体专属/虚拟专属条款需由课程采用范围决定。"
+        },
+        {
+          "id": "no_mass_or_friction",
+          "summary_zh": "Laws1-2及全文未找到球质量或摩擦系数数值；Size1本身不足以唯一确定质量。规则也未给球颜色/周长；可继续用课程45cm和黑白或橙色。"
+        },
+        {
+          "id": "adult_penalty_width_internal_discrepancy",
+          "pdf_pages": [
+            6,
+            9
+          ],
+          "summary_zh": "AdultSize: p6正文罚球区每侧距柱内侧0.7m，若两柱间2.6m则宽4m；p9表给6m。KidSize对应1.2m与5m一致，不影响本课程KidSize建模。"
+        }
+      ]
+    },
+    "robocup2025_match_logic": {
+      "source": {
+        "id": "R2025",
+        "url": "https://humanoid.robocup.org/wp-content/uploads/RC-HL-2025-Rules.pdf",
+        "revision_date": "2025-04-14",
+        "pdf_pages": 76,
+        "sha256": "2b121471f2fa018964986f65a2d13ce30329f17a1dc1705c36d7c01ad43ec7bf",
+        "local_path": "/home/fayne/Alpha/humanoid_football_robot/reports/sources/RC-HL-2025-Rules.pdf"
+      },
+      "scope_zh": "KidSize普通足球比赛建模所需规则参考；未将virtual子条款自动用作课程仿真规定。技术挑战、Drop-In和赛事组织评分不作为此模型默认。",
+      "parameters": [
+        {
+          "id": "rules.match.period_count",
+          "value": 2,
+          "unit": "count",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.match.period_duration",
+          "value": 600,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.match.halftime_interval_max",
+          "value": 300,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.match.halftime_interval",
+          "value": 0,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.initial_software_startup_window",
+          "value": 120,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.later_spawn_wait_min",
+          "value": 15,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.final_logging_window",
+          "value": 120,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.match.clock_runs_in_ready_set",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            22
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.ready_time_range",
+          "value": [
+            15,
+            45
+          ],
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            47
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.ready_time",
+          "value": 45,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            47
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.set_to_play_time",
+          "value": 5,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            47
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.in_play_timeout",
+          "value": 10,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            23,
+            47
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.clear_ball_movement",
+          "value": 0.05,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            23,
+            33,
+            47,
+            48
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "达到此位移才视为明显移动；实体赛由裁判判断。"
+        },
+        {
+          "id": "rules.kickoff.all_robots_own_half",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            23,
+            47
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.opponents_outside_centre_circle",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            23,
+            47
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.kickoff.direct_goal_allowed",
+          "value": false,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            23
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "球须完全离开中圈，或先被另一球员触碰，再踢入球门。"
+        },
+        {
+          "id": "rules.kickoff.after_goal_awarded_to_conceding_team",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            23
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.match.change_ends_second_half",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            23
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.drop_ball.stall_window",
+          "value": 120,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            24
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.drop_ball.stall_movement_threshold",
+          "value": 0.05,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            24
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "过去2分钟移动不足5cm；具体轨迹窗口统计方法需实现决定。"
+        },
+        {
+          "id": "rules.out_of_play.whole_ball_crosses_line",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            25
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.goal.whole_ball_between_posts_below_bar",
+          "value": true,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            26
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.offside.enabled",
+          "value": false,
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            27
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.physical.continuous_push_duration_range",
+          "value": [
+            4,
+            5
+          ],
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "并非所有接触皆犯规；需结合动作、稳定性及原条款例外。"
+        },
+        {
+          "id": "rules.holding.field_player_time_limit",
+          "value": 5,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28,
+            29
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.holding.goalkeeper_on_ground_limit",
+          "value": 6,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28,
+            29
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.holding.goalkeeper_lifted_limit",
+          "value": 10,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28,
+            29,
+            30
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.holding.same_team_vicinity_kidsize",
+          "value": 0.375,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28,
+            29
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "严格小于0.375m；用于同队多机器人联合凸包持球判定。"
+        },
+        {
+          "id": "rules.foul.near_ball_radius_approx",
+          "value": 1,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            28,
+            29,
+            31
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "特定直接/间接任意球与移除处罚的处理条件；持球犯规例外，间接任意球p31仅Physical明确此范围。不是所有犯规的统一检测半径。"
+        },
+        {
+          "id": "rules.virtual.foul.pushing_time",
+          "value": 1,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.foul.pushing_period",
+          "value": 2,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.foul.vicinity_distance",
+          "value": 2,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.foul.distance_difference_threshold",
+          "value": 0.1,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.virtual.foul.speed_threshold",
+          "value": 0.2,
+          "unit": "m/s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "用于犯规判定，不是NAO6最大速度。"
+        },
+        {
+          "id": "rules.virtual.foul.direction_threshold",
+          "value": 30,
+          "unit": "deg",
+          "source_id": "R2025",
+          "pdf_pages": [
+            29
+          ],
+          "scope": "virtual",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.free_kick.opponent_distance_kidsize",
+          "value": 0.75,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            33,
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "对手位于己方球门线且两门柱之间有例外；对方罚球区内任意球另要求退出罚球区。"
+        },
+        {
+          "id": "rules.free_kick.in_play_timeout",
+          "value": 10,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            33,
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.free_kick.law13_positioning_allowance_max",
+          "value": 30,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            34
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "与p48通用中断流程的15s存在文本差异，未选择课程最终值。"
+        },
+        {
+          "id": "rules.interruption.positioning_allowance",
+          "value": 15,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "与p34 Law13的最多30s存在文本差异。"
+        },
+        {
+          "id": "rules.interruption.opponent_retreat_guaranteed_time",
+          "value": 15,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            34,
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "双方就绪且无非法站位时，原规则允许裁判提前执行。"
+        },
+        {
+          "id": "rules.interruption.stand_up_grace",
+          "value": 5,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            47
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.interruption.moved_objects_clearance_kidsize",
+          "value": 0.5,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            47
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.interruption.distance_measurement",
+          "value": "ground_projected_centres_of_mass",
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "p48此测量约定限定为球与对方球员之间；不自动推广至p47所有移动对象。"
+        },
+        {
+          "id": "rules.penalty.other_players_distance_from_mark_kidsize",
+          "value": 0.75,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            35
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "p35原文对象为主罚者以外的球员，距离从罚球点量；守门员须另满足门线和门柱间站位条款。"
+        },
+        {
+          "id": "rules.penalty_shootout.pretrial_wait",
+          "value": 15,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            48
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.penalty_shootout.trial_duration",
+          "value": 60,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            35
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "球仍运动时可延至停止；p35其他终止条件措辞需核对后再实现。"
+        },
+        {
+          "id": "rules.throw_in.hand_release_time_limit",
+          "value": 10,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            36
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.throw_in.replacement",
+          "value": "touchline_at_exit_position",
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            36
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.goal_kick.replacement",
+          "value": "touchline_intersection_with_centre_line_on_exit_side",
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            37
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "RoboCup此条与常规人类足球直觉不同，不是在小禁区任意放球。"
+        },
+        {
+          "id": "rules.corner.replacement",
+          "value": "corner_on_exit_side",
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            38
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.incapable.field_player_get_up_deadline",
+          "value": 20,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.incapable.goalkeeper_ball_near_radius",
+          "value": 0.5,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "球在球门区且距门将此半径内，需主动尝试处理。"
+        },
+        {
+          "id": "rules.incapable.goalkeeper_inactivity_deadline",
+          "value": 20,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.incapable.outside_turf_deadline",
+          "value": 20,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.removal.penalty_duration",
+          "value": 10,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49,
+            50
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.removal.slot_spacing_kidsize",
+          "value": 0.6,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.removal.slot_line_clearance_kidsize",
+          "value": 0.3,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            50
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.removal.slot_occupied_radius_kidsize",
+          "value": 0.3,
+          "unit": "m",
+          "source_id": "R2025",
+          "pdf_pages": [
+            50
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.substitution.max_per_game",
+          "value": 2,
+          "unit": "count",
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.goalkeeper_role_change",
+          "value": "referee_informed_during_stoppage",
+          "unit": null,
+          "source_id": "R2025",
+          "pdf_pages": [
+            49
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "不计作替补；课程允许的动态角色分配仍须与门将身份规则对应。"
+        },
+        {
+          "id": "rules.timeout.duration_max",
+          "value": 120,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            50
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.timeout.max_per_regular_period",
+          "value": 1,
+          "unit": "count",
+          "source_id": "R2025",
+          "pdf_pages": [
+            50
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.timeout.additional_for_extra_time_and_shootout",
+          "value": 1,
+          "unit": "count",
+          "source_id": "R2025",
+          "pdf_pages": [
+            50
+          ],
+          "scope": "physical",
+          "status": "official_rule_reference_not_course_activation"
+        },
+        {
+          "id": "rules.knockout.extra_period_count",
+          "value": 2,
+          "unit": "count",
+          "source_id": "R2025",
+          "pdf_pages": [
+            46
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "常规时间未分胜负时；Physical裁判可咨询队长后跳过加时。"
+        },
+        {
+          "id": "rules.knockout.extra_period_duration",
+          "value": 300,
+          "unit": "s",
+          "source_id": "R2025",
+          "pdf_pages": [
+            46
+          ],
+          "scope": "both",
+          "status": "official_rule_reference_not_course_activation",
+          "note_zh": "常规时间未分胜负时；Physical裁判可咨询队长后跳过加时。"
+        }
+      ],
+      "clarifications_required": [
+        {
+          "id": "law13_vs_general_interruption_time",
+          "pages": [
+            34,
+            48
+          ],
+          "issue_zh": "Law13允许主罚球员最多30s站位；通用中断流程写15s。需向导师确认课程采用的流程。"
+        },
+        {
+          "id": "goalkeeper_foul_exemption_region",
+          "pages": [
+            29,
+            30
+          ],
+          "issue_zh": "虚拟赛正文例外写own penalty area且正在追球；Figure4用ownGoalArea且未写追球条件。不可自动视为等价。"
+        },
+        {
+          "id": "penalty_trial_termination_wording",
+          "pages": [
+            35
+          ],
+          "issue_zh": "除60s和出界外，goal area相关终止措辞不清，需核对裁判实现/导师解释。"
+        },
+        {
+          "id": "course_physical_or_virtual_profile",
+          "pages": [
+            4,
+            5,
+            22,
+            47,
+            48
+          ],
+          "issue_zh": "课程最终部署到实体NAO6，不能因使用仿真就自动套用虚拟锦标赛全部子条款。"
+        }
+      ]
+    }
+  },
+  "evidence_files": {
+    "nao6_hardware.json": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/research/nao6_hardware.json",
+      "sha256": "05f1e95b5e07f51e18202fddda6e6e8b4984cc00ebf85d93b7cc93e31d1cccab"
+    },
+    "nao6_motion.json": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/research/nao6_motion.json",
+      "sha256": "c935f8b4c30555156f4bf18f18c98472b8c8eab08ccd0e34c9db522f55eb05d7"
+    },
+    "rules_geometry_sensing.json": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/research/rules_geometry_sensing.json",
+      "sha256": "002295982bb5271c9946ab591a60e4d97010549588f143c3fd1ee21ce9d55bf0"
+    },
+    "robocup2025_match_logic.json": {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/reports/research/robocup2025_match_logic.json",
+      "sha256": "a2184b1b532e9ca66978a410902c619ec354f003d44ad48b77d30f371b9d0d9b"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "seed": 9,
+  "kickNoise": 0.10471975511965978,
+  "maximumDifference": 6.92123287571178E-8,
+  "firstDifferentStep": 5044,
+  "firstDifferentColumn": 59,
+  "exact": false,
+  "oracle": {
+    "goals": [
+      2,
+      2
+    ],
+    "shots": [
+      17,
+      15
+    ],
+    "firstTouchSeconds": 3.6500000000000004,
+    "steps": 12000,
+    "overlapSteps": 0,
+    "overlapPairSamples": 0,
+    "maximumPenetrationMetres": 0,
+    "outsidePitchRobotSamples": 1019,
+    "outsideBorderRobotSamples": 0,
+    "translationRequests": 95679,
+    "blockedTranslationSamples": 108,
+    "blockedTranslationRatio": 0.0011287743391966889,
+    "finite": true
+  },
+  "migrated": {
+    "goals": [
+      2,
+      2
+    ],
+    "shots": [
+      17,
+      15
+    ],
+    "firstTouchSeconds": 3.6500000000000004,
+    "steps": 12000,
+    "overlapSteps": 0,
+    "overlapPairSamples": 0,
+    "maximumPenetrationMetres": 0,
+    "outsidePitchRobotSamples": 1019,
+    "outsideBorderRobotSamples": 0,
+    "translationRequests": 95679,
+    "blockedTranslationSamples": 108,
+    "blockedTranslationRatio": 0.0011287743391966889,
+    "finite": true
+  }
+}

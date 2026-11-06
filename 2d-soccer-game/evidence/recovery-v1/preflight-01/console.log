@@ -1,0 +1,8 @@
+dt50-seed05 PASS (12000 steps, score 1-0, 122 actual kicks, 184.6 wall seconds)
+{Error using assert
+Production or validation files changed during the run. Inspect both manifests.
+
+Error in validate_v1_matrix (line 106)
+    assert(strcmp(after.fingerprint,source.fingerprint),'TDP:V1SourceDrift', ...
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_pitch.py",
+    "webots/worlds/tdp_single.wbt"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+  "startUtc": "2026-11-05T23:23:39.485232+00:00",
+  "status": "PASS",
+  "childPid": 3,
+  "exitCode": 0,
+  "endUtc": "2026-11-05T23:23:39.528020+00:00",
+  "wallSeconds": 0.042786723002791405
+}

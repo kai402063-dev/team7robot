@@ -1,0 +1,84 @@
+Running test_ros_adapter
+....{Invalid structure field 'Actuator'. Code generation does not support the
+addition of new fields after a structure has been read or used. Function
+"tdpTemplates.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',207,850,851)">#207.850.851</a>),
+line 13, column 1: "T" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',172);">report</a>.
+} 
+{Simulink does not have enough information to determine output sizes for this
+block. If you think the errors below are inaccurate, try specifying types for
+the block inputs and/or sizes for the block outputs.
+} 
+{Function call failed. Function "BridgeDecode.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',206,296,311)">#206.296.311</a>),
+line 5, column 3: "tdpTemplates(P)" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',172);">report</a>.
+} 
+{Function call failed. Function "Decode" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',173,63,127)">#173.63.127</a>),
+line 2, column 1:
+"[obs,intent,fb,tSim,quality,held]=BridgeDecode(frame,previous,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',172);">report</a>.
+} 
+{Errors occurred during parsing of <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4')">'tdpFrameReplay/Decode'</a>.
+} 
+{Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4')">'tdpFrameReplay/Decode'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 
+
+================================================================================
+Error occurred in test_ros_adapter/testActualCoreReplay and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:MException:MultipleErrors'
+    --------------
+    Error Details:
+    --------------
+    Error using runFrameReplay (line 9)
+    Error due to multiple causes.
+    
+    Error in test_ros_adapter>testActualCoreReplay (line 27)
+    [a,q]=runFrameReplay(P,f);b=runFrameReplay(P,f);verifyEqual(t,a,b);verifyTrue(t,any(q(:,3)==1));verifyTrue(t,any(a(:,3)==double(TdpPhase.Kick)));
+          ^^^^^^^^^^^^^^^^^^^
+    Caused by:
+        Error using Simulink.Simulation.internal.DesktopSimHelper
+        Simulink is unable to determine sizes and/or types of the outputs for
+        block
+        <a
+        href="matlab:sfprivate('sfOpenObjectBySId','tdpFrameReplay:4')">'tdpFrameReplay/Decode'</a>
+        due to errors in the block body, or limitations of the underlying
+        analysis.
+        The errors might be inaccurate. Fix the indicated errors, or explicitly
+        specify sizes and/or types for all block outputs.
+    
+    
+        Error using Simulink.Simulation.internal.DesktopSimHelper
+        Error in port widths or dimensions. 'Output Port 1' of
+        'tdpFrameReplay/Decode/frame' is a [1x20] matrix.
+================================================================================
+.
+Done test_ros_adapter
+__________
+
+Failure Summary:
+
+     Name                                   Failed  Incomplete  Reason(s)
+    ======================================================================
+     test_ros_adapter/testActualCoreReplay    X         X       Errored.
+{Error using assert
+At least one test failed in the test session.
+
+Error in matlab.unittest.internal.BaseTestResult/assertSuccess (line 126)
+             assert(~any([resultArray.Failed]),message('MATLAB:unittest:TestResult:UnsuccessfulRun'));
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in validate_ros_adapter (line 6)
+writeJson(fullfile(outDir,'adapter-receipt.json'),receipt);assertSuccess(r);
+                                                           ^^^^^^^^^^^^^^^^
+} 

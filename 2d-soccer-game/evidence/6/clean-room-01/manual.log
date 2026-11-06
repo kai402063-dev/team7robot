@@ -1,0 +1,82 @@
+MANUAL quick example: request=0.44000000000000006, robot4.x=-0.98750000000000004
+Running test_laneClearLesson
+....
+Done test_laneClearLesson
+__________
+
+Running test_laneClearLesson
+.
+================================================================================
+Verification failed in test_laneClearLesson/testObstacleBeyondEndpoint.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/build/learning/test_laneClearLesson.m (testObstacleBeyondEndpoint) at 12
+================================================================================
+..
+================================================================================
+Verification failed in test_laneClearLesson/testExactMarginIsClear.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/build/learning/test_laneClearLesson.m (testExactMarginIsClear) at 22
+================================================================================
+.
+Done test_laneClearLesson
+__________
+
+Failure Summary:
+
+     Name                                             Failed  Incomplete  Reason(s)
+    ==============================================================================================
+     test_laneClearLesson/testObstacleBeyondEndpoint    X                 Failed by verification.
+    ----------------------------------------------------------------------------------------------
+     test_laneClearLesson/testExactMarginIsClear        X                 Failed by verification.
+Running test_laneClearLesson
+....
+Done test_laneClearLesson
+__________
+
+[Warning: The model name 'tdpDelayLesson' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpDelayLesson" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_lessons (line 5)
+In run_manual_audit (line 59)] 
+[Warning: The model name 'tdpFlatLesson' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpFlatLesson" at the command line to find
+the other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_lessons (line 17)
+In run_manual_audit (line 59)] 
+Running test_lessons
+..
+Done test_lessons
+__________
+
+Running test_controller
+........
+Done test_controller
+__________
+
+MANUAL_AUDIT PASS_AUTOMATED_MANUAL_PATHS_WITH_DOCUMENTED_BLOCKERS in 74.3 seconds. Receipt: /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01/build/manual-reproduction-audit/manual-receipt.json

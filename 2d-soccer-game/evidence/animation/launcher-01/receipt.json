@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/start_2d.sh",
+  "fixture": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp",
+  "scope": "Stub execution only: no user desktop or real MATLAB process opened",
+  "elapsedSeconds": 1.0152847099961946,
+  "results": [
+    {
+      "name": "help_without_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "unknown_arguments",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "missing_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "unreachable_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "missing_matlab",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "valid_environment",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "matlab_failure_exit",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "options_remain_data",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "sessions_are_isolated",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "executable_from_path",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "shell_syntax",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "desktop_entry",
+      "passed": true,
+      "assertionFailure": false
+    }
+  ],
+  "passed": 12,
+  "total": 12
+}

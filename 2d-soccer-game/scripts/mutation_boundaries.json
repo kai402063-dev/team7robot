@@ -1,0 +1,8 @@
+{
+  "id": "boundaries-v1",
+  "file": "controllers/CoreGeometry.m",
+  "old": " || ~isfinite(obs.robotStamp(j))",
+  "new": "",
+  "suite": "tests/test_extensions.m",
+  "evidence": "evidence/6/mutation-boundaries-01"
+}

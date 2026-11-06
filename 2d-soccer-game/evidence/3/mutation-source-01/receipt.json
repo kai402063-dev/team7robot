@@ -1,0 +1,50 @@
+{
+  "spec": {
+    "id": "source-defects-v1",
+    "file": "baseline/BScoringOracle.m",
+    "old": "teamIdx = behavior(lastPossession).team;",
+    "new": "teamIdx = 3-behavior(lastPossession).team;",
+    "suite": "tests/test_source_defects.m",
+    "evidence": "evidence/3/mutation-source-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_source_defects/testACoincidentCenters",
+      "test_source_defects/testAOnePassLeavesOverlap",
+      "test_source_defects/testASimplifiedRestarts",
+      "test_source_defects/testLastTouchIsNotPossession",
+      "test_source_defects/testBOwnGoalSourceSlice",
+      "test_source_defects/testBNoPossessionSourceSlice",
+      "test_source_defects/testBRandomizeAccumulates"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

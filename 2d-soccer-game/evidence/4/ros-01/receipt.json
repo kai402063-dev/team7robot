@@ -1,0 +1,16 @@
+{
+  "status": "PASS_PROXY_ONLINE_AND_COMMUNICATION",
+  "nativeRosToolbox": "BLOCKED: not installed",
+  "generatedNode": "BLOCKED: Coders not installed",
+  "scalar": {
+    "input": 3.5,
+    "output": 4.5,
+    "communication": "PASS"
+  },
+  "frames": 101,
+  "actionsExactlyEqual": true,
+  "extraTopic": "PASS: /tdp/diagnostics/action_age",
+  "clockPublishers": 1,
+  "modelValidation": "NOT_ESTABLISHED: transport and controller replay only",
+  "elapsedSeconds": 104.16637197400269
+}

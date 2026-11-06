@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/validate_ros.py", line 78, in <module>
+    run(Path(args.output).resolve())
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/validate_ros.py", line 55, in run
+    assert proc.wait(timeout=300) == 0, name + ' failed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: driver failed

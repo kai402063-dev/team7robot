@@ -1,0 +1,23 @@
+{
+  "status": "FAIL",
+  "adapter": {
+    "names": [
+      "test_ros_adapter/testFreshAndDuplicate",
+      "test_ros_adapter/testOldSequenceAndFuture",
+      "test_ros_adapter/testBadPacketAndClock",
+      "test_ros_adapter/testFeedbackContract",
+      "test_ros_adapter/testActualCoreReplay"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "nativeRosToolbox": "BLOCKED: not installed",
+    "generatedNode": "BLOCKED: Coders not installed"
+  },
+  "error": "Error using assert\nros failed: Traceback (most recent call last):\n  File \"/home/fayne/Documents/Robotics & AI/Robotics\n  TDP/2d-soccer-game/tdp-migrated-r1/scripts/validate_ros.py\", line 78, in\n  <module>\n    run(Path(args.output).resolve())\n  File \"/home/fayne/Documents/Robotics & AI/Robotics\n  TDP/2d-soccer-game/tdp-migrated-r1/scripts/validate_ros.py\", line 55, in run\n    assert proc.wait(timeout=300) == 0, name + ' failed'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: driver failed\n\n\nError in reproduce_m2/command (line 34)\n  fprintf('M2 %s\\n',label);[status,output]=system(cmd);f=fopen(fullfile(outDir,[label '.log']),'w');fprintf(f,'%s',output);fclose(f);assert(status==0,'TDP:M2Command','%s failed: %s',label,output);\n                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in reproduce_m2 (line 11)\n rosDir=fullfile(outDir,'ros');command('ros',['./scripts/run_ros.sh python3 scripts/validate_ros.py ' shellQuote(rosDir)]);\n                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+  "elapsedSeconds": 163.47877899999918
+}

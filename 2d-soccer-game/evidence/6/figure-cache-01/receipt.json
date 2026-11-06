@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "script": "export_manual_figures.py",
+      "returncode": 0,
+      "temporaryCacheWarning": false
+    },
+    {
+      "script": "export_m2_figures.py",
+      "returncode": 0,
+      "temporaryCacheWarning": false
+    }
+  ],
+  "cache": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/matplotlib",
+  "files": [
+    "fontlist-v330.json"
+  ]
+}

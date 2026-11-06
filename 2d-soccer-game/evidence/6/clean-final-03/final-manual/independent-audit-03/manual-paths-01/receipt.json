@@ -1,0 +1,271 @@
+{
+  "status": "PASS_API_MANUAL_PATHS_GUI_NOT_PERFORMED",
+  "guiDragging": "NOT_PERFORMED",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "release": "2026b",
+  "paths": {
+    "root": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+    "setup": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/tdpSetup.m",
+    "runA": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/baseline/runA.m",
+    "runReplay": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/scripts/runReplay.m",
+    "preferences": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/matlab-prefs"
+  },
+  "firstStep": {
+    "forwardRequest": 0.44000000000000006,
+    "robot4x": -0.9875
+  },
+  "laneOriginal": {
+    "names": [
+      "test_laneClearLesson/testInside",
+      "test_laneClearLesson/testBeyond",
+      "test_laneClearLesson/testDegenerate",
+      "test_laneClearLesson/testEquality"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "laneMutation": {
+    "names": [
+      "test_laneClearLesson/testInside",
+      "test_laneClearLesson/testBeyond",
+      "test_laneClearLesson/testDegenerate",
+      "test_laneClearLesson/testEquality"
+    ],
+    "passed": [
+      false,
+      false,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "laneRestored": {
+    "names": [
+      "test_laneClearLesson/testInside",
+      "test_laneClearLesson/testBeyond",
+      "test_laneClearLesson/testDegenerate",
+      "test_laneClearLesson/testEquality"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "unitDelay": [
+    0,
+    0.040000000000000008,
+    0.078400000000000011,
+    0.115264,
+    0.15065344
+  ],
+  "flatPhase": [
+    0,
+    1,
+    2,
+    2,
+    2
+  ],
+  "originalStates": 7,
+  "emptyStates": 0,
+  "transitionPriorities": {
+    "expected": [
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1
+    ],
+    "actual": [
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      3,
+      1,
+      1,
+      1
+    ]
+  },
+  "redrawnStates": 7,
+  "redrawnTransitions": 14,
+  "hierarchical": {
+    "equalToReference": true,
+    "requestId": 6,
+    "sameIdDonePhase": 5,
+    "oldIdDonePhase": 4,
+    "originalRecoverRow": 25,
+    "halfTimeoutRecoverRow": 15,
+    "originalLibraryUnaffected": true
+  },
+  "controller": {
+    "names": [
+      "test_controller/testReplayAndTruthIsolation",
+      "test_controller/testNormalFeedback",
+      "test_controller/testTimeout",
+      "test_controller/testFailedAndRejectedFeedback",
+      "test_controller/testLateFeedbackIgnored",
+      "test_controller/testLostBallAndStop",
+      "test_controller/testStaleObservation",
+      "test_controller/testSingleClosedLoop"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "lessons": {
+    "names": [
+      "test_lessons/testClosedLoopUnitDelay",
+      "test_lessons/testFlatStates",
+      "test_lessons/testLearningHarnessUsesItsOwnChart"
+    ],
+    "passed": [
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false
+    ]
+  },
+  "stale": {
+    "initialQuality": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "repeatedAfterClockAdvance": [
+      0,
+      0.6,
+      1,
+      0.6,
+      1,
+      1
+    ],
+    "selfValid": false,
+    "asynchronousStopPublishingWatchdog": "NOT_VERIFIED"
+  },
+  "rosAdapter": {
+    "names": [
+      "test_ros_adapter/testFreshAndDuplicate",
+      "test_ros_adapter/testOldSequenceAndFuture",
+      "test_ros_adapter/testBadPacketAndClock",
+      "test_ros_adapter/testFeedbackContract",
+      "test_ros_adapter/testActualCoreReplay"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "elapsedSeconds": 138.39206899999081
+}

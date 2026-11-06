@@ -1,0 +1,226 @@
+Running test_animation
+..[Warning: Graphics acceleration hardware is unavailable. Graphics quality and
+performance might be diminished. See <a
+href="https://www.mathworks.com/support/requirements/matlab-system-requirements.html">MATLAB
+System Requirements</a>.] 
+[> In LiveViewer2D/beginRun (line 131)
+In runAnimatedMatch (line 16)
+In test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 38)]
+[Warning: The following error was caught while executing 'onCleanup' class
+destructor:
+Attempt to read from or write to already-destroyed variable 'sm' in workspace
+of an exiting function.
+
+Error in runAnimatedMatch/cleanupSimulation (line 58)
+        if ~strcmp(sm.Status,'inactive'),stop(sm);end
+                   ^^^^^^^^^
+Error in onCleanup/delete (line 33)
+            obj.task();
+            ^^^^^^^^^^
+Error in runAnimatedMatch (line 4)
+tdp.validateConfig(P);
+^^^^^^^^^^^^^^^^^^^^^
+Error in test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 38)
+v=LiveViewer2D(t.TestData.P,'off',3);c=onCleanup(@()dispose(v)); %#ok<NASGU>
+        ^
+Error in matlab.unittest.TestRunner/evaluateMethodCore (line 864)
+                    func(content);
+                    ^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodsOnTestContent (line 801)
+                    runner.evaluateMethodCore(method, content, arguments);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestMethodCore (line 980)
+            runner.evaluateMethodsOnTestContent(method, testCase);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestCore (line 952)
+                    runner.runTestMethodCore;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/repeatTest (line 396)
+                    runner.runTestCore;
+                    ^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runSharedTestCase (line 337)
+                    runner.repeatTest(usePlugins);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestClass (line 1252)
+                runner.runSharedTestCase(runner.PluginData.runSharedTestCase);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestClass (line 67)
+            nextOperator.runTestClass(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.plugins.testrunprogress.ConciseProgressPlugin/runTestClass
+(line 68)
+            runTestClass@matlab.unittest.plugins.TestRunnerPlugin(plugin,
+            pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestSuite (line 1176)
+                    plugin.runTestClass(runner.PluginData.runTestClass);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestSuite (line 39)
+            nextOperator.runTestSuite(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsOutputPlugin/runTestSuite (line 73)
+            runTestSuite@matlab.unittest.plugins.TestRunnerPlugin(plugin,
+            pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestSuite (line 39)
+            nextOperator.runTestSuite(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsRecordingPlugin/runTestSuite (line
+79)
+            plugin.runTestSuite@matlab.unittest.plugins.TestRunnerPlugin(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodOnPlugins (line 254)
+                [varargout{1:nargout}] = plugin.(methodName)(pluginData);
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.SerialTestRunStrategy/runTestSuite (line 36)
+            runner.evaluateMethodOnPlugins("runTestSuite", pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.SerialTestRunStrategy/runSession (line 16)
+            strategy.runTestSuite(runner,testSuiteRunPluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runSession (line 1133)
+            runner.TestRunStrategy.runSession(runner,pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runSession (line 34)
+            nextOperator.runSession(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsOutputPlugin/runSession (line 58)
+            runSession@matlab.unittest.plugins.TestRunnerPlugin(plugin,pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodOnPlugins (line 254)
+                [varargout{1:nargout}] = plugin.(methodName)(pluginData);
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/doRunWithFcn (line 242)
+            runner.evaluateMethodOnPlugins(methodName, pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/run (line 138)
+            result = doRunWithFcn(runner, "runSession", pluginData);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.internal.testoutputviewhandlers.DefaultHandler/invokeRunFunction
+(line 17)
+            results = runFcn(runner, suite);
+                      ^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.internal.testoutputviewhandlers.TestOutputHandler/runTests
+(line 34)
+            results = handler.invokeRunFunction(runFcn, runner, suite);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in runtests (line 16)
+testResults = testOutputHandler.runTests(parseResults.Options, plugins, suite,
+runner);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^] 
+[> In runAnimatedMatch (line 4)
+In test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 38)]
+[Warning: The following error was caught while executing 'onCleanup' class
+destructor:
+Attempt to read from or write to already-destroyed variable 'sm' in workspace
+of an exiting function.
+
+Error in runAnimatedMatch/cleanupSimulation (line 58)
+        if ~strcmp(sm.Status,'inactive'),stop(sm);end
+                   ^^^^^^^^^
+Error in onCleanup/delete (line 33)
+            obj.task();
+            ^^^^^^^^^^
+Error in runAnimatedMatch (line 4)
+tdp.validateConfig(P);
+^^^^^^^^^^^^^^^^^^^^^
+Error in test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 38)
+v=LiveViewer2D(t.TestData.P,'off',3);c=onCleanup(@()dispose(v)); %#ok<NASGU>
+        ^
+Error in matlab.unittest.TestRunner/evaluateMethodCore (line 864)
+                    func(content);
+                    ^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodsOnTestContent (line 801)
+                    runner.evaluateMethodCore(method, content, arguments);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestMethodCore (line 980)
+            runner.evaluateMethodsOnTestContent(method, testCase);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestCore (line 952)
+                    runner.runTestMethodCore;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/repeatTest (line 396)
+                    runner.runTestCore;
+                    ^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runSharedTestCase (line 337)
+                    runner.repeatTest(usePlugins);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestClass (line 1252)
+                runner.runSharedTestCase(runner.PluginData.runSharedTestCase);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestClass (line 67)
+            nextOperator.runTestClass(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.plugins.testrunprogress.ConciseProgressPlugin/runTestClass
+(line 68)
+            runTestClass@matlab.unittest.plugins.TestRunnerPlugin(plugin,
+            pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runTestSuite (line 1176)
+                    plugin.runTestClass(runner.PluginData.runTestClass);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestSuite (line 39)
+            nextOperator.runTestSuite(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsOutputPlugin/runTestSuite (line 73)
+            runTestSuite@matlab.unittest.plugins.TestRunnerPlugin(plugin,
+            pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runTestSuite (line 39)
+            nextOperator.runTestSuite(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsRecordingPlugin/runTestSuite (line
+79)
+            plugin.runTestSuite@matlab.unittest.plugins.TestRunnerPlugin(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodOnPlugins (line 254)
+                [varargout{1:nargout}] = plugin.(methodName)(pluginData);
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.SerialTestRunStrategy/runTestSuite (line 36)
+            runner.evaluateMethodOnPlugins("runTestSuite", pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.SerialTestRunStrategy/runSession (line 16)
+            strategy.runTestSuite(runner,testSuiteRunPluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/runSession (line 1133)
+            runner.TestRunStrategy.runSession(runner,pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.TestRunnerPlugin/runSession (line 34)
+            nextOperator.runSession(pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.plugins.DiagnosticsOutputPlugin/runSession (line 58)
+            runSession@matlab.unittest.plugins.TestRunnerPlugin(plugin,pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/evaluateMethodOnPlugins (line 254)
+                [varargout{1:nargout}] = plugin.(methodName)(pluginData);
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/doRunWithFcn (line 242)
+            runner.evaluateMethodOnPlugins(methodName, pluginData);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.TestRunner/run (line 138)
+            result = doRunWithFcn(runner, "runSession", pluginData);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.internal.testoutputviewhandlers.DefaultHandler/invokeRunFunction
+(line 17)
+            results = runFcn(runner, suite);
+                      ^^^^^^^^^^^^^^^^^^^^^
+Error in
+matlab.unittest.internal.testoutputviewhandlers.TestOutputHandler/runTests
+(line 34)
+            results = handler.invokeRunFunction(runFcn, runner, suite);
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in runtests (line 16)
+testResults = testOutputHandler.runTests(parseResults.Options, plugins, suite,
+runner);
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^] 
+[> In runAnimatedMatch (line 4)
+In test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 38)]
+.
+Done test_animation
+__________
+

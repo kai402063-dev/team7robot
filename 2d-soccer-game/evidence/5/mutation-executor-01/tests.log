@@ -1,0 +1,19 @@
+test_duplicate_and_ball_independent_completion (test_webots.WebotsTests.test_duplicate_and_ball_independent_completion) ... FAIL
+test_expiry_and_late (test_webots.WebotsTests.test_expiry_and_late) ... ok
+test_group_dimensions (test_webots.WebotsTests.test_group_dimensions) ... ok
+test_motion_source_durations (test_webots.WebotsTests.test_motion_source_durations) ... ok
+test_queue_failure_and_cancel (test_webots.WebotsTests.test_queue_failure_and_cancel) ... ok
+
+======================================================================
+FAIL: test_duplicate_and_ball_independent_completion (test_webots.WebotsTests.test_duplicate_and_ball_independent_completion)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-webots-v1/tests/test_webots.py", line 29, in test_duplicate_and_ball_independent_completion
+    e.receive(r,5);e.tick(5,[0,0]);self.assertEqual(e.executions,1)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.042s
+
+FAILED (failures=1)

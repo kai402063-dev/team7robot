@@ -1,0 +1,97 @@
+{
+  "states": {
+    "11": "Idle\nen,du:\n phase=TdpPhase.Idle;\n requestId=requestId+uint32(1);",
+    "12": "Active\nen,du:\n if P.mode==TdpMode.Compat || phase~=TdpPhase.Kick\n     requestId=requestId+uint32(1);\n end",
+    "13": "Search\nen: phase=TdpPhase.Search;",
+    "14": "Approach\nen: phase=TdpPhase.Approach;",
+    "15": "Align\nen: phase=TdpPhase.Align;",
+    "16": "Kick\nen:\n phase=TdpPhase.Kick;\n requestId=requestId+uint32(1);\n kickStart=tSim;\n kickTarget=g.target;\n kickSpeed=g.speed;",
+    "17": "Recover\nen:\n phase=TdpPhase.Recover;\n recoverStart=tSim;"
+  },
+  "transitions": [
+    {
+      "source": "DEFAULT",
+      "destination": "Search",
+      "priority": "1",
+      "text": ""
+    },
+    {
+      "source": "Align",
+      "destination": "Kick",
+      "priority": "3",
+      "text": "[g.ready]"
+    },
+    {
+      "source": "Align",
+      "destination": "Search",
+      "priority": "1",
+      "text": "[~g.ballVisible]"
+    },
+    {
+      "source": "Approach",
+      "destination": "Search",
+      "priority": "1",
+      "text": "[~g.ballVisible && g.intent~=TdpAction.Goto]"
+    },
+    {
+      "source": "Recover",
+      "destination": "Search",
+      "priority": "1",
+      "text": "[tSim-recoverStart>=P.recoverTime]"
+    },
+    {
+      "source": "Search",
+      "destination": "Approach",
+      "priority": "1",
+      "text": "[g.ballVisible || g.intent==TdpAction.Goto]"
+    },
+    {
+      "source": "Align",
+      "destination": "Approach",
+      "priority": "2",
+      "text": "[g.distance>P.alignExit || g.intent==TdpAction.Goto]"
+    },
+    {
+      "source": "Approach",
+      "destination": "Align",
+      "priority": "2",
+      "text": "[g.distance<P.alignEnter && g.intent~=TdpAction.Goto]"
+    },
+    {
+      "source": "Kick",
+      "destination": "Recover",
+      "priority": "1",
+      "text": "[fb.requestId==requestId && (fb.status==TdpStatus.Done || fb.status==TdpStatus.Failed || fb.status==TdpStatus.Rejected)]"
+    },
+    {
+      "source": "Kick",
+      "destination": "Recover",
+      "priority": "2",
+      "text": "[tSim-kickStart>=P.kickTimeout]"
+    },
+    {
+      "source": "Kick",
+      "destination": "Recover",
+      "priority": "3",
+      "text": "[~g.ballVisible]"
+    },
+    {
+      "source": "DEFAULT",
+      "destination": "Idle",
+      "priority": "1",
+      "text": "{requestId=uint32(0);kickStart=0;kickTarget=[0 0];kickSpeed=0;recoverStart=0;}"
+    },
+    {
+      "source": "Active",
+      "destination": "Idle",
+      "priority": "1",
+      "text": "[~g.safe || (~g.running && P.mode==TdpMode.Delayed)]"
+    },
+    {
+      "source": "Idle",
+      "destination": "Active",
+      "priority": "1",
+      "text": "[g.safe && (g.running || P.mode==TdpMode.Compat)]"
+    }
+  ]
+}

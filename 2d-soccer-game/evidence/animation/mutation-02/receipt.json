@@ -1,0 +1,38 @@
+{
+  "spec": {
+    "id": "animation-ball-coordinate-v2",
+    "file": "environment/LiveViewer2D.m",
+    "old": "row(57)+P.ballR*cos(obj.Circle)",
+    "new": "row(58)+P.ballR*cos(obj.Circle)",
+    "suite": "tests/test_animation.m",
+    "evidence": "evidence/animation/mutation-02"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_animation/testCoordinatesAndPersistentGraphics",
+      "test_animation/testPauseSpeedStopAndClose",
+      "test_animation/testInvalidSpeedLeavesNoWindow",
+      "test_animation/testAnimatedTrajectoryMatchesNormalSimulation"
+    ],
+    "passed": [
+      false,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

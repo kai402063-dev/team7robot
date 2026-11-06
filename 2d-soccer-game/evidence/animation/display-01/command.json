@@ -1,0 +1,7 @@
+{
+  "status": "FAIL",
+  "scope": "Private X11 display; user desktop untouched",
+  "exitCode": 1,
+  "display": ":1",
+  "elapsedSeconds": 299.3855135969934
+}

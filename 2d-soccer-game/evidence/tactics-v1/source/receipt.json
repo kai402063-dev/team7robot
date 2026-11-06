@@ -1,0 +1,20 @@
+{
+  "status": "SOURCE_READ_COMPLETE",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1WAQseg6KUErBnFk1h2jFuvWF1SHPaDJC9W4jTtnW-6Q/edit",
+  "sourceModifiedTime": "2026-11-05T16:23:28.446Z",
+  "requestedVersion": "V1",
+  "selectedSheets": [
+    "Sheet1",
+    "Sheet2"
+  ],
+  "excludedProposals": [
+    "Sheet3 — v1.1 EN",
+    "Sheet4 — v1.1 中文"
+  ],
+  "onlineWrites": 0,
+  "files": {
+    "REQUIREMENTS.md": "f3997832b75d38d3bfa35b93473e2e49946fac98f8cebe095f2806e3434c5ac7",
+    "course-ai-check.json": "4b72f4d84b4aa153b26f9b10c1566b1d6a142a6e8002308880f22d432169c8d6",
+    "spreadsheet-snapshot.json": "66fe122eeb0d6ed9e35b37b9cf8a4841f56a1fdf4cf2ba12171b349d69746370"
+  }
+}

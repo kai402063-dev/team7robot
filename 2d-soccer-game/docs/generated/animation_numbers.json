@@ -1,0 +1,16 @@
+{
+  "source": "evidence/animation/display-02/artifacts/receipt.json",
+  "testsPassed": 4,
+  "pausedSimulationTime": 0.35000000000000003,
+  "frozenSimulationTime": 0.35000000000000003,
+  "stoppedFrames": 97,
+  "restartFrames": 160,
+  "figures": {
+    "animation-live-before.png": "dad7d9c0b4b7f0f52fc14a68fc8cedc3e3c97549a0a735d3446d64f02321d0ce",
+    "animation-live-after.png": "42312641d7407ff469ec2a44f5e61d9bee1ee056db18b2e004bf08dcefc3fd01"
+  },
+  "launcherSource": "evidence/animation/launch-e2e-01/receipt.json",
+  "launcherFrames": 100,
+  "coldInitializationSeconds": 148.777606,
+  "launcherElapsedSeconds": 193.16873767400102
+}

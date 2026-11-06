@@ -1,0 +1,38 @@
+{
+  "names": [
+    "test_source_defects/testACoincidentCenters",
+    "test_source_defects/testAOnePassLeavesOverlap",
+    "test_source_defects/testASimplifiedRestarts",
+    "test_source_defects/testLastTouchIsNotPossession",
+    "test_source_defects/testBOwnGoalSourceSlice",
+    "test_source_defects/testBNoPossessionSourceSlice",
+    "test_source_defects/testBRandomizeAccumulates"
+  ],
+  "passed": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

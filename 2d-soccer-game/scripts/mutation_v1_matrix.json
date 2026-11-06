@@ -1,0 +1,8 @@
+{
+  "id": "tactics-v1-matrix-owner-audit",
+  "file": "scripts/v1MatchMetrics.m",
+  "old": "'unauthorizedKickRequest',effectiveKick & ~owner",
+  "new": "'unauthorizedKickRequest',false(size(effectiveKick))",
+  "suite": "tests/test_v1_matrix.m",
+  "evidence": "evidence/tactics-v1/mutation-matrix-01"
+}

@@ -1,0 +1,132 @@
+{FOR loop index expressions of unknown size are only supported if they are of
+the form A:B or A:B:C. Function "actionSelection.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',486,2311,2547)">#486.2311.2547</a>),
+line 62, column 1: "for i = supporter" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{FOR loop index expressions of unknown size are only supported if they are of
+the form A:B or A:B:C. Function "actionSelection.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',486,2311,2547)">#486.2311.2547</a>),
+line 62, column 1: "for i = supporter" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',288);">report</a>.
+} 
+{Simulink does not have enough information to determine output sizes for this
+block. If you think the errors below are inaccurate, try specifying types for
+the block inputs and/or sizes for the block outputs.
+} 
+{FOR loop index expressions of unknown size are only supported if they are of
+the form A:B or A:B:C. Function "actionSelection.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',486,2311,2547)">#486.2311.2547</a>),
+line 62, column 1: "for i = supporter" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "teamBehaviour.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',483,191,236)">#483.191.236</a>),
+line 4, column 9: "tdp.actionSelection(robots,ball,team,roles,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "TeamCoordinator.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',482,132,214)">#482.132.214</a>),
+line 3, column 1:
+"[plans,m]=tdp.teamBehaviour(obs.robots,obs.ball,team,struct('striker',previous),"
+Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "Team2" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',306,52,113)">#306.52.113</a>),
+line 2, column 1:
+"[plans,striker]=TeamCoordinator(observations(5),2,previous,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Errors occurred during parsing of <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:9')">'tdpMatch/Team2'</a>.
+} 
+{Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:9')">'tdpMatch/Team2'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 
+{Simulink does not have enough information to determine output sizes for this
+block. If you think the errors below are inaccurate, try specifying types for
+the block inputs and/or sizes for the block outputs.
+} 
+{FOR loop index expressions of unknown size are only supported if they are of
+the form A:B or A:B:C. Function "actionSelection.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',486,2311,2547)">#486.2311.2547</a>),
+line 62, column 1: "for i = supporter" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',288);">report</a>.
+} 
+{Function call failed. Function "teamBehaviour.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',483,191,236)">#483.191.236</a>),
+line 4, column 9: "tdp.actionSelection(robots,ball,team,roles,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',288);">report</a>.
+} 
+{Function call failed. Function "TeamCoordinator.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',482,132,214)">#482.132.214</a>),
+line 3, column 1:
+"[plans,m]=tdp.teamBehaviour(obs.robots,obs.ball,team,struct('striker',previous),"
+Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',288);">report</a>.
+} 
+{Function call failed. Function "Team1" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',289,52,113)">#289.52.113</a>),
+line 2, column 1:
+"[plans,striker]=TeamCoordinator(observations(1),1,previous,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',288);">report</a>.
+} 
+{Errors occurred during parsing of <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:7')">'tdpMatch/Team1'</a>.
+} 
+{Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:7')">'tdpMatch/Team1'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 
+{FOR loop index expressions of unknown size are only supported if they are of
+the form A:B or A:B:C. Function "actionSelection.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',486,2311,2547)">#486.2311.2547</a>),
+line 62, column 1: "for i = supporter" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "teamBehaviour.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',483,191,236)">#483.191.236</a>),
+line 4, column 9: "tdp.actionSelection(robots,ball,team,roles,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "TeamCoordinator.m" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',482,132,214)">#482.132.214</a>),
+line 3, column 1:
+"[plans,m]=tdp.teamBehaviour(obs.robots,obs.ball,team,struct('striker',previous),"
+Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Function call failed. Function "Team2" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',306,52,113)">#306.52.113</a>),
+line 2, column 1:
+"[plans,striker]=TeamCoordinator(observations(5),2,previous,P)" Launch
+diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',305);">report</a>.
+} 
+{Errors occurred during parsing of <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:9')">'tdpMatch/Team2'</a>.
+} 
+{Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:9')">'tdpMatch/Team2'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 
+{Error using runMatch (line 7)
+Simulink is unable to determine sizes and/or types of the outputs for block <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpMatch:9')">'tdpMatch/Team2'</a>
+due to errors in the block body, or limitations of the underlying analysis. The
+errors might be inaccurate. Fix the indicated errors, or explicitly specify
+sizes and/or types for all block outputs.
+} 

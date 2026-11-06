@@ -1,0 +1,34 @@
+{
+  "names": [
+    "test_manual_numbers/testNumbersMatchExecutableResults",
+    "test_manual_numbers/testRenderedManualContainsActualNumbers",
+    "test_manual_numbers/testParameterTableMatchesCurrentConfiguration",
+    "test_manual_numbers/testM2NumbersFromActualRecordedInputs",
+    "test_manual_numbers/testWebotsParameterTable",
+    "test_manual_numbers/testAnimationNumbersAndFigures"
+  ],
+  "passed": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

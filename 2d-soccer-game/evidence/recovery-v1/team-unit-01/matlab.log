@@ -1,0 +1,1740 @@
+Running test_v1_tactics
+.......... .
+Done test_v1_tactics
+__________
+
+Running test_recovery_tactics
+.
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 36
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          4         -4           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpAction enumeration
+    
+        Stop
+    Expected Value:
+      TdpAction enumeration
+    
+        Search
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 47
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 36
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          8         -8           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         8
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpAction enumeration
+    
+        Stop
+    Expected Value:
+      TdpAction enumeration
+    
+        Search
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 47
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 36
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          4         -4           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpAction enumeration
+    
+        Stop
+    Expected Value:
+      TdpAction enumeration
+    
+        Search
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 47
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 36
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          7         -7           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         7
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 44
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          8         -8           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         8
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 46
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpAction enumeration
+    
+        Stop
+    Expected Value:
+      TdpAction enumeration
+    
+        Search
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testAutomaticRecoveryUsesTimeAndKeepsSearch) at 47
+================================================================================
+.
+================================================================================
+Verification failed in test_recovery_tactics/testHardFaultAndStaleHeartbeatRestartDwell.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testHardFaultAndStaleHeartbeatRestartDwell) at 68
+================================================================================
+.
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 81
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 82
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      1×2 TdpAction enumeration array
+    
+        Stop    Stop
+    Expected Value:
+      1×2 TdpAction enumeration array
+    
+        Kick    Stop
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 83
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Path to failure: <Value>.kind
+        --> The objects are not equal using "isequaln".
+        
+        Actual TdpAction:
+          TdpAction enumeration
+        
+            Stop
+        Expected TdpAction:
+          TdpAction enumeration
+        
+            Kick
+    
+    Actual Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Stop
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 1
+        validUntil: 1.100000000000000
+    Expected Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Kick
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 0.800000000000000
+        validUntil: 1.400000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 85
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 91
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpTeamPhase enumeration
+    
+        Search
+    Expected Value:
+      TdpTeamPhase enumeration
+    
+        Defend
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 91
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 81
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Actual    Expected    Error    RelativeError
+            ______    ________    _____    _____________
+                                                        
+              0          3         -3           -1      
+    
+    Actual Value:
+         0
+    Expected Value:
+         3
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 82
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      1×2 TdpAction enumeration array
+    
+        Stop    Stop
+    Expected Value:
+      1×2 TdpAction enumeration array
+    
+        Kick    Stop
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 83
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Path to failure: <Value>.kind
+        --> The objects are not equal using "isequaln".
+        
+        Actual TdpAction:
+          TdpAction enumeration
+        
+            Stop
+        Expected TdpAction:
+          TdpAction enumeration
+        
+            Kick
+    
+    Actual Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Stop
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 1
+        validUntil: 1.100000000000000
+    Expected Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Kick
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 0.800000000000000
+        validUntil: 1.400000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 85
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyFalse failed.
+    --> The value must evaluate to "false".
+    
+    Actual Value:
+      logical
+    
+       1
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 91
+================================================================================
+
+================================================================================
+Verification failed in test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The objects are not equal using "isequaln".
+    
+    Actual Value:
+      TdpTeamPhase enumeration
+    
+        Search
+    Expected Value:
+      TdpTeamPhase enumeration
+    
+        Defend
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/tests/test_recovery_tactics.m (testNaturalCompletionKeepsOneIdAndRestoresPhase) at 91
+================================================================================
+....
+Done test_recovery_tactics
+__________
+
+Failure Summary:
+
+     Name                                                                   Failed  Incomplete  Reason(s)
+    ====================================================================================================================
+     test_recovery_tactics/testAutomaticRecoveryUsesTimeAndKeepsSearch        X                 Failed by verification.
+    --------------------------------------------------------------------------------------------------------------------
+     test_recovery_tactics/testHardFaultAndStaleHeartbeatRestartDwell         X                 Failed by verification.
+    --------------------------------------------------------------------------------------------------------------------
+     test_recovery_tactics/testNaturalCompletionKeepsOneIdAndRestoresPhase    X                 Failed by verification.
+{Error using assert
+At least one test failed in the test session.
+
+Error in matlab.unittest.internal.BaseTestResult/assertSuccess (line 126)
+             assert(~any([resultArray.Failed]),message('MATLAB:unittest:TestResult:UnsuccessfulRun'));
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

@@ -1,0 +1,7 @@
+{
+  "checkedUtc": "2026-11-05T23:26:13.865748+00:00",
+  "image": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/webots-camera-manual-01/decoded/camera.png",
+  "inspection": "Actual decoded 160 by 120 image displays green field, pitch markings, opposite goal and stands.",
+  "source": "actual ROS Image subscription, not synthetic image",
+  "scope": "Visual image decoding inspection only; ball detection/localization and native Read Image are not validated"
+}

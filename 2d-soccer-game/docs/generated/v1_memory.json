@@ -1,0 +1,13 @@
+{
+  "basePhase": "Attack",
+  "phase": "Attack",
+  "chaser": 0,
+  "failed": false,
+  "recovering": false,
+  "releaseId": 0,
+  "handledFailureId": 0,
+  "ballKnown": false,
+  "ballSource": 0,
+  "takeover": false,
+  "releaseStamp": 0
+}

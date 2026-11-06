@@ -1,0 +1,18 @@
+{
+  "names": [
+    "test_validation_receipts/testCameraFailureIsNotPass",
+    "test_validation_receipts/testReplayFailureIsNotPass"
+  ],
+  "passed": [
+    false,
+    false
+  ],
+  "failed": [
+    true,
+    true
+  ],
+  "incomplete": [
+    false,
+    true
+  ]
+}

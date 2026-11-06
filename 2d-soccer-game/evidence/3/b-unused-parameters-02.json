@@ -1,0 +1,10 @@
+{
+  "robotDetectorFOV": {
+    "consumers": [],
+    "conclusion": "UNUSED_IN_SOCCER_SOURCE"
+  },
+  "wheelRadius": {
+    "consumers": [],
+    "conclusion": "UNUSED_IN_SOCCER_SOURCE"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": "v1-pause-before-ack",
+  "file": "environment/LiveViewer2D.m",
+  "old": "obj.PauseRequested=~obj.Paused;obj.PauseRequestTimer=tic;",
+  "new": "obj.PauseRequested=~obj.Paused;obj.Paused=obj.PauseRequested;obj.PauseRequestTimer=tic;",
+  "suite": "tests/test_animation.m",
+  "evidence": "evidence/tactics-v1/mutation-pause-01"
+}

@@ -1,0 +1,39 @@
+{
+  "status": "FAIL",
+  "tests": {
+    "names": [
+      "test_animation/testCoordinatesAndPersistentGraphics",
+      "test_animation/testPauseSpeedStopAndClose",
+      "test_animation/testInvalidSpeedLeavesNoWindow",
+      "test_animation/testAnimatedTrajectoryMatchesNormalSimulation",
+      "test_animation/testV1ChaserHighlight",
+      "test_animation/testV1LiveMatchReplaysDecisions"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "error": "Error using assert\nSimulation advanced while paused.\n\nError in validate_animation (line 19)\n assert(frozenTime==pausedTime,'TDP:AnimationPause','Simulation advanced while paused.');\n ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+  "elapsedSeconds": 462.361948
+}

@@ -1,0 +1,35 @@
+{
+  "status": "READ_COMPLETED_NOT_A_COURSE_PERMISSION",
+  "readAtUtc": "2026-11-06T00:16:38.455419+00:00",
+  "method": "pdftotext -layout over both complete files; rendered and visually inspected specification PDF page 5 and introductory PDF page 32",
+  "files": [
+    {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/Resource/ENG5325 Robotics TDP M -Spec Doc 2026 2027.pdf",
+      "sha256": "7f9babf35c6cc50de55787b670e6497bfcf31b2223473b4be724d54780a2a354",
+      "pageCount": 10,
+      "extractCharacters": 18867,
+      "aiKeywordMatches": []
+    },
+    {
+      "path": "/home/fayne/Alpha/humanoid_football_robot/Resource/RTDPM Introductory Presentation 2026 2027.pdf",
+      "sha256": "c138e385a0912aade966f640edf86684d4d03d6ab13866cb6c63381af5c6e10a",
+      "pageCount": 33,
+      "extractCharacters": 15126,
+      "aiKeywordMatches": []
+    }
+  ],
+  "relevantQuote": {
+    "file": "/home/fayne/Alpha/humanoid_football_robot/Resource/ENG5325 Robotics TDP M -Spec Doc 2026 2027.pdf",
+    "pdfPage": 5,
+    "text": "Please note that the University’s plagiarism policy applies to the material presented in the team reports and presentations."
+  },
+  "limits": [
+    "No matching AI restriction found in extractable text; this does not prove permission to use AI for code.",
+    "Only cited assessment pages were rendered for visual inspection.",
+    "Spreadsheet cites introductory page 34; supplied PDF has 33 pages."
+  ],
+  "spreadsheetClaim": {
+    "cell": "Sheet2!A27",
+    "text": "课程允许将 AI 用于战术构思，但禁止 AI 编写仿真或硬件代码。"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "revision": "a324545cde4adc35adcb49801888d17459773627",
+  "cleanAtStart": true,
+  "rebuild": false,
+  "periodSeconds": 0.05,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "executionRoot": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/v1-release-check-01",
+  "startedAtUtc": "2026-11-06T09:35:15.469416+00:00",
+  "cacheId": "v1release_50ms",
+  "preferencePath": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/v1-release-check-01/build/release-command-01/prefs-50",
+  "command": [
+    "./scripts/run_matlab.sh",
+    "tdpSetup; validate_v1_matrix('evidence/tactics-v1/release-matrix-01/matches-50ms',50/1000,1:20);"
+  ],
+  "exitCode": 0,
+  "finishedAtUtc": "2026-11-06T09:40:49.273851+00:00",
+  "elapsedSeconds": 333.8044564760057
+}

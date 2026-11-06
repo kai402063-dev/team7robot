@@ -1,0 +1,141 @@
+{
+  "status": "PASS_V1_2D",
+  "branch": "ai-migration-baseline",
+  "originalExperimentRevision": "ca87cb149cf7b71e5ad5ae1ea7396dd64f981b2c",
+  "releaseRuntimeRevision": "a324545cde4adc35adcb49801888d17459773627",
+  "fullReleaseRechecks": 40,
+  "releaseArrayPairsMatched": 80,
+  "scope": "Fixed-role V1, real 4v4 Simulink, headless and live. Separate nominal ACompat regression.",
+  "modelsAndTacticsIndependentOfViewer": true,
+  "officialMatches": 40,
+  "totalOfficialSteps": 540000,
+  "matchSeconds": 600,
+  "distinctSeeds": 20,
+  "periods": [
+    0.05,
+    0.04
+  ],
+  "headline": {
+    "scoringMatches": 12,
+    "goals": 22,
+    "shots": 3505,
+    "physicalKicks": 6727,
+    "overlapSteps": 0,
+    "outsideBorderRobotSamples": 0
+  },
+  "matlabTestCases": 25,
+  "officialElapsedWallSeconds": 875.1277440309932,
+  "manualTestCasesPassed": 9,
+  "legacyMatches": 40,
+  "extraSeed1ShippedModelRuns": 2,
+  "extraSeed1Replays": 2,
+  "immutableRootCount": 14,
+  "immutableFileCount": 818,
+  "unresolved": [
+    "Team-defined physical recovery signal for striker; explicit recovery injection used",
+    "2D sensing, maximum speeds and rolling/contact parameters require physical validation",
+    "Native ROS Toolbox and Coder integrations blocked by missing products; V1 tactics have not been exercised on a 3D or physical NAO"
+  ],
+  "receipts": {
+    "matrix": {
+      "file": "matrix-final-01/receipt.json",
+      "sha256": "5e757f300a5ee6f5dc2d2f323e46f6b81e5bdb5007235c2d8c02ec3ad3d48652"
+    },
+    "summary": {
+      "file": "matrix-final-01/summary/receipt.json",
+      "sha256": "06981da4eae217f928376a9bce7a9f0deb1b8da383181a3a6a785d8d3f74c453"
+    },
+    "matlabCommand": {
+      "file": "matrix-final-01/command/command.json",
+      "sha256": "2e185e08f64ec8d8b05cca8243711c27d3d473c9b81bac8b97b537382987d412"
+    },
+    "perStepAudit": {
+      "file": "matrix-final-01/independent-audit.json",
+      "sha256": "1124a4d1d62f53306eb9ea134d37d284f1e96a751483c80ddab3c01f6d0724b5"
+    },
+    "releaseMatrix": {
+      "file": "release-matrix-01/receipt.json",
+      "sha256": "b9fb102fb565176c4f5bad7091784047e53dabeb4d2d982ad5c40db9a807d0bc"
+    },
+    "shippedVsRebuilt": {
+      "file": "prebuilt-rebuild-01/receipt.json",
+      "sha256": "3d6a85092be156c24a6ca74e1c29d2c9d54e7a548a9d8f8c4e58cdc17a1a5c3b"
+    },
+    "mutation-team": {
+      "file": "mutation-plans-01/receipt.json",
+      "sha256": "4d0b676b51a5c07df9872823be5444668347e7bde7c209d3acd21fa5fbf451ab"
+    },
+    "mutation-model": {
+      "file": "model-mutation-02/receipt.json",
+      "sha256": "11a387d46180a251de62fd68d04b1668639d764183a4193e99b0a5eb9fc35d6d"
+    },
+    "mutation-matrix": {
+      "file": "mutation-matrix-01/receipt.json",
+      "sha256": "cba37d08f9d787418887a7f09a4fd8815af2795c0d9669e0efac27c438069f11"
+    },
+    "mutation-pause": {
+      "file": "mutation-pause-01/receipt.json",
+      "sha256": "d946130cee68a40b4d61587219ddef2ef9ec69a316f866c6ef63e5954f677452"
+    },
+    "ACompat": {
+      "file": "legacy-01/receipt.json",
+      "sha256": "d68b69d77a7be2e7f58d923784d0ef81d90a020d515b47fdc401bd7fe2393dbc"
+    },
+    "firstTimeReader": {
+      "file": "reader-01/receipt.json",
+      "sha256": "f9d4cf90a999ccf31a719e05c99922d3d37deca305c4b934d6879a6e3c3a2169"
+    },
+    "handson": {
+      "file": "handson-01/receipt.json",
+      "sha256": "0ee3e027282c338048d9d31e4897f29014d592b31326141727febe2996f6ff27"
+    },
+    "manualNumbers": {
+      "file": "manual-final-02/receipt.json",
+      "sha256": "03e46f9f1df3b39d9b45ef849b3e99f8360c940cd15aed738d4e0b4e62c2dfed"
+    },
+    "modelStructure": {
+      "file": "model-structure-01/receipt.json",
+      "sha256": "669a6a714c461048a037f5766767caa101b5b05c27a39f751a94f0d6291642f5"
+    },
+    "interactiveDisplay": {
+      "file": "viewer-02/artifacts/receipt.json",
+      "sha256": "330b632333926435b4c64363d514346324b1a8c9cc418ab6e4396036b22897e9"
+    },
+    "displayCommand": {
+      "file": "viewer-02/command.json",
+      "sha256": "72e035c492d27db79117bc99f54962b4c5f213e4f66a783704705ac321723889"
+    },
+    "releaseLauncher": {
+      "file": "launcher-02/receipt.json",
+      "sha256": "965fc0ebd2221286890dbd53451b9d461bc203e9913a29beece5540f6a0922b7"
+    },
+    "observedMotion": {
+      "file": "launcher-02/recorded-motion.json",
+      "sha256": "bf776b1e4eab062202cb72873944d9aff93c43eda8fafb57c225a630b06d1a4a"
+    },
+    "sourceDriftRehearsal": {
+      "file": "matrix-longcheck-01/receipt.json",
+      "sha256": "cc944abb5ad0d9378987666bdc5e999d5794c282580961ff353dd079480f3773"
+    },
+    "initialDisplayRegression": {
+      "file": "viewer-01/artifacts/receipt.json",
+      "sha256": "f39587f17f9a2b159b80ec55872acbdda9a33739c95ef83f5303aadf85532a33"
+    },
+    "readOnlyStart": {
+      "file": "implementation/inputs-before.json",
+      "sha256": "a929ead6b627be1c75d23739df0b5a4c5ae2f3c4eb2e5bf0d2e043057a9697a3"
+    },
+    "readOnlyEnd": {
+      "file": "implementation/inputs-after.json",
+      "sha256": "a929ead6b627be1c75d23739df0b5a4c5ae2f3c4eb2e5bf0d2e043057a9697a3"
+    },
+    "manualLinkAudit": {
+      "file": "implementation/manual-audit.json",
+      "sha256": "339acc3b09add3c3d0e689adf17878a1bd264d3a3f00fccce7db538630e20066"
+    },
+    "mutationAudit": {
+      "file": "implementation/mutation-audit.json",
+      "sha256": "1d2be71ad502d3cbb043b8cbcded5e7dbe83c38bfea92ef7f66eb08fb7ef4044"
+    }
+  }
+}

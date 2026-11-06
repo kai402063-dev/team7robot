@@ -1,0 +1,8 @@
+{
+  "status": "FAIL",
+  "scope": "Private X11 display; user desktop untouched",
+  "exitCode": 1,
+  "display": ":1",
+  "cacheId": "animation_display_417282",
+  "elapsedSeconds": 508.862524133001
+}

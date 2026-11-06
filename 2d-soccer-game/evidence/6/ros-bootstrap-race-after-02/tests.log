@@ -1,0 +1,14 @@
+test_bootstrap_delayed_discovery (test_webots.BootstrapTests.test_bootstrap_delayed_discovery) ... ok
+test_bootstrap_lost_first_images (test_webots.BootstrapTests.test_bootstrap_lost_first_images) ... ok
+test_bootstrap_ready_does_not_publish (test_webots.BootstrapTests.test_bootstrap_ready_does_not_publish) ... ok
+test_bootstrap_timeout_is_bounded (test_webots.BootstrapTests.test_bootstrap_timeout_is_bounded) ... ok
+test_duplicate_and_ball_independent_completion (test_webots.WebotsTests.test_duplicate_and_ball_independent_completion) ... ok
+test_expiry_and_late (test_webots.WebotsTests.test_expiry_and_late) ... ok
+test_group_dimensions (test_webots.WebotsTests.test_group_dimensions) ... ok
+test_motion_source_durations (test_webots.WebotsTests.test_motion_source_durations) ... ok
+test_queue_failure_and_cancel (test_webots.WebotsTests.test_queue_failure_and_cancel) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.049s
+
+OK

@@ -1,0 +1,7 @@
+{
+  "sourceCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
+  "startUtc": "2026-11-05T22:15:56.701961+00:00",
+  "output": "build/m2-bootstrap-01",
+  "status": "LAUNCHED",
+  "purpose": "Actual ROS and physical Webots regression after first-frame bootstrap race fix"
+}

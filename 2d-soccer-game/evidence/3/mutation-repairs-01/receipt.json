@@ -1,0 +1,50 @@
+{
+  "spec": {
+    "id": "repairs-v1",
+    "file": "environment/Contact2D.m",
+    "old": "if d<minD",
+    "new": "if d<minD && d>1e-9",
+    "suite": "tests/test_repairs.m",
+    "evidence": "evidence/3/mutation-repairs-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_repairs/testCoincidentAndChainSeparation",
+      "test_repairs/testEightCoincidentAtBoundary",
+      "test_repairs/testInactiveSlotsAreUntouched",
+      "test_repairs/testReferenceRestartAndClearance",
+      "test_repairs/testWholeBallBetweenPosts",
+      "test_repairs/testOwnGoalAndNoTouch",
+      "test_repairs/testCompatibilityUntouched"
+    ],
+    "passed": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": false
+}

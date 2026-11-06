@@ -1,0 +1,25 @@
+[Warning: The model name 'ControllerCore' is shadowing another name in the
+MATLAB workspace or path. Type "which -all ControllerCore" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_controller (line 5)] 
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 4)] 
+[Warning: The model name 'tdpSingleRobot' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpSingleRobot" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_single (line 4)] 
+Running test_actuator
+......
+Done test_actuator
+__________
+
+Running test_controller
+........
+Done test_controller
+__________
+

@@ -1,0 +1,13 @@
+{
+  "spec": {
+    "id": "baseline",
+    "file": "reference/projectA/ballModel.m",
+    "old": "v - P.ballDecel*P.dt",
+    "new": "v - 1.01*P.ballDecel*P.dt",
+    "suite": "tests/test_baseline.m",
+    "evidence": "evidence/0/mutation-01"
+  },
+  "exitCode": 1,
+  "results": {},
+  "detected": false
+}

@@ -1,0 +1,130 @@
+{
+  "status": "PASS_AVAILABLE_M2_WITH_BLOCKERS_AND_NOISY_TRACE_DIFFERENCES",
+  "scope": "M2",
+  "completedUtc": "2026-11-05T23:35:01.957538+00:00",
+  "branch": "ai-migration-baseline",
+  "worktree": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1",
+  "labels": [
+    "baseline-2d-v1",
+    "baseline-v1"
+  ],
+  "validatedExecutableCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
+  "executableFilesUnchangedSinceValidation": true,
+  "oneKeyEvidence": "evidence/6/clean-final-03/artifacts/receipt.json",
+  "independentManualAudit": "evidence/6/clean-final-03/final-manual/independent-audit-03/FINAL_AUDIT.json",
+  "stageGates": {
+    "0": {
+      "status": "PASS",
+      "evidence": "evidence/0/FINAL_RECEIPT_v2.json",
+      "finalRepeat": "evidence/6/clean-final-03/artifacts/stage0/receipt.json",
+      "matches": 80,
+      "secondsEach": 600,
+      "repeatExact": true
+    },
+    "1": {
+      "status": "PASS",
+      "evidence": "evidence/6/clean-final-03/artifacts/stage1/receipt.json",
+      "functions": 11,
+      "casesPerFunction": 1000,
+      "tolerance": 1e-12,
+      "screenerMessages": 0
+    },
+    "2": {
+      "status": "PASS",
+      "evidence": "evidence/6/clean-final-03/artifacts/stage2/receipt.json",
+      "testsPassed": 15,
+      "controlPeriodsSeconds": [
+        0.05,
+        0.04
+      ]
+    },
+    "3": {
+      "status": "PASS_WITH_DOCUMENTED_NOISY_TRACE_DIVERGENCE",
+      "rawTraceStatus": "DIVERGENCE",
+      "evidence": "evidence/6/clean-final-03/artifacts/stage3/receipt.json",
+      "comparisons": 40,
+      "zeroNoiseMaximumDifference": 5.1529960853891055e-14,
+      "defaultNoiseMaximumDifference": 0.024622509687048044,
+      "allGoalShotFirstTouchMetricsEqual": true,
+      "repairsEvidence": "evidence/6/clean-final-03/artifacts/repairs/receipt.json"
+    },
+    "4": {
+      "status": "PASS_AVAILABLE_GATES_NATIVE_GATES_BLOCKED",
+      "evidence": "evidence/6/clean-final-03/final-manual/ros-manual-03/receipt.json",
+      "frames": 101,
+      "actionsExactlyEqual": true,
+      "standardMessages": true
+    },
+    "5": {
+      "status": "PASS_SINGLE_V5_AVAILABLE_GATES",
+      "evidence": "evidence/6/clean-final-03/final-manual/webots-closed-manual-01/analysis.json",
+      "frames": 1001,
+      "physicalExecutions": 1,
+      "ballMoved": true,
+      "sampledBallDisplacementMetres": 0.19552818220887058,
+      "cameraErrorCode": 0,
+      "clockPublishers": 1,
+      "supervisorBallVelocityWrites": false,
+      "modelValidation": "NOT_ESTABLISHED"
+    },
+    "6": {
+      "status": "PASS_AVAILABLE_MANUAL_PATHS",
+      "evidence": "evidence/6/clean-final-03/final-manual/independent-audit-03/FINAL_AUDIT.json",
+      "oneKeyWallSeconds": 2429.332090665004,
+      "manualSuccessfulCommandSeconds": 638.0530490340097,
+      "guiDragging": "NOT_PERFORMED"
+    }
+  },
+  "blockedProducts": [
+    "ROS Toolbox",
+    "Simulink Coder",
+    "MATLAB Coder"
+  ],
+  "blockedGates": {
+    "nativeMatlabRos2": "BLOCKED: ROS Toolbox not installed; installation not authorized",
+    "generatedControllerNode": "BLOCKED: Simulink Coder and MATLAB Coder not installed",
+    "nativeReadImage": "BLOCKED: ROS Toolbox not installed"
+  },
+  "unverified": {
+    "guiDragging": "NOT_PERFORMED",
+    "asynchronousNoNewWatchdog": "NOT_VERIFIED",
+    "NAO6AndRealDynamicsValidation": "NOT_ESTABLISHED",
+    "visionBallDetectionAndLocalization": "NOT_IMPLEMENTED",
+    "realTimeControl": "NOT_ESTABLISHED: lockstep proxy waits for messages"
+  },
+  "physicalLimitations": [
+    "Webots Nao H25 V5, not NAO6",
+    "Supervisor read-only ground truth, not vision localization",
+    "Uncalibrated teaching mass, contact and motion parameters",
+    "Rolling deceleration is insufficient; no calibrated transfer of the 2D 0.4 m/s^2 estimate",
+    "Tap maps to Shoot in 3D; only Kick validated here"
+  ],
+  "readOnlyInputs": {
+    "identical": true,
+    "roots": 14,
+    "files": 818,
+    "before": "evidence/0/inputs-before.json",
+    "after": "evidence/6/inputs-after.json",
+    "comparisonLog": "evidence/6/input-hash-comparison.log"
+  },
+  "mutationEvidence": "evidence/6/audit-receipts-mutation-audit.json",
+  "bootstrapMutation": "evidence/6/ros-bootstrap-race-mutation-02/receipt.json",
+  "sourceFixesDuringFinalAudit": [
+    "Validation receipts no longer report PASS before asserting success",
+    "Truth-isolation test includes a positive sensing control",
+    "Frozen first camera/clock frames are retried during DDS discovery",
+    "Matplotlib cache is isolated in build"
+  ],
+  "preservedAttempts": [
+    "evidence/6/clean-final-01-superseded",
+    "evidence/6/clean-final-02-failed",
+    "evidence/6/pause-02",
+    "evidence/6/resume-interruption-02"
+  ],
+  "decisionsForTeam": "docs/chapters/course_mapping.md",
+  "processCleanup": "TASK_RUNTIME_STOPPED_SHARED_MATHWORKS_AUXILIARIES_RETAINED",
+  "taskExperimentProcessesRemaining": [],
+  "sharedMathWorksAuxiliariesRetained": true,
+  "installedProductsDuringTask": [],
+  "pushedOrOpenedPR": false
+}

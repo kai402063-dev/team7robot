@@ -1,0 +1,50 @@
+{
+  "names": [
+    "test_algorithms/testGoToPose",
+    "test_algorithms/testKickSkill",
+    "test_algorithms/testRobotModel",
+    "test_algorithms/testBallModel",
+    "test_algorithms/testCollisions",
+    "test_algorithms/testRulesCheck",
+    "test_algorithms/testRoleAssignment",
+    "test_algorithms/testActionSelection",
+    "test_algorithms/testLaneClear",
+    "test_algorithms/testAnglesAndKickoff"
+  ],
+  "passed": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ]
+}

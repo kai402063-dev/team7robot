@@ -1,0 +1,24 @@
+{
+  "status": "FAIL",
+  "error": "TimeoutError('No ROS graph evidence receipt')",
+  "frames": 0,
+  "elapsedWallSeconds": 31.612457436000113,
+  "events": [],
+  "kickResults": [],
+  "executions": 0,
+  "duplicateDeliveries": 0,
+  "camera": {
+    "width": 160,
+    "height": 120,
+    "encoding": "bgra8",
+    "step": 640,
+    "bytes": 76800,
+    "stamp": 2.0,
+    "sha256": "b1a20bc743853ca3b1afd182cb34a651b5b112cc0855910a6e44e1dcc319dbb9",
+    "source": "actual Webots CameraTop buffer"
+  },
+  "clockPublisherCounts": [],
+  "localization": "Supervisor read-only ground truth; not perception validation",
+  "robotModel": "Webots Nao H25 V5 red",
+  "modelValidation": "NOT_ESTABLISHED: V5 simulation with uncalibrated teaching parameters"
+}

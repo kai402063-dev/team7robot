@@ -1,0 +1,36 @@
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 4)] 
+[Warning: Symbol 'P' defined in model workspace of tdpReplay shadows the symbol
+in <a href="matlab:slprivate('exploreListNode', '/home/fayne/Documents/Robotics
+& AI/Robotics
+TDP/2d-soccer-game/tdp-migrated-r1/models/TdpTypes.sldd','dictionary',7,
+'','tdpReplay');">TdpTypes.sldd</a>.] 
+[> In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)] 
+{Error using runReplay (line 6)
+Symbol 'P' has multiple inconsistent definitions. To maintain inconsistent
+definitions across the model hierarchy consider clearing the model property
+'Enforce consistent data definitions across referenced models'.
+Caused by:
+    Error using Simulink.Simulation.internal.DesktopSimHelper
+    valuestruct differences in <a href="matlab:slprivate('exploreListNode',
+    '/home/fayne/Documents/Robotics & AI/Robotics
+    TDP/2d-soccer-game/tdp-migrated-r1/models/TdpTypes.sldd','dictionary',7,
+    '','tdpReplay');">TdpTypes.sldd</a> (<a
+    href="matlab:Simulink.internal.data.externalsources.definitionConflictResolution.launchDialog('copy',
+    'P', '/home/fayne/Documents/Robotics & AI/Robotics
+    TDP/2d-soccer-game/tdp-migrated-r1/models/TdpTypes.sldd:Design Data', 7, {'base
+    workspace:'}, {}, []);">Update others to match</a>) - Show complete stack trace
+    Error using Simulink.Simulation.internal.DesktopSimHelper
+    valuestruct differences in <a href="matlab:slprivate('exploreListNode', '',
+    'base', 'P');">base workspace</a> (<a
+    href="matlab:Simulink.internal.data.externalsources.definitionConflictResolution.launchDialog('copy',
+    'P', 'base workspace:', 0, {}, {'/home/fayne/Documents/Robotics & AI/Robotics
+    TDP/2d-soccer-game/tdp-migrated-r1/models/TdpTypes.sldd:Design Data'},
+    [7]);">Update others to match</a>) - Show complete stack trace
+} 

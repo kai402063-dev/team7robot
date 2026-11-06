@@ -1,0 +1,1706 @@
+{
+  "source": "matlab.log",
+  "model": "tdpRecoveryMatch",
+  "events": [
+    {
+      "case": "approach-handback",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.05,
+        0.75,
+        0.8
+      ],
+      "owner": [
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        1,
+        1
+      ],
+      "requestId": [
+        1,
+        15,
+        16
+      ],
+      "status": [
+        0,
+        0,
+        0
+      ],
+      "feedbackId": [
+        0,
+        0,
+        0
+      ],
+      "reason": [
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        1,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.05,
+        0.75,
+        0.8
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "approach-handback",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.04,
+        0.8,
+        0.84
+      ],
+      "owner": [
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        1,
+        1
+      ],
+      "requestId": [
+        1,
+        20,
+        21
+      ],
+      "status": [
+        0,
+        0,
+        0
+      ],
+      "feedbackId": [
+        0,
+        0,
+        0
+      ],
+      "reason": [
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        1,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.04,
+        0.8,
+        0.84
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "natural-geometry-return",
+      "dt": 0.05,
+      "team": 2,
+      "robot": 8,
+      "tSim": [
+        6.5,
+        6.550000000000001,
+        6.6000000000000005,
+        7.050000000000001,
+        7.1000000000000005
+      ],
+      "owner": [
+        8,
+        7,
+        7,
+        7,
+        8
+      ],
+      "takeover": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "requestId": [
+        119,
+        119,
+        120,
+        129,
+        130
+      ],
+      "status": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "feedbackId": [
+        119,
+        119,
+        119,
+        119,
+        119
+      ],
+      "reason": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ready": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        6.5,
+        6.550000000000001,
+        6.6000000000000005,
+        7.050000000000001,
+        7.1000000000000005
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "natural-geometry-return",
+      "dt": 0.04,
+      "team": 2,
+      "robot": 8,
+      "tSim": [
+        9.32,
+        9.36,
+        9.4,
+        9.88,
+        9.92
+      ],
+      "owner": [
+        8,
+        7,
+        7,
+        7,
+        8
+      ],
+      "takeover": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      "requestId": [
+        209,
+        209,
+        210,
+        222,
+        223
+      ],
+      "status": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "feedbackId": [
+        209,
+        209,
+        209,
+        209,
+        209
+      ],
+      "reason": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ready": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        9.32,
+        9.36,
+        9.4,
+        9.88,
+        9.92
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "finish-original-mf-kick",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.7000000000000001,
+        1.05,
+        1.1
+      ],
+      "owner": [
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        2,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        6
+      ],
+      "status": [
+        1,
+        2,
+        2
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.7000000000000001,
+        1.05,
+        1.1
+      ],
+      "kicker": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "case": "finish-original-mf-kick",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.72,
+        1,
+        1.04
+      ],
+      "owner": [
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        2,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        6
+      ],
+      "status": [
+        1,
+        2,
+        2
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.72,
+        1,
+        1.04
+      ],
+      "kicker": [
+        0,
+        3,
+        0
+      ]
+    },
+    {
+      "case": "stopped-game",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "owner": [
+        3,
+        0,
+        0
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        8
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "stale-ball",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "owner": [
+        3,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        7
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "unavailable-midfielder",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "owner": [
+        3,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        8
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.75,
+        0.8,
+        0.8500000000000001
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "stopped-game",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "owner": [
+        3,
+        0,
+        0
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        8
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "stale-ball",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "owner": [
+        3,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        7
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "unavailable-midfielder",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "owner": [
+        3,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        2,
+        0,
+        0
+      ],
+      "requestId": [
+        6,
+        6,
+        8
+      ],
+      "status": [
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.76,
+        0.8,
+        0.84
+      ],
+      "kicker": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "hold-through-missing-terminal",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.8,
+        1.55,
+        1.6,
+        1.6500000000000001
+      ],
+      "owner": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "requestId": [
+        6,
+        6,
+        6,
+        23
+      ],
+      "status": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.75,
+        0.75,
+        1.6,
+        1.6500000000000001
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "hold-through-missing-terminal",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.8,
+        1.56,
+        1.6,
+        1.6400000000000001
+      ],
+      "owner": [
+        0,
+        0,
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "releaseId": [
+        6,
+        6,
+        6,
+        0
+      ],
+      "kind": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "requestId": [
+        6,
+        6,
+        6,
+        27
+      ],
+      "status": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "feedbackId": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "reason": [
+        0,
+        0,
+        4,
+        4
+      ],
+      "ready": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.72,
+        0.72,
+        1.6,
+        1.6400000000000001
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "subsystem-clear-heartbeat-drop-return",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 4,
+      "tSim": [
+        0.4,
+        1.1,
+        1.9000000000000001,
+        1.9500000000000002
+      ],
+      "owner": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "requestId": [
+        8,
+        22,
+        38,
+        40
+      ],
+      "status": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "feedbackId": [
+        0,
+        0,
+        0,
+        40
+      ],
+      "reason": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "heartBeatStamp": [
+        0.4,
+        1,
+        1.9000000000000001,
+        1.9500000000000002
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "subsystem-clear-heartbeat-drop-return",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 4,
+      "tSim": [
+        0.4,
+        1.12,
+        1.92,
+        1.96
+      ],
+      "owner": [
+        3,
+        3,
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "requestId": [
+        10,
+        28,
+        48,
+        50
+      ],
+      "status": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "feedbackId": [
+        0,
+        0,
+        0,
+        50
+      ],
+      "reason": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ready": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "heartBeatStamp": [
+        0.4,
+        1,
+        1.92,
+        1.96
+      ],
+      "kicker": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "case": "wrong-id",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "old-stamp",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "cancel-rejected",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "future-stamp",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "still-active",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "matching-terminal",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.05,
+      "owner": 4,
+      "takeover": 0,
+      "recovering": 0,
+      "releaseId": 0,
+      "kind": 0,
+      "requestId": 1,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.05,
+      "kicker": 0
+    },
+    {
+      "case": "wrong-id",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "old-stamp",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "cancel-rejected",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "future-stamp",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "still-active",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 0,
+      "takeover": 1,
+      "recovering": 1,
+      "releaseId": 42,
+      "kind": 0,
+      "requestId": 42,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "matching-terminal",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": 0.04,
+      "owner": 4,
+      "takeover": 0,
+      "recovering": 0,
+      "releaseId": 0,
+      "kind": 0,
+      "requestId": 1,
+      "status": 0,
+      "feedbackId": 0,
+      "reason": 0,
+      "ready": 1,
+      "heartBeatStamp": 0.04,
+      "kicker": 0
+    },
+    {
+      "case": "expired-locked-request",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.05,
+        0.1
+      ],
+      "owner": [
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        0
+      ],
+      "releaseId": [
+        42,
+        0
+      ],
+      "kind": [
+        0,
+        0
+      ],
+      "requestId": [
+        42,
+        2
+      ],
+      "status": [
+        3,
+        3
+      ],
+      "feedbackId": [
+        42,
+        42
+      ],
+      "reason": [
+        4,
+        4
+      ],
+      "ready": [
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.05,
+        0.1
+      ],
+      "kicker": [
+        0,
+        0
+      ]
+    },
+    {
+      "case": "expired-locked-request",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 3,
+      "tSim": [
+        0.04,
+        0.08
+      ],
+      "owner": [
+        0,
+        4
+      ],
+      "takeover": [
+        1,
+        0
+      ],
+      "recovering": [
+        1,
+        0
+      ],
+      "releaseId": [
+        42,
+        0
+      ],
+      "kind": [
+        0,
+        0
+      ],
+      "requestId": [
+        42,
+        2
+      ],
+      "status": [
+        3,
+        3
+      ],
+      "feedbackId": [
+        42,
+        42
+      ],
+      "reason": [
+        4,
+        4
+      ],
+      "ready": [
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.04,
+        0.08
+      ],
+      "kicker": [
+        0,
+        0
+      ]
+    },
+    {
+      "case": "healthy-return-to-search",
+      "dt": 0.05,
+      "team": 1,
+      "robot": 4,
+      "tSim": [
+        0.75,
+        0.8
+      ],
+      "owner": [
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        3
+      ],
+      "requestId": [
+        15,
+        16
+      ],
+      "status": [
+        0,
+        0
+      ],
+      "feedbackId": [
+        0,
+        0
+      ],
+      "reason": [
+        0,
+        0
+      ],
+      "ready": [
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.75,
+        0.8
+      ],
+      "kicker": [
+        0,
+        0
+      ]
+    },
+    {
+      "case": "healthy-return-to-search",
+      "dt": 0.04,
+      "team": 1,
+      "robot": 4,
+      "tSim": [
+        0.8,
+        0.84
+      ],
+      "owner": [
+        3,
+        4
+      ],
+      "takeover": [
+        1,
+        0
+      ],
+      "recovering": [
+        0,
+        0
+      ],
+      "releaseId": [
+        0,
+        0
+      ],
+      "kind": [
+        0,
+        3
+      ],
+      "requestId": [
+        20,
+        21
+      ],
+      "status": [
+        0,
+        0
+      ],
+      "feedbackId": [
+        0,
+        0
+      ],
+      "reason": [
+        0,
+        0
+      ],
+      "ready": [
+        1,
+        1
+      ],
+      "heartBeatStamp": [
+        0.8,
+        0.84
+      ],
+      "kicker": [
+        0,
+        0
+      ]
+    }
+  ]
+}

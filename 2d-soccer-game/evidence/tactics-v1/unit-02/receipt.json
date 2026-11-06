@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "matlabExitCode": 0,
+  "testsPassed": 11,
+  "testsFailed": 0,
+  "testsIncomplete": 0,
+  "elapsedSeconds": 38.12649500000104,
+  "randomMirroredWorlds": 1000,
+  "mutationReceipt": "evidence/tactics-v1/mutation-plans-01/receipt.json",
+  "mutationDetected": true,
+  "scope": "Pure team decisions and V1 configuration; whole-model evidence is separate.",
+  "testedFilesSha256": {
+    "algorithms/+tdp/v1TeamPlans.m": "c96442768b5039a31af68fb4ff925bc706640f90f4bf67e0e9b424ecaacf6bff",
+    "algorithms/+tdp/v1TeamMemory.m": "6c2bf6a026d26ad8bc22df0fa25f9e1c8470eff2241e8e31646c075ee9078f16",
+    "algorithms/+tdp/v1Config.m": "144ba246978d1e6203a3b5f37f7cb417c37fde20716026d777b31b1d12179e30",
+    "algorithms/+tdp/validateV1Config.m": "b737ee2201b40c13abb3ee4ee1d6b4cae3d0d07e73df7fdd45c504e22dbf98f9",
+    "interfaces/TdpRole.m": "2b5de49b68bab16a49354474c8afa72dca2d4a266fba0ec78e1ae2ec7221e700",
+    "interfaces/TdpTeamPhase.m": "a0b5a89ce7c2f40c44f0a9102a997c1584592b848a786e5376f249f43871b84a",
+    "tests/test_v1_tactics.m": "43060d100cada78431cf8d044b4027a4360f0597adfd7707cbf7f6688f4b6d8f",
+    "scripts/mutation_v1_tactics.json": "e2ba1673c54756bbf4c58b363924245093c3218101f4c34ca99b689d64059c80"
+  }
+}

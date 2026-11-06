@@ -1,0 +1,7 @@
+Read-only parent-test observation, PID 332051; no signals sent.
+First sample: elapsed 02:53, average CPU 107%, main thread futex_do_wait.
+Direct children: owned Xvfb, fluxbox, MATLABWindow, matlab_helper, MathWorksService.
+One-second task sample: MCR 0 interpret used 71 CPU ticks; no gcc child observed.
+Task environment selectors only: TDP_CACHE_ID=animation_main; MATLAB_PREFDIR=build/animation-prefs.
+Later cache snapshot: cache/animation_main/tdpMatch.slxc about 36 s old; cache/animation_main/slprj/_sfprj/tdpMatch/amsi_serial.mat about 8 s old.
+Inference: active model preparation/compilation is plausible; this snapshot does not prove either simulation progression or a hang.

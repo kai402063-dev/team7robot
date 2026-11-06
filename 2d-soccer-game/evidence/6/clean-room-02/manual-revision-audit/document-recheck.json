@@ -1,0 +1,10 @@
+{
+  "commit": "31e82e0a3158328d83232f30ae06ce2dc792b7e8",
+  "initialGitStatus": "clean",
+  "stateCount": 7,
+  "transitionCount": 14,
+  "renderedEscapedPipeEntities": false,
+  "correctFeedbackTestName": true,
+  "thirdModelParameterDocumented": true,
+  "method": "Stateflow API reconstruction from Markdown code blocks; no GUI dragging"
+}

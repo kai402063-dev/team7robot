@@ -1,0 +1,8 @@
+{
+ "id":"animation-ball-coordinate-v2",
+ "file":"environment/LiveViewer2D.m",
+ "old":"row(57)+P.ballR*cos(obj.Circle)",
+ "new":"row(58)+P.ballR*cos(obj.Circle)",
+ "suite":"tests/test_animation.m",
+ "evidence":"evidence/animation/mutation-02"
+}

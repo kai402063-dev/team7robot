@@ -1,0 +1,1714 @@
+{
+  "status": "PASS",
+  "revision": "703099dce808f45c887642ddf05ddcb6bde46a9d",
+  "sourceFingerprint": "d5a166da105c73291104675e12947e038eb9a3705eb02c7afe527de98eefd9b1",
+  "pairedCases": 40,
+  "historicMatchesReproduced": 40,
+  "officialMatches": 80,
+  "totalOfficialSteps": 1080000,
+  "additionalFullReplays": 4,
+  "periods": [
+    {
+      "period": 0.05,
+      "default": {
+        "period": 0.05,
+        "matches": 20,
+        "steps": 240000,
+        "distinctTraces": 20,
+        "goals": [
+          3,
+          7
+        ],
+        "matchesWithGoal": 4,
+        "shots": [
+          955,
+          817
+        ],
+        "actualKicks": [
+          1801,
+          1672
+        ],
+        "midfielderShots": [
+          782,
+          796
+        ],
+        "takeoverEntries": [
+          13,
+          11
+        ],
+        "takeoverSeconds": [
+          6629.900000000001,
+          6249.55
+        ],
+        "phaseSwitches": [
+          422,
+          422
+        ],
+        "chaserChanges": [
+          522,
+          398
+        ],
+        "firstTouchRangeSeconds": [
+          3.95,
+          3.95
+        ],
+        "matchesWithoutTouch": 0,
+        "overlapSteps": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 24297,
+        "outsideBorderRobotSamples": 0,
+        "blockedTranslationSamples": 2567,
+        "translationRequests": 1377478,
+        "blockedTranslationRatio": 0.0018635506338395241,
+        "physicalKickStepsWithBallMotion": 3473
+      },
+      "experiment": {
+        "period": 0.05,
+        "matches": 20,
+        "steps": 240000,
+        "distinctTraces": 20,
+        "goals": [
+          3,
+          0
+        ],
+        "matchesWithGoal": 3,
+        "shots": [
+          1917,
+          348
+        ],
+        "actualKicks": [
+          2198,
+          493
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "takeoverEntries": [
+          41,
+          20
+        ],
+        "takeoverSeconds": [
+          22.55,
+          11.0
+        ],
+        "phaseSwitches": [
+          585,
+          557
+        ],
+        "chaserChanges": [
+          615,
+          629
+        ],
+        "firstTouchRangeSeconds": [
+          3.95,
+          3.95
+        ],
+        "matchesWithoutTouch": 0,
+        "overlapSteps": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 25759,
+        "outsideBorderRobotSamples": 0,
+        "blockedTranslationSamples": 5847,
+        "translationRequests": 1654775,
+        "blockedTranslationRatio": 0.0035334108866764365,
+        "physicalKickStepsWithBallMotion": 2691
+      },
+      "automatic": {
+        "returns": [
+          41,
+          20
+        ],
+        "entries": [
+          41,
+          20
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          0,
+          0
+        ]
+      },
+      "pairsWithChangedPhysicalTrace": 20
+    },
+    {
+      "period": 0.04,
+      "default": {
+        "period": 0.04,
+        "matches": 20,
+        "steps": 300000,
+        "distinctTraces": 20,
+        "goals": [
+          5,
+          7
+        ],
+        "matchesWithGoal": 8,
+        "shots": [
+          1223,
+          510
+        ],
+        "actualKicks": [
+          1999,
+          1255
+        ],
+        "midfielderShots": [
+          771,
+          441
+        ],
+        "takeoverEntries": [
+          16,
+          9
+        ],
+        "takeoverSeconds": [
+          7031.36,
+          4864.12
+        ],
+        "phaseSwitches": [
+          352,
+          352
+        ],
+        "chaserChanges": [
+          380,
+          454
+        ],
+        "firstTouchRangeSeconds": [
+          3.92,
+          3.92
+        ],
+        "matchesWithoutTouch": 0,
+        "overlapSteps": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 23427,
+        "outsideBorderRobotSamples": 0,
+        "blockedTranslationSamples": 4078,
+        "translationRequests": 1737471,
+        "blockedTranslationRatio": 0.0023470895341562536,
+        "physicalKickStepsWithBallMotion": 3254
+      },
+      "experiment": {
+        "period": 0.04,
+        "matches": 20,
+        "steps": 300000,
+        "distinctTraces": 20,
+        "goals": [
+          4,
+          0
+        ],
+        "matchesWithGoal": 4,
+        "shots": [
+          2106,
+          235
+        ],
+        "actualKicks": [
+          2375,
+          376
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "takeoverEntries": [
+          54,
+          13
+        ],
+        "takeoverSeconds": [
+          30.240000000000002,
+          7.280000000000001
+        ],
+        "phaseSwitches": [
+          532,
+          466
+        ],
+        "chaserChanges": [
+          575,
+          610
+        ],
+        "firstTouchRangeSeconds": [
+          3.92,
+          3.92
+        ],
+        "matchesWithoutTouch": 0,
+        "overlapSteps": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 26990,
+        "outsideBorderRobotSamples": 0,
+        "blockedTranslationSamples": 7828,
+        "translationRequests": 2075151,
+        "blockedTranslationRatio": 0.0037722556093508375,
+        "physicalKickStepsWithBallMotion": 2751
+      },
+      "automatic": {
+        "returns": [
+          54,
+          13
+        ],
+        "entries": [
+          54,
+          13
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          0,
+          0
+        ]
+      },
+      "pairsWithChangedPhysicalTrace": 20
+    }
+  ],
+  "matches": [
+    {
+      "period": 0.04,
+      "seed": 1,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "8387890bd122691d6e974df19f5634bbc93a956ae8742966cee7a09ebdd4ae1f",
+      "handback": {
+        "entries": [
+          5,
+          0
+        ],
+        "returns": [
+          5,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed01/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed01/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 2,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "9397e323474e560b1ae9fc34263952b5ed941809b202d7d4539d6c427f0e4a93",
+      "handback": {
+        "entries": [
+          3,
+          1
+        ],
+        "returns": [
+          3,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed02/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed02/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 3,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "cb42ddbc113a783458468bf950dba057a5322dbd2faf781b01ea8d597b8c5ca8",
+      "handback": {
+        "entries": [
+          1,
+          0
+        ],
+        "returns": [
+          1,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed03/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed03/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 4,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "3ab6c020bed7eb830fb6c01acb150db749008220b3dd26da264240950c379807",
+      "handback": {
+        "entries": [
+          1,
+          5
+        ],
+        "returns": [
+          1,
+          5
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed04/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed04/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 5,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "b39e0385bdcc150d41c44e29a273eb7d683d5380212e1e163573a6d493e99491",
+      "handback": {
+        "entries": [
+          4,
+          1
+        ],
+        "returns": [
+          4,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed05/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed05/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 6,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "ded5abbed33cca560e4092b668e1efadeb2e7bfca55392cd8ffd186ba21e988b",
+      "handback": {
+        "entries": [
+          3,
+          0
+        ],
+        "returns": [
+          3,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed06/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed06/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 7,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "1a11f7376e38252d4432c9d3d53c0a463edfe8d81a5a23803e2fce4116372e9c",
+      "handback": {
+        "entries": [
+          2,
+          0
+        ],
+        "returns": [
+          2,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed07/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed07/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 8,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "5eb84c894843e1d4a18b4ae44fc5cf66f327555e4308b1e8c5efbfd96d596c87",
+      "handback": {
+        "entries": [
+          2,
+          0
+        ],
+        "returns": [
+          2,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed08/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed08/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 9,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "12bf0168f061ea5c8199bd8baa8576007e2f52f1898111837fae90ba57432e1a",
+      "handback": {
+        "entries": [
+          2,
+          1
+        ],
+        "returns": [
+          2,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed09/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed09/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 10,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "ebca8d6f8aceab0e5e86d1ca8ba941974180896079ad4a8c40211499a0bbea1b",
+      "handback": {
+        "entries": [
+          5,
+          1
+        ],
+        "returns": [
+          5,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed10/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed10/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 11,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "8c11e891efbd3b4e15b1f16d495cf70b274332c54562adb8d9d91091a4948cd4",
+      "handback": {
+        "entries": [
+          4,
+          1
+        ],
+        "returns": [
+          4,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed11/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed11/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 12,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "36ae8e6b10f73be36e631fd10c53025be3070175e408a67d645da6e006625ffc",
+      "handback": {
+        "entries": [
+          1,
+          0
+        ],
+        "returns": [
+          1,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed12/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed12/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 13,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "0f07dcd79d03cbd9ea4a90a8fe13aa22e459becee06ab1910a12d8fb7df2002f",
+      "handback": {
+        "entries": [
+          3,
+          0
+        ],
+        "returns": [
+          3,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed13/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed13/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 14,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "e553fae057ae63f7041f5556909a042677e0af16b2c24530d4986d847409b945",
+      "handback": {
+        "entries": [
+          1,
+          0
+        ],
+        "returns": [
+          1,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed14/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed14/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 15,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "a37bf476db1ab273e1aa76af9c58fbaa6697e7f8167939f18b91747a139420ce",
+      "handback": {
+        "entries": [
+          6,
+          0
+        ],
+        "returns": [
+          6,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed15/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed15/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 16,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "6a71e1be48d86a190340717f6fc0534d79d749b616ca5ca01b9fc09dd0a4def2",
+      "handback": {
+        "entries": [
+          4,
+          1
+        ],
+        "returns": [
+          4,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed16/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed16/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 17,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "53d54882bc55a7abc7ba77ceedb26a4a63511a4356fe284450a4c7b73b71647e",
+      "handback": {
+        "entries": [
+          3,
+          0
+        ],
+        "returns": [
+          3,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed17/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed17/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 18,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "7aa900da94f3a6d8c13b8613e5201ec7befe0fef84707378810f604712fbc8af",
+      "handback": {
+        "entries": [
+          2,
+          1
+        ],
+        "returns": [
+          2,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed18/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed18/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 19,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "0f857fe72d0f89b13e3e20862ab645ff09e956193cd547743c4261856a1afb4a",
+      "handback": {
+        "entries": [
+          2,
+          0
+        ],
+        "returns": [
+          2,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.56,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed19/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed19/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 20,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "d515f32281e857d189450cff38efa89718fe1b473e0ce3ca1960241e06c29c65",
+      "handback": {
+        "entries": [
+          0,
+          1
+        ],
+        "returns": [
+          0,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0,
+          0.56
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt40-seed20/receipt.json",
+      "experimentReceipt": "recovery/dt40-seed20/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 1,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "7ef7568836997bbb976b8d9487f850ae2163a9df2655e56adb762745cd1fc697",
+      "handback": {
+        "entries": [
+          3,
+          0
+        ],
+        "returns": [
+          3,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed01/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed01/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 2,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "9922c192e1755a3a67cdde8c9265f4c7e19fe99105102b4527d2caf4b3b4ef53",
+      "handback": {
+        "entries": [
+          1,
+          1
+        ],
+        "returns": [
+          1,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed02/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed02/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 3,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "344a48e45d3cbe2b0883efc1500cb388ce46e1e1f3a8572cc8ce40817cf9145c",
+      "handback": {
+        "entries": [
+          4,
+          0
+        ],
+        "returns": [
+          4,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed03/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed03/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 4,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "4816d3079fa14b94a7e6d86eaf177c134e13492311846c4a3d2a748f972369c1",
+      "handback": {
+        "entries": [
+          1,
+          4
+        ],
+        "returns": [
+          1,
+          4
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed04/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed04/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 5,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "04f4834fdef2b8a909a0548fd6e04d8fc6f3ecb7cbf83105a0ba1fb77158a057",
+      "handback": {
+        "entries": [
+          3,
+          2
+        ],
+        "returns": [
+          3,
+          2
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed05/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed05/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 6,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "0b7a05d241bc8b321aa8a51eecaebc9f11897d11a3c6460db7894926ed5c38b3",
+      "handback": {
+        "entries": [
+          1,
+          2
+        ],
+        "returns": [
+          1,
+          2
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed06/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed06/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 7,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "68e3f223520603252674400b5427ce7f9fce4f9770ea03d32fba5992716e4ca7",
+      "handback": {
+        "entries": [
+          1,
+          1
+        ],
+        "returns": [
+          1,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed07/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed07/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 8,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "5ebe2d1fbe6610b8ea9283f7a22b52c94adf27e7a72a53c3330e683cb9d64ace",
+      "handback": {
+        "entries": [
+          1,
+          1
+        ],
+        "returns": [
+          1,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed08/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed08/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 9,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "3813bbd3bc14237d036c06d85d0905f7d228487811ee38646ab45aafc51b1846",
+      "handback": {
+        "entries": [
+          2,
+          1
+        ],
+        "returns": [
+          2,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed09/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed09/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 10,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "a961bb51b05fffc764b1b2033b8271c73f513dbe73db5cdc1585d90255209934",
+      "handback": {
+        "entries": [
+          2,
+          0
+        ],
+        "returns": [
+          2,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed10/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed10/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 11,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "ebc219a78e63ecb51cabf171c00c398c353f9398940b14fc220796483b283122",
+      "handback": {
+        "entries": [
+          5,
+          1
+        ],
+        "returns": [
+          5,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed11/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed11/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 12,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "7045803e8fd2c847bc85d2b80f73b9a646c44fc84bc85533efff3181d0877aef",
+      "handback": {
+        "entries": [
+          1,
+          1
+        ],
+        "returns": [
+          1,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed12/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed12/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 13,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "daf052ab963481690d7c0d7bf46cfc3b611db8fa265dfc36433b4c84f1849f03",
+      "handback": {
+        "entries": [
+          1,
+          0
+        ],
+        "returns": [
+          1,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed13/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed13/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 14,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "9c81cbc15b604f7117e7c42fc0fbe3ced680c735eaa2ccdee147dbc87736be86",
+      "handback": {
+        "entries": [
+          1,
+          1
+        ],
+        "returns": [
+          1,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed14/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed14/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 15,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "a8d825ea81e98eb18cf0c62b212fde430e776a6d8974bccc3abc4b6ad923140c",
+      "handback": {
+        "entries": [
+          4,
+          0
+        ],
+        "returns": [
+          4,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed15/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed15/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 16,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "e76772d2467b998fa8e090bf9c7e5f56599ca651ac504d900ce399defed31a44",
+      "handback": {
+        "entries": [
+          5,
+          0
+        ],
+        "returns": [
+          5,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed16/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed16/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 17,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "a46a95bfb91f9d9c9b5048c94fb9b995eb8e5e5902e6081b6d2f1352700bd2cf",
+      "handback": {
+        "entries": [
+          1,
+          0
+        ],
+        "returns": [
+          1,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed17/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed17/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 18,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "eec932ec4311fc4ca9ca8290160efe0a73c8b3f3b9c7e33416e996d77cbf8a69",
+      "handback": {
+        "entries": [
+          2,
+          1
+        ],
+        "returns": [
+          2,
+          1
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed18/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed18/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 19,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "80d94afad1ec4268a606f8f02bd43a571f81a0b94748ea9988a42d0c03f40f8a",
+      "handback": {
+        "entries": [
+          2,
+          0
+        ],
+        "returns": [
+          2,
+          0
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0.55,
+          0
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed19/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed19/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 20,
+      "defaultEqualsArchived": true,
+      "samePhysicalTraceAcrossPolicies": false,
+      "sameTacticalTraceAcrossPolicies": false,
+      "recoveryDigest": "9db57b346fecf756a7a8ba711ca5e7d36ef180433859a5ebfbe311e12b62ef91",
+      "handback": {
+        "entries": [
+          0,
+          4
+        ],
+        "returns": [
+          0,
+          4
+        ],
+        "stillTakenOverAtEnd": [
+          false,
+          false
+        ],
+        "maximumTakeoverSeconds": [
+          0,
+          0.55
+        ],
+        "mfKicksDuringHandback": [
+          0,
+          0
+        ],
+        "cancelSamples": [
+          0,
+          0
+        ]
+      },
+      "defaultReceipt": "v1/dt50-seed20/receipt.json",
+      "experimentReceipt": "recovery/dt50-seed20/receipt.json"
+    }
+  ]
+}

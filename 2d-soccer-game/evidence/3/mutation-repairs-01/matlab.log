@@ -1,0 +1,56 @@
+Running test_repairs
+
+================================================================================
+Error occurred in test_repairs/testCoincidentAndChainSeparation and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:error:missingMessageArgument'
+    --------------
+    Error Details:
+    --------------
+    Error using assert
+    If you specify a message identifier argument, you must specify the message
+    text
+    argument.
+    
+    Error in Contact2D (line 35)
+    assert(worst<=max(20*P.contactTolerance,1e-8),'TDP:ContactConvergence');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Error in test_repairs>testCoincidentAndChainSeparation (line 9)
+     [r,~,~]=Contact2D(r,b,s,false,active,P);
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+================================================================================
+.
+================================================================================
+Error occurred in test_repairs/testEightCoincidentAtBoundary and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:error:missingMessageArgument'
+    --------------
+    Error Details:
+    --------------
+    Error using assert
+    If you specify a message identifier argument, you must specify the message
+    text
+    argument.
+    
+    Error in Contact2D (line 35)
+    assert(worst<=max(20*P.contactTolerance,1e-8),'TDP:ContactConvergence');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    Error in test_repairs>testEightCoincidentAtBoundary (line 16)
+    [r,~,~]=Contact2D(r,b,s,false,true(1,8),P);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+================================================================================
+......
+Done test_repairs
+__________
+
+Failure Summary:
+
+     Name                                           Failed  Incomplete  Reason(s)
+    ==============================================================================
+     test_repairs/testCoincidentAndChainSeparation    X         X       Errored.
+    ------------------------------------------------------------------------------
+     test_repairs/testEightCoincidentAtBoundary       X         X       Errored.

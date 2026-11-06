@@ -1,0 +1,8476 @@
+{
+  "status": "PASS_40_V1_MATCHES",
+  "revision": "703099dce808f45c887642ddf05ddcb6bde46a9d",
+  "sourceFingerprint": "d5a166da105c73291104675e12947e038eb9a3705eb02c7afe527de98eefd9b1",
+  "officialMatches": 40,
+  "additionalFullSeedOneReplays": 2,
+  "totalOfficialSteps": 540000,
+  "periods": [
+    {
+      "period": 0.05,
+      "matches": 20,
+      "steps": 240000,
+      "distinctTraces": 20,
+      "goals": [
+        3,
+        0
+      ],
+      "matchesWithGoal": 3,
+      "shots": [
+        1917,
+        348
+      ],
+      "actualKicks": [
+        2198,
+        493
+      ],
+      "midfielderShots": [
+        0,
+        0
+      ],
+      "takeoverEntries": [
+        41,
+        20
+      ],
+      "takeoverSeconds": [
+        22.55,
+        11.0
+      ],
+      "phaseSwitches": [
+        585,
+        557
+      ],
+      "chaserChanges": [
+        615,
+        629
+      ],
+      "firstTouchRangeSeconds": [
+        3.95,
+        3.95
+      ],
+      "matchesWithoutTouch": 0,
+      "overlapSteps": 0,
+      "maximumPenetrationMetres": 0,
+      "outsidePitchRobotSamples": 25759,
+      "outsideBorderRobotSamples": 0,
+      "blockedTranslationSamples": 5847,
+      "translationRequests": 1654775,
+      "blockedTranslationRatio": 0.0035334108866764365,
+      "physicalKickStepsWithBallMotion": 2691
+    },
+    {
+      "period": 0.04,
+      "matches": 20,
+      "steps": 300000,
+      "distinctTraces": 20,
+      "goals": [
+        4,
+        0
+      ],
+      "matchesWithGoal": 4,
+      "shots": [
+        2106,
+        235
+      ],
+      "actualKicks": [
+        2375,
+        376
+      ],
+      "midfielderShots": [
+        0,
+        0
+      ],
+      "takeoverEntries": [
+        54,
+        13
+      ],
+      "takeoverSeconds": [
+        30.240000000000002,
+        7.280000000000001
+      ],
+      "phaseSwitches": [
+        532,
+        466
+      ],
+      "chaserChanges": [
+        575,
+        610
+      ],
+      "firstTouchRangeSeconds": [
+        3.92,
+        3.92
+      ],
+      "matchesWithoutTouch": 0,
+      "overlapSteps": 0,
+      "maximumPenetrationMetres": 0,
+      "outsidePitchRobotSamples": 26990,
+      "outsideBorderRobotSamples": 0,
+      "blockedTranslationSamples": 7828,
+      "translationRequests": 2075151,
+      "blockedTranslationRatio": 0.0037722556093508375,
+      "physicalKickStepsWithBallMotion": 2751
+    }
+  ],
+  "matches": [
+    {
+      "period": 0.04,
+      "seed": 1,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          117,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 515,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104938,
+        "blockedTranslationSamples": 495,
+        "blockedTranslationRatio": 0.004717071032419143,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          129,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          117,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          804,
+          0,
+          0,
+          12,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          18,
+          9
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            96,
+            0,
+            14834,
+            0,
+            70
+          ],
+          [
+            96,
+            14679,
+            225,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          5,
+          0
+        ],
+        "takeoverEntries": [
+          5,
+          0
+        ],
+        "takeoverSeconds": [
+          2.8000000000000003,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1005
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          70,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "chaserChanges": [
+          18,
+          35
+        ],
+        "physicalKickStepsWithBallMotion": 135,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 129.39065534261545,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 10.585445,
+      "traceDigest": "4ed2c6fd140a8a06b76645c2baaca9b3d0d101225fa349046cf0dec7b3b127ee",
+      "tacticsDigest": "a1c776e22373d49dca5091cf31ed3150902c039e0d104ef5d5a9636781d2dcaf",
+      "artifactSha256": "0f2d7e1cf0d6956cbeaa1da5039d7015aa06d35f35b1ab93fb2e846e1e7832e2",
+      "receipt": "recovery/dt40-seed01/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 2,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          106,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 981,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104536,
+        "blockedTranslationSamples": 495,
+        "blockedTranslationRatio": 0.0047352108364582535,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          1,
+          5
+        ],
+        "actualKicksByTeam": [
+          123,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          106,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          756,
+          0,
+          0,
+          6,
+          36
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          28,
+          25
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            289,
+            0,
+            14669,
+            0,
+            42
+          ],
+          [
+            289,
+            14395,
+            302,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          1
+        ],
+        "takeoverEntries": [
+          3,
+          1
+        ],
+        "takeoverSeconds": [
+          1.68,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1420
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          42,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          1,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          6
+        ],
+        "chaserChanges": [
+          28,
+          47
+        ],
+        "physicalKickStepsWithBallMotion": 129,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000026,
+        "observedBallTravelMetresIncludingResets": 137.715940182262,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.89984,
+      "traceDigest": "7c52595c2f46baa2e22a42fe9d49405ef2fd213f645472a5e413fcec9fd469f5",
+      "tacticsDigest": "85d82d14e5663a404366b1019a670fd399fbbb4a4c69403324bb732351ab18c8",
+      "artifactSha256": "ec53d8f871fa54f2cad3e38493025700015b4cb9ac6bb04bc2f823442ed37246",
+      "receipt": "recovery/dt40-seed02/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 3,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          125,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1293,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103242,
+        "blockedTranslationSamples": 495,
+        "blockedTranslationRatio": 0.004794560353344569,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          141,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          852,
+          0,
+          0,
+          6,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          30,
+          29
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            336,
+            0,
+            14650,
+            0,
+            14
+          ],
+          [
+            336,
+            14433,
+            231,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          0
+        ],
+        "takeoverEntries": [
+          1,
+          0
+        ],
+        "takeoverSeconds": [
+          0.56,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          837
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          14,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          30,
+          33
+        ],
+        "physicalKickStepsWithBallMotion": 146,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000023,
+        "observedBallTravelMetresIncludingResets": 141.02004475616374,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.923993,
+      "traceDigest": "3da70aa1fc46973daf39fd18f91726c6a6b3e1859117982177a61297cd0509f1",
+      "tacticsDigest": "faa03ff15f44d564e8388958c48fb706b5c728a03043dd546b5a799dc08f99b0",
+      "artifactSha256": "4de970750ab239d04100d129c988243cccb87541540ef30e41817cec07a05ea2",
+      "receipt": "recovery/dt40-seed03/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 4,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          128
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1882,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103845,
+        "blockedTranslationSamples": 396,
+        "blockedTranslationRatio": 0.0038133757041744908,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          143
+        ],
+        "actualKicksByTeam": [
+          7,
+          143
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          48,
+          0,
+          0,
+          0,
+          888
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          148
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          148
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          27,
+          34
+        ],
+        "basePhaseSwitches": [
+          1,
+          0
+        ],
+        "phaseSampleCounts": [
+          [
+            288,
+            14320,
+            378,
+            0,
+            14
+          ],
+          [
+            288,
+            0,
+            14642,
+            0,
+            70
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          5
+        ],
+        "takeoverEntries": [
+          1,
+          5
+        ],
+        "takeoverSeconds": [
+          0.56,
+          2.8000000000000003
+        ],
+        "regularMfChaseSamples": [
+          651,
+          0
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          14,
+          70
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          7,
+          0,
+          0,
+          0,
+          143
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          148
+        ],
+        "chaserChanges": [
+          24,
+          34
+        ],
+        "physicalKickStepsWithBallMotion": 150,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000026,
+        "observedBallTravelMetresIncludingResets": 136.57277898732733,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.149165,
+      "traceDigest": "dcc20bfbad53319f4aa13c0ddc4a8909fc0b4c53ebf370eb183ba6ea384b419c",
+      "tacticsDigest": "47e1723eca798612477d7dcffecf142298aec0faa9336a89e264e00f768d4a11",
+      "artifactSha256": "93f54937f369372acb9f74eba92068768263d43387290b96984ea8cfded63975",
+      "receipt": "recovery/dt40-seed04/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 5,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          104,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1326,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104274,
+        "blockedTranslationSamples": 495,
+        "blockedTranslationRatio": 0.004747108579319869,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          115,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          115,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          104,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          714,
+          0,
+          0,
+          6,
+          32
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          1,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          1,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "phaseSwitches": [
+          32,
+          27
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            288,
+            0,
+            14656,
+            0,
+            56
+          ],
+          [
+            288,
+            14413,
+            285,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          4,
+          1
+        ],
+        "takeoverEntries": [
+          4,
+          1
+        ],
+        "takeoverSeconds": [
+          2.24,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1354
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          56,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          115,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          1,
+          6
+        ],
+        "chaserChanges": [
+          32,
+          43
+        ],
+        "physicalKickStepsWithBallMotion": 120,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000026,
+        "observedBallTravelMetresIncludingResets": 131.93506219819545,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.852288,
+      "traceDigest": "cbb82da0d3aa31e754c9ea32a598521352d28ce2fcb7a7f1ae396c987dbf50d8",
+      "tacticsDigest": "65071bf4a26253406f335eb0973cbc1e418d0d70d973eb80e7ac296cbd426e70",
+      "artifactSha256": "86f0b57b5e2eb93d4aeff606a64ff331005f4d36f1ca3dd7df2b4ae59dd8928c",
+      "receipt": "recovery/dt40-seed05/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 6,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          118,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1436,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 101590,
+        "blockedTranslationSamples": 198,
+        "blockedTranslationRatio": 0.0019490107294025001,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          5
+        ],
+        "actualKicksByTeam": [
+          135,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          118,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          828,
+          0,
+          0,
+          6,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          138,
+          0,
+          0,
+          1,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          138,
+          0,
+          0,
+          1,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          34,
+          29
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            361,
+            0,
+            14597,
+            0,
+            42
+          ],
+          [
+            361,
+            14385,
+            254,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          0
+        ],
+        "takeoverEntries": [
+          3,
+          0
+        ],
+        "takeoverSeconds": [
+          1.68,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          715
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          42,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          138,
+          0,
+          0,
+          1,
+          5
+        ],
+        "chaserChanges": [
+          34,
+          25
+        ],
+        "physicalKickStepsWithBallMotion": 141,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 140.72620241275766,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.372851,
+      "traceDigest": "91e498bc9249957240b8cf1e179726d4dcf0a21f6c3b8bd363d3663e0f1bea39",
+      "tacticsDigest": "0a3a9e2ab1265a70c267b7eb6ab3b9b2bbbf0b4bdf12925251f6cbabcc103010",
+      "artifactSha256": "97cc5fca32ff0c4c7b2a6cda28ef4ccc63751bfbb11d48e749e63b141b773902",
+      "receipt": "recovery/dt40-seed06/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 7,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          124,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 562,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104726,
+        "blockedTranslationSamples": 425,
+        "blockedTranslationRatio": 0.0040582090407348705,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0,
+          5
+        ],
+        "actualKicksByTeam": [
+          135,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          124,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          822,
+          0,
+          0,
+          0,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          14,
+          11
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            120,
+            0,
+            14852,
+            0,
+            28
+          ],
+          [
+            120,
+            14621,
+            259,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          0
+        ],
+        "takeoverEntries": [
+          2,
+          0
+        ],
+        "takeoverSeconds": [
+          1.12,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          643
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          28,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          5
+        ],
+        "chaserChanges": [
+          14,
+          31
+        ],
+        "physicalKickStepsWithBallMotion": 140,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000024,
+        "observedBallTravelMetresIncludingResets": 131.8475219303094,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.387957,
+      "traceDigest": "ec575a1d2d595ea5af23e282c4adc8e749452bdd76b5ccf46d31cfca6ad6f75f",
+      "tacticsDigest": "95d68cdd0309353a0c4afe8c149b899e85d1cd486263b5226e9eaa9d5035de7f",
+      "artifactSha256": "9fe7bdc5bc9322cd91d6d94e1e1574b622ec5ef3b12898779e7e3e42a73a011f",
+      "receipt": "recovery/dt40-seed07/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 8,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          124,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 647,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103676,
+        "blockedTranslationSamples": 396,
+        "blockedTranslationRatio": 0.0038195918052393997,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          141,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          124,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          858,
+          0,
+          0,
+          6,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          18,
+          15
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            193,
+            0,
+            14779,
+            0,
+            28
+          ],
+          [
+            193,
+            14578,
+            229,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          0
+        ],
+        "takeoverEntries": [
+          2,
+          0
+        ],
+        "takeoverSeconds": [
+          1.12,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          597
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          28,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          18,
+          21
+        ],
+        "physicalKickStepsWithBallMotion": 146,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000026,
+        "observedBallTravelMetresIncludingResets": 135.28099610240224,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.037888,
+      "traceDigest": "1549dc2e8ba0b5c79cb9633135966186821366b8d61834ae0a34fe69105fa392",
+      "tacticsDigest": "138bc24064564e33ed22a440b0a5ed4ebe950b6c7c204a46d0a26c4e0a22f2e1",
+      "artifactSha256": "abf3b8a809d6662bb4d1dc86cc374cce3dbc9eb7cb809321226fd0f3b7255b54",
+      "receipt": "recovery/dt40-seed08/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 9,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          108,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 3311,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 99844,
+        "blockedTranslationSamples": 198,
+        "blockedTranslationRatio": 0.0019830936260566484,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          126,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          108,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          768,
+          0,
+          0,
+          6,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          1,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          1,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          54,
+          53
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            625,
+            0,
+            14347,
+            0,
+            28
+          ],
+          [
+            625,
+            14102,
+            259,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          1
+        ],
+        "takeoverEntries": [
+          2,
+          1
+        ],
+        "takeoverSeconds": [
+          1.12,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          274
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          28,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          1,
+          5
+        ],
+        "chaserChanges": [
+          54,
+          11
+        ],
+        "physicalKickStepsWithBallMotion": 131,
+        "maximumBallDisplacementOnKickMetres": 0.0713600000000003,
+        "observedBallTravelMetresIncludingResets": 140.5510677123699,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.912648,
+      "traceDigest": "80a09b4fb7c85ddbd772e7049f071be222227015ee29b131503fd3e374831bd2",
+      "tacticsDigest": "40d9e083d4e9189f3e3847556579fb86c0c66e023d481f693e91046eb9f5178f",
+      "artifactSha256": "ab46fa41e9c5baf0743fac38d6c8827a561a65d65f79bc52ee692e45c9cb530b",
+      "receipt": "recovery/dt40-seed09/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 10,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          136,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 882,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103619,
+        "blockedTranslationSamples": 396,
+        "blockedTranslationRatio": 0.0038216929327632965,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          147,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          147,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          136,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          912,
+          0,
+          0,
+          6,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          152,
+          0,
+          0,
+          1,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          152,
+          0,
+          0,
+          1,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          28,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            216,
+            0,
+            14714,
+            0,
+            70
+          ],
+          [
+            216,
+            14488,
+            282,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          5,
+          1
+        ],
+        "takeoverEntries": [
+          5,
+          1
+        ],
+        "takeoverSeconds": [
+          2.8000000000000003,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          778
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          70,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          147,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          152,
+          0,
+          0,
+          1,
+          5
+        ],
+        "chaserChanges": [
+          28,
+          23
+        ],
+        "physicalKickStepsWithBallMotion": 152,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000027,
+        "observedBallTravelMetresIncludingResets": 140.43208300580068,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.677635,
+      "traceDigest": "c662a9b9c9ef9947349e96bf0814d8c19cb8743624f7e68e6eda4e89042ef365",
+      "tacticsDigest": "73fe513d544e92dfb75dc924931e09180f685f743c4fe84565506a1c849731f5",
+      "artifactSha256": "59ce6f4e075383addcabd163bf770ae68f1080a5ab5184bbeacf2100684b7e94",
+      "receipt": "recovery/dt40-seed10/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 11,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          120,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 2482,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 102423,
+        "blockedTranslationSamples": 297,
+        "blockedTranslationRatio": 0.0028997393163644886,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          135,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          834,
+          0,
+          0,
+          11,
+          31
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          2,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          2,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "phaseSwitches": [
+          42,
+          37
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            408,
+            0,
+            14536,
+            0,
+            56
+          ],
+          [
+            408,
+            14314,
+            264,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          4,
+          1
+        ],
+        "takeoverEntries": [
+          4,
+          1
+        ],
+        "takeoverSeconds": [
+          2.24,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          882
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          56,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          1,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          2,
+          6
+        ],
+        "chaserChanges": [
+          42,
+          23
+        ],
+        "physicalKickStepsWithBallMotion": 140,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000024,
+        "observedBallTravelMetresIncludingResets": 137.00888011350503,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 7.396929,
+      "traceDigest": "9bb35ea6f64943f1ae330e4b20844486687fe8ec2bcd5c46aca56ff71fe10af2",
+      "tacticsDigest": "4c55300ff385abd4a0d56ec6714f1f72bcbc4fe8a0967528247156a4f48e2d53",
+      "artifactSha256": "fb6b3f0c4b989e5156989e4bc195e56405672b1ae48e15e248fe41e2ca3f0b30",
+      "receipt": "recovery/dt40-seed11/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 12,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          128,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1768,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 105709,
+        "blockedTranslationSamples": 509,
+        "blockedTranslationRatio": 0.004815105620145872,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          142,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          858,
+          0,
+          0,
+          6,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          24,
+          23
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            264,
+            0,
+            14722,
+            0,
+            14
+          ],
+          [
+            264,
+            14481,
+            255,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          0
+        ],
+        "takeoverEntries": [
+          1,
+          0
+        ],
+        "takeoverSeconds": [
+          0.56,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1005
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          14,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          143,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          24,
+          35
+        ],
+        "physicalKickStepsWithBallMotion": 147,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 137.81971428763995,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 7.644371,
+      "traceDigest": "4592b8cc7ece951134389224f938f9061692277f0b4633a95cc2c0cf67e70baf",
+      "tacticsDigest": "89f7208c8b74545cd5ed67f9a87872aa4927dcbab34e687940c82c9fb995fa37",
+      "artifactSha256": "236148b8248939648eaf86e1d8ae49275258666290c9b207f85fa5dc6cb8b85b",
+      "receipt": "recovery/dt40-seed12/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 13,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          109,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1037,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104878,
+        "blockedTranslationSamples": 432,
+        "blockedTranslationRatio": 0.004119071683289155,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          3,
+          5
+        ],
+        "actualKicksByTeam": [
+          130,
+          8
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          109,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          798,
+          0,
+          0,
+          18,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          3,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          3,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          26,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14718,
+            0,
+            42
+          ],
+          [
+            240,
+            14499,
+            261,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          0
+        ],
+        "takeoverEntries": [
+          3,
+          0
+        ],
+        "takeoverSeconds": [
+          1.68,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1208
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          42,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          3,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          3,
+          5
+        ],
+        "chaserChanges": [
+          26,
+          27
+        ],
+        "physicalKickStepsWithBallMotion": 138,
+        "maximumBallDisplacementOnKickMetres": 0.07141164777718133,
+        "observedBallTravelMetresIncludingResets": 132.3571270503218,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.6856,
+      "traceDigest": "fc20848f2b5285c7337735824fe4ab03954512c0867fb3197f8617822d498a32",
+      "tacticsDigest": "b80e3fe7e9d1f32710e9401220fb254e28502821f7e17d9c4c6214011b706f93",
+      "artifactSha256": "b07a0f8970ae6281568923f0f05317db38ee5cdd6179b684391480e32fecb4ea",
+      "receipt": "recovery/dt40-seed13/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 14,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          114,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1449,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103951,
+        "blockedTranslationSamples": 396,
+        "blockedTranslationRatio": 0.0038094871622206617,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          0,
+          5
+        ],
+        "actualKicksByTeam": [
+          125,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          114,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          756,
+          0,
+          0,
+          0,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          0,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          0,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          22,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14746,
+            0,
+            14
+          ],
+          [
+            240,
+            14500,
+            260,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          0
+        ],
+        "takeoverEntries": [
+          1,
+          0
+        ],
+        "takeoverSeconds": [
+          0.56,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          956
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          14,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          0,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          0,
+          5
+        ],
+        "chaserChanges": [
+          22,
+          31
+        ],
+        "physicalKickStepsWithBallMotion": 130,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 132.43943676434688,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.398045,
+      "traceDigest": "0cd0555d945f0458c0427ce1f68ffbce5cc40b76aa675f6c45a85c0c0f7b9eb4",
+      "tacticsDigest": "dab0d9b07c020a6db27fb98a9919432252ca02a948e06f49c066be6e87c9e9f2",
+      "artifactSha256": "09d558e97d7b871273ea4b603516ad5f2bdc7adf803beb7f1596a580deb7cf38",
+      "receipt": "recovery/dt40-seed14/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 15,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          124,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1009,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 102981,
+        "blockedTranslationSamples": 297,
+        "blockedTranslationRatio": 0.0028840271506394384,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          136,
+          0,
+          0,
+          0,
+          5
+        ],
+        "actualKicksByTeam": [
+          136,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          124,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          852,
+          0,
+          0,
+          0,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          0,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          0,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          32,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14676,
+            0,
+            84
+          ],
+          [
+            240,
+            14502,
+            258,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          6,
+          0
+        ],
+        "takeoverEntries": [
+          6,
+          0
+        ],
+        "takeoverSeconds": [
+          3.36,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1125
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          84,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          136,
+          0,
+          0,
+          0,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          0,
+          5
+        ],
+        "chaserChanges": [
+          32,
+          37
+        ],
+        "physicalKickStepsWithBallMotion": 141,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 136.30667946012184,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.793622,
+      "traceDigest": "6875af1da64c629b46c3bb5ce9e01efa4391ffd0fc280c1b068e4b90385712c6",
+      "tacticsDigest": "ad6c5e9b000fe6686a023c5647115c2002313ce8ddb07acf3e1d546223fbd2d9",
+      "artifactSha256": "3e8aac27c4437b87fb6e606e3587c8c95120d31bfb763296c1dadef58e0a5e32",
+      "receipt": "recovery/dt40-seed15/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 16,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          103,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1371,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103611,
+        "blockedTranslationSamples": 297,
+        "blockedTranslationRatio": 0.0028664910096418334,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          116,
+          0,
+          0,
+          3,
+          7
+        ],
+        "actualKicksByTeam": [
+          116,
+          10
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          103,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          720,
+          0,
+          0,
+          18,
+          48
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          8
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          8
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          28,
+          23
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14704,
+            0,
+            56
+          ],
+          [
+            240,
+            14378,
+            368,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          4,
+          1
+        ],
+        "takeoverEntries": [
+          4,
+          1
+        ],
+        "takeoverSeconds": [
+          2.24,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1539
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          56,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          116,
+          0,
+          0,
+          3,
+          7
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          8
+        ],
+        "chaserChanges": [
+          28,
+          53
+        ],
+        "physicalKickStepsWithBallMotion": 126,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000023,
+        "observedBallTravelMetresIncludingResets": 130.50727966482742,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.991763,
+      "traceDigest": "eb24a4673e97ce0bf3c320afbd18fe13042fd7f88c8c446409d290fe4294727b",
+      "tacticsDigest": "26a5938d70f1865bb3e9188414f7de8a1df69de99011af35a22c41f26eb5e6bc",
+      "artifactSha256": "679bc46edeb1d98838e7502769dd6ac7fe42dddd06079b4e7d75b1e42f205798",
+      "receipt": "recovery/dt40-seed16/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 17,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          112,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1323,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104467,
+        "blockedTranslationSamples": 415,
+        "blockedTranslationRatio": 0.003972546354351135,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          123,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          112,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          756,
+          0,
+          0,
+          12,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          2,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          2,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          26,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14718,
+            0,
+            42
+          ],
+          [
+            240,
+            14528,
+            232,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          0
+        ],
+        "takeoverEntries": [
+          3,
+          0
+        ],
+        "takeoverSeconds": [
+          1.68,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          997
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          42,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          2,
+          4
+        ],
+        "chaserChanges": [
+          26,
+          29
+        ],
+        "physicalKickStepsWithBallMotion": 129,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 130.0094954531537,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.794958,
+      "traceDigest": "aedcd1b049b79cbfd805bb536b19a316e2f6234f1671ab283722ae7d1e5fdc63",
+      "tacticsDigest": "0a4fc32663c035ef4edfc24b3e73e39c02865e10b16d5b1ed726f71966078c04",
+      "artifactSha256": "e490d61fd5bd91d736e217f637199599c4e4f7c08900a4417c6ed6c1a2866313",
+      "receipt": "recovery/dt40-seed17/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 18,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          123,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 2289,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 103046,
+        "blockedTranslationSamples": 297,
+        "blockedTranslationRatio": 0.0028822079459658793,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0,
+          6
+        ],
+        "actualKicksByTeam": [
+          135,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          822,
+          0,
+          0,
+          0,
+          42
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          7
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          7
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          24,
+          23
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            240,
+            0,
+            14732,
+            0,
+            28
+          ],
+          [
+            240,
+            14388,
+            358,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          1
+        ],
+        "takeoverEntries": [
+          2,
+          1
+        ],
+        "takeoverSeconds": [
+          1.12,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          0,
+          555
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          28,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          0,
+          6
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          137,
+          0,
+          0,
+          0,
+          7
+        ],
+        "chaserChanges": [
+          24,
+          27
+        ],
+        "physicalKickStepsWithBallMotion": 141,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000023,
+        "observedBallTravelMetresIncludingResets": 133.95473324148765,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.980262,
+      "traceDigest": "d324202d085f6981b6907bbb84f2495f78062893e21c4688535a4a3ca3640758",
+      "tacticsDigest": "5c927ab7621fa3aad1a2831844e1282bd0549786e3859b7b6408a803ce49bf9b",
+      "artifactSha256": "e2ba74a9b1e0731bff3dc78b5479d5a7fcad555ae53cea1020ba026c5b156cc3",
+      "receipt": "recovery/dt40-seed18/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 19,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          111,
+          0
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 983,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 104015,
+        "blockedTranslationSamples": 305,
+        "blockedTranslationRatio": 0.0029322693842234295,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          121,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          121,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          111,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          738,
+          0,
+          0,
+          6,
+          24
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          16,
+          13
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            144,
+            0,
+            14828,
+            0,
+            28
+          ],
+          [
+            144,
+            14631,
+            225,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          0
+        ],
+        "takeoverEntries": [
+          2,
+          0
+        ],
+        "takeoverSeconds": [
+          1.12,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1122
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          28,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          121,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          16,
+          35
+        ],
+        "physicalKickStepsWithBallMotion": 126,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000021,
+        "observedBallTravelMetresIncludingResets": 127.85417375212569,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.814882,
+      "traceDigest": "a2e284f83ed0713970298fe7483cf28c630a51e4826379fd8171a6ac7f615a55",
+      "tacticsDigest": "ae3763de30d648bc6218c7adf4a0053fbc1919ce9e6f4c70d257c40d9341db63",
+      "artifactSha256": "5ee0a24833a12a969fb93915521c46b07697f05522f759eeca3b7658e1063b2e",
+      "receipt": "recovery/dt40-seed19/receipt.json"
+    },
+    {
+      "period": 0.04,
+      "seed": 20,
+      "steps": 15000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          107
+        ],
+        "firstTouchSeconds": 3.92,
+        "steps": 15000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 444,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 105780,
+        "blockedTranslationSamples": 594,
+        "blockedTranslationRatio": 0.005615428247305729,
+        "finite": true,
+        "period": 0.04,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          3,
+          10,
+          0,
+          0,
+          0,
+          130
+        ],
+        "actualKicksByTeam": [
+          13,
+          130
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          107
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          18,
+          60,
+          0,
+          0,
+          0,
+          786
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          3,
+          10,
+          0,
+          0,
+          0,
+          131
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          3,
+          10,
+          0,
+          0,
+          0,
+          131
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          9,
+          10
+        ],
+        "basePhaseSwitches": [
+          1,
+          0
+        ],
+        "phaseSampleCounts": [
+          [
+            96,
+            14483,
+            421,
+            0,
+            0
+          ],
+          [
+            96,
+            0,
+            14890,
+            0,
+            14
+          ]
+        ],
+        "fallbackEntries": [
+          0,
+          1
+        ],
+        "takeoverEntries": [
+          0,
+          1
+        ],
+        "takeoverSeconds": [
+          0,
+          0.56
+        ],
+        "regularMfChaseSamples": [
+          1618,
+          0
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          0,
+          14
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          3,
+          10,
+          0,
+          0,
+          0,
+          130
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          3,
+          10,
+          0,
+          0,
+          0,
+          131
+        ],
+        "chaserChanges": [
+          55,
+          10
+        ],
+        "physicalKickStepsWithBallMotion": 143,
+        "maximumBallDisplacementOnKickMetres": 0.07136000000000023,
+        "observedBallTravelMetresIncludingResets": 128.00508915759087,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.922551,
+      "traceDigest": "690ab6f4423c598dfc4c25f01dc2c457342040dd397018178a27d75162cddf42",
+      "tacticsDigest": "e82c38893d31334d146edefa961380d986ba72dd81bb163ce6fdae263de0eb2f",
+      "artifactSha256": "a09ddf00f5c289b0ae53e578927f185c5fbcb4757ffd6d2de64806012ac89305",
+      "receipt": "recovery/dt40-seed20/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 1,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          111,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1275,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82899,
+        "blockedTranslationSamples": 294,
+        "blockedTranslationRatio": 0.0035464842760467557,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          123,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          111,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          630,
+          0,
+          0,
+          13,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          3,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          3,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "phaseSwitches": [
+          24,
+          19
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            171,
+            0,
+            11796,
+            0,
+            33
+          ],
+          [
+            171,
+            11649,
+            180,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          0
+        ],
+        "takeoverEntries": [
+          3,
+          0
+        ],
+        "takeoverSeconds": [
+          1.6500000000000001,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          529
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          33,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          1,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          3,
+          4
+        ],
+        "chaserChanges": [
+          24,
+          19
+        ],
+        "physicalKickStepsWithBallMotion": 129,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 129.8247636445854,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 10.211685,
+      "traceDigest": "297b886d1c27be6fe4d10aa5dea5331387db52eaecd52f49bd1136952f12b53e",
+      "tacticsDigest": "a79c60e876780851adb14637102154226dbec7c9070ea33a11cf1c61e8ece253",
+      "artifactSha256": "6c51910e14e68b0c5ca275fe739e22676f3a4039e37de97d50c3dbfe9d461351",
+      "receipt": "recovery/dt50-seed01/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 2,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          107
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1119,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83861,
+        "blockedTranslationSamples": 311,
+        "blockedTranslationRatio": 0.0037085176661380143,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          120
+        ],
+        "actualKicksByTeam": [
+          4,
+          120
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          107
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          10,
+          20,
+          0,
+          0,
+          0,
+          605
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          121
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          121
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          25,
+          24
+        ],
+        "basePhaseSwitches": [
+          1,
+          0
+        ],
+        "phaseSampleCounts": [
+          [
+            209,
+            11579,
+            201,
+            0,
+            11
+          ],
+          [
+            209,
+            0,
+            11780,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          1
+        ],
+        "takeoverEntries": [
+          1,
+          1
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          1092,
+          0
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          1,
+          3,
+          0,
+          0,
+          0,
+          120
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          121
+        ],
+        "chaserChanges": [
+          49,
+          24
+        ],
+        "physicalKickStepsWithBallMotion": 124,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000023,
+        "observedBallTravelMetresIncludingResets": 130.88266103545192,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.501268,
+      "traceDigest": "62af6f6a03517ac6c55adcadfa53f365b25eb6225ca1dfa5d13dbcb843ba1d8a",
+      "tacticsDigest": "943b2f3ce3e91ebf6d47a4f0d2f398df6cb357197c259e589a1744a4828b7cc6",
+      "artifactSha256": "a43e06ad5ade8d274e158584626521e7582b5c2412048c4e2540cbf2c937c74a",
+      "receipt": "recovery/dt50-seed02/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 3,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          117,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 829,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82626,
+        "blockedTranslationSamples": 294,
+        "blockedTranslationRatio": 0.003558202018735023,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          129,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          117,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          665,
+          0,
+          0,
+          5,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          30,
+          23
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            209,
+            0,
+            11747,
+            0,
+            44
+          ],
+          [
+            209,
+            11608,
+            183,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          4,
+          0
+        ],
+        "takeoverEntries": [
+          4,
+          0
+        ],
+        "takeoverSeconds": [
+          2.2,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          537
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          44,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          133,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          30,
+          25
+        ],
+        "physicalKickStepsWithBallMotion": 134,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 129.1454839318732,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.557591,
+      "traceDigest": "04020b7fa74445fed33cd331fb186120541fe09ba50cc1a658b9490be7cc1aa1",
+      "tacticsDigest": "a2c06ee0c8fd206802f4c57ed152acefcd82ae922f17edf835a919b3663d0b5d",
+      "artifactSha256": "1a52149719882a18f4407e6a591754708e3dfecb992920ba12ffa7f68d47a385",
+      "receipt": "recovery/dt50-seed03/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 4,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          128
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1415,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83000,
+        "blockedTranslationSamples": 294,
+        "blockedTranslationRatio": 0.003542168674698795,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          140
+        ],
+        "actualKicksByTeam": [
+          5,
+          140
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          720
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          144
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          144
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          29,
+          34
+        ],
+        "basePhaseSwitches": [
+          1,
+          0
+        ],
+        "phaseSampleCounts": [
+          [
+            247,
+            11493,
+            249,
+            0,
+            11
+          ],
+          [
+            247,
+            0,
+            11709,
+            0,
+            44
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          4
+        ],
+        "takeoverEntries": [
+          1,
+          4
+        ],
+        "takeoverSeconds": [
+          0.55,
+          2.2
+        ],
+        "regularMfChaseSamples": [
+          603,
+          0
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          44
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          140
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          4
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          144
+        ],
+        "chaserChanges": [
+          39,
+          34
+        ],
+        "physicalKickStepsWithBallMotion": 145,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000023,
+        "observedBallTravelMetresIncludingResets": 138.205176270661,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.296059,
+      "traceDigest": "399a7d7f7119f71d45f004a7573dc39999e299c3cb2ce883449e19f2086d9b93",
+      "tacticsDigest": "fc3e8d1abe9d71ff14db4717526c348f2473165ee2666ae8071cf7f424014f1b",
+      "artifactSha256": "cd280ea06e10fd858766721a4a6d6249f9423e9a5a9e44e81318ae1b4a29561e",
+      "receipt": "recovery/dt50-seed04/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 5,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          100,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 929,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83064,
+        "blockedTranslationSamples": 378,
+        "blockedTranslationRatio": 0.004550707887893672,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          117,
+          0,
+          0,
+          3,
+          2
+        ],
+        "actualKicksByTeam": [
+          117,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          100,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          600,
+          0,
+          0,
+          15,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          38,
+          37
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            324,
+            0,
+            11643,
+            0,
+            33
+          ],
+          [
+            324,
+            11473,
+            181,
+            0,
+            22
+          ]
+        ],
+        "fallbackEntries": [
+          3,
+          2
+        ],
+        "takeoverEntries": [
+          3,
+          2
+        ],
+        "takeoverSeconds": [
+          1.6500000000000001,
+          1.1
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1190
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          33,
+          22
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          117,
+          0,
+          0,
+          3,
+          2
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          3,
+          4
+        ],
+        "chaserChanges": [
+          38,
+          49
+        ],
+        "physicalKickStepsWithBallMotion": 122,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000023,
+        "observedBallTravelMetresIncludingResets": 140.2873173241574,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.323952,
+      "traceDigest": "5287f7f1cc07ccf8a0930a6629fc3ff6fa704428606ffa006311d2152ab74a37",
+      "tacticsDigest": "98fb1aeeb986b4041e2fed7237267484eebee8e988db0224af2f178d7f6e60c1",
+      "artifactSha256": "c12efb6ff61abd2628b4a43429fda83e570e9240691a55655ce92424fb1ba6c2",
+      "receipt": "recovery/dt50-seed05/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 6,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          123,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 982,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82770,
+        "blockedTranslationSamples": 220,
+        "blockedTranslationRatio": 0.002657967862752205,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          0,
+          5
+        ],
+        "actualKicksByTeam": [
+          139,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          700,
+          0,
+          0,
+          0,
+          35
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          0,
+          7
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          0,
+          7
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          24,
+          27
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            209,
+            0,
+            11780,
+            0,
+            11
+          ],
+          [
+            209,
+            11504,
+            265,
+            0,
+            22
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          2
+        ],
+        "takeoverEntries": [
+          1,
+          2
+        ],
+        "takeoverSeconds": [
+          0.55,
+          1.1
+        ],
+        "regularMfChaseSamples": [
+          0,
+          486
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          22
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          0,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          0,
+          7
+        ],
+        "chaserChanges": [
+          24,
+          27
+        ],
+        "physicalKickStepsWithBallMotion": 144,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000022,
+        "observedBallTravelMetresIncludingResets": 135.0264941350856,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.636464,
+      "traceDigest": "858152e009e2f3efebb0249692156fd4fc137c248ba491f4bd60db57034229b4",
+      "tacticsDigest": "0a7f8f84d181826e7a250c2b3d8b44a0d87fbc48ea8a45931555e526300af610",
+      "artifactSha256": "4968abeb7746af185eda81ff77ad8d032a85d4b8c3e2625f8e396696d85e2536",
+      "receipt": "recovery/dt50-seed06/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 7,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          115,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 465,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 84634,
+        "blockedTranslationSamples": 365,
+        "blockedTranslationRatio": 0.004312687572370442,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          5
+        ],
+        "actualKicksByTeam": [
+          126,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          115,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          635,
+          0,
+          0,
+          5,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          1,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          1,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          10,
+          11
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            76,
+            0,
+            11913,
+            0,
+            11
+          ],
+          [
+            76,
+            11659,
+            254,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          1
+        ],
+        "takeoverEntries": [
+          1,
+          1
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1037
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          126,
+          0,
+          0,
+          1,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          1,
+          6
+        ],
+        "chaserChanges": [
+          10,
+          46
+        ],
+        "physicalKickStepsWithBallMotion": 132,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 127.16985925682533,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.26815,
+      "traceDigest": "97213f61b4b8a9190c725e463763571caaf1d8a8edd584c9374c01cebb9eecba",
+      "tacticsDigest": "ec228f6bbdf0af55c5a1a75555e03b0ddd2de90597a3a610fb89838e3b59234e",
+      "artifactSha256": "e98ab9176f35df28ca84604a6959796f32f3b2239a7067625ab7f45bc10e73da",
+      "receipt": "recovery/dt50-seed07/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 8,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          127,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 683,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83558,
+        "blockedTranslationSamples": 367,
+        "blockedTranslationRatio": 0.004392158740036861,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          3,
+          4
+        ],
+        "actualKicksByTeam": [
+          141,
+          7
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          710,
+          0,
+          0,
+          15,
+          26
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          3,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          3,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "phaseSwitches": [
+          18,
+          19
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            152,
+            0,
+            11837,
+            0,
+            11
+          ],
+          [
+            152,
+            11613,
+            224,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          1
+        ],
+        "takeoverEntries": [
+          1,
+          1
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          908
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          141,
+          0,
+          0,
+          3,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          142,
+          0,
+          0,
+          3,
+          6
+        ],
+        "chaserChanges": [
+          18,
+          37
+        ],
+        "physicalKickStepsWithBallMotion": 148,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 137.58462893823926,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.406326,
+      "traceDigest": "865b9d17af2ebb06c46380820833584b984d17cdb686d7cefa1ab48dfea5d10a",
+      "tacticsDigest": "288077efd5c350ad090aba670a61cacb36015b4f5404fef1620988079a25e752",
+      "artifactSha256": "22bfa0b477ff04d1b74ccade7a0bc8cd2b6396ceff22f3a9a1113a31baf7553d",
+      "receipt": "recovery/dt50-seed08/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 9,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          111,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 2481,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 80312,
+        "blockedTranslationSamples": 294,
+        "blockedTranslationRatio": 0.0036607231795995616,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          138,
+          0,
+          0,
+          3,
+          4
+        ],
+        "actualKicksByTeam": [
+          138,
+          7
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          111,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          700,
+          0,
+          0,
+          17,
+          25
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          4,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          4,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "phaseSwitches": [
+          56,
+          55
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            514,
+            0,
+            11464,
+            0,
+            22
+          ],
+          [
+            514,
+            11267,
+            208,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          1
+        ],
+        "takeoverEntries": [
+          2,
+          1
+        ],
+        "takeoverSeconds": [
+          1.1,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          419
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          22,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          138,
+          0,
+          0,
+          3,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          1,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          140,
+          0,
+          0,
+          4,
+          5
+        ],
+        "chaserChanges": [
+          56,
+          15
+        ],
+        "physicalKickStepsWithBallMotion": 145,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000031,
+        "observedBallTravelMetresIncludingResets": 143.35136395452673,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 6.040909,
+      "traceDigest": "0ff2a87155a226a10c3fc9c12a26b7a6bd38ac6396ccc44b335e10077da8059b",
+      "tacticsDigest": "47260f8957f45d9cf9244a3784b30203ab246021e884158a19d8a3f02da497a1",
+      "artifactSha256": "3df590d7e5774cf15bee919750281fc50f5e3616c7b58ddf4872df150fa1aed1",
+      "receipt": "recovery/dt50-seed09/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 10,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          130,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1796,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 81247,
+        "blockedTranslationSamples": 146,
+        "blockedTranslationRatio": 0.0017969894273019312,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          146,
+          0,
+          0,
+          1,
+          5
+        ],
+        "actualKicksByTeam": [
+          146,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          740,
+          0,
+          0,
+          5,
+          25
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          148,
+          0,
+          0,
+          1,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          148,
+          0,
+          0,
+          1,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          38,
+          35
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            323,
+            0,
+            11655,
+            0,
+            22
+          ],
+          [
+            323,
+            11433,
+            244,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          0
+        ],
+        "takeoverEntries": [
+          2,
+          0
+        ],
+        "takeoverSeconds": [
+          1.1,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          649
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          22,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          146,
+          0,
+          0,
+          1,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          148,
+          0,
+          0,
+          1,
+          5
+        ],
+        "chaserChanges": [
+          38,
+          30
+        ],
+        "physicalKickStepsWithBallMotion": 152,
+        "maximumBallDisplacementOnKickMetres": 0.0890000000000002,
+        "observedBallTravelMetresIncludingResets": 141.80474142244165,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.817154,
+      "traceDigest": "ebfdd82b4893734783fdef1f5326fc1069158f332c8b2f13985f8efc9ef5fd97",
+      "tacticsDigest": "e34a7c4b59b57edbafbd320b75f4982c8531ee70c35b03d3d12b7a4dec03c8d8",
+      "artifactSha256": "f19d81fb21c5af8a73da9d3ddfe1f47261e843a4dcade8e3737e4f16d3ffc72b",
+      "receipt": "recovery/dt50-seed10/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 11,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          115,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1155,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 81822,
+        "blockedTranslationSamples": 220,
+        "blockedTranslationRatio": 0.0026887634132629367,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          1,
+          7
+        ],
+        "actualKicksByTeam": [
+          130,
+          8
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          115,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          675,
+          0,
+          0,
+          5,
+          42
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          9
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          9
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "phaseSwitches": [
+          38,
+          31
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            266,
+            0,
+            11679,
+            0,
+            55
+          ],
+          [
+            266,
+            11396,
+            327,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          5,
+          1
+        ],
+        "takeoverEntries": [
+          5,
+          1
+        ],
+        "takeoverSeconds": [
+          2.75,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          569
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          55,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          1,
+          7
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          135,
+          0,
+          0,
+          1,
+          9
+        ],
+        "chaserChanges": [
+          38,
+          25
+        ],
+        "physicalKickStepsWithBallMotion": 138,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000027,
+        "observedBallTravelMetresIncludingResets": 130.33418994994446,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.484775,
+      "traceDigest": "98c0f562aacd28a46661d339de6cbc4feec9aaebf392ad15e2ce77bd6ced3594",
+      "tacticsDigest": "25b6b87d500e3e7354e49fdd33acb9e2f616cb6e0ca5be6607e66f68eb877c62",
+      "artifactSha256": "97528ec9501ec1f111c3ccd66af2039e13d2fe92db13f7bedc9dc60bb2c73369",
+      "receipt": "recovery/dt50-seed11/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 12,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          115,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1048,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83688,
+        "blockedTranslationSamples": 440,
+        "blockedTranslationRatio": 0.005257623554153523,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          2,
+          5
+        ],
+        "actualKicksByTeam": [
+          128,
+          7
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          115,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          645,
+          0,
+          0,
+          10,
+          30
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          6
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          6
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          24,
+          25
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            209,
+            0,
+            11780,
+            0,
+            11
+          ],
+          [
+            209,
+            11541,
+            239,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          1
+        ],
+        "takeoverEntries": [
+          1,
+          1
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          897
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          2,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          6
+        ],
+        "chaserChanges": [
+          24,
+          47
+        ],
+        "physicalKickStepsWithBallMotion": 135,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000026,
+        "observedBallTravelMetresIncludingResets": 132.8820683455628,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.509794,
+      "traceDigest": "d887a0c21ffc0f67111acc924b5e814ba4dc32e9b11c9445086916e26c0655c1",
+      "tacticsDigest": "a02720b8b3bc55c36d77adf035ada8ab16a3acd3bcccf2def3062ce4580c3a7b",
+      "artifactSha256": "40af07650647979bef8819b36e9187ec5e13410877a7a5bd2a371c928a4a2ffd",
+      "receipt": "recovery/dt50-seed12/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 13,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          105,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1084,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83910,
+        "blockedTranslationSamples": 367,
+        "blockedTranslationRatio": 0.004373733762364438,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          118,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          118,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          105,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          595,
+          0,
+          0,
+          10,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          2,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          2,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          18,
+          17
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            152,
+            0,
+            11837,
+            0,
+            11
+          ],
+          [
+            152,
+            11662,
+            186,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          0
+        ],
+        "takeoverEntries": [
+          1,
+          0
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1022
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          118,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          2,
+          4
+        ],
+        "chaserChanges": [
+          18,
+          29
+        ],
+        "physicalKickStepsWithBallMotion": 124,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000022,
+        "observedBallTravelMetresIncludingResets": 127.30127371772492,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.421811,
+      "traceDigest": "da6240c7c6116b944c55bae3679c09018ea9c6f5ccfbf6348687f004e89ebdc3",
+      "tacticsDigest": "d7173a7d9a1ae5760ec928f68ed59b9413a8b2b7078b535b5e5f2fbbc44ed6ef",
+      "artifactSha256": "9cb982aeb29bb5bd735e9251be154c30befc160ab16fa38b58fa9b3ffbe1970a",
+      "receipt": "recovery/dt50-seed13/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 14,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          1,
+          0
+        ],
+        "shots": [
+          95,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 2280,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82682,
+        "blockedTranslationSamples": 293,
+        "blockedTranslationRatio": 0.0035436975399724246,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          118,
+          0,
+          0,
+          4,
+          5
+        ],
+        "actualKicksByTeam": [
+          118,
+          9
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          95,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          595,
+          0,
+          0,
+          24,
+          31
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          5,
+          7
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          5,
+          7
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "phaseSwitches": [
+          36,
+          37
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            343,
+            0,
+            11646,
+            0,
+            11
+          ],
+          [
+            343,
+            11388,
+            258,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          1
+        ],
+        "takeoverEntries": [
+          1,
+          1
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1113
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          118,
+          0,
+          0,
+          4,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          119,
+          0,
+          0,
+          5,
+          7
+        ],
+        "chaserChanges": [
+          36,
+          33
+        ],
+        "physicalKickStepsWithBallMotion": 127,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000026,
+        "observedBallTravelMetresIncludingResets": 135.95837758246168,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.511499,
+      "traceDigest": "d8825aa178dbe16b2ba205b0d2ed392d09b4cd1e129e7a562a03f10f79645415",
+      "tacticsDigest": "26415845e4721e520fc8457c34ca4432f4cb730a12f770220eca2630a9d2e7e0",
+      "artifactSha256": "10eef778b6f02603403f22501ba6dec1e7ad03c4eb32bd3d2df7b60d8680c005",
+      "receipt": "recovery/dt50-seed14/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 15,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          110,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1704,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82551,
+        "blockedTranslationSamples": 365,
+        "blockedTranslationRatio": 0.004421509127690761,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          3,
+          5
+        ],
+        "actualKicksByTeam": [
+          127,
+          8
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          110,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          656,
+          0,
+          0,
+          15,
+          25
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          3,
+          5
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          3,
+          5
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          42,
+          35
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            324,
+            0,
+            11632,
+            0,
+            44
+          ],
+          [
+            324,
+            11468,
+            208,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          4,
+          0
+        ],
+        "takeoverEntries": [
+          4,
+          0
+        ],
+        "takeoverSeconds": [
+          2.2,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          797
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          44,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          127,
+          0,
+          0,
+          3,
+          5
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          3,
+          5
+        ],
+        "chaserChanges": [
+          42,
+          27
+        ],
+        "physicalKickStepsWithBallMotion": 135,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000023,
+        "observedBallTravelMetresIncludingResets": 135.81357533611896,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.396765,
+      "traceDigest": "ab13be4933a2a2a9521f3a0cbb6412cbd3cbd5eac9aae99bbe2a4f66c511f59f",
+      "tacticsDigest": "a4d0334b607e1a252f9c2915440bf15cabac85de67cb6304a59d0ea42890c3f6",
+      "artifactSha256": "5ea2739a82426f2c250c9069c306c0eeffab55204b04deb8e1838023617f20b2",
+      "receipt": "recovery/dt50-seed15/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 16,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          112,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1975,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 81047,
+        "blockedTranslationSamples": 170,
+        "blockedTranslationRatio": 0.0020975483361506285,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          129,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          112,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          670,
+          0,
+          0,
+          10,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          46,
+          37
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            342,
+            0,
+            11603,
+            0,
+            55
+          ],
+          [
+            342,
+            11468,
+            190,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          5,
+          0
+        ],
+        "takeoverEntries": [
+          5,
+          0
+        ],
+        "takeoverSeconds": [
+          2.75,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          549
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          55,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          129,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          5,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          134,
+          0,
+          0,
+          2,
+          4
+        ],
+        "chaserChanges": [
+          46,
+          27
+        ],
+        "physicalKickStepsWithBallMotion": 135,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000026,
+        "observedBallTravelMetresIncludingResets": 129.72519804189133,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.235419,
+      "traceDigest": "43adf95daa69db3902ce59d107b8e774a2c7bbef0cfd51124bb7c1271d723ce8",
+      "tacticsDigest": "8839b7d4852f7bddb8657fdd9bb81b6f4ab2a6bcd15bf55d5e9757667e208be3",
+      "artifactSha256": "747e053a38684130fdd2a8577286c38c88ce29bd06e0b89186fe37d48aadd7f4",
+      "receipt": "recovery/dt50-seed16/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 17,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          108,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1283,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 82346,
+        "blockedTranslationSamples": 220,
+        "blockedTranslationRatio": 0.0026716537536735237,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          2,
+          4
+        ],
+        "actualKicksByTeam": [
+          120,
+          6
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          108,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          605,
+          0,
+          0,
+          10,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          121,
+          0,
+          0,
+          2,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          121,
+          0,
+          0,
+          2,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          22,
+          21
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            190,
+            0,
+            11799,
+            0,
+            11
+          ],
+          [
+            190,
+            11599,
+            211,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          1,
+          0
+        ],
+        "takeoverEntries": [
+          1,
+          0
+        ],
+        "takeoverSeconds": [
+          0.55,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          738
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          11,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          120,
+          0,
+          0,
+          2,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          121,
+          0,
+          0,
+          2,
+          4
+        ],
+        "chaserChanges": [
+          22,
+          29
+        ],
+        "physicalKickStepsWithBallMotion": 126,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 129.75972755025472,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.311907,
+      "traceDigest": "119e3851cbab750a5d29ff8040b0af7a515f3e1203d1e62788c0cebdfc60f645",
+      "tacticsDigest": "469547d28069eb96cc9fb480d9f59ef0f6e4c1d116fab44d44bce9c46b75aa4a",
+      "artifactSha256": "d9f78b71e3bac01d6b19a014311fa8f720ed1f53c8099028e87e90fd0309be6e",
+      "receipt": "recovery/dt50-seed17/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 18,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          109,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 910,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 84251,
+        "blockedTranslationSamples": 367,
+        "blockedTranslationRatio": 0.004356031382416826,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          6
+        ],
+        "actualKicksByTeam": [
+          123,
+          8
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          109,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          625,
+          0,
+          0,
+          10,
+          37
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          2,
+          8
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          2,
+          8
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "phaseSwitches": [
+          16,
+          15
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            114,
+            0,
+            11864,
+            0,
+            22
+          ],
+          [
+            114,
+            11589,
+            286,
+            0,
+            11
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          1
+        ],
+        "takeoverEntries": [
+          2,
+          1
+        ],
+        "takeoverSeconds": [
+          1.1,
+          0.55
+        ],
+        "regularMfChaseSamples": [
+          0,
+          1635
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          22,
+          11
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          123,
+          0,
+          0,
+          2,
+          6
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          2
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          125,
+          0,
+          0,
+          2,
+          8
+        ],
+        "chaserChanges": [
+          16,
+          55
+        ],
+        "physicalKickStepsWithBallMotion": 131,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 126.76446418735158,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.425988,
+      "traceDigest": "29342700a945c3d1233bce8197fe22831ef9dca7645181bd944288fb0ff7488e",
+      "tacticsDigest": "4b153e4ac85e3940469acad98945bc96ffcb0bf171cda7ac72d7f09b363fc03a",
+      "artifactSha256": "1c1f22196831958b2d699ba447580756abb70f8f782cebeb1272ea87a7ca7e2f",
+      "receipt": "recovery/dt50-seed18/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 19,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          114,
+          0
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1065,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 81336,
+        "blockedTranslationSamples": 147,
+        "blockedTranslationRatio": 0.0018073177928592506,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          1,
+          4
+        ],
+        "actualKicksByTeam": [
+          130,
+          5
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          114,
+          0,
+          0,
+          0,
+          0
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          0,
+          660,
+          0,
+          0,
+          5,
+          20
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          1,
+          4
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          1,
+          4
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          28,
+          25
+        ],
+        "basePhaseSwitches": [
+          0,
+          1
+        ],
+        "phaseSampleCounts": [
+          [
+            228,
+            0,
+            11750,
+            0,
+            22
+          ],
+          [
+            228,
+            11592,
+            180,
+            0,
+            0
+          ]
+        ],
+        "fallbackEntries": [
+          2,
+          0
+        ],
+        "takeoverEntries": [
+          2,
+          0
+        ],
+        "takeoverSeconds": [
+          1.1,
+          0
+        ],
+        "regularMfChaseSamples": [
+          0,
+          538
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          22,
+          0
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          0,
+          130,
+          0,
+          0,
+          1,
+          4
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          0,
+          132,
+          0,
+          0,
+          1,
+          4
+        ],
+        "chaserChanges": [
+          28,
+          21
+        ],
+        "physicalKickStepsWithBallMotion": 135,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000025,
+        "observedBallTravelMetresIncludingResets": 126.60237948785233,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.236851,
+      "traceDigest": "8c8a5f44d8789ca46c231d968e4e2097faa8d1bd15879afbc1faa843367ab019",
+      "tacticsDigest": "49befc797a35bc6cf065d17203db04a7475f488d7ece47535a86b4e8982e19c2",
+      "artifactSha256": "8a39d3d610e045b2f29c58b6e10a7565976d50904104ccf179658042f385b76d",
+      "receipt": "recovery/dt50-seed19/receipt.json"
+    },
+    {
+      "period": 0.05,
+      "seed": 20,
+      "steps": 12000,
+      "metrics": {
+        "goals": [
+          0,
+          0
+        ],
+        "shots": [
+          0,
+          113
+        ],
+        "firstTouchSeconds": 3.95,
+        "steps": 12000,
+        "overlapSteps": 0,
+        "overlapPairSamples": 0,
+        "maximumPenetrationMetres": 0,
+        "outsidePitchRobotSamples": 1281,
+        "outsideBorderRobotSamples": 0,
+        "translationRequests": 83171,
+        "blockedTranslationSamples": 295,
+        "blockedTranslationRatio": 0.00354690937947121,
+        "finite": true,
+        "period": 0.05,
+        "simulationSeconds": 600,
+        "roleChangesByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actualKicksByRobot": [
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          123
+        ],
+        "actualKicksByTeam": [
+          7,
+          123
+        ],
+        "actualShotsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          113
+        ],
+        "midfielderShots": [
+          0,
+          0
+        ],
+        "kickRequestSamples": [
+          0,
+          0,
+          15,
+          22,
+          0,
+          0,
+          0,
+          635
+        ],
+        "kickRequestIds": [
+          0,
+          0,
+          3,
+          5,
+          0,
+          0,
+          0,
+          127
+        ],
+        "executionStartsByRobot": [
+          0,
+          0,
+          3,
+          5,
+          0,
+          0,
+          0,
+          127
+        ],
+        "revokedRawKickSamples": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "phaseSwitches": [
+          23,
+          30
+        ],
+        "basePhaseSwitches": [
+          1,
+          0
+        ],
+        "phaseSampleCounts": [
+          [
+            209,
+            11597,
+            194,
+            0,
+            0
+          ],
+          [
+            209,
+            0,
+            11747,
+            0,
+            44
+          ]
+        ],
+        "fallbackEntries": [
+          0,
+          4
+        ],
+        "takeoverEntries": [
+          0,
+          4
+        ],
+        "takeoverSeconds": [
+          0,
+          2.2
+        ],
+        "regularMfChaseSamples": [
+          686,
+          0
+        ],
+        "searchSamples": [
+          0,
+          0
+        ],
+        "failedStrikerSamples": [
+          0,
+          44
+        ],
+        "doneActionsByRobot": [
+          0,
+          0,
+          3,
+          4,
+          0,
+          0,
+          0,
+          123
+        ],
+        "failedActionsByRobot": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          4
+        ],
+        "rejectedActionsByRobot": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "runningActionsByRobot": [
+          0,
+          0,
+          3,
+          5,
+          0,
+          0,
+          0,
+          127
+        ],
+        "chaserChanges": [
+          19,
+          30
+        ],
+        "physicalKickStepsWithBallMotion": 130,
+        "maximumBallDisplacementOnKickMetres": 0.08900000000000027,
+        "observedBallTravelMetresIncludingResets": 133.688495065962,
+        "robotsWithMotion": 8,
+        "geometryPassed": true,
+        "passed": true
+      },
+      "elapsedSeconds": 5.460233,
+      "traceDigest": "85427132e8fd2f63b15282fbb70ea4bec1daef2372805fcc077ad10c3726043e",
+      "tacticsDigest": "09631ad4a1cee6bee8e8da34cd0f2d4b0a5f18448874d35a14794551df9802e9",
+      "artifactSha256": "7e723d910f3ae01bd2dde3391b9db549dbd7ef163c38a3300cc9e08c6368f34e",
+      "receipt": "recovery/dt50-seed20/receipt.json"
+    }
+  ]
+}

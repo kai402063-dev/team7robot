@@ -1,0 +1,34 @@
+{
+  "spec": {
+    "id": "tactics-v1-matrix-owner-audit",
+    "file": "scripts/v1MatchMetrics.m",
+    "old": "'unauthorizedKickRequest',effectiveKick & ~owner",
+    "new": "'unauthorizedKickRequest',false(size(effectiveKick))",
+    "suite": "tests/test_v1_matrix.m",
+    "evidence": "evidence/tactics-v1/mutation-matrix-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_v1_matrix/testStationaryReference",
+      "test_v1_matrix/testUnownedEffectiveRequest",
+      "test_v1_matrix/testDuplicatePhysicalKick"
+    ],
+    "passed": [
+      true,
+      false,
+      true
+    ],
+    "failed": [
+      false,
+      true,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

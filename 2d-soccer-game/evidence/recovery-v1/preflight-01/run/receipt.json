@@ -1,0 +1,17 @@
+{
+  "status": "FAIL",
+  "periods": 0.05,
+  "seeds": 5,
+  "matchSeconds": 600,
+  "completedMatches": 1,
+  "elapsedSeconds": 186.887084,
+  "startedAtUtc": "2026-11-06T10:36:55.841Z",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "executionRoot": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1",
+  "cacheId": "recoveryPre01",
+  "artifactDirectory": "build/v1-matrix/tp939373c9_1178_4fc8_9d2c_c34204037506",
+  "sourceFingerprint": "25f349a3e42bf7cf0cdcd340d981e84419e085489dc556c57821a19c9e2af024",
+  "revision": "ba985b7094f9c1d193671785db552f5b173598f6",
+  "identifier": "TDP:V1SourceDrift",
+  "error": "Error using assert\nProduction or validation files changed during the run. Inspect both manifests.\n\nError in validate_v1_matrix (line 106)\n    assert(strcmp(after.fingerprint,source.fingerprint),'TDP:V1SourceDrift', ...\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+}

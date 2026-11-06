@@ -1,0 +1,17 @@
+{
+  "command": [
+    "./scripts/run_ros.sh",
+    "python3",
+    "scripts/run_webots.py",
+    "build/webots-motion-manual-01",
+    "--mode",
+    "motion"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+  "startUtc": "2026-11-05T23:25:38.715517+00:00",
+  "status": "PASS",
+  "childPid": 299878,
+  "exitCode": 0,
+  "endUtc": "2026-11-05T23:26:11.144613+00:00",
+  "wallSeconds": 32.429095594998216
+}

@@ -1,0 +1,168 @@
+{
+  "status": "PASS_READER_TEN_SECOND_HEADLESS",
+  "seed": 1,
+  "dt": 0.05,
+  "tMatch": 10,
+  "mat": "build/v1-reader-01/build/my-v1-ten-seconds/trace.mat",
+  "matSha256": "61cf52f0028774113bf1275eddb6ff19cad9d68d7b4bba2b55cf5de38b745d22",
+  "traceShape": [
+    200,
+    98
+  ],
+  "tacticsShape": [
+    200,
+    171
+  ],
+  "traceNumericSha256": "a9ef961df829cacb5ba336bdc1c631d78b34780a1d51bc9a89d760dfdc81d048",
+  "tacticsNumericSha256": "d93894719739f5e34ec7ef356eb10a599d77a607c21f23d713529d1d0bfc5f01",
+  "numericEncoding": "row-major little-endian IEEE754 float64",
+  "timeBoundsSeconds": [
+    0.05,
+    10.0
+  ],
+  "fixedRolesEachRow": [
+    1,
+    3,
+    5,
+    2,
+    1,
+    3,
+    5,
+    2
+  ],
+  "actualEventsCount": 9,
+  "events": [
+    [
+      3.95,
+      4
+    ],
+    [
+      4.0,
+      8
+    ],
+    [
+      5.15,
+      4
+    ],
+    [
+      5.2,
+      8
+    ],
+    [
+      6.3500000000000005,
+      4
+    ],
+    [
+      6.4,
+      8
+    ],
+    [
+      7.550000000000001,
+      4
+    ],
+    [
+      7.6000000000000005,
+      8
+    ],
+    [
+      8.75,
+      4
+    ]
+  ],
+  "exampleActorGlobal": 4,
+  "exampleTimeline": [
+    {
+      "row1": 75,
+      "time": 3.75,
+      "teamPhase": 2,
+      "globalChaser": 4,
+      "localChaserTrace": 4,
+      "role": 2,
+      "kicker": 0,
+      "actualKickTrace": 0,
+      "ballXYm": [
+        0.0,
+        0.0
+      ],
+      "ballVxyMps": [
+        0.0,
+        0.0
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "ballSpeedMps": 0.0,
+      "intent": 2.0,
+      "rawKind": 2.0,
+      "kind": 2.0,
+      "skill": 4.0,
+      "status": 1.0,
+      "requestId": 76.0,
+      "feedbackId": 76.0,
+      "speed": 0.6
+    },
+    {
+      "row1": 78,
+      "time": 3.9000000000000004,
+      "teamPhase": 2,
+      "globalChaser": 4,
+      "localChaserTrace": 4,
+      "role": 2,
+      "kicker": 0,
+      "actualKickTrace": 0,
+      "ballXYm": [
+        0.0,
+        0.0
+      ],
+      "ballVxyMps": [
+        0.0,
+        0.0
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "ballSpeedMps": 0.0,
+      "intent": 2.0,
+      "rawKind": 2.0,
+      "kind": 2.0,
+      "skill": 4.0,
+      "status": 1.0,
+      "requestId": 76.0,
+      "feedbackId": 76.0,
+      "speed": 0.6
+    },
+    {
+      "row1": 79,
+      "time": 3.95,
+      "teamPhase": 2,
+      "globalChaser": 4,
+      "localChaserTrace": 4,
+      "role": 2,
+      "kicker": 4,
+      "actualKickTrace": 1,
+      "ballXYm": [
+        0.02893304764246798,
+        -0.0019694552847622617
+      ],
+      "ballVxyMps": [
+        0.5786609528493596,
+        -0.03938910569524523
+      ],
+      "scores": [
+        0,
+        0
+      ],
+      "ballSpeedMps": 0.58,
+      "intent": 2.0,
+      "rawKind": 2.0,
+      "kind": 2.0,
+      "skill": 4.0,
+      "status": 2.0,
+      "requestId": 76.0,
+      "feedbackId": 76.0,
+      "speed": 0.6
+    }
+  ]
+}

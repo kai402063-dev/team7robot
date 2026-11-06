@@ -1,0 +1,8 @@
+{
+  "id": "recovery-substitute-request",
+  "file": "environment/V1AuthorizeRequests.m",
+  "old": "raw(i).requestId~=state.releaseId || t>state.releaseDeadline;",
+  "new": "t>state.releaseDeadline;",
+  "suite": "tests/test_recovery_tactics.m",
+  "evidence": "evidence/recovery-v1/team-mutation-01"
+}

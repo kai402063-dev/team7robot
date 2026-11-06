@@ -1,0 +1,853 @@
+[Warning: The model name 'ControllerCore' is shadowing another name in the
+MATLAB workspace or path. Type "which -all ControllerCore" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_controller (line 5)] 
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 4)] 
+[Warning: The model name 'tdpSingleRobot' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpSingleRobot" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_single (line 4)] 
+Running test_controller
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In construct_module (line 81)
+In generate_code_for_charts_and_machine (line 142)
+In sfc (line 168)
+In targetman>code_method (line 320)
+In targetman>method_nag_wrapper (line 133)
+In targetman (line 69)
+In autobuild_kernel>autobuild_local (line 173)
+In autobuild_kernel (line 53)
+In autobuild_driver (line 118)
+In slsf (line 140)
+In sfprivate (line 13)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testReplayAndTruthIsolation (line 8)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In construct_module (line 81)
+In generate_code_for_charts_and_machine (line 142)
+In sfc (line 168)
+In targetman>code_method (line 320)
+In targetman>method_nag_wrapper (line 133)
+In targetman (line 69)
+In autobuild_kernel>autobuild_local (line 173)
+In autobuild_kernel (line 53)
+In autobuild_driver (line 118)
+In slsf (line 140)
+In sfprivate (line 13)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testReplayAndTruthIsolation (line 8)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testReplayAndTruthIsolation (line 10)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testReplayAndTruthIsolation (line 10)]
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testNormalFeedback (line 16)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testNormalFeedback (line 16)]
+
+================================================================================
+Verification failed in test_controller/testNormalFeedback.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyNotEmpty failed.
+    --> The value must not be empty.
+    --> The value has a size of [0  0].
+    
+    Actual Value:
+         []
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testNormalFeedback) at 17
+================================================================================
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testNormalFeedback (line 20)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testNormalFeedback (line 20)]
+
+================================================================================
+Verification failed in test_controller/testNormalFeedback.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Sizes do not match.
+        
+        Actual size:
+             0     1
+        Expected size:
+             1     1
+    
+    Actual Value:
+      0×1 empty double column vector
+    Expected Value:
+         5
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testNormalFeedback) at 20
+================================================================================
+
+================================================================================
+Error occurred in test_controller/testNormalFeedback and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:repmat:invalidReplications'
+    --------------
+    Error Details:
+    --------------
+    Error using repmat
+    Replication factors must be a row vector of integers or integer scalars.
+    
+    Error in test_controller>testNormalFeedback (line 21)
+     verifyEqual(tc,b(k:finish-1,2),repmat(double(id),finish-k,1));
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+================================================================================
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testTimeout (line 25)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testTimeout (line 25)]
+
+================================================================================
+Verification failed in test_controller/testTimeout.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyGreaterThanOrEqual failed.
+    --> The actual value must be non-empty.
+    
+    Actual Value:
+         []
+    Minimum Value (Inclusive):
+       0.999999999999000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testTimeout) at 27
+================================================================================
+
+================================================================================
+Verification failed in test_controller/testTimeout.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyLessThanOrEqual failed.
+    --> The actual value must be non-empty.
+    
+    Actual Value:
+         []
+    Maximum Value (Inclusive):
+       1.050000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testTimeout) at 28
+================================================================================
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testFailedAndRejectedFeedback (line 32)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testFailedAndRejectedFeedback (line 32)]
+
+================================================================================
+Error occurred in test_controller/testFailedAndRejectedFeedback and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:index:expected_one_output_for_assignment'
+    --------------
+    Error Details:
+    --------------
+    Assigning to 0 elements using a simple assignment statement is not
+    supported.
+    Consider using comma-separated list assignment.
+    
+    Error in test_controller>testFailedAndRejectedFeedback (line 33)
+     j=k+2;sc(j).feedback=struct('requestId',uint32(a(k,2)),'status',status,'stamp',(j-1)*P.dt);
+           ^^^^^^^^^^^^^^
+================================================================================
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLateFeedbackIgnored (line 38)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLateFeedbackIgnored (line 38)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLateFeedbackIgnored (line 40)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLateFeedbackIgnored (line 40)]
+
+================================================================================
+Verification failed in test_controller/testLateFeedbackIgnored.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Sizes do not match.
+        
+        Actual size:
+             0     1
+        Expected size:
+             6     1
+    
+    Actual Value:
+      0×1 empty double column vector
+    Expected Value:
+         4
+         4
+         4
+         4
+         4
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testLateFeedbackIgnored) at 40
+================================================================================
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLostBallAndStop (line 45)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLostBallAndStop (line 45)]
+
+================================================================================
+Verification failed in test_controller/testLostBallAndStop.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyTrue failed.
+    --> The value must evaluate to "true".
+    
+    Actual Value:
+      logical
+    
+       0
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testLostBallAndStop) at 46
+================================================================================
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLostBallAndStop (line 49)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testLostBallAndStop (line 49)]
+
+================================================================================
+Verification failed in test_controller/testLostBallAndStop.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Sizes do not match.
+        
+        Actual size:
+             0     1
+        Expected size:
+            34     1
+    
+    Actual Value:
+      0×1 empty double column vector
+    Expected Value:
+        34x1 double
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testLostBallAndStop) at 49
+================================================================================
+
+================================================================================
+Verification failed in test_controller/testLostBallAndStop.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Sizes do not match.
+        
+        Actual size:
+             0     1
+        Expected size:
+            34     1
+    
+    Actual Value:
+      0×1 empty double column vector
+    Expected Value:
+        34x1 double
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller/tests/test_controller.m (testLostBallAndStop) at 50
+================================================================================
+.[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::31')">'[tSim-...erTime]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::17')">'Recover'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testStaleObservation (line 55)]
+[Warning: Transition <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::25')">'[~g.ballVisible]'</a>
+is not fully contained in natural parent <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>,
+the lowest common ancestor of source <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::15')">'Align'</a>
+and destination <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::13')">'Search'</a>.
+This causes the state <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>
+to exit and reenter when this transition is taken. If this is not expected,
+move/resize the transition to be fully contained inside <a
+href="matlab:sfprivate('sfOpenObjectBySId','ControllerCore:9:::12')">'Active'</a>.
+You can also configure the diagnostic by clicking<a href="matlab:
+sfprivate('openConfigParamsSFDiagnostics',255)"> here.</a>
+
+] 
+[> In sldiagviewer.reportWarning
+In construct_error (line 60)
+In sfprivate (line 15)
+In Simulink.Simulation.internal.DesktopSimHelper
+In Simulink.Simulation.internal.DesktopSimHelper.sim
+In Simulink/SimulationInput/sim
+In runReplay (line 6)
+In test_controller>testStaleObservation (line 55)]
+
+================================================================================
+Error occurred in test_controller/testStaleObservation and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'MATLAB:badsubscript'
+    --------------
+    Error Details:
+    --------------
+    Index in position 1 exceeds array bounds.
+    
+    Error in test_controller>testStaleObservation (line 56)
+    verifyEqual(tc,a(old,1),zeros(numel(old),1));
+                   ^^^^^^^^
+================================================================================
+.{Arrays have incompatible sizes ([8 x 1] and [1 x 8]).
+The size to the left is the size of the left-hand side of the assignment.
+Function "Plant2D" (<a
+href="matlab:Stateflow.internal.sfLegacyMatlabApi('Open',307,56,64)">#307.56.64</a>),
+line 2, column 7: "feedback" Launch diagnostic <a href="matlab:
+sfprivate('eml_report_manager','open',306);">report</a>.
+} 
+{Errors occurred during parsing of <a
+href="matlab:sfprivate('sfOpenObjectBySId','tdpSingleRobot:10')">'tdpSingleRobot/Plant2D'</a>.
+} 
+
+================================================================================
+Error occurred in test_controller/testSingleClosedLoop and it did not run to completion.
+    ---------
+    Error ID:
+    ---------
+    'Stateflow:cdr:ErrorsParsingEmlFcn'
+    --------------
+    Error Details:
+    --------------
+    Error using test_controller>testSingleClosedLoop (line 61)
+    Errors occurred during parsing of <a
+    href="matlab:sfprivate('sfOpenObjectBySId','tdpSingleRobot:10')">'tdpSingleRobot/Plant2D'</a>.
+================================================================================
+.
+Done test_controller
+__________
+
+Failure Summary:
+
+     Name                                           Failed  Incomplete  Reason(s)
+    ============================================================================================
+     test_controller/testNormalFeedback               X         X       Failed by verification.
+                                                                        Errored.
+    --------------------------------------------------------------------------------------------
+     test_controller/testTimeout                      X                 Failed by verification.
+    --------------------------------------------------------------------------------------------
+     test_controller/testFailedAndRejectedFeedback    X         X       Errored.
+    --------------------------------------------------------------------------------------------
+     test_controller/testLateFeedbackIgnored          X                 Failed by verification.
+    --------------------------------------------------------------------------------------------
+     test_controller/testLostBallAndStop              X                 Failed by verification.
+    --------------------------------------------------------------------------------------------
+     test_controller/testStaleObservation             X         X       Errored.
+    --------------------------------------------------------------------------------------------
+     test_controller/testSingleClosedLoop             X         X       Errored.

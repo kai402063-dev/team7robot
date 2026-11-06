@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "scripts/analyze_webots.py",
+    "build/webots-closed-manual-01",
+    "--output",
+    "build/webots-closed-manual-01/analysis.json"
+  ],
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03",
+  "startUtc": "2026-11-05T23:29:21.670049+00:00",
+  "status": "PASS",
+  "childPid": 3,
+  "exitCode": 0,
+  "endUtc": "2026-11-05T23:29:21.805195+00:00",
+  "wallSeconds": 0.135142896004254
+}

@@ -1,0 +1,42 @@
+{
+  "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-03/build/ros-manual-01",
+  "largeThresholdBytes": 1048576,
+  "files": [
+    {
+      "path": "matlab.log",
+      "bytes": 291,
+      "sha256": "cc33035b0868bfff10ccfc6e88967a1a440c332b984b87b3b57f3adba8cbabe3",
+      "retained": true
+    },
+    {
+      "path": "proxy.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "retained": true
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 249,
+      "sha256": "aae0687a8e3372854f656a8067bb47ccdcbf61da81b483ab766184c46be09e0c",
+      "retained": true
+    },
+    {
+      "path": "scalar-echo.log",
+      "bytes": 14,
+      "sha256": "79742767f35337aea04c9560ead6df5a4be960eb82ce8715595c363771a41eba",
+      "retained": true
+    },
+    {
+      "path": "scalar-node.log",
+      "bytes": 2179,
+      "sha256": "dfcf4cf426324fe338c5c4e62f88e4a04cfc9b52e162d33d4699f38f4696f4b6",
+      "retained": true
+    },
+    {
+      "path": "scalar-pub.log",
+      "bytes": 124,
+      "sha256": "fc089e4116d147277cd9029ec39535014b1ab66a25e2a5d330697e6d9ede16f5",
+      "retained": true
+    }
+  ]
+}

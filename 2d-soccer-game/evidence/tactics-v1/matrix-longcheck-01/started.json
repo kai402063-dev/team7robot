@@ -1,0 +1,13 @@
+{
+  "status": "RUNNING",
+  "periods": 0.05,
+  "seeds": 1,
+  "matchSeconds": 600,
+  "completedMatches": 0,
+  "elapsedSeconds": 0,
+  "startedAtUtc": "2026-11-06T09:02:18.184Z",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "executionRoot": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1",
+  "cacheId": "v1matrix_longcheck",
+  "artifactDirectory": "build/v1-matrix/tp7f23e3f4_72c9_45f7_9939_be148c370955"
+}

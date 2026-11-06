@@ -1,0 +1,69 @@
+Running test_animation
+
+================================================================================
+Verification failed in test_animation/testCoordinatesAndPersistentGraphics.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> The error was not within absolute tolerance.
+    --> Failure table:
+            Index    Actual    Expected    Error      RelativeError      AbsoluteTolerance
+            _____    ______    ________    _____    _________________    _________________
+                                                                                          
+              1      -0.87       1.18      -2.05    -1.73728813559322          1e-12      
+              2      -0.73       1.32      -2.05    -1.5530303030303           1e-12      
+    
+    Actual Value:
+      -0.870000000000000  -0.730000000000000  -0.870000000000000  -0.730000000000000
+    Expected Value:
+       1.180000000000000   1.320000000000000  -0.870000000000000  -0.730000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-animation-ball-coordinate-v1/tests/test_animation.m (testCoordinatesAndPersistentGraphics) at 18
+================================================================================
+.
+================================================================================
+Verification failed in test_animation/testPauseSpeedStopAndClose.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Classes do not match.
+        
+        Actual Class:
+            matlab.lang.OnOffSwitchState
+        Expected Class:
+            char
+    
+    Actual Value:
+      OnOffSwitchState enumeration
+    
+        on
+    Expected char:
+        on
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-animation-ball-coordinate-v1/tests/test_animation.m (testPauseSpeedStopAndClose) at 27
+================================================================================
+..[Warning: Graphics acceleration hardware is unavailable. Graphics quality and
+performance might be diminished. See <a
+href="https://www.mathworks.com/support/requirements/matlab-system-requirements.html">MATLAB
+System Requirements</a>.] 
+[> In LiveViewer2D/beginRun (line 131)
+In runAnimatedMatch (line 16)
+In test_animation>testAnimatedTrajectoryMatchesNormalSimulation (line 46)]
+.
+Done test_animation
+__________
+
+Failure Summary:
+
+     Name                                                 Failed  Incomplete  Reason(s)
+    ==================================================================================================
+     test_animation/testCoordinatesAndPersistentGraphics    X                 Failed by verification.
+    --------------------------------------------------------------------------------------------------
+     test_animation/testPauseSpeedStopAndClose              X                 Failed by verification.

@@ -1,0 +1,46 @@
+{
+  "spec": {
+    "id": "actuator",
+    "file": "environment/Actuator2D.m",
+    "old": "req.requestId>memory.seenId",
+    "new": "req.requestId>=memory.seenId",
+    "suite": "tests/test_actuator.m",
+    "evidence": "evidence/2/mutation-actuator-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_actuator/testDuplicateRequest",
+      "test_actuator/testExecutionFailure",
+      "test_actuator/testLateAndBusyRequests",
+      "test_actuator/testWalkExpiry",
+      "test_actuator/testStopCancels",
+      "test_actuator/testCompatImmediate"
+    ],
+    "passed": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true
+    ],
+    "failed": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "incomplete": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "detected": true
+}

@@ -1,0 +1,3 @@
+{
+  "reason": "The convergence guard raised an error before the verification assertions. This attempt is not counted by the strict mutation receipt; v2 mutates the separation distance and reaches the assertions."
+}

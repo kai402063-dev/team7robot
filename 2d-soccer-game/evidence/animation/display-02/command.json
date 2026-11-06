@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "Private X11 display; user desktop untouched",
+  "exitCode": 0,
+  "display": ":1",
+  "cacheId": "animation_display_340292",
+  "elapsedSeconds": 188.36425419399893
+}

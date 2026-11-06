@@ -1,0 +1,8 @@
+{
+  "id": "recovery-stale-mf-terminal",
+  "file": "algorithms/+tdp/updateRecovery.m",
+  "old": "fb.stamp>=m.releaseStamp && ...",
+  "new": "isfinite(fb.stamp) && ...",
+  "suite": "tests/test_recovery_model.m",
+  "evidence": "evidence/recovery-v1/model-mutation-01"
+}

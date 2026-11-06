@@ -1,0 +1,12 @@
+            matlab: '26.2.0.3386108 (R2026b)'
+           release: '2026b'
+              root: '/home/fayne/Applications/MATLAB/R2026b'
+          products: [1×6 struct]
+    installAllowed: 0
+       pushAllowed: 0
+          licenses: [1×1 struct]
+              ros2: ''
+          screener: '/home/fayne/Applications/MATLAB/R2026b/toolbox/mlcoder/screener/core/ml/+coder/screener.p'
+         rosOnline: 'BLOCKED_ROS_TOOLBOX_NOT_INSTALLED'
+        standalone: 'BLOCKED_CODERS_NOT_INSTALLED'
+

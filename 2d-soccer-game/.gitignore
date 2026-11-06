@@ -1,0 +1,11 @@
+
+# Migration generated caches and large traces
+/build/
+*.asv
+*.slxc
+/evidence/**/*.mat
+__pycache__/
+
+*.egg-info/
+
+webots/worlds/.*.wbproj

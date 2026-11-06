@@ -1,0 +1,659 @@
+[
+  {
+    "bus": "RobotBus",
+    "field": "team",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "num",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "isGK",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "role",
+    "type": "TdpRole",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "x",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "y",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "th",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "vxw",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "vyw",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RobotBus",
+    "field": "cool",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "BallBus",
+    "field": "x",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "BallBus",
+    "field": "y",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "BallBus",
+    "field": "vx",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "BallBus",
+    "field": "vy",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "t",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "score",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "lastTouch",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "pauseUntil",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "msg",
+    "type": "TdpEvent",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "msgUntil",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "shots",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "RefereeBus",
+    "field": "touchTime",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "IntentBus",
+    "field": "type",
+    "type": "TdpAction",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "IntentBus",
+    "field": "target",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "IntentBus",
+    "field": "heading",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "IntentBus",
+    "field": "speed",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "IntentBus",
+    "field": "role",
+    "type": "TdpRole",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "FeedbackBus",
+    "field": "requestId",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "FeedbackBus",
+    "field": "status",
+    "type": "TdpStatus",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "FeedbackBus",
+    "field": "stamp",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "requestId",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "kind",
+    "type": "TdpAction",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "velocity",
+    "type": "double",
+    "size": [
+      1,
+      3
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "target",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "speed",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "stamp",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "RequestBus",
+    "field": "validUntil",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "selfIndex",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "robots",
+    "type": "struct",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "robotValid",
+    "type": "logical",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "robotStamp",
+    "type": "double",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "ball",
+    "type": "struct",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "ballValid",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "ballStamp",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "selfValid",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "gameRunning",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "allowKick",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ObservationBus",
+    "field": "tSim",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "command",
+    "type": "double",
+    "size": [
+      1,
+      3
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "target",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "speed",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "ready",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "distance",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "safe",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "ballVisible",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "running",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "GeometryBus",
+    "field": "intent",
+    "type": "TdpAction",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "seenId",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "rejectedId",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "active",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "start",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "target",
+    "type": "double",
+    "size": [
+      1,
+      2
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "speed",
+    "type": "double",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "feedback",
+    "type": "struct",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "ActuatorBus",
+    "field": "executions",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "robots",
+    "type": "struct",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "ball",
+    "type": "struct",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "referee",
+    "type": "struct",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "actuator",
+    "type": "struct",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "active",
+    "type": "logical",
+    "size": [
+      1,
+      8
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "lastCommands",
+    "type": "double",
+    "size": [
+      8,
+      3
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "lastKick",
+    "type": "logical",
+    "size": [
+      1,
+      1
+    ]
+  },
+  {
+    "bus": "WorldBus",
+    "field": "kickCount",
+    "type": "uint32",
+    "size": [
+      1,
+      1
+    ]
+  }
+]

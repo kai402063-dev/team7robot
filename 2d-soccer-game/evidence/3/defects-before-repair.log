@@ -1,0 +1,31 @@
+{Error using matlab.unittest.internal.services.fileextension.MATLABCodeFileExtensionService/createSuiteExplicitly (line 38)
+Error: File: /home/fayne/Documents/Robotics & AI/Robotics
+TDP/2d-soccer-game/tdp-migrated-r1/tests/test_source_defects.m Line: 43 Column:
+1
+Illegal use of reserved keyword "end".
+
+Error in matlab.unittest.TestSuite.fromFileCore_ (line 187)
+            suite = supportingService.createSuiteExplicitly(liaison, modifier, externalParameters);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.services.informalsuite.MATLABCodeFileHandler/createSuiteForSingleTest (line 24)
+            suite = TestSuite.fromFileCore_(file, rejector, options.ExternalParameters);
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.services.informalsuite.SingleTestHandler/createSuite (line 19)
+                suites{idx} = handler.createSuiteForSingleTest(tests(idx), rejector, options);
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.createTestSuite (line 28)
+    suites{k} = uniqueHandlersToUse(k).createSuite(testsForHandler, options);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in testsuite (line 8)
+suite = matlab.unittest.internal.createTestSuite(tests, options);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.testoutputviewhandlers.TestOutputHandler/createSuite (line 19)
+            suite = suiteCreatorFcn(suiteInputs{:});
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in matlab.unittest.internal.runtestsParser (line 52)
+    suite = results.Options.TestViewHandler_.createSuite(testsuiteCreatorFcn, results.TestsuiteInputs);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in runtests (line 6)
+[parseResults, suite] = matlab.unittest.internal.runtestsParser(@testsuite, varargin{:});
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 

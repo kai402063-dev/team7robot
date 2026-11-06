@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "entry": "start_2d_recovery",
+  "defaultFigureVisibleBefore": "on",
+  "defaultFigureVisibleAfter": "on",
+  "visibleFigureClosed": true,
+  "inheritedEnvironmentStrategy": "v1",
+  "v1AutoRecovery": true,
+  "actuatedKickCount": 2,
+  "traceShape": [
+    100,
+    98
+  ],
+  "tacticsShape": [
+    100,
+    171
+  ],
+  "recoveryShape": [
+    100,
+    53
+  ],
+  "recoverySimTimeEqualsTrace": true,
+  "matchReceipt": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/animation-20261106-105233-827/receipt.json"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "SUPERSEDED_BY_VALIDATION_FIX",
+  "targetCommit": "a4676cd0fec63dec75f34e88ce6dcc64b79d39e0",
+  "replacementCommit": "3334d3c42f239f60fbfe72dad4c663d5559f231f",
+  "stopRequestedUtc": "2026-11-05T21:35:25.052511+00:00",
+  "pid": 210306,
+  "observedCwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-01/tests",
+  "signal": "SIGTERM",
+  "reason": "Parent requested full fresh run of final acceptance fixes; stage0 and stage1 completed, stage2 controller suite running. Old incomplete overall run is not PASS.",
+  "firstStopAttempt": "No signal sent because exact root cwd assertion rejected tests subdirectory; second attempt verifies containment and command."
+}

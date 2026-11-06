@@ -1,0 +1,31 @@
+{
+  "status": "PAUSED_BY_USER",
+  "timestampUtc": "2026-11-05T23:04:21.121123+00:00",
+  "codeCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
+  "branch": "ai-migration-baseline",
+  "fullCleanReproduction": "PASS_AVAILABLE_M2_WITH_BLOCKERS_AND_NOISY_TRACE_DIFFERENCES",
+  "fullEvidence": "evidence/6/clean-final-03/artifacts/receipt.json",
+  "independentAudit": "evidence/6/clean-final-03/independent-audit",
+  "manualAPI": "PASS",
+  "manualRosBuild": "PASS",
+  "manualRosScalar": "PASS: 3.5 -> 4.5",
+  "manualRosOnline": "PAUSED: user interruption, neither PASS nor behavior FAIL",
+  "manualWebots": "NOT_STARTED",
+  "guiDragging": "NOT_PERFORMED",
+  "remainingOwnedLivePids": [],
+  "stopRecord": "evidence/6/clean-final-03/independent-audit/PAUSE_STOP_RECORD.json",
+  "oldInterruptedCommandExitCode": -2,
+  "remaining": [
+    "resume manual ROS online in a new attempt directory",
+    "manual Webots build/pitch/camera/single action/closed-loop steps",
+    "independent final audit",
+    "end SHA-256 comparison of 14 read-only inputs",
+    "final manual timings/status and stage6 commit",
+    "baseline-v1 tag"
+  ],
+  "baseline2dTag": "baseline-2d-v1",
+  "baselineV1Created": false,
+  "endInputHashesPerformed": false,
+  "noInstall": true,
+  "noPushOrPR": true
+}

@@ -1,0 +1,43 @@
+{
+  "commit": "be3fc7c6dd4bf7fb919a020db030b4738fd615f1",
+  "cloneDirectory": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-room-01",
+  "reviewedUTC": "2026-11-05T19:42:41.798976+00:00",
+  "sourceReadScope": "DEV_MANUAL and linked chapters/files only; no development history used",
+  "sourceWorktreeChangedByThisAgent": false,
+  "initialGitStatusObserved": "clean",
+  "manualSHA256": "6ca2c15ba5180980bf225011a7f33902ac48faccf01bb476e118acc270ecf654",
+  "findings": [
+    {
+      "id": "DOC-1",
+      "status": "BLOCKED_DIRECT_COPY",
+      "file": "docs/generated/stateflow.md",
+      "description": "Transition conditions are inline code containing literal &#124;&#124;; path 4 promises directly copyable conditions."
+    },
+    {
+      "id": "DOC-2",
+      "status": "FAIL_NAVIGATION",
+      "file": "docs/chapters/stateflow.md",
+      "description": "References test_controller/testNormalCompletion, but actual linked suite has testNormalFeedback."
+    },
+    {
+      "id": "DOC-3",
+      "status": "BLOCKED_SELF_BUILT_CHART_REPLAY",
+      "file": "docs/chapters/handson.md",
+      "description": "Path 4 step 6 does not explain connecting the hand-built GeometryBus/FeedbackBus chart to the generated tdpReplay ControllerCore. runReplay is fixed to tdpReplay, so it would continue testing the generated chart."
+    }
+  ],
+  "visualReview": {
+    "architecture": "readable",
+    "stateflow": "readable; complete conditions are in generated Markdown"
+  },
+  "links": {
+    "documentCount": 11,
+    "missingMarkdownTargets": []
+  },
+  "boundaries": [
+    "No installs, pushes, or source implementation edits",
+    "No use of existing MATLAB desktop",
+    "GUI dragging not performed",
+    "M2 ROS/Webots unavailable in this commit; do not claim PASS"
+  ]
+}

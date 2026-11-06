@@ -1,0 +1,58 @@
+{
+  "status": "MOTION_RUN_COMPLETE",
+  "error": null,
+  "frames": 201,
+  "elapsedWallSeconds": 12.238546216998657,
+  "events": [
+    {
+      "event": "accepted",
+      "requestId": 1,
+      "time": 2.0,
+      "kind": 2
+    },
+    {
+      "event": "motion_start",
+      "requestId": 1,
+      "time": 2.02,
+      "ball": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "event": "motion_end",
+      "requestId": 1,
+      "time": 6.82,
+      "ball": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "kickResults": [
+    {
+      "requestId": 1,
+      "motionEnded": true,
+      "ballDisplacementAtMotionEnd": 0.0,
+      "ballMoved": false
+    }
+  ],
+  "executions": 1,
+  "duplicateDeliveries": 200,
+  "camera": {
+    "width": 160,
+    "height": 120,
+    "encoding": "bgra8",
+    "step": 640,
+    "bytes": 76800,
+    "stamp": 2.0,
+    "sha256": "b1a20bc743853ca3b1afd182cb34a651b5b112cc0855910a6e44e1dcc319dbb9",
+    "source": "actual Webots CameraTop buffer"
+  },
+  "clockPublisherCounts": [
+    1
+  ],
+  "localization": "Supervisor read-only ground truth; not perception validation",
+  "robotModel": "Webots Nao H25 V5 red",
+  "modelValidation": "NOT_ESTABLISHED: V5 simulation with uncalibrated teaching parameters"
+}

@@ -1,0 +1,22 @@
+{
+  "names": [
+    "test_manual_numbers/testNumbersMatchExecutableResults",
+    "test_manual_numbers/testRenderedManualContainsActualNumbers",
+    "test_manual_numbers/testParameterTableMatchesCurrentConfiguration"
+  ],
+  "passed": [
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false
+  ]
+}

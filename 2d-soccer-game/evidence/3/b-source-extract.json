@@ -1,0 +1,12 @@
+[
+  {
+    "file": "simulink/stateflow/chart_529.xml",
+    "field": "labelString",
+    "text": "BallPossession\nen:\ngameState.possession = 0;\nen,du:\n% Calculate distances from robots to ball\n% (Goalkeepers get 2x the range)\nfor idx = 1:numRobots\n    ballDists(idx) = norm( sensors(idx).pose(1:2) - ballPose' );\n    if behavior(idx).role == Role.Goalkeeper\n        ballDists(idx) = ballDists(idx)/2;\n    end\nend\n% Find the robot index of the current and latest possessions\nrobotIdx = findPossession;\nif robotIdx > 0\n    lastPossession = robotIdx;\nend\n% Unpack the robot commands\naction = commands(lastPossession).action;\nballVel = commands(lastPossession).ballVelocity;\nrobotPose = sensors(lastPossession).pose;"
+  },
+  {
+    "file": "simulink/stateflow/chart_529.xml",
+    "field": "labelString",
+    "text": "OutOfBounds\nen:\n% If a goal is scored, increment the score\nif gameState.state == GameState.GoalScored\n    ballPose = initBallPos;\n    teamIdx = behavior(lastPossession).team;\n    gameState.score(teamIdx) = gameState.score(teamIdx) + 1;\n    % Else, place the ball back in bounds\nelse\n    ballPose = placeBallInBounds();\nend\nsetBallState(ballPose,0,robotPose(3));"
+  }
+]

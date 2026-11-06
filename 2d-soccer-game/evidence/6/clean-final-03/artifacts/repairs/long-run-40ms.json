@@ -1,0 +1,21 @@
+{
+  "goals": [
+    2,
+    1
+  ],
+  "shots": [
+    28,
+    11
+  ],
+  "firstTouchSeconds": 3.64,
+  "steps": 15000,
+  "overlapSteps": 0,
+  "overlapPairSamples": 0,
+  "maximumPenetrationMetres": 0,
+  "outsidePitchRobotSamples": 1330,
+  "outsideBorderRobotSamples": 0,
+  "translationRequests": 119723,
+  "blockedTranslationSamples": 0,
+  "blockedTranslationRatio": 0,
+  "finite": true
+}

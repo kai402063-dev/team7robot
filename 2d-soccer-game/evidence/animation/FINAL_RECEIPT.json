@@ -1,0 +1,91 @@
+{
+  "status": "PASS_LIVE_2D_ANIMATION",
+  "baselineTag": "baseline-v1",
+  "controllerAndPhysicsChanged": false,
+  "trajectoryParity": {
+    "simulationSeconds": 8,
+    "periodsSeconds": [
+      0.05,
+      0.04
+    ],
+    "seed": 2,
+    "comparisonTolerance": 1e-12,
+    "receipt": "display-02/artifacts/receipt.json"
+  },
+  "interactiveControls": {
+    "events": [
+      {
+        "event": "started",
+        "simulationTime": 0,
+        "speed": "1x"
+      },
+      {
+        "event": "paused",
+        "simulationTime": 0.30000000000000004,
+        "speed": "1x"
+      },
+      {
+        "event": "speed",
+        "simulationTime": 0.35000000000000003,
+        "speed": "2x"
+      },
+      {
+        "event": "resumed",
+        "simulationTime": 0.35000000000000003,
+        "speed": "2x"
+      },
+      {
+        "event": "stopped",
+        "simulationTime": 4.800000000000001,
+        "speed": "2x"
+      }
+    ],
+    "pausedTime": 0.35000000000000003,
+    "frozenTime": 0.35000000000000003,
+    "partialFrames": 97,
+    "sameAsUnpacedPrefix": true
+  },
+  "restart": {
+    "frames": 160,
+    "sameTrace": true,
+    "separateReceipts": true
+  },
+  "closedDuringRun": true,
+  "realLauncher": {
+    "receipt": "launch-e2e-01/receipt.json",
+    "privateDisplayOnly": true,
+    "frames": 100,
+    "naturalExitAfterClose": true,
+    "exitCode": 0
+  },
+  "unitTests": 4,
+  "manualTests": 6,
+  "launcherContractTests": 12,
+  "mutations": [
+    "mutation-02/receipt.json",
+    "launcher-mutation-01/receipt.json"
+  ],
+  "failedAttemptsRetained": [
+    "api-probes/README.md",
+    "matlab-01/matlab.log",
+    "display-01/command.json",
+    "mutation-01/NOT_QUALIFIED.json"
+  ],
+  "readOnlyInputs": "input-hash-comparison.log",
+  "sourceSha256": {
+    "start_2d.m": "b6258505e85ea05a15ca55c939be06b85c70f11e7b36abf236e03994d9a3f3ba",
+    "start_2d.sh": "a1e16640f179969a5e75e5541b9ae1f9d322f5513120b02b25846cec2df24540",
+    "START_2D.desktop": "a05e88307e55979b290a75196f054a6669687a861b2ebe67a8ea0cbc6b0eec55",
+    "environment/LiveViewer2D.m": "be844c32901d2de7e1ce601bc0a7f659fc5af7b4124a0bea6a007cbe88358ff7",
+    "scripts/runAnimatedMatch.m": "2817d768f2c02daa4358fb769710b998c2bdd1fc187fdef2409eaa8b614396f3",
+    "tests/test_animation.m": "4872f791c2345610f93df6bae31c0d6de2add9cf52181fa12f07f71fcdc39222",
+    "scripts/validate_animation.m": "f838f8b5065a51ce897b771cd5847ef2c40e44eb3ce46b2279f6fee3f8eff02d",
+    "scripts/validate_live_launcher.py": "15dd60eba6709662ad0eb636db1c21909410a0d43279d8ed651cbf7751131318"
+  },
+  "limits": [
+    "600 s wall-paced viewing not timed.",
+    "Desktop file human double-click not tested.",
+    "No V1 tactics or NAO6 validation is claimed.",
+    "Complete M2 reproduction belongs to the frozen baseline; targeted animation and manual verification reran."
+  ]
+}

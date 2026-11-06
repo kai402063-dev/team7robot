@@ -1,0 +1,36 @@
+{
+  "python": "3.12.3",
+  "os": "Linux-7.0.0-42-generic-x86_64-with-glibc2.39",
+  "commands": {
+    "gcc": {
+      "exit": 0,
+      "stdout": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": ""
+    },
+    "colcon": {
+      "exit": 0,
+      "stdout": "/usr/bin/colcon\n",
+      "stderr": ""
+    },
+    "ros": {
+      "exit": 0,
+      "stdout": "<package format=\"3\">\n  <name>webots_ros2_driver</name>\n  <version>2025.0.0</version>\n  <description>Implementation of the Webots - ROS 2 interface</description>\n  <maintainer email=\"support@cyberbotics.com\">Cyberbotics</maintainer>\n  <license>Apache License 2.0</license>\n  <url type=\"website\">http://wiki.ros.org/webots_ros2</url>\n  <url type=\"bugtracker\">https://github.com/cyberbotics/webots_ros2/issues</url>\n  <url type=\"repository\">https://github.com/cyberbotics/webots_ros2</url>\n\n  <build_depend>ros_environment</build_depend>\n\n  <buildtool_depend>ament_cmake</buildtool_depend>\n  <buildtool_depend>python_cmake_module</buildtool_depend>\n  <buildtool_depend>ament_cmake_python</buildtool_depend>\n\n  <depend>pluginlib</depend>\n  <depend>rclcpp</depend>\n  <depend>rclpy</depend>\n  <depend>sensor_msgs</depend>\n  <depend>std_msgs</depend>\n  <depend>geometry_msgs</depend>\n  <depend>tf2_geometry_msgs</depend>\n  <depend>tf2_ros</depend>\n  <depend>vision_msgs</depend>\n  <depend>tinyxml2_vendor</depend>\n  <depend>webots_ros2_msgs</depend>\n  <depend>webots_ros2_importer</depend>\n  <depend>yaml-cpp</depend>\n\n  <test_depend>ament_lint_auto</test_depend>\n  <test_depend>ament_lint_common</test_depend>\n\n  <export>\n    <build_type>ament_cmake</build_type>\n  </export>\n\n</package>\n",
+      "stderr": ""
+    },
+    "webots": {
+      "exit": 134,
+      "stdout": "",
+      "stderr": "Warning: could not connect to display :0\nWarning: From 6.5.0, xcb-cursor0 or libxcb-cursor0 is needed to load the Qt xcb platform plugin.\nInfo: Could not load the Qt platform plugin \"xcb\" in \"\" even though it was found.\nFatal: This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.\n\nAvailable platform plugins are: wayland-egl, wayland, xcb.\n\n/home/fayne/.ros/webotsR2025a/webots/webots: line 105:    21 Aborted                 (core dumped) \"$webots_home/bin/webots-bin\" \"$@\"\n"
+    },
+    "xvfb": {
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "mpm": {
+      "exit": 0,
+      "stdout": "-rwxrw-r-- 1 fayne fayne 75749504 Oct 26 10:11 /home/fayne/Documents/Codex/2026-10-26/home-fayne-downloads-matlab-r2026b-linux/work/mpm\n",
+      "stderr": ""
+    }
+  }
+}

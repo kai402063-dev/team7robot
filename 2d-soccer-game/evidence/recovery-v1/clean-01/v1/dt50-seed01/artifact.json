@@ -1,0 +1,22 @@
+{
+  "sha256": "6305a559dc2f17183307fd6e8cd357ef6a983bcca224124d4f52aa5a325caf5a",
+  "bytes": 5530720,
+  "arrays": {
+    "trace": {
+      "shape": [
+        12000,
+        98
+      ],
+      "sha256LittleEndianDoublesRowMajor": "9697b4141443d605f3ca1306d74c47f59d7a033c1b5881d6cfbdcb065ce57470",
+      "finite": true
+    },
+    "tactics": {
+      "shape": [
+        12000,
+        171
+      ],
+      "sha256LittleEndianDoublesRowMajor": "41b486d42af7f3756ede3aefaff1fa2796f0a8dbab8b29c01a366e0d38db5083",
+      "finite": true
+    }
+  }
+}

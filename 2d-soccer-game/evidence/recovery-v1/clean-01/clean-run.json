@@ -1,0 +1,11 @@
+{
+  "exitCode": 0,
+  "revision": "703099dce808f45c887642ddf05ddcb6bde46a9d",
+  "cloneMethod": "git clone --no-local --single-branch --branch ai-migration-baseline . build/recovery-clean-01",
+  "initialGitStatus": "clean",
+  "matlabInvocation": "tdpSetup;reproduce_recovery('evidence/recovery-v1/clean-01');",
+  "cacheId": "cleanRecovery01",
+  "wallSeconds": 1252.521406,
+  "testCount": 54,
+  "rawArtifacts": "The shard receipts and artifact.json list the local files and hashes. Only receipts are committed."
+}

@@ -1,0 +1,66 @@
+Running test_camera
+
+================================================================================
+Verification failed in test_camera/testChannelAndPixelOrder.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Index    Actual    Expected    AbsoluteError
+            _____    ______    ________    _____________
+                                                        
+              1        10         30            20      
+              3        30         10            20      
+    
+    Actual Value:
+      1×3 uint8 row vector
+    
+       10   20   30
+    Expected Value:
+      1×3 uint8 row vector
+    
+       30   20   10
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-camera-channel-v1/tests/test_camera.m (testChannelAndPixelOrder) at 7
+================================================================================
+
+================================================================================
+Verification failed in test_camera/testChannelAndPixelOrder.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Index    Actual    Expected    AbsoluteError
+            _____    ______    ________    _____________
+                                                        
+              1        40         60            20      
+              3        60         40            20      
+    
+    Actual Value:
+      1×3 uint8 row vector
+    
+       40   50   60
+    Expected Value:
+      1×3 uint8 row vector
+    
+       60   50   40
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-camera-channel-v1/tests/test_camera.m (testChannelAndPixelOrder) at 7
+================================================================================
+..
+Done test_camera
+__________
+
+Failure Summary:
+
+     Name                                  Failed  Incomplete  Reason(s)
+    ===================================================================================
+     test_camera/testChannelAndPixelOrder    X                 Failed by verification.

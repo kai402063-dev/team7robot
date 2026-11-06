@@ -1,0 +1,8 @@
+{
+  "id": "repairs-v2",
+  "file": "environment/Contact2D.m",
+  "old": "minD=2*P.robotR",
+  "new": "minD=P.robotR",
+  "suite": "tests/test_repairs.m",
+  "evidence": "evidence/3/mutation-repairs-02"
+}

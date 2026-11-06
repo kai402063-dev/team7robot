@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "testsPassed": 8,
+  "testsTotal": 8,
+  "testsIncomplete": 0,
+  "realStage1Status": "PASS",
+  "screenedFunctions": 11,
+  "allScreeningMessagesEmpty": true,
+  "mutationDetected": true,
+  "mutationReceipt": "evidence/6/audit-receipts-mutation-01/receipt.json",
+  "sourceMatchesIsolatedTestCopy": true,
+  "defectReproduction": "evidence/6/audit-receipts-before-02/receipt.json",
+  "initialIncompleteAttempt": "evidence/6/audit-receipts-before-01/NOT_QUALIFIED.json"
+}

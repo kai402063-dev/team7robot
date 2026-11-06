@@ -1,0 +1,9 @@
+{
+  "scripts/validate_stage1.m": "5ca1efa7cb2a87ef9870cbcad6a614a5054930b6ddd575434d4298655b681957",
+  "scripts/reproduce_all.m": "dbd59f20c14aece426207a9bdd5e340422c297a294154455b9cdb625d56a7808",
+  "scripts/validate_camera.m": "8ad65c45da5ee77a32a6eebe57be66e8044be7fa61272efdbd891a655adb8763",
+  "scripts/validate_webots_replay.m": "15ca89eb8fa1e0fbe302d40b69db0e81fd47679137b98ec0bced6eda5ddced41",
+  "scripts/assertStage1Gate.m": "2e1e6217d3f0219e6af1bd9c2a89ca92e6c13a0ec6fe16f78ae57684324be352",
+  "tests/test_validation_receipts.m": "aeed01c5bfc0ad6ac6f8b4e7dba02da6b181b1e2cd1ffaaf2f9ff5161b036b7f",
+  "scripts/mutation_validation_receipts.json": "da2531c9720d6d6d5342d2faa20d45fce7f7e4e28e3ea21ea59f1f61f4f04d2d"
+}

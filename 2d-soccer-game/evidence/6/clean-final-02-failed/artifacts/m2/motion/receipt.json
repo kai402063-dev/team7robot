@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "mode": "motion",
+  "error": "AssertionError('Webots process failed')",
+  "elapsedSeconds": 104.33980694500497
+}

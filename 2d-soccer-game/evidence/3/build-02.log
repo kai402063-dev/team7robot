@@ -1,0 +1,9 @@
+[Warning: The model name 'tdpMatch' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpMatch" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_match (line 4)] 
+   200    98
+
+     0
+

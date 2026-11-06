@@ -1,0 +1,11 @@
+{
+  "status": "RUNNING",
+  "command": "'/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/start_2d.sh' --recovery",
+  "duration": 5,
+  "speed": "Inf",
+  "desktopExecSource": "START_2D_RECOVERY.desktop",
+  "desktopSha256": "b8aa786c374e9b6e4fb4e8f8760b05997da9c6a624392929467268217bccc4b4",
+  "desktopScope": "Exec and Path verified; shell directly executes entry argv, no file-manager click",
+  "scope": "Private authenticated Xvfb; one target window; real default MATLAB",
+  "launcherSha256": "861a594b256e67b7f199da88a8e4fcb94c03e9789b92e869faef9d49d49b1fb6"
+}

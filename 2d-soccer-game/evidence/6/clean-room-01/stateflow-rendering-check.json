@@ -1,0 +1,10 @@
+{
+  "availableRenderers": {
+    "mistune": false,
+    "markdown_it": true,
+    "markdown": false
+  },
+  "proof": "HTML output stored",
+  "renderer": "markdown_it",
+  "containsEscapedEntityInsideCode": true
+}

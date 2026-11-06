@@ -1,0 +1,17 @@
+{
+  "cwd": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp/project with spaces & symbols",
+  "argv": [
+    "-logfile",
+    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp/project with spaces & symbols/build/animation-launcher/animation_20261106T001039_47/matlab.log",
+    "-batch",
+    "app=start_2d; if isgraphics(app.Figure),waitfor(app.Figure);end; if isprop(app,'LastError') && ~isempty(app.LastError),rethrow(app.LastError);end"
+  ],
+  "environment": {
+    "DISPLAY": ":tdp-stub",
+    "WAYLAND_DISPLAY": "wayland-stub",
+    "XAUTHORITY": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp/authority",
+    "MATLAB_PREFDIR": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp/project with spaces & symbols/build/animation-launcher/animation_20261106T001039_47/preferences",
+    "TDP_MATLAB_PREFDIR": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-jdswj2cp/project with spaces & symbols/build/animation-launcher/animation_20261106T001039_47/preferences",
+    "TDP_CACHE_ID": "animation_20261106T001039_47"
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "deletion-after.json",
+    "bytes": 73,
+    "sha256": "93b0048d3b93414c89855149f9b306f63b647e95ed779badc70bf40971c5fd6a"
+  },
+  {
+    "name": "deletion-before.json",
+    "bytes": 1371,
+    "sha256": "607f907719945f219cbc2def8a388456ff602769ba6532969b52efcf6969fda4"
+  },
+  {
+    "name": "receipt.json",
+    "bytes": 2260,
+    "sha256": "2667eb6d5737841051e9f999097d4d7196710e97d2704b7aed63e1dac0ddf3e2"
+  },
+  {
+    "name": "run_chart_retry.m",
+    "bytes": 8558,
+    "sha256": "48ae4b0fab61d914bb2bad5778eaa7e6ec28a71089db1d0b5b4895c9cc984289"
+  },
+  {
+    "name": "own-chart-replays.mat",
+    "bytes": 47240,
+    "sha256": "add58428a3b75a5cea080907a10cbb2c1b8bb7b7821777dbaba47ad99f6311d1"
+  },
+  {
+    "name": "exit-code.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "name": "start.txt",
+    "bytes": 26,
+    "sha256": "ff12fb8689cc18977643710bd63c9e55b9373e42b85f41388a0f08c1784ab06d"
+  },
+  {
+    "name": "end.txt",
+    "bytes": 26,
+    "sha256": "db41a053a95216c83f7db23455f26a24def90eeb1719a8567d2df6b7dc29dfcf"
+  },
+  {
+    "name": "matlab.log",
+    "bytes": 223,
+    "sha256": "2a47713cd74b6455056232003b60b0eff143d17d85494311a9b6ed5b3fc3f1a4"
+  }
+]

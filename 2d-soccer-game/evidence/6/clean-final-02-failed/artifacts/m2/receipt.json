@@ -1,0 +1,39 @@
+{
+  "status": "FAIL",
+  "adapter": {
+    "names": [
+      "test_ros_adapter/testFreshAndDuplicate",
+      "test_ros_adapter/testOldSequenceAndFuture",
+      "test_ros_adapter/testBadPacketAndClock",
+      "test_ros_adapter/testFeedbackContract",
+      "test_ros_adapter/testActualCoreReplay"
+    ],
+    "passed": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "nativeRosToolbox": "BLOCKED: not installed",
+    "generatedNode": "BLOCKED: Coders not installed"
+  },
+  "ros": {
+    "status": "PASS_PROXY_ONLINE_AND_COMMUNICATION",
+    "nativeRosToolbox": "BLOCKED: not installed",
+    "generatedNode": "BLOCKED: Coders not installed",
+    "scalar": {
+      "input": 3.5,
+      "output": 4.5,
+      "communication": "PASS"
+    },
+    "frames": 101,
+    "actionsExactlyEqual": true,
+    "extraTopic": "PASS: /tdp/diagnostics/action_age",
+    "clockPublishers": 1,
+    "modelValidation": "NOT_ESTABLISHED: transport and controller replay only",
+    "elapsedSeconds": 115.29029982900101
+  },
+  "error": "Error using assert\nmotion failed: Traceback (most recent call last):\n  File \"/home/fayne/Documents/Robotics & AI/Robotics\n  TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/scripts/run_webots.py\",\n  line 64, in <module>\n    p=argparse.ArgumentParser();p.add_argument('output');p.add_argument('--mode',choices=['probe','motion','closed'],default='closed');a=p.parse_args();run(a.output,a.mode)\n                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/fayne/Documents/Robotics & AI/Robotics\n  TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/scripts/run_webots.py\",\n  line 41, in run\n    assert webots.wait(timeout=600)==0,'Webots process failed'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Webots process failed\n\n\nError in reproduce_m2/command (line 34)\n  fprintf('M2 %s\\n',label);[status,output]=system(cmd);f=fopen(fullfile(outDir,[label '.log']),'w');fprintf(f,'%s',output);fclose(f);assert(status==0,'TDP:M2Command','%s failed: %s',label,output);\n                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in reproduce_m2 (line 13)\n motionDir=fullfile(outDir,'motion');command('motion',['./scripts/run_ros.sh python3 scripts/run_webots.py ' shellQuote(motionDir) ' --mode motion']);\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in reproduce_all (line 31)\n  receipt.m2=reproduce_m2(fullfile(outDir,'m2'));\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+  "elapsedSeconds": 237.1420230000019
+}

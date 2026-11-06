@@ -1,0 +1,40 @@
+{
+  "status": "PASS_SHARD",
+  "periods": [
+    0.05,
+    0.04
+  ],
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "matchSeconds": 600,
+  "completedMatches": 40,
+  "elapsedSeconds": 245.687725,
+  "startedAtUtc": "2026-11-06T10:58:58.347Z",
+  "matlabVersion": "26.2.0.3386108 (R2026b)",
+  "executionRoot": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-clean-01",
+  "cacheId": "cleanRecovery01",
+  "artifactDirectory": "build/v1-matrix/tp69be5906_d260_4caa_9345_947fdc7a8a3d",
+  "sourceFingerprint": "d5a166da105c73291104675e12947e038eb9a3705eb02c7afe527de98eefd9b1",
+  "revision": "703099dce808f45c887642ddf05ddcb6bde46a9d",
+  "finishedAtUtc": "2026-11-06T11:03:04.035Z"
+}

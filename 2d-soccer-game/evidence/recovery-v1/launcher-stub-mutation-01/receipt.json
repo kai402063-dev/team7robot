@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "mutation": "Keep inherited MATLAB_JAVA in the MATLAB environment",
+  "originalSha256": "861a594b256e67b7f199da88a8e4fcb94c03e9789b92e869faef9d49d49b1fb6",
+  "mutantSha256": "45f02f44d9c46cd044bd0f8838fb4e89373c1a1eb450e723abd068fe49b5af80",
+  "mutant": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-mutation-4nuo1boe/start_2d.sh",
+  "detected": true,
+  "expectedFailure": "valid_environment: MATLAB_JAVA must not enter the new MATLAB process",
+  "failures": [
+    {
+      "name": "valid_environment",
+      "passed": false,
+      "assertionFailure": true,
+      "message": "MATLAB_JAVA must not enter the new MATLAB process"
+    }
+  ],
+  "scope": "Stub execution only; original launcher remains unchanged"
+}

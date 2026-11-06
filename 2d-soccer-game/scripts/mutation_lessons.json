@@ -1,0 +1,9 @@
+{
+  "id": "lessons-v2",
+  "file": "scripts/build_lessons.m",
+  "old": "'Gain','0.8'",
+  "new": "'Gain','0.7'",
+  "suite": "tests/test_lessons.m",
+  "evidence": "evidence/6/mutation-lessons-02",
+  "setup": "build_lessons;"
+}

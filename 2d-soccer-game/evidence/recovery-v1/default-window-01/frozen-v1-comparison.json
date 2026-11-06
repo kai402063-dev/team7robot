@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "originalReceipt": "evidence/tactics-v1/launcher-02/receipt.json",
+  "currentReceipt": "evidence/recovery-v1/default-window-01/receipt.json",
+  "checks": "Both archived MAT hashes matched their receipts; array_equal on every numeric value plus absence of recovery arrays.",
+  "arrays": {
+    "trace": {
+      "shape": [
+        100,
+        98
+      ],
+      "matchingRowMajorDoubleSHA256": "85027fab4f9081336943e265e65ce8ca7b5d4e427a8f15a413bbd1137db68d9a"
+    },
+    "tactics": {
+      "shape": [
+        100,
+        171
+      ],
+      "matchingRowMajorDoubleSHA256": "3a3696f282b1704654c04be78a96187ff88a3bf2aa72977f9abc0b999c4b88b6"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "status": "FAIL",
+  "source": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-mutation-rhg3jdxr/start_2d.sh",
+  "fixture": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-33ve8k7w",
+  "scope": "Stub execution only: no user desktop or real MATLAB process opened",
+  "elapsedSeconds": 0.8661919299993315,
+  "results": [
+    {
+      "name": "help_without_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "unknown_arguments",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "missing_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "unreachable_display",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "missing_matlab",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "valid_environment",
+      "passed": false,
+      "assertionFailure": true,
+      "message": "MATLAB_JAVA must not enter the new MATLAB process"
+    },
+    {
+      "name": "matlab_failure_exit",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "options_remain_data",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "sessions_are_isolated",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "executable_from_path",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "shell_syntax",
+      "passed": true,
+      "assertionFailure": false
+    },
+    {
+      "name": "desktop_entry",
+      "passed": true,
+      "assertionFailure": false
+    }
+  ],
+  "passed": 11,
+  "total": 12
+}

@@ -1,0 +1,173 @@
+[Warning: The model name 'tdpRecoveryMatch' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpRecoveryMatch" at the command
+line to find the other uses of this name. You should change the name of the
+model to avoid problems.] 
+[> In build_match (line 10)
+In build_recovery_match (line 16)
+In reproduce_recovery (line 14)] 
+Running test_recovery_tactics
+.......
+Done test_recovery_tactics
+__________
+
+Running test_recovery_actuator
+......
+Done test_recovery_actuator
+__________
+
+Running test_recovery_model
+RECOVERY_CASE {"case":"approach-handback","dt":0.05,"team":1,"robot":3,"tSim":[0.05,0.75,0.8],"owner":[3,3,4],"takeover":[1,1,0],"recovering":[0,0,0],"releaseId":[0,0,0],"kind":[0,1,1],"requestId":[1,15,16],"status":[0,0,0],"feedbackId":[0,0,0],"reason":[0,0,0],"ready":[1,1,1],"heartBeatStamp":[0.05,0.75,0.8],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"approach-handback","dt":0.04,"team":1,"robot":3,"tSim":[0.04,0.8,0.84],"owner":[3,3,4],"takeover":[1,1,0],"recovering":[0,0,0],"releaseId":[0,0,0],"kind":[0,1,1],"requestId":[1,20,21],"status":[0,0,0],"feedbackId":[0,0,0],"reason":[0,0,0],"ready":[1,1,1],"heartBeatStamp":[0.04,0.8,0.84],"kicker":[0,0,0]}
+.RECOVERY_CASE {"case":"natural-geometry-return","dt":0.05,"team":2,"robot":8,"tSim":[6.5,6.5500000000000007,6.6000000000000005,7.0500000000000007,7.1000000000000005],"owner":[8,7,7,7,8],"takeover":[0,1,1,1,0],"recovering":[0,0,0,0,0],"releaseId":[0,0,0,0,0],"kind":[2,0,0,0,1],"requestId":[119,119,120,129,130],"status":[3,3,3,3,3],"feedbackId":[119,119,119,119,119],"reason":[1,1,1,1,1],"ready":[1,1,1,1,1],"heartBeatStamp":[6.5,6.5500000000000007,6.6000000000000005,7.0500000000000007,7.1000000000000005],"kicker":[0,0,0,0,0]}
+RECOVERY_CASE {"case":"natural-geometry-return","dt":0.04,"team":2,"robot":8,"tSim":[9.32,9.36,9.4,9.88,9.92],"owner":[8,7,7,7,8],"takeover":[0,1,1,1,0],"recovering":[0,0,0,0,0],"releaseId":[0,0,0,0,0],"kind":[2,0,0,0,1],"requestId":[209,209,210,222,223],"status":[3,3,3,3,3],"feedbackId":[209,209,209,209,209],"reason":[1,1,1,1,1],"ready":[1,1,1,1,1],"heartBeatStamp":[9.32,9.36,9.4,9.88,9.92],"kicker":[0,0,0,0,0]}
+.RECOVERY_CASE {"case":"finish-original-mf-kick","dt":0.05,"team":1,"robot":3,"tSim":[0.70000000000000007,1.05,1.1],"owner":[3,3,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,2,0],"requestId":[6,6,6],"status":[1,2,2],"feedbackId":[6,6,6],"reason":[0,0,0],"ready":[0,1,1],"heartBeatStamp":[0.70000000000000007,1.05,1.1],"kicker":[0,3,0]}
+RECOVERY_CASE {"case":"finish-original-mf-kick","dt":0.04,"team":1,"robot":3,"tSim":[0.72,1,1.04],"owner":[3,3,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,2,0],"requestId":[6,6,6],"status":[1,2,2],"feedbackId":[6,6,6],"reason":[0,0,0],"ready":[0,1,1],"heartBeatStamp":[0.72,1,1.04],"kicker":[0,3,0]}
+.RECOVERY_CASE {"case":"stopped-game","dt":0.05,"team":1,"robot":3,"tSim":[0.75,0.8,0.85000000000000009],"owner":[3,0,0],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,8],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.75,0.8,0.85000000000000009],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"stale-ball","dt":0.05,"team":1,"robot":3,"tSim":[0.75,0.8,0.85000000000000009],"owner":[3,0,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,7],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.75,0.8,0.85000000000000009],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"unavailable-midfielder","dt":0.05,"team":1,"robot":3,"tSim":[0.75,0.8,0.85000000000000009],"owner":[3,0,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,8],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.75,0.8,0.85000000000000009],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"stopped-game","dt":0.04,"team":1,"robot":3,"tSim":[0.76,0.8,0.84],"owner":[3,0,0],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,8],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.76,0.8,0.84],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"stale-ball","dt":0.04,"team":1,"robot":3,"tSim":[0.76,0.8,0.84],"owner":[3,0,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,7],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.76,0.8,0.84],"kicker":[0,0,0]}
+RECOVERY_CASE {"case":"unavailable-midfielder","dt":0.04,"team":1,"robot":3,"tSim":[0.76,0.8,0.84],"owner":[3,0,4],"takeover":[1,1,0],"recovering":[1,1,0],"releaseId":[6,6,0],"kind":[2,0,0],"requestId":[6,6,8],"status":[1,3,3],"feedbackId":[6,6,6],"reason":[0,4,4],"ready":[0,1,1],"heartBeatStamp":[0.76,0.8,0.84],"kicker":[0,0,0]}
+.RECOVERY_CASE {"case":"hold-through-missing-terminal","dt":0.05,"team":1,"robot":3,"tSim":[0.8,1.55,1.6,1.6500000000000001],"owner":[0,0,0,4],"takeover":[1,1,1,0],"recovering":[1,1,1,0],"releaseId":[6,6,6,0],"kind":[0,0,0,1],"requestId":[6,6,6,23],"status":[1,1,3,3],"feedbackId":[6,6,6,6],"reason":[0,0,4,4],"ready":[0,0,1,1],"heartBeatStamp":[0.75,0.75,1.6,1.6500000000000001],"kicker":[0,0,0,0]}
+RECOVERY_CASE {"case":"hold-through-missing-terminal","dt":0.04,"team":1,"robot":3,"tSim":[0.8,1.56,1.6,1.6400000000000001],"owner":[0,0,0,4],"takeover":[1,1,1,0],"recovering":[1,1,1,0],"releaseId":[6,6,6,0],"kind":[0,0,0,1],"requestId":[6,6,6,27],"status":[1,1,3,3],"feedbackId":[6,6,6,6],"reason":[0,0,4,4],"ready":[0,0,1,1],"heartBeatStamp":[0.72,0.72,1.6,1.6400000000000001],"kicker":[0,0,0,0]}
+.RECOVERY_CASE {"case":"subsystem-clear-heartbeat-drop-return","dt":0.05,"team":1,"robot":4,"tSim":[0.4,1.1,1.9000000000000001,1.9500000000000002],"owner":[3,3,3,4],"takeover":[1,1,1,0],"recovering":[0,0,0,0],"releaseId":[0,0,0,0],"kind":[0,0,0,2],"requestId":[8,22,38,40],"status":[0,0,0,1],"feedbackId":[0,0,0,40],"reason":[0,0,0,0],"ready":[0,1,1,0],"heartBeatStamp":[0.4,1,1.9000000000000001,1.9500000000000002],"kicker":[0,0,0,0]}
+RECOVERY_CASE {"case":"subsystem-clear-heartbeat-drop-return","dt":0.04,"team":1,"robot":4,"tSim":[0.4,1.12,1.92,1.96],"owner":[3,3,3,4],"takeover":[1,1,1,0],"recovering":[0,0,0,0],"releaseId":[0,0,0,0],"kind":[0,0,0,2],"requestId":[10,28,48,50],"status":[0,0,0,1],"feedbackId":[0,0,0,50],"reason":[0,0,0,0],"ready":[0,1,1,0],"heartBeatStamp":[0.4,1,1.92,1.96],"kicker":[0,0,0,0]}
+.RECOVERY_CASE {"case":"wrong-id","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"old-stamp","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"cancel-rejected","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"future-stamp","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"still-active","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"matching-terminal","dt":0.05,"team":1,"robot":3,"tSim":0.05,"owner":4,"takeover":0,"recovering":0,"releaseId":0,"kind":0,"requestId":1,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.05,"kicker":0}
+RECOVERY_CASE {"case":"wrong-id","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+RECOVERY_CASE {"case":"old-stamp","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+RECOVERY_CASE {"case":"cancel-rejected","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+RECOVERY_CASE {"case":"future-stamp","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+RECOVERY_CASE {"case":"still-active","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":0,"takeover":1,"recovering":1,"releaseId":42,"kind":0,"requestId":42,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+RECOVERY_CASE {"case":"matching-terminal","dt":0.04,"team":1,"robot":3,"tSim":0.04,"owner":4,"takeover":0,"recovering":0,"releaseId":0,"kind":0,"requestId":1,"status":0,"feedbackId":0,"reason":0,"ready":1,"heartBeatStamp":0.04,"kicker":0}
+.RECOVERY_CASE {"case":"expired-locked-request","dt":0.05,"team":1,"robot":3,"tSim":[0.05,0.1],"owner":[0,4],"takeover":[1,0],"recovering":[1,0],"releaseId":[42,0],"kind":[0,0],"requestId":[42,2],"status":[3,3],"feedbackId":[42,42],"reason":[4,4],"ready":[1,1],"heartBeatStamp":[0.05,0.1],"kicker":[0,0]}
+RECOVERY_CASE {"case":"expired-locked-request","dt":0.04,"team":1,"robot":3,"tSim":[0.04,0.08],"owner":[0,4],"takeover":[1,0],"recovering":[1,0],"releaseId":[42,0],"kind":[0,0],"requestId":[42,2],"status":[3,3],"feedbackId":[42,42],"reason":[4,4],"ready":[1,1],"heartBeatStamp":[0.04,0.08],"kicker":[0,0]}
+.RECOVERY_CASE {"case":"healthy-return-to-search","dt":0.05,"team":1,"robot":4,"tSim":[0.75,0.8],"owner":[3,4],"takeover":[1,0],"recovering":[0,0],"releaseId":[0,0],"kind":[0,3],"requestId":[15,16],"status":[0,0],"feedbackId":[0,0],"reason":[0,0],"ready":[1,1],"heartBeatStamp":[0.75,0.8],"kicker":[0,0]}
+RECOVERY_CASE {"case":"healthy-return-to-search","dt":0.04,"team":1,"robot":4,"tSim":[0.8,0.84],"owner":[3,4],"takeover":[1,0],"recovering":[0,0],"releaseId":[0,0],"kind":[0,3],"requestId":[20,21],"status":[0,0],"feedbackId":[0,0],"reason":[0,0],"ready":[1,1],"heartBeatStamp":[0.8,0.84],"kicker":[0,0]}
+.
+Done test_recovery_model
+__________
+
+Running test_v1_tactics
+.......... .
+Done test_v1_tactics
+__________
+
+Running test_v1_model
+V1_CASE {"case":"normal-shot","dt":0.05,"robot":4,"tSim":[0.4,0.45],"blueOwner":[4,4],"rawKind":[2,2],"kind":[2,2],"requestId":[6,6],"feedbackId":[6,6],"status":[1,2],"kicker":[0,4]}
+V1_CASE {"case":"normal-shot","dt":0.04,"robot":4,"tSim":[0.36,0.4],"blueOwner":[4,4],"rawKind":[2,2],"kind":[2,2],"requestId":[6,6],"feedbackId":[6,6],"status":[1,2],"kicker":[0,4]}
+.V1_CASE {"case":"unavailable-during-preparation","dt":0.05,"robot":4,"tSim":[0.25,0.30000000000000004,0.35000000000000003],"blueOwner":[4,3,3],"rawKind":[2,0,0],"kind":[2,0,0],"requestId":[6,6,8],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+V1_CASE {"case":"unavailable-during-preparation","dt":0.04,"robot":4,"tSim":[0.2,0.24,0.28],"blueOwner":[4,3,3],"rawKind":[2,0,0],"kind":[2,0,0],"requestId":[6,6,8],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+.V1_CASE {"case":"confirmed-execution-failure","dt":0.05,"robot":4,"tSim":[0.4,0.45,0.5],"blueOwner":[4,4,3],"rawKind":[2,2,0],"kind":[2,2,0],"requestId":[6,6,6],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+V1_CASE {"case":"confirmed-execution-failure","dt":0.04,"robot":4,"tSim":[0.36,0.4,0.44],"blueOwner":[4,4,3],"rawKind":[2,2,0],"kind":[2,2,0],"requestId":[6,6,6],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+.V1_CASE {"case":"mf-shoots","dt":0.05,"robot":3,"tSim":0.45,"blueOwner":3,"rawKind":2,"kind":2,"requestId":6,"feedbackId":6,"status":2,"kicker":3}
+V1_CASE {"case":"return-to-st","dt":0.05,"robot":3,"tSim":[0.25,0.30000000000000004,0.35000000000000003],"blueOwner":[3,0,4],"rawKind":[2,2,0],"kind":[2,0,0],"requestId":[6,6,6],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+V1_CASE {"case":"mf-shoots","dt":0.04,"robot":3,"tSim":0.4,"blueOwner":3,"rawKind":2,"kind":2,"requestId":6,"feedbackId":6,"status":2,"kicker":3}
+V1_CASE {"case":"return-to-st","dt":0.04,"robot":3,"tSim":[0.2,0.24,0.28],"blueOwner":[3,0,4],"rawKind":[2,2,0],"kind":[2,0,0],"requestId":[6,6,6],"feedbackId":[6,6,6],"status":[1,3,3],"kicker":[0,0,0]}
+.....V1_CASE {"case":"stop-during-preparation","dt":0.05,"robot":4,"tSim":[0.25,0.30000000000000004],"blueOwner":[4,0],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+V1_CASE {"case":"loss-during-preparation","dt":0.05,"robot":4,"tSim":[0.25,0.30000000000000004],"blueOwner":[4,4],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+V1_CASE {"case":"stale-during-preparation","dt":0.05,"robot":4,"tSim":[0.25,0.30000000000000004],"blueOwner":[4,4],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+V1_CASE {"case":"stop-during-preparation","dt":0.04,"robot":4,"tSim":[0.2,0.24],"blueOwner":[4,0],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+V1_CASE {"case":"loss-during-preparation","dt":0.04,"robot":4,"tSim":[0.2,0.24],"blueOwner":[4,4],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+V1_CASE {"case":"stale-during-preparation","dt":0.04,"robot":4,"tSim":[0.2,0.24],"blueOwner":[4,4],"rawKind":[2,0],"kind":[2,0],"requestId":[6,6],"feedbackId":[6,6],"status":[1,3],"kicker":[0,0]}
+.V1_CASE {"case":"no-feedback-core-replay","dt":0.05,"robot":1,"requestId":6,"kickTime":0.2,"recoverTime":1.2000000000000002,"elapsedSeconds":1}
+V1_CASE {"case":"no-feedback-core-replay","dt":0.04,"robot":1,"requestId":6,"kickTime":0.16,"recoverTime":1.2,"elapsedSeconds":1.04}
+. .
+Done test_v1_model
+__________
+
+Running test_v1_matrix
+...
+Done test_v1_matrix
+__________
+
+Running test_actuator
+.......
+Done test_actuator
+__________
+
+dt50-seed01 PASS (12000 steps, score 0-0, 126 actual kicks, 14.5 wall seconds)
+dt50-seed02 PASS (12000 steps, score 0-0, 209 actual kicks, 8.6 wall seconds)
+dt50-seed03 PASS (12000 steps, score 0-0, 131 actual kicks, 6.0 wall seconds)
+dt50-seed04 PASS (12000 steps, score 0-0, 243 actual kicks, 5.7 wall seconds)
+dt50-seed05 PASS (12000 steps, score 0-3, 366 actual kicks, 4.8 wall seconds)
+dt50-seed06 PASS (12000 steps, score 0-0, 181 actual kicks, 4.9 wall seconds)
+dt50-seed07 PASS (12000 steps, score 0-2, 325 actual kicks, 4.9 wall seconds)
+dt50-seed08 PASS (12000 steps, score 0-0, 156 actual kicks, 5.2 wall seconds)
+dt50-seed09 PASS (12000 steps, score 2-2, 239 actual kicks, 5.0 wall seconds)
+dt50-seed10 PASS (12000 steps, score 0-0, 139 actual kicks, 5.1 wall seconds)
+dt50-seed11 PASS (12000 steps, score 0-0, 202 actual kicks, 5.2 wall seconds)
+dt50-seed12 PASS (12000 steps, score 0-0, 193 actual kicks, 5.6 wall seconds)
+dt50-seed13 PASS (12000 steps, score 0-0, 120 actual kicks, 6.1 wall seconds)
+dt50-seed14 PASS (12000 steps, score 0-0, 150 actual kicks, 6.6 wall seconds)
+dt50-seed15 PASS (12000 steps, score 0-0, 135 actual kicks, 6.1 wall seconds)
+dt50-seed16 PASS (12000 steps, score 0-0, 118 actual kicks, 6.1 wall seconds)
+dt50-seed17 PASS (12000 steps, score 0-0, 62 actual kicks, 7.0 wall seconds)
+dt50-seed18 PASS (12000 steps, score 0-0, 140 actual kicks, 6.1 wall seconds)
+dt50-seed19 PASS (12000 steps, score 1-0, 117 actual kicks, 5.7 wall seconds)
+dt50-seed20 PASS (12000 steps, score 0-0, 121 actual kicks, 5.7 wall seconds)
+dt40-seed01 PASS (15000 steps, score 0-0, 131 actual kicks, 10.0 wall seconds)
+dt40-seed02 PASS (15000 steps, score 0-0, 131 actual kicks, 5.8 wall seconds)
+dt40-seed03 PASS (15000 steps, score 0-0, 21 actual kicks, 5.4 wall seconds)
+dt40-seed04 PASS (15000 steps, score 0-2, 294 actual kicks, 5.4 wall seconds)
+dt40-seed05 PASS (15000 steps, score 1-1, 200 actual kicks, 5.5 wall seconds)
+dt40-seed06 PASS (15000 steps, score 1-0, 139 actual kicks, 5.6 wall seconds)
+dt40-seed07 PASS (15000 steps, score 0-0, 141 actual kicks, 6.5 wall seconds)
+dt40-seed08 PASS (15000 steps, score 0-0, 135 actual kicks, 6.4 wall seconds)
+dt40-seed09 PASS (15000 steps, score 0-0, 143 actual kicks, 5.7 wall seconds)
+dt40-seed10 PASS (15000 steps, score 0-0, 196 actual kicks, 5.7 wall seconds)
+dt40-seed11 PASS (15000 steps, score 0-2, 286 actual kicks, 6.2 wall seconds)
+dt40-seed12 PASS (15000 steps, score 0-0, 146 actual kicks, 5.5 wall seconds)
+dt40-seed13 PASS (15000 steps, score 0-0, 129 actual kicks, 5.6 wall seconds)
+dt40-seed14 PASS (15000 steps, score 0-0, 129 actual kicks, 5.5 wall seconds)
+dt40-seed15 PASS (15000 steps, score 0-0, 131 actual kicks, 5.6 wall seconds)
+dt40-seed16 PASS (15000 steps, score 0-1, 232 actual kicks, 6.0 wall seconds)
+dt40-seed17 PASS (15000 steps, score 1-0, 132 actual kicks, 6.6 wall seconds)
+dt40-seed18 PASS (15000 steps, score 1-1, 275 actual kicks, 6.8 wall seconds)
+dt40-seed19 PASS (15000 steps, score 1-0, 123 actual kicks, 6.2 wall seconds)
+dt40-seed20 PASS (15000 steps, score 0-0, 140 actual kicks, 6.2 wall seconds)
+dt50-seed01 PASS (12000 steps, score 0-0, 129 actual kicks, 10.2 wall seconds)
+dt50-seed02 PASS (12000 steps, score 0-0, 124 actual kicks, 5.5 wall seconds)
+dt50-seed03 PASS (12000 steps, score 0-0, 134 actual kicks, 5.6 wall seconds)
+dt50-seed04 PASS (12000 steps, score 0-0, 145 actual kicks, 5.3 wall seconds)
+dt50-seed05 PASS (12000 steps, score 1-0, 122 actual kicks, 5.3 wall seconds)
+dt50-seed06 PASS (12000 steps, score 0-0, 144 actual kicks, 5.6 wall seconds)
+dt50-seed07 PASS (12000 steps, score 0-0, 132 actual kicks, 6.3 wall seconds)
+dt50-seed08 PASS (12000 steps, score 0-0, 148 actual kicks, 6.4 wall seconds)
+dt50-seed09 PASS (12000 steps, score 1-0, 145 actual kicks, 6.0 wall seconds)
+dt50-seed10 PASS (12000 steps, score 0-0, 152 actual kicks, 5.8 wall seconds)
+dt50-seed11 PASS (12000 steps, score 0-0, 138 actual kicks, 5.5 wall seconds)
+dt50-seed12 PASS (12000 steps, score 0-0, 135 actual kicks, 5.5 wall seconds)
+dt50-seed13 PASS (12000 steps, score 0-0, 124 actual kicks, 5.4 wall seconds)
+dt50-seed14 PASS (12000 steps, score 1-0, 127 actual kicks, 5.5 wall seconds)
+dt50-seed15 PASS (12000 steps, score 0-0, 135 actual kicks, 5.4 wall seconds)
+dt50-seed16 PASS (12000 steps, score 0-0, 135 actual kicks, 5.2 wall seconds)
+dt50-seed17 PASS (12000 steps, score 0-0, 126 actual kicks, 5.3 wall seconds)
+dt50-seed18 PASS (12000 steps, score 0-0, 131 actual kicks, 5.4 wall seconds)
+dt50-seed19 PASS (12000 steps, score 0-0, 135 actual kicks, 5.2 wall seconds)
+dt50-seed20 PASS (12000 steps, score 0-0, 130 actual kicks, 5.5 wall seconds)
+dt40-seed01 PASS (15000 steps, score 0-0, 135 actual kicks, 10.6 wall seconds)
+dt40-seed02 PASS (15000 steps, score 1-0, 129 actual kicks, 5.9 wall seconds)
+dt40-seed03 PASS (15000 steps, score 0-0, 146 actual kicks, 5.9 wall seconds)
+dt40-seed04 PASS (15000 steps, score 0-0, 150 actual kicks, 6.1 wall seconds)
+dt40-seed05 PASS (15000 steps, score 0-0, 120 actual kicks, 5.9 wall seconds)
+dt40-seed06 PASS (15000 steps, score 1-0, 141 actual kicks, 6.4 wall seconds)
+dt40-seed07 PASS (15000 steps, score 0-0, 140 actual kicks, 6.4 wall seconds)
+dt40-seed08 PASS (15000 steps, score 1-0, 146 actual kicks, 6.0 wall seconds)
+dt40-seed09 PASS (15000 steps, score 1-0, 131 actual kicks, 5.9 wall seconds)
+dt40-seed10 PASS (15000 steps, score 0-0, 152 actual kicks, 6.7 wall seconds)
+dt40-seed11 PASS (15000 steps, score 0-0, 140 actual kicks, 7.4 wall seconds)
+dt40-seed12 PASS (15000 steps, score 0-0, 147 actual kicks, 7.6 wall seconds)
+dt40-seed13 PASS (15000 steps, score 0-0, 138 actual kicks, 6.7 wall seconds)
+dt40-seed14 PASS (15000 steps, score 0-0, 130 actual kicks, 6.4 wall seconds)
+dt40-seed15 PASS (15000 steps, score 0-0, 141 actual kicks, 5.8 wall seconds)
+dt40-seed16 PASS (15000 steps, score 0-0, 126 actual kicks, 6.0 wall seconds)
+dt40-seed17 PASS (15000 steps, score 0-0, 129 actual kicks, 5.8 wall seconds)
+dt40-seed18 PASS (15000 steps, score 0-0, 141 actual kicks, 6.0 wall seconds)
+dt40-seed19 PASS (15000 steps, score 0-0, 126 actual kicks, 5.8 wall seconds)
+dt40-seed20 PASS (15000 steps, score 0-0, 143 actual kicks, 5.9 wall seconds)
+Recovery comparison: 40 matched pairs. /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/recovery-clean-01/evidence/recovery-v1/clean-01/receipt.json

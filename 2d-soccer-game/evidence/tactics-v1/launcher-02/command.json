@@ -1,0 +1,8 @@
+{
+  "status": "RUNNING",
+  "command": "./start_2d.sh",
+  "duration": 5,
+  "speed": "Inf",
+  "scope": "Private authenticated Xvfb; one target window; real default MATLAB",
+  "launcherSha256": "a1e16640f179969a5e75e5541b9ae1f9d322f5513120b02b25846cec2df24540"
+}

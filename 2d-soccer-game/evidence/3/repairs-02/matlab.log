@@ -1,0 +1,25 @@
+Running test_source_defects
+.......
+Done test_source_defects
+__________
+
+Running test_repairs
+.......
+Done test_repairs
+__________
+
+Running test_match
+....
+Done test_match
+__________
+
+Running test_actuator
+.......
+Done test_actuator
+__________
+
+Running test_controller
+........
+Done test_controller
+__________
+

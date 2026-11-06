@@ -1,0 +1,57 @@
+            matlab: '26.2.0.3386108 (R2026b)'
+           release: '2026b'
+              root: '/home/fayne/Applications/MATLAB/R2026b'
+          products: [1×6 struct]
+    installAllowed: 0
+       pushAllowed: 0
+          licenses: [1×1 struct]
+              ros2: ''
+          screener: '/home/fayne/Applications/MATLAB/R2026b/toolbox/mlcoder/screener/core/ml/+coder/screener.p'
+         rosOnline: 'BLOCKED_ROS_TOOLBOX_NOT_INSTALLED'
+        standalone: 'BLOCKED_CODERS_NOT_INSTALLED'
+
+Running test_baseline
+...
+Done test_baseline
+__________
+
+Baseline 1/40: seed 1 noise 0
+Baseline 2/40: seed 2 noise 0
+Baseline 3/40: seed 3 noise 0
+Baseline 4/40: seed 4 noise 0
+Baseline 5/40: seed 5 noise 0
+Baseline 6/40: seed 6 noise 0
+Baseline 7/40: seed 7 noise 0
+Baseline 8/40: seed 8 noise 0
+Baseline 9/40: seed 9 noise 0
+Baseline 10/40: seed 10 noise 0
+Baseline 11/40: seed 11 noise 0
+Baseline 12/40: seed 12 noise 0
+Baseline 13/40: seed 13 noise 0
+Baseline 14/40: seed 14 noise 0
+Baseline 15/40: seed 15 noise 0
+Baseline 16/40: seed 16 noise 0
+Baseline 17/40: seed 17 noise 0
+Baseline 18/40: seed 18 noise 0
+Baseline 19/40: seed 19 noise 0
+Baseline 20/40: seed 20 noise 0
+Baseline 21/40: seed 1 noise 0.10471975511965978
+Baseline 22/40: seed 2 noise 0.10471975511965978
+Baseline 23/40: seed 3 noise 0.10471975511965978
+Baseline 24/40: seed 4 noise 0.10471975511965978
+Baseline 25/40: seed 5 noise 0.10471975511965978
+Baseline 26/40: seed 6 noise 0.10471975511965978
+Baseline 27/40: seed 7 noise 0.10471975511965978
+Baseline 28/40: seed 8 noise 0.10471975511965978
+Baseline 29/40: seed 9 noise 0.10471975511965978
+Baseline 30/40: seed 10 noise 0.10471975511965978
+Baseline 31/40: seed 11 noise 0.10471975511965978
+Baseline 32/40: seed 12 noise 0.10471975511965978
+Baseline 33/40: seed 13 noise 0.10471975511965978
+Baseline 34/40: seed 14 noise 0.10471975511965978
+Baseline 35/40: seed 15 noise 0.10471975511965978
+Baseline 36/40: seed 16 noise 0.10471975511965978
+Baseline 37/40: seed 17 noise 0.10471975511965978
+Baseline 38/40: seed 18 noise 0.10471975511965978
+Baseline 39/40: seed 19 noise 0.10471975511965978
+Baseline 40/40: seed 20 noise 0.10471975511965978

@@ -1,0 +1,12 @@
+{
+  "status": "FAIL",
+  "nativeRosToolbox": "BLOCKED: not installed",
+  "generatedNode": "BLOCKED: Coders not installed",
+  "scalar": {
+    "input": 3.5,
+    "output": 4.5,
+    "communication": "PASS"
+  },
+  "error": "AssertionError('driver failed')",
+  "elapsedSeconds": 93.11530722599855
+}

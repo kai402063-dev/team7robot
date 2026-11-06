@@ -1,0 +1,15 @@
+function clearLane = laneClearLesson(a, b, obstacles, margin)
+% Independent exercise following handson.md and its linked laneClear policy.
+segment = b-a;
+lengthSquared = dot(segment,segment);
+clearLane = true;
+if lengthSquared < 1e-9, return; end
+for i = 1:size(obstacles,1)
+    fraction = min(1,max(0,dot(obstacles(i,:)-a,segment)/lengthSquared));
+    distance = norm(a+fraction*segment-obstacles(i,:));
+    if distance > margin
+        clearLane = false;
+        return
+    end
+end
+end

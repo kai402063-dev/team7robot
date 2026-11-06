@@ -1,0 +1,62 @@
+[Warning: The model name 'ControllerCore' is shadowing another name in the
+MATLAB workspace or path. Type "which -all ControllerCore" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_controller (line 5)] 
+[Warning: The model name 'tdpReplay' is shadowing another name in the MATLAB
+workspace or path. Type "which -all tdpReplay" at the command line to find the
+other uses of this name. You should change the name of the model to avoid
+problems.] 
+[> In build_replay (line 4)] 
+[Warning: The model name 'tdpSingleRobot' is shadowing another name in the
+MATLAB workspace or path. Type "which -all tdpSingleRobot" at the command line
+to find the other uses of this name. You should change the name of the model to
+avoid problems.] 
+[> In build_single (line 4)] 
+Running test_controller
+....
+================================================================================
+Verification failed in test_controller/testLateFeedbackIgnored.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> The numeric values are not equal using "isequaln".
+    --> Failure table:
+            Index    Actual    Expected    Error    RelativeError
+            _____    ______    ________    _____    _____________
+                                                                 
+              2        5          4          1          0.25     
+              3        5          4          1          0.25     
+              4        5          4          1          0.25     
+              5        5          4          1          0.25     
+              6        5          4          1          0.25     
+    
+    Actual Value:
+         4
+         5
+         5
+         5
+         5
+         5
+    Expected Value:
+         4
+         4
+         4
+         4
+         4
+         4
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-controller-v2/tests/test_controller.m (testLateFeedbackIgnored) at 40
+================================================================================
+....
+Done test_controller
+__________
+
+Failure Summary:
+
+     Name                                     Failed  Incomplete  Reason(s)
+    ======================================================================================
+     test_controller/testLateFeedbackIgnored    X                 Failed by verification.

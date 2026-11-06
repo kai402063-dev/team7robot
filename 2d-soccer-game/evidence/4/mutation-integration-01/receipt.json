@@ -1,0 +1,7 @@
+{
+  "suite": "ROS integration",
+  "mutation": "x+1 to x+2",
+  "detected": true,
+  "exitCode": 1,
+  "reason": "Actual ROS output 5.5 violates expected 4.5"
+}
