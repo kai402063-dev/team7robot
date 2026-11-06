@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "In-memory analysis canaries; no simulated or altered treatment matches are included.",
+  "formulaInput": {
+    "default": 14,
+    "redOnly": 10,
+    "blueOnly": 5,
+    "both": 0
+  },
+  "expectedAndActual": {
+    "redChangeBlueDefault": -4,
+    "redChangeBlueAuto": -5,
+    "blueChangeRedDefault": -9,
+    "blueChangeRedAuto": -10,
+    "interaction": -1,
+    "delta": -14,
+    "redOrderAverage": -4.5,
+    "blueOrderAverage": -9.5
+  },
+  "realShootingEventCount": 109,
+  "forgedLastShotDetected": "Physical shot events differ from referee shot counter"
+}

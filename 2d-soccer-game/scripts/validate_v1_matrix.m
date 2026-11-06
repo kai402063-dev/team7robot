@@ -7,9 +7,8 @@ if nargin<2, periods=[.05 .04]; end
 if nargin<3, seeds=1:20; end
 if nargin<4, P=tdp.v1Config(); end
 tdp.validateV1Config(P);
+[~,model]=matchSimulationInput(P);
 automatic=isfield(P,'v1AutoRecovery') && P.v1AutoRecovery;
-model='tdpV1Match';
-if automatic, model='tdpRecoveryMatch'; end
 assert(all(ismember(periods,[.05 .04])) && numel(unique(periods))==numel(periods) ...
     && ~isempty(periods),'TDP:V1Periods','Use one or both qualified periods.');
 assert(all(ismember(seeds,1:20)) && numel(unique(seeds))==numel(seeds) ...

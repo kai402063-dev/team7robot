@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "modelSha256": "0d690d70404fb073fc32d4bb23fbcfdb687aad8dc2888da88633b7d7f2920c34",
+  "referenceModelSha256": "3bf7127f17075f6f6ff1382d72096fc86cc3f30e81624a7e767034086a59c196",
+  "cores": [
+    "Robot1",
+    "Robot2",
+    "Robot3",
+    "Robot4",
+    "Robot5",
+    "Robot6",
+    "Robot7",
+    "Robot8"
+  ],
+  "unitDelays": [
+    "DeviceHealthMemory",
+    "FeedbackMemory",
+    "HealthMemory",
+    "RequestMemory",
+    "Team1Memory",
+    "Team2Memory",
+    "WorldMemory"
+  ],
+  "identicalNamedRootWires": 134,
+  "policyDispatcherTeamArguments": [
+    "1",
+    "2"
+  ]
+}

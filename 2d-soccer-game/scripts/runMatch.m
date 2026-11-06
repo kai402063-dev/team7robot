@@ -17,7 +17,7 @@ if nargout>1
     end
 end
 if nargout>2
-    if strcmp(model,'tdpRecoveryMatch')
+    if strcmp(model,'tdpRecoveryMatch') || strcmp(model,'tdpTeamRecoveryMatch')
         recovery=recordRows(output.recoveryRecords);
     else
         recovery=zeros(size(trace,1),0);

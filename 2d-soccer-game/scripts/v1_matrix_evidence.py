@@ -39,7 +39,8 @@ def sources(destination):
         "v1TraceColumns.m", "validate_v1_matrix.m", "v1_matrix_evidence.py"))
     for name in ('models/tdpRecoveryMatch.slx', 'scripts/build_recovery_match.m',
                  'scripts/v1RecoveryColumns.m', 'scripts/recoveryMatchMetrics.m',
-                 'scripts/compare_recovery.py'):
+                 'scripts/compare_recovery.py', 'models/tdpTeamRecoveryMatch.slx',
+                 'scripts/build_team_recovery_match.m'):
         source = ROOT / name
         if source.is_file():
             files.add(source)

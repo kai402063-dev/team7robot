@@ -3,7 +3,8 @@ function [health,feedback]=RecoveryFeedback2D(deviceHealth,deviceFeedback,heldHe
 health=deviceHealth;
 feedback=deviceFeedback;
 for i=1:8
-    if tSim>=P.v1HealthDropWindow(i,1) && tSim<P.v1HealthDropWindow(i,2)
+    if tdp.recoveryTeamSelected(P,1+(i>4)) && ...
+            tSim>=P.v1HealthDropWindow(i,1) && tSim<P.v1HealthDropWindow(i,2)
         health(i)=heldHealth(i);
         feedback(i)=heldFeedback(i);
     end

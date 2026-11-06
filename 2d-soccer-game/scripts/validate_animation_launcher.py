@@ -139,6 +139,16 @@ sys.exit(int(os.environ.get('STUB_EXIT','0')))
         result,observed=run(overrides={'STUB_EXIT':'7'})
         assert observed is not None and result.returncode==7
 
+    def replay_selection():
+        result, observed = run(['--replay'])
+        assert result.returncode == 0
+        code = observed['argv'][-1]
+        assert 'app=replay_2d;' in code
+        assert '~isempty(app) && isgraphics(app.Figure),waitfor(app.Figure)' in code
+        assert 'start_2d' not in code
+        result, observed = run(['--recovery', '--replay'])
+        assert result.returncode == 2 and observed is None
+
     def options_remain_data():
         value='2; $(touch INJECTION_MARKER) `touch INJECTION_MARKER`'
         result,observed=run(overrides={'TDP_2D_DURATION':value,'TDP_2D_SPEED':value})
@@ -164,7 +174,9 @@ sys.exit(int(os.environ.get('STUB_EXIT','0')))
 
     def desktop_entry():
         names=set()
-        for file, arguments in [('START_2D.desktop', []), ('START_2D_RECOVERY.desktop', ['--recovery'])]:
+        for file, arguments in [('START_2D.desktop', []), ('START_2D_RECOVERY.desktop', ['--recovery']),
+                                ('REPLAY_2D.desktop', ['--replay'])]:
+            assert os.access(ROOT/file, os.X_OK), f'{file} must be executable'
             p=configparser.ConfigParser(interpolation=None)
             p.read(ROOT/file)
             entry=p['Desktop Entry']
@@ -185,7 +197,7 @@ sys.exit(int(os.environ.get('STUB_EXIT','0')))
     for function in [help_without_display,unknown_arguments,missing_display,
                      unreachable_display,missing_matlab,valid_environment,
                      matlab_failure_exit,options_remain_data,sessions_are_isolated,
-                     executable_from_path,shell_syntax,desktop_entry,strategy_selection]:
+                     executable_from_path,shell_syntax,desktop_entry,strategy_selection,replay_selection]:
         case(function.__name__,function)
     passed=all(row['passed'] for row in results)
     receipt={'status':'PASS' if passed else 'FAIL','source':str(source),'fixture':str(fixture),

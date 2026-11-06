@@ -61,7 +61,7 @@ if ismember('records',out.who),trace=recordRows(out.records);end
 if ~strcmp(model,'tdpMatch') && ismember('tacticsRecords',out.who)
     tactics=recordRows(out.tacticsRecords);
 end
-if strcmp(model,'tdpRecoveryMatch') && ismember('recoveryRecords',out.who)
+if ismember('recoveryRecords',out.who)
     recovery=recordRows(out.recoveryRecords);
 end
 viewer.finishRun(trace);

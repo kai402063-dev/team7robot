@@ -7,7 +7,9 @@ model='tdpMatch';
 if isfield(P,'v1Enabled') && P.v1Enabled
     tdp.validateV1Config(P);
     model='tdpV1Match';
-    if isfield(P,'v1AutoRecovery') && P.v1AutoRecovery
+    if isfield(P,'v1AutoRecoveryTeams')
+        model='tdpTeamRecoveryMatch';
+    elseif isfield(P,'v1AutoRecovery') && P.v1AutoRecovery
         model='tdpRecoveryMatch';
     end
 end

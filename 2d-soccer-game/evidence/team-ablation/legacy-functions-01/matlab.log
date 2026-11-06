@@ -1,0 +1,20 @@
+Running test_actuator
+.......
+Done test_actuator
+__________
+
+Running test_recovery_actuator
+......
+Done test_recovery_actuator
+__________
+
+Running test_v1_tactics
+.......... .
+Done test_v1_tactics
+__________
+
+Running test_recovery_tactics
+.......
+Done test_recovery_tactics
+__________
+

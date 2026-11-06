@@ -16,7 +16,10 @@ for i=1:8
             next.actuator(i)=device;
             reasons(i)=TdpV1Reason.Subsystem;
         end
-        feedback(i)=device.feedback;
+        % V1 sends an empty receipt for an inactive device already at rest.
+        if world.actuator(i).active || tdp.recoveryTeamSelected(P,1+(i>4))
+            feedback(i)=device.feedback;
+        end
     end
     fb=feedback(i);
     reason=reasons(i);

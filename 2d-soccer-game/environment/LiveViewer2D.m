@@ -41,7 +41,7 @@ classdef LiveViewer2D < handle
         Speeds = [0.25 0.5 1 2 4 8 Inf]
     end
     methods
-        function obj=LiveViewer2D(P,visible,speed)
+        function obj=LiveViewer2D(P,visible,speed,initialRow)
             if nargin<2,visible='on';end
             if nargin<3,speed=1;end
             assert(isscalar(speed) && isnumeric(speed) && isreal(speed) && speed>0,'TDP:AnimationSpeed','Speed must be positive.');
@@ -92,7 +92,10 @@ classdef LiveViewer2D < handle
                 'Position',[.04 .015 .92 .045],'String','Ready','FontSize',10, ...
                 'BackgroundColor',bg,'ForegroundColor',[.66 .76 .86]);
             obj.setSpeed(speed);
-            T=tdpTemplates(P);obj.showFrame(MatchRecord(T.World,0,0),true);
+            if nargin<4
+                T=tdpTemplates(P);initialRow=MatchRecord(T.World,0,0);
+            end
+            obj.showFrame(initialRow,true);
             obj.FrameCount=0;obj.Events=struct('event',{},'simulationTime',{},'speed',{});
         end
 
@@ -261,7 +264,11 @@ classdef LiveViewer2D < handle
     end
     methods (Access=private)
         function runningStatus(obj)
-            if isfield(obj.Parameters,'v1AutoRecovery') && obj.Parameters.v1AutoRecovery
+            if isfield(obj.Parameters,'v1AutoRecoveryTeams')
+                names={'V1','Auto'};
+                labels=names(1+double(obj.Parameters.v1AutoRecoveryTeams));
+                obj.setStatus(sprintf('Team comparison | Blue: %s  Red: %s | Gold ring: primary chaser',labels{:}));
+            elseif isfield(obj.Parameters,'v1AutoRecovery') && obj.Parameters.v1AutoRecovery
                 obj.setStatus('Automatic recovery experiment | GK 1/5  DF 2/6  MF 3/7  ST 4/8 | Gold ring: primary chaser');
             elseif obj.TeamV1
                 obj.setStatus('Team V1  |  GK 1/5   DF 2/6   MF 3/7   ST 4/8  |  Gold ring: primary chaser');

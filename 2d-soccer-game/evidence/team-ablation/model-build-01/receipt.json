@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "rows": [
+    400,
+    98
+  ],
+  "tacticsShape": [
+    400,
+    171
+  ],
+  "healthShape": [
+    400,
+    53
+  ],
+  "redTakeover": 9.36,
+  "redReturn": 9.92,
+  "mask": [
+    false,
+    true
+  ]
+}

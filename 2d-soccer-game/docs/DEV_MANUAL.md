@@ -8,6 +8,8 @@ TDP 是 Team Design Project（团队设计项目）。这份工程把 A 的 4v4�
 
 前锋恢复的三个条件属于小组选择的实验扩展。两种策略的参数、编号保护、故障场景与逐步日志见[自动交还实验](chapters/recovery_experiment.md)。
 
+要区分红队自己的交还与蓝队对手交还的影响，可在专用模型中一次只切换一队。同种子的四组实验、追球授权定义以及复现命令见[单队对照](chapters/team_ablation.md)。
+
 交付标签为 `baseline-v1`，二维冻结点为 `baseline-2d-v1`。最终干净 clone 的完整一键和可用手工路径均已通过；缺产品门仍为 BLOCKED，默认噪声轨迹分歧和未验证项见下表及[最终回执](../evidence/6/FINAL_RECEIPT.json)。该次冻结基线的运行代码验证目标为 `1f52c4c`。之后的动画与球队 V1 属独立增量。
 
 现在直接执行 `./start_2d.sh` 会用球队 V1 的四个固定角色开赛。每队获得追球授权的机器人有金色外圈。要在独立 MATLAB 进程复现二维战术验收，在工程根目录运行 `./scripts/run_matlab.sh "tdpSetup; reproduce_v1;"`。它从空白建模，执行定向场景，再以 20 个种子分别在 50 ms 和 40 ms 下跑满 600 s。模型接线、教学假设和每项判据见[战术开发章节](chapters/tactics_v1_design.md)。

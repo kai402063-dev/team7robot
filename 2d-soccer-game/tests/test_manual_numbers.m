@@ -141,3 +141,14 @@ for pair=comparison.matches'
     verifyEqual(t,evidence.parameters.v1RecoveryHealthySeconds,config.v1RecoveryHealthySeconds);
 end
 end
+
+function testSingleTeamComparisonTable(t)
+root=fileparts(fileparts(mfilename('fullpath')));
+run=fullfile(root,'evidence','team-ablation','clean-01');
+analysis=fullfile(root,'scripts','analyze_team_ablation.py');
+page=fullfile(root,'scripts','export_team_ablation_manual.py');
+[status,message]=system(strjoin({'python3',shellQuote(analysis),shellQuote(run),'--check'},' '));
+verifyEqual(t,status,0,message);
+[status,message]=system(strjoin({'python3',shellQuote(page),'--check'},' '));
+verifyEqual(t,status,0,message);
+end

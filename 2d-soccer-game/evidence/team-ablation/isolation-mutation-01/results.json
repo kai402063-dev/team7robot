@@ -1,0 +1,8 @@
+{
+  "names": [
+    "test_team_ablation/testManualTeamRetainsLegacyAuthorizer"
+  ],
+  "passed": false,
+  "failed": true,
+  "incomplete": false
+}

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=TDP Football 2D Replay
+Name[zh_CN]=TDP 二维足球回放
+Comment=Select a finished football match to replay
+Comment[zh_CN]=选择一场已结束的比赛并观看回放
+Exec="/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/start_2d.sh" --replay
+Path=/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1
+Icon=media-playback-start
+Terminal=true
+Categories=Education;Science;

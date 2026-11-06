@@ -1,0 +1,26 @@
+{
+  "names": [
+    "test_team_ablation/testBothStrikersRecoverOnlySelectedTeamHandsBack",
+    "test_team_ablation/testWrongNumberStopAndFeedbackLossStayOnSelectedTeam",
+    "test_team_ablation/testManualTeamRetainsLegacyAuthorizer",
+    "test_team_ablation/testHomogeneousEndpointsMatchArchivedEntireTrajectories"
+  ],
+  "passed": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "failed": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "incomplete": [
+    false,
+    false,
+    false,
+    false
+  ]
+}

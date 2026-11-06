@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
-# Launch a separate, task-local MATLAB session with the live 2D pitch.
+# Launch a separate, task-local MATLAB session for live matches or replay.
 set -euo pipefail
 
 usage() {
   cat <<'EOF'
-Usage: ./start_2d.sh [--recovery | --help]
+Usage: ./start_2d.sh [--recovery | --replay | --help]
 
 Open the live 2D football animation in a new MATLAB process.
 Use --recovery to select the experimental striker handback policy.
 Close the pitch window to stop the simulation and exit that process.
+Use --replay to pick a saved match. Close the replay window or cancel the
+selection to exit the replay process.
 
 Optional environment variables:
   MATLAB_BIN       MATLAB executable (default: local MATLAB R2026b)
@@ -23,8 +25,11 @@ EOF
 }
 
 task_strategy=v1
+task_entry=start_2d
 if [[ $# -eq 1 && $1 == --recovery ]]; then
   task_strategy=recovery
+elif [[ $# -eq 1 && $1 == --replay ]]; then
+  task_entry=replay_2d
 elif [[ $# -gt 0 ]]; then
   if [[ $# -eq 1 && ( $1 == --help || $1 == -h ) ]]; then
     usage
@@ -39,7 +44,7 @@ cd -- "$task_root"
 
 if [[ -z ${DISPLAY:-} ]]; then
   printf 'No DISPLAY is available. Run start_2d.sh from the graphical desktop.\n' >&2
-  printf 'For a MATLAB session already open on that desktop, run start_2d instead.\n' >&2
+  printf 'For a MATLAB session already open on that desktop, run %s instead.\n' "$task_entry" >&2
   exit 2
 fi
 
@@ -72,10 +77,14 @@ task_cache_id="animation_$(date -u +%Y%m%dT%H%M%S)_$$"
 task_session_dir="$task_root/build/animation-launcher/$task_cache_id"
 task_preferences="$task_session_dir/preferences"
 mkdir -p -- "$task_preferences"
-printf 'Starting live 2D football. First compilation can take a moment.\n'
+if [[ $task_entry == replay_2d ]]; then
+  printf 'Opening the saved match selector.\n'
+  task_matlab_code="app=replay_2d; if ~isempty(app) && isgraphics(app.Figure),waitfor(app.Figure);end"
+else
+  printf 'Starting live 2D football. First compilation can take a moment.\n'
+  task_matlab_code="app=start_2d; if isgraphics(app.Figure),waitfor(app.Figure);end; if isprop(app,'LastError') && ~isempty(app.LastError),rethrow(app.LastError);end"
+fi
 printf 'Launch log: %s\n' "$task_session_dir/matlab.log"
-
-task_matlab_code="app=start_2d; if isgraphics(app.Figure),waitfor(app.Figure);end; if isprop(app,'LastError') && ~isempty(app.LastError),rethrow(app.LastError);end"
 exec env -u LD_LIBRARY_PATH -u LD_PRELOAD -u MATLAB_JAVA \
   MATLAB_PREFDIR="$task_preferences" TDP_MATLAB_PREFDIR="$task_preferences" \
   TDP_CACHE_ID="$task_cache_id" TDP_2D_STRATEGY="$task_strategy" \

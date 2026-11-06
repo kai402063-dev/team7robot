@@ -1,0 +1,9 @@
+TDP_TEAM_MODEL_BUILT
+          status: 'PASS'
+            rows: [400 98]
+    tacticsShape: [400 171]
+     healthShape: [400 53]
+     redTakeover: 9.3600
+       redReturn: 9.9200
+            mask: [0 1]
+

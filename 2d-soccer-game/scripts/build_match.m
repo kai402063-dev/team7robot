@@ -2,14 +2,16 @@ function build_match(n)
 %BUILD_MATCH Generate eight independent library cores and two coordinators.
 root=tdpSetup();
 if nargin<1,n='tdpMatch';end
-recovery=strcmp(n,'tdpRecoveryMatch');
+teamPolicy=strcmp(n,'tdpTeamRecoveryMatch');
+recovery=strcmp(n,'tdpRecoveryMatch') || teamPolicy;
 v1=strcmp(n,'tdpV1Match') || recovery;
 teamType='Bus: V1TeamBus';
 assert(v1 || strcmp(n,'tdpMatch'),'TDP:MatchModel','Unknown match model');
 if bdIsLoaded(n),close_system(n,0);end
 new_system(n);configure_model(n);set_param(n,'StopTime','P.Tmatch-P.dt');
 if recovery
- P=tdp.recoveryConfig();set_param(n,'DataDictionary','TdpRecoveryTypes.sldd');
+ if teamPolicy, P=tdp.teamRecoveryConfig([false true]); else, P=tdp.recoveryConfig(); end
+ set_param(n,'DataDictionary','TdpRecoveryTypes.sldd');
  teamType='Bus: RecoveryTeamBus';
 elseif v1
  P=tdp.v1Config();set_param(n,'DataDictionary','TdpV1Types.sldd');
@@ -45,7 +47,7 @@ add_line(n,'WorldMemory/1','Observation2D/1');add_line(n,'StepTime/1','Observati
 for team=1:2
  label=sprintf('Team%d',team);y=200+team*170;
  if v1
-  addV1Team(n,label,team,y,recovery,teamType);
+  addV1Team(n,label,team,y,recovery,teamType,teamPolicy);
  else
   mem=[label 'StrikerMemory'];
  add_block('simulink/Discrete/Unit Delay',[n '/' mem],'InitialCondition','0','SampleTime','P.dt','Position',[170 y 230 y+40]);
@@ -114,7 +116,7 @@ if recovery,addRecoveryLog(n,teamType);end
 save_system(n,fullfile(root,'models',[n '.slx']));close_system(n,0);
 end
 
-function addV1Team(n,label,team,y,recovery,teamType)
+function addV1Team(n,label,team,y,recovery,teamType,teamPolicy)
 memory=[label 'Memory'];
 add_block('simulink/Discrete/Unit Delay',[n '/' memory], ...
     'InitialCondition','v1Memory0','SampleTime','P.dt','Position',[170 y 265 y+45]);
@@ -128,9 +130,13 @@ ports={'obs','Bus: ObservationBus','Input';'previous',teamType,'Input'; ...
     'plans','Bus: IntentBus','Output';'state',teamType,'Output'; ...
     'P','Inherit: Same as Simulink','Parameter'};
 if recovery
+    call=sprintf('tdp.v1TeamPlans(obs,%d,previous,requests,feedback,false,P,health)',team);
+    if teamPolicy
+        call=sprintf('tdp.teamPolicyPlans(obs,%d,previous,requests,feedback,health,P)',team);
+    end
     script=sprintf(['function [plans,state,localOwner]=f(obs,previous,requests,feedback,health,P)\n' ...
-        '[plans,state]=tdp.v1TeamPlans(obs,%d,previous,requests,feedback,false,P,health);\n' ...
-        'localOwner=0;\nif state.chaser>0,localOwner=state.chaser-%d;end\nend'],team,4*(team-1));
+        '[plans,state]=%s;\n' ...
+        'localOwner=0;\nif state.chaser>0,localOwner=state.chaser-%d;end\nend'],call,4*(team-1));
     ports=[ports;{'health','Bus: V1HealthBus','Input'}];
 end
 add_matlab_block([n '/' label],script,[365 y 540 y+110],ports);

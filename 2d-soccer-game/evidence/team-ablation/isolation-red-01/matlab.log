@@ -1,0 +1,98 @@
+Running test_team_ablation
+
+================================================================================
+Verification failed in test_team_ablation/testManualTeamRetainsLegacyAuthorizer.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Path to failure: <Value>.kind
+        --> The objects are not equal using "isequaln".
+        
+        Actual TdpAction:
+          TdpAction enumeration
+        
+            Stop
+        Expected TdpAction:
+          TdpAction enumeration
+        
+            Kick
+    
+    Actual Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Stop
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 1
+        validUntil: 1.100000000000000
+    Expected Value:
+      struct with fields:
+    
+         requestId: 18
+              kind: Kick
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 0.800000000000000
+        validUntil: 1.800000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/team-ablation-isolation-red-01/tests/test_team_ablation.m (testManualTeamRetainsLegacyAuthorizer) at 103
+================================================================================
+
+================================================================================
+Verification failed in test_team_ablation/testManualTeamRetainsLegacyAuthorizer.
+    ---------------------
+    Framework Diagnostic:
+    ---------------------
+    verifyEqual failed.
+    --> Path to failure: <Value>.kind
+        --> The objects are not equal using "isequaln".
+        
+        Actual TdpAction:
+          TdpAction enumeration
+        
+            Stop
+        Expected TdpAction:
+          TdpAction enumeration
+        
+            Kick
+    
+    Actual Value:
+      struct with fields:
+    
+         requestId: 17
+              kind: Stop
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 1
+        validUntil: 1.100000000000000
+    Expected Value:
+      struct with fields:
+    
+         requestId: 18
+              kind: Kick
+          velocity: [0 0 0]
+            target: [0 0]
+             speed: 0
+             stamp: 0.800000000000000
+        validUntil: 1.800000000000000
+    ------------------
+    Stack Information:
+    ------------------
+    In /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/team-ablation-isolation-red-01/tests/test_team_ablation.m (testManualTeamRetainsLegacyAuthorizer) at 103
+================================================================================
+.
+Done test_team_ablation
+__________
+
+Failure Summary:
+
+     Name                                                      Failed  Incomplete  Reason(s)
+    =======================================================================================================
+     test_team_ablation/testManualTeamRetainsLegacyAuthorizer    X                 Failed by verification.

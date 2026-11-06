@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "id": "team-ablation-cross-team-id-lock",
+    "file": "environment/V1AuthorizeRequests.m",
+    "old": " && (i==3 || i==7) && tdp.recoveryTeamSelected(P,1+(i>4))",
+    "new": " && (i==3 || i==7)",
+    "suite": "tests/test_team_ablation.m",
+    "evidence": "evidence/team-ablation/isolation-mutation-01"
+  },
+  "exitCode": 0,
+  "results": {
+    "names": [
+      "test_team_ablation/testManualTeamRetainsLegacyAuthorizer"
+    ],
+    "passed": false,
+    "failed": true,
+    "incomplete": false
+  },
+  "detected": true,
+  "selection": "testManualTeamRetainsLegacyAuthorizer",
+  "scope": "Targeted mutation on both mixed masks, with one action gate disabled in an isolated copy."
+}

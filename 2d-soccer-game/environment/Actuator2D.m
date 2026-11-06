@@ -1,7 +1,8 @@
 function [memory,feedback,cmd,doKick,kickV,reason]=Actuator2D(memory,req,obs,tSim,P,allowKick,noiseSample,forceFailure)
 %ACTUATOR2D Idempotent action execution with simulation-time deadlines.
 reason=TdpV1Reason.None;
-strict=isfield(P,'v1AutoRecovery') && P.v1AutoRecovery;
+strict=isfield(P,'v1AutoRecovery') && P.v1AutoRecovery && ...
+    tdp.recoveryTeamSelected(P,1+(obs.selfIndex>4));
 cmd=[0 0 0];doKick=false;kickV=[0 0];feedback=memory.feedback;
 if (~obs.gameRunning && P.mode==TdpMode.Delayed) || req.kind==TdpAction.Stop
  if memory.active

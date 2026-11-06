@@ -23,7 +23,7 @@ for i=1:8
         && feedback(i).requestId==previous(i).requestId;
     interrupted=pending && (~kicking(raw(i).kind) || raw(i).requestId~=previous(i).requestId);
     locked=false;
-    if isfield(state,'cancelPending') && (i==3 || i==7)
+    if isfield(state,'cancelPending') && (i==3 || i==7) && tdp.recoveryTeamSelected(P,1+(i>4))
         locked=state.releaseId~=0;
         if locked
             revoke=revoke || state.cancelPending || ~kicking(raw(i).kind) || ...

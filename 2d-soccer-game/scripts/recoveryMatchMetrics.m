@@ -18,24 +18,27 @@ for team=1:2
     kind=tactics(:,c.kind(mf));
     id=tactics(:,c.requestId(mf));
     kick=ismember(kind,double([TdpAction.Kick TdpAction.Tap]));
-    assert(all(id(locked)==lockedId(locked)) && all(~locked | takeover), ...
-        'TDP:RecoveryId','The MF changed ID before release.');
-    assert(all(~locked | tactics(:,c.chaser(team))~=st),'TDP:DoubleGrant','ST regained the grant with an MF request outstanding.');
-    assert(all(~cancel | (locked & kind==double(TdpAction.Stop))),'TDP:RecoveryStop','Missing same-ID cancellation.');
-    assert(all(~locked | ~kick | time<=recovery(:,h.releaseDeadline(team))+1e-10), ...
-        'TDP:RecoveryDeadline','A retained kick exceeded its original deadline.');
-    % At sample k the coordinator consumes the health produced at k-1.
-    % Audit the full run of consecutive usable samples before every release.
-    stamp=recovery(:,h.stamp(st));
-    healthy=tactics(2:end,c.available(st))~=0 & recovery(1:end-1,h.ready(st))~=0 & ...
-        recovery(1:end-1,h.activeId(st))==0 & stamp(1:end-1)<=time(2:end) & ...
-        time(2:end)-stamp(1:end-1)<=P.dt+1e-10;
-    for k=returns'
-        onset=entries(find(entries<k,1,'last'));
-        first=k-ceil((P.v1RecoveryHealthySeconds-1e-10)/P.dt);
-        assert(first>=max(2,onset) && all(healthy(first-1:k-1)) && ...
-            stamp(k-1)-stamp(first-1)>=P.v1RecoveryHealthySeconds-1e-10, ...
-            'TDP:EarlyRecovery','Team %d released the handback before a continuous healthy interval at %.4f s.',team,time(k));
+    automatic=tdp.recoveryTeamSelected(P,team);
+    if automatic
+        assert(all(id(locked)==lockedId(locked)) && all(~locked | takeover), ...
+            'TDP:RecoveryId','The MF changed ID before release.');
+        assert(all(~locked | tactics(:,c.chaser(team))~=st),'TDP:DoubleGrant','ST regained the grant with an MF request outstanding.');
+        assert(all(~cancel | (locked & kind==double(TdpAction.Stop))),'TDP:RecoveryStop','Missing same-ID cancellation.');
+        assert(all(~locked | ~kick | time<=recovery(:,h.releaseDeadline(team))+1e-10), ...
+            'TDP:RecoveryDeadline','A retained kick exceeded its original deadline.');
+        % At sample k the coordinator consumes the health produced at k-1.
+        % Audit the full run of consecutive usable samples before every release.
+        stamp=recovery(:,h.stamp(st));
+        healthy=tactics(2:end,c.available(st))~=0 & recovery(1:end-1,h.ready(st))~=0 & ...
+            recovery(1:end-1,h.activeId(st))==0 & stamp(1:end-1)<=time(2:end) & ...
+            time(2:end)-stamp(1:end-1)<=P.dt+1e-10;
+        for k=returns'
+            onset=entries(find(entries<k,1,'last'));
+            first=k-ceil((P.v1RecoveryHealthySeconds-1e-10)/P.dt);
+            assert(first>=max(2,onset) && all(healthy(first-1:k-1)) && ...
+                stamp(k-1)-stamp(first-1)>=P.v1RecoveryHealthySeconds-1e-10, ...
+                'TDP:EarlyRecovery','Team %d released the handback before a continuous healthy interval at %.4f s.',team,time(k));
+        end
     end
     ended=[returns;numel(time)+1];
     durations=zeros(size(entries));

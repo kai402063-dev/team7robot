@@ -64,4 +64,5 @@ The detailed guides below are in Chinese. The developer manual lists the verifie
 | 实时动画 / Live viewer | [动画操作与排错 / Controls and troubleshooting](docs/chapters/live_animation.md) | [动画验收与截图 / Viewer checks and screenshots](docs/generated/animation_numbers.md) |
 | V1 战术 / V1 tactics | [场景、参数和判据 / Scenarios, parameters and criteria](docs/chapters/tactics_v1_design.md) | [40 场结果与运行时间 / 40-match results and runtime](docs/generated/v1_results.md) |
 | 自动交还 / Striker handback | [交还条件与验证方法 / Handback conditions and verification](docs/chapters/recovery_experiment.md) | [80 场对照结果 / 80-match comparison](docs/generated/recovery_results.md) |
+| 单队对照 / One-team comparisons | [区分本队与对手的交还效果 / Comparing handback for one team at a time](docs/chapters/team_ablation.md) | [追球授权、射门与进球 / Chasing permissions, shots and goals](docs/generated/team_ablation.md) |
 | 工程概览 / Project overview | [开发手册与依赖 / Developer manual and dependencies](docs/DEV_MANUAL.md) | [开发进度 / Development progress](docs/PROGRESS.md) |
