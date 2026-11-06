@@ -29,13 +29,15 @@ USE_BUILTIN_SHOOT = False   # True = use Webots' Shoot.motion instead of the cus
 BALL_X = 0.20               # TUNE where the ball should sit in front of the robot (m)
 BALL_Y = 0.05               # TUNE sideways offset so the ball is in front of the kicking foot
 POS_TOL_X, POS_TOL_Y = 0.05, 0.035
-HEAD_TOL = math.radians(12)
+HEAD_TOL = math.radians(20)  # turn clips finish in full steps; allow their small overshoot
 
 # Walking speed: motions are played this many times faster than recorded.
 # If the robot falls while walking, the speed-up drops by WALK_SPEED_STEP
 # automatically (never below 1.0).
-WALK_SPEED = 1.5            # TUNE 1.0 = original speed
-TURN_SPEED = 1.4            # TUNE
+WALK_SPEED = 1.0            # use the recorded gait speed for stability
+TURN_SPEED = 0.5            # half-speed turn playback reduces leg clipping and falls
+SIDE_STEP_SPEED = 0.6       # complete each lateral step slowly before checking position
+SIDE_STEP_WIDTH = 0.9       # reduce lateral reach to keep the stance under the body
 WALK_SPEED_STEP = 0.1
 WALK_HEAD_TOL = math.radians(25)   # walk without turning first if heading is within this
 
@@ -64,7 +66,7 @@ WALK_MOTIONS = ["Forwards", "Forwards50", "Backwards", "SideStepLeft", "SideStep
                 "TurnLeft40", "TurnRight40", "TurnLeft60", "TurnRight60",
                 "StandUpFromFront", "Shoot",
                 # get-up motions from Cyberbotics' NAO wrestling examples (optional, see README)
-                "GetUpBack", "GetUpFront"]
+                "GetUpBack", "GetUpFront", "GetUpSide"]
 
 
 def wrap(a):
@@ -119,6 +121,7 @@ class NaoKickRecovery:
         self._tilt_steps = 0
         self.walk_speed = WALK_SPEED
         self.turn_speed = TURN_SPEED
+        print(f"Motion speeds: walk {self.walk_speed:.1f}x, turn {self.turn_speed:.1f}x")
 
     # ------------------------------------------------------------ helpers
     def _load_motions(self):
@@ -166,8 +169,6 @@ class NaoKickRecovery:
             self._tilt_steps += 1
         else:
             self._tilt_steps = 0
-        self.walk_speed = WALK_SPEED
-        self.turn_speed = TURN_SPEED
         return self._tilt_steps * self.ts / 1000.0 >= FALL_CONFIRM_S
 
     def lying_state(self):
@@ -175,6 +176,11 @@ class NaoKickRecovery:
         fz, lz, uz = self.torso_axes()
         if uz > 0.7:
             return "up"
+        # A robot tilted between its back and side can have a fairly large fz.
+        # Classify by the dominant horizontal torso axis so side falls take the
+        # side-to-front recovery path instead of starting GetUpBack directly.
+        if abs(lz) > abs(fz):
+            return "side"
         if fz > 0.5:
             return "back"          # chest facing the sky
         if fz < -0.5:
@@ -203,8 +209,6 @@ class NaoKickRecovery:
             return "missing"
         check = self.fall_check if abort_on_fall else None
         self._tilt_steps = 0
-        self.walk_speed = WALK_SPEED
-        self.turn_speed = TURN_SPEED
         seq = motion_to_sequence(self.motions[name], time_scale, stop_after=stop_after)
         res = self.player.play(seq, check=check)
         if res == "done" and stop_after is not None:
@@ -228,8 +232,6 @@ class NaoKickRecovery:
         else:
             seq = poses.kick_sequence(foot, strength)
         self._tilt_steps = 0
-        self.walk_speed = WALK_SPEED
-        self.turn_speed = TURN_SPEED
         res = self.player.play(seq, check=check)
         fell = res == "aborted" or self.is_fallen()
         if fell:
@@ -274,8 +276,6 @@ class NaoKickRecovery:
             self.step(0.5)
             return "missing"
         self._tilt_steps = 0
-        self.walk_speed = WALK_SPEED
-        self.turn_speed = TURN_SPEED
         t_end = self.robot.getTime() + max_time
         reached = [False]
 
@@ -295,7 +295,10 @@ class NaoKickRecovery:
             res = self.player.play(seq, check=check, ease=False)
             if res == "quit":
                 sys.exit(0)
-            if res == "aborted" or self.robot.getTime() > t_end:
+            # `check` aborts the current motion both when the target is reached
+            # and when the robot falls. Replaying after `done()` caused endless
+            # start-stop walking at the target until the timeout.
+            if reached[0] or res == "aborted" or self.robot.getTime() > t_end:
                 break
         if self.is_fallen():
             # walking too fast for the robot: slow down for the rest of the run
@@ -313,24 +316,38 @@ class NaoKickRecovery:
         return result
 
     def turn_to(self, heading, tol=HEAD_TOL):
-        """Turn on the spot until the robot faces the given world heading."""
-        err = wrap(heading - self.robot_pose()[2])
-        if abs(err) <= tol:
-            return "done"
-        sign = 1.0 if err > 0 else -1.0
-        big = abs(err) > math.radians(50) and ("TurnLeft60" in self.motions) and ("TurnRight60" in self.motions)
-        name = ("TurnLeft60" if sign > 0 else "TurnRight60") if big else ("TurnLeft40" if sign > 0 else "TurnRight40")
-        # done when within tolerance or once it has turned past the heading
-        return self.play_until(name, lambda: sign * wrap(heading - self.robot_pose()[2]) < tol * 0.5,
-                               max_time=15.0)
+        """Turn using complete recorded steps so the legs do not stop mid-stride."""
+        for _ in range(12):
+            current_heading = self.robot_pose()[2]
+            err = wrap(heading - current_heading)
+            if abs(err) <= tol:
+                return "done"
+            large_turn = abs(err) > math.radians(50)
+            if large_turn and "TurnLeft60" in self.motions and "TurnRight60" in self.motions:
+                name = "TurnLeft60" if err > 0 else "TurnRight60"
+            else:
+                name = "TurnLeft40" if err > 0 else "TurnRight40"
+            print(f"  {name}: heading {math.degrees(current_heading):.1f} deg "
+                  f"toward {math.degrees(heading):.1f} deg")
+            # Do not interrupt the clip when the heading crosses the target. The
+            # clip ends with a stable stance; the next iteration checks the angle.
+            res = self.play_motion(name, time_scale=1.0 / self.turn_speed,
+                                   abort_on_fall=True)
+            if self.is_fallen():
+                return "fallen"
+            if res != "done":
+                return res
+        return "timeout"
 
     def walk_to(self, gx, gy, tol=0.08):
         """Walk forwards to a point (turning towards it first)."""
         x, y, yaw = self.robot_pose()
         if math.hypot(gx - x, gy - y) <= tol:
             return "done"
-        res = self.turn_to(math.atan2(gy - y, gx - x), tol=WALK_HEAD_TOL)
-        if res == "fallen":
+        # Finish the turn before starting a walking motion. The wider walking
+        # tolerance made the robot walk diagonally while it was still reorienting.
+        res = self.turn_to(math.atan2(gy - y, gx - x), tol=HEAD_TOL)
+        if res != "done":
             return res
 
         def done():
@@ -367,9 +384,25 @@ class NaoKickRecovery:
                     res = self.turn_to(kick_dir)
                 elif abs(ey) > POS_TOL_Y:
                     sgn = 1.0 if ey > 0 else -1.0
-                    res = self.play_until("SideStepLeft" if sgn > 0 else "SideStepRight",
-                                          lambda: sgn * self.errors_to(gx, gy)[1] < POS_TOL_Y * 0.5,
-                                          max_time=8.0)
+                    name = "SideStepLeft" if sgn > 0 else "SideStepRight"
+                    if name not in self.motions:
+                        print("Motion not available:", name)
+                        return False
+                    # Finish the complete two-leg motion. Interrupting on the
+                    # first position crossing can stop before the other leg steps.
+                    seq = motion_to_sequence(self.motions[name],
+                                             time_scale=1.0 / SIDE_STEP_SPEED)
+                    for _, pose in seq:
+                        for joint in ("LHipRoll", "RHipRoll"):
+                            if joint in pose:
+                                pose[joint] *= SIDE_STEP_WIDTH
+                    self._tilt_steps = 0
+                    res = self.player.play(seq, check=self.fall_check)
+                    if res == "quit":
+                        sys.exit(0)
+                    if res != "done" or self.is_fallen():
+                        return False
+                    print(f"  {name} complete; checking lateral position again")
                 elif ex > POS_TOL_X:
                     res = self.play_until("Forwards", lambda: self.errors_to(gx, gy)[0] < POS_TOL_X * 0.5,
                                           max_time=8.0)
@@ -431,9 +464,9 @@ class NaoKickRecovery:
     def recover(self):
         """Get up from any fall. Returns (success, seconds taken, attempts).
 
-        back  -> GetUpBack.motion (Cyberbotics wrestling), else roll over + front get-up
+        back  -> GetUpBack.motion (Cyberbotics wrestling)
         front -> GetUpFront.motion, else Webots' StandUpFromFront.motion
-        side  -> push with one shoulder to roll onto the back, then as above
+        side  -> GetUpSide.motion, roll onto the front, then GetUpFront.motion
         """
         t0 = self.robot.getTime()
         self.step(0.5)                                   # let the robot settle first
@@ -443,17 +476,39 @@ class NaoKickRecovery:
         roll_side = "L"
         for attempt in range(1, MAX_GETUP_ATTEMPTS + 1):
             state = self.lying_state()
-            print(f"  get-up attempt {attempt}: lying on {state}")
+            side_fall = state == "side"
+            fz, lz, uz = self.torso_axes()
+            print(f"  get-up attempt {attempt}: lying on {state} "
+                  f"(torso forward_z={fz:.2f}, left_z={lz:.2f}, up_z={uz:.2f})")
             if state == "up":
                 return True, self.robot.getTime() - t0, attempt - 1
             if state == "side":
-                # same trick as Cyberbotics' David: push with the lower shoulder
                 fz, lz, uz = self.torso_axes()
-                pose = {"RShoulderRoll": -1.2} if lz > 0 else {"LShoulderRoll": 1.2}
-                self.player.play([(0.4, pose), (1.0, {})])
+                if "GetUpSide" in self.motions:
+                    # The authored clip is for the robot lying on its right side;
+                    # mirror it when the torso's left axis points down instead.
+                    print("  playing GetUpSide.motion")
+                    seq = motion_to_sequence(self.motions["GetUpSide"])
+                    if lz < 0:
+                        seq = poses.mirror_sequence(seq)
+                    self.player.play(seq)
+                else:
+                    print("  GetUpSide.motion unavailable; using shoulder push")
+                    pose = {"RShoulderRoll": -1.2} if lz > 0 else {"LShoulderRoll": 1.2}
+                    self.player.play([(0.4, pose), (1.0, {})])
+                self.step(0.3)
                 state = self.lying_state()
+                print(f"  side motion ended on {state}")
+                if state == "side":
+                    print("  side roll did not reach the back or front; retrying")
+                    continue
             if state == "back":
-                if "GetUpBack" in self.motions:
+                if side_fall:
+                    # Side recovery must reach the front before standing. Do not
+                    # start the back get-up if the side roll lands supine.
+                    print("  side motion reached back, not front; retrying side-to-front roll")
+                    continue
+                elif "GetUpBack" in self.motions:
                     self.play_motion("GetUpBack", abort_on_fall=False)
                 else:
                     self.player.play(poses.rollover_sequence(roll_side))
@@ -462,6 +517,8 @@ class NaoKickRecovery:
                     state = self.lying_state()
             if state == "front":
                 name = "GetUpFront" if "GetUpFront" in self.motions else "StandUpFromFront"
+                if side_fall:
+                    print("  playing front get-up after side roll")
                 self.play_motion(name, abort_on_fall=False)
             # the critical moment: straight after the get-up the robot is upright but
             # still moving, so settle and balance instead of jumping to the stand pose
