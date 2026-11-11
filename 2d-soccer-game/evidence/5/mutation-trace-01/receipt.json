@@ -1,9 +1,0 @@
-{
-  "suite": "Webots closed-loop gate",
-  "mutation": "Freeze only the recorded ball while retaining completed-motion evidence",
-  "detected": true,
-  "reason": "Ball displacement gate",
-  "originalTraceSHA256": "cd914eb6c3640f75b7cc9afe87af761dc76d95a8f6b0271d573607200635d9b8",
-  "mutatedFixtureSHA256": "c307d9cb4858e8d505a92915c4c78a1e202242cdbfab99ba786ee30a9b3dc3b2",
-  "note": "Synthetic mutation fixture; never presented as a physical run"
-}

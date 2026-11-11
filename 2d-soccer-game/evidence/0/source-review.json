@@ -1,8 +1,0 @@
-{
-  "projectA": "All 16 files inventoried; all numerical source functions and main order inspected.",
-  "projectB": "Parameter script, enum, detector and Stateflow XML inspected; structural reference only.",
-  "course": "Both PDFs extracted; pitch dimensions page rendered.",
-  "legacySafe": "tdpRun, validation, setup and final receipt inspected; no behavior inherited.",
-  "analysis": "Read migration design and defect inventory; proposed interfaces not treated as existing implementation.",
-  "webots": "NAO example world, MATLAB controller, motion inventory; Turtlebot launch and Epuck device URDF inspected."
-}

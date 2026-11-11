@@ -1,3 +1,0 @@
-{
-  "reason": "Replay fixture ran from tests directory, so relative config path failed before a receipt; replay test incomplete. Camera error PASS independently reproduced."
-}

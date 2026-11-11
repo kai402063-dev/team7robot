@@ -1,9 +1,0 @@
-{
-  "command": [
-    "/bin/bash",
-    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-s44i67s9/project with spaces & symbols/start_2d.sh",
-    "--help"
-  ],
-  "exitCode": 0,
-  "capture": null
-}

@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "<frozen runpy>", line 198, in _run_module_as_main
-  File "<frozen runpy>", line 88, in _run_code
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/ros2/tdp_webots_bridge/tdp_webots_bridge/replay_driver.py", line 57, in <module>
-    main()
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/ros2/tdp_webots_bridge/tdp_webots_bridge/replay_driver.py", line 36, in main
-    raise RuntimeError('ros2 topic info failed')
-RuntimeError: ros2 topic info failed

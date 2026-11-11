@@ -1,7 +1,0 @@
-{
-  "status": "FAILED",
-  "exitCode": 1,
-  "stdoutBytes": 0,
-  "context": "Host batch also exited with no diagnostic; inherited LD_LIBRARY_PATH contains ROS libraries.",
-  "nextAttempt": "attempt-03: clean library environment, no display"
-}

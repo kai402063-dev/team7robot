@@ -1,8 +1,0 @@
-{
-  "id": "team-ablation-cross-team-id-lock",
-  "file": "environment/V1AuthorizeRequests.m",
-  "old": " && (i==3 || i==7) && tdp.recoveryTeamSelected(P,1+(i>4))",
-  "new": " && (i==3 || i==7)",
-  "suite": "tests/test_team_ablation.m",
-  "evidence": "evidence/team-ablation/isolation-mutation-01"
-}

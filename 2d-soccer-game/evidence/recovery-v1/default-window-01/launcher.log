@@ -1,8 +1,0 @@
-Starting live 2D football. First compilation can take a moment.
-Launch log: /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/animation-launcher/animation_20261106T103725_479679/matlab.log
-[Warning: Graphics acceleration hardware is unavailable. Graphics quality and
-performance might be diminished. See <a
-href="https://www.mathworks.com/support/requirements/matlab-system-requirements.html">MATLAB
-System Requirements</a>.] 
-[> In start_2d (line 22)] 
-TDP animation: /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/animation-20261106-103816-179/receipt.json

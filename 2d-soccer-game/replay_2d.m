@@ -60,8 +60,9 @@ uiwait(picker);
         set(feedback,'String','正在读取比赛记录…');
         drawnow nocallbacks
         try
-            saved = load(match.file,'P','trace');
-            viewer = MatchReplay2D(saved.P,saved.trace,match.label,'on');
+            rec = loadReplayRecording(match.file);
+            for note = rec.Warnings, warning('TDP:ReplayLoad','%s',note{1}); end
+            viewer = MatchReplay2D(rec.P,rec.Trace,match.label,'on',rec.Tactics);
         catch problem
             if isgraphics(picker)
                 set(feedback,'String',['无法播放这场比赛。' newline problem.message]);

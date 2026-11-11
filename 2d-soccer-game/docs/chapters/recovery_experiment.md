@@ -70,8 +70,8 @@ disp(table(tactics(idx,c.time), takeover(idx), tactics(idx,c.chaser(team)), ...
 ./scripts/run_matlab.sh "tdpSetup; reproduce_recovery;"
 ```
 
-[队级测试结果](../../evidence/recovery-v1/team-unit-02/receipt.json)和[移除编号检查后的变异结果](../../evidence/recovery-v1/team-mutation-01/receipt.json)可用来核对为什么不能换号；[模型定向测试](../../tests/test_recovery_model.m)给出场景初值和逐拍断言。调试时先区分心跳送达、动作确认和球发生位移这三件事。这里验证的是两个控制周期下的二维代理，实机定位时延、NAO6 的步态与踢球接触仍需各自的实测。
+[模型定向测试](../../tests/test_recovery_model.m)给出场景初值和逐拍断言。调试时先区分心跳送达、动作确认和球发生位移这三件事。这里验证的是两个控制周期下的二维代理，实机定位时延、NAO6 的步态与踢球接触仍需各自的实测。
 
-正式一键复验在本机干净克隆中约需 21 分钟，耗时包括编译、定向测试、整场对照和重复回放。每组比赛双方使用相同策略；比较的是该组条件下的比赛节奏、接管与总进球。实验在常规比赛中成功解除所有自然接管，快速交还同时伴随更多射门、更少进球。保护中场在途踢球和失效后同编号取消的情形由定向场景实际触发。采用哪套规则仍由小组决定。[干净运行总回执](../../evidence/recovery-v1/clean-01/receipt.json) · [故障与交还逐拍记录](../../evidence/recovery-v1/model-scenarios-02/events.json)
+正式一键复验在本机干净克隆中约需 21 分钟，耗时包括编译、定向测试、整场对照和重复回放。每组比赛双方使用相同策略；比较的是该组条件下的比赛节奏、接管与总进球。实验在常规比赛中成功解除所有自然接管，快速交还同时伴随更多射门、更少进球。保护中场在途踢球和失效后同编号取消的情形由定向场景实际触发。采用哪套规则仍由小组决定。
 
 [两种策略的整场对照与证据](../generated/recovery_results.md)

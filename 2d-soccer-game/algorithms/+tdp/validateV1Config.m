@@ -33,6 +33,21 @@ if isfield(P,'v1AutoRecovery')
             isfinite(duration) && duration>0,'TDP:RecoveryConfig','The healthy interval must be positive.');
     end
 end
+if isfield(P,'v11Fallback')
+    assert(islogical(P.v11Fallback) && isscalar(P.v11Fallback), ...
+        'TDP:V11Config','v11Fallback must be a scalar logical.');
+    assert(~(isfield(P,'v1AutoRecovery') && P.v1AutoRecovery), ...
+        'TDP:V11Config','The V1.1 fallback runs only in the approved V1 model.');
+    count=P.v11FailCount;
+    assert(isnumeric(count) && isscalar(count) && count==round(count) && ...
+        count>=1 && count<=8,'TDP:V11Config','v11FailCount must be an integer in 1..8.');
+    seconds={'v11FailWindow','v11RecoverSeconds'};
+    for k=1:numel(seconds)
+        value=P.(seconds{k});
+        assert(isnumeric(value) && isreal(value) && isscalar(value) && ...
+            isfinite(value) && value>0,'TDP:V11Config','Invalid %s.',seconds{k});
+    end
+end
 names = {'v1UnavailableWindow','v1BlindWindow','v1StaleWindow', ...
     'v1StopWindow','v1RecoveryWindow','v1FailWindow'};
 counts = [8 8 8 1 2 8];

@@ -1,4 +1,0 @@
-{
-  "status": "NOT_QUALIFIED",
-  "reason": "This attempt includes an unrelated test assertion comparing R2026b OnOffSwitchState to char. Preserve it; rerun the corrected positive suite and mutation in a new attempt."
-}

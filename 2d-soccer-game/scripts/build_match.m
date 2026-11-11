@@ -35,6 +35,10 @@ if v1
   add_block('simulink/Discrete/Unit Delay',[n '/DeviceHealthMemory'],'InitialCondition','health0','SampleTime','P.dt','Position',[1720 1000 1820 1050]);
  else
   assignin(w,'v1Memory0',tdp.v1TeamMemory());
+  % Draft v1.1 fallback monitor state and last tick's skill phases (inactive
+  % unless P.v11Fallback is true; see tdp.v11FallbackConfig).
+  assignin(w,'v11Memory0',tdp.v11FallbackMemory());assignin(w,'skill0',zeros(1,8));
+  add_block('simulink/Discrete/Unit Delay',[n '/SkillMemory'],'InitialCondition','skill0','SampleTime','P.dt','Position',[1500 1100 1590 1150]);
  end
  add_block('simulink/Discrete/Unit Delay',[n '/RequestMemory'],'InitialCondition','request0','SampleTime','P.dt','Position',[1300 950 1410 1000]);
 else
@@ -112,6 +116,7 @@ add_block('simulink/Sinks/To Workspace',[n '/Records'],'VariableName','records',
 lines={'WorldMemory/1','Plant2D/1';requestSource,'Plant2D/2';'JoinPlans/1','Plant2D/3';'StepTime/1','Plant2D/4';'Plant2D/1','WorldMemory/1';feedbackSource,'FeedbackMemory/1';'Plant2D/1','Record/1';['Team1' strikerPort],'Record/2';['Team2' strikerPort],'Record/3';'Record/1','Records/1'};
 for k=1:size(lines,1),add_line(n,lines{k,1},lines{k,2},'autorouting','on');end
 if v1,addV1Log(n,teamType,feedbackSource);end
+if v1 && ~recovery,add_line(n,'JoinSkills/1','SkillMemory/1','autorouting','on');end
 if recovery,addRecoveryLog(n,teamType);end
 save_system(n,fullfile(root,'models',[n '.slx']));close_system(n,0);
 end
@@ -139,14 +144,27 @@ if recovery
         'localOwner=0;\nif state.chaser>0,localOwner=state.chaser-%d;end\nend'],call,4*(team-1));
     ports=[ports;{'health','Bus: V1HealthBus','Input'}];
 end
+if ~recovery
+    % Same approved V1 call plus the opt-in V1.1 fallback monitor (9 inputs).
+    script=sprintf(['function [plans,state,localOwner,v11]=f(obs,previous,requests,feedback,v11previous,skills,P)\n' ...
+        't=obs(1).tSim;\n' ...
+        'recovered=t>=P.v1RecoveryWindow(%d,1) && t<P.v1RecoveryWindow(%d,2);\n' ...
+        '[plans,state,v11]=tdp.v1TeamPlans(obs,%d,previous,requests,feedback,recovered,P,skills,v11previous);\n' ...
+        'localOwner=0;\nif state.chaser>0,localOwner=state.chaser-%d;end\nend'],team,team,team,4*(team-1));
+    v11memory=[label 'V11Memory'];
+    add_block('simulink/Discrete/Unit Delay',[n '/' v11memory], ...
+        'InitialCondition','v11Memory0','SampleTime','P.dt','Position',[170 y+60 265 y+100]);
+end
 add_matlab_block([n '/' label],script,[365 y 540 y+110],ports);
 if recovery,set_data_size([n '/' label],'health','[1 8]');end
 for key={'obs','requests','feedback'},set_data_size([n '/' label],key{1},'[1 8]');end
 set_data_size([n '/' label],'plans','[1 4]');
 sources={'Observation2D/1',[memory '/1'],'RequestMemory/1','FeedbackMemory/1'};
 if recovery,sources{end+1}='HealthMemory/1';end
+if ~recovery,sources=[sources {[v11memory '/1'],'SkillMemory/1'}];end
 wireInputs(n,label,sources);
 add_line(n,[label '/2'],[memory '/1'],'autorouting','on');
+if ~recovery,add_line(n,[label '/4'],[v11memory '/1'],'autorouting','on');end
 end
 
 function addV1Authorization(n,teamType)

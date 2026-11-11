@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/scripts/run_webots.py", line 64, in <module>
-    p=argparse.ArgumentParser();p.add_argument('output');p.add_argument('--mode',choices=['probe','motion','closed'],default='closed');a=p.parse_args();run(a.output,a.mode)
-                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/clean-final-02/scripts/run_webots.py", line 41, in run
-    assert webots.wait(timeout=600)==0,'Webots process failed'
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Webots process failed

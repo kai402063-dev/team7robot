@@ -1,7 +1,0 @@
-{
-  "status": "DEFECT_REPRODUCED",
-  "expectedAssertionFailures": 2,
-  "actualAssertionFailures": 2,
-  "incomplete": false,
-  "scope": "Incorrect PASS receipts from invalid camera encoding and changed recorded action"
-}

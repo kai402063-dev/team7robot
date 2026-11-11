@@ -17,4 +17,4 @@
 
 固定蓝队默认，红队切换后其进球变化为 -13；固定蓝队自动，变化为 -3。固定红队默认，蓝队切换后红队进球变化为 -11；固定红队自动，变化为 -1。
 
-[两周期分表、逐场比较和归因方法](../../evidence/team-ablation/clean-01/summary.md) · [运行方法](../chapters/team_ablation.md)
+[运行方法](../chapters/team_ablation.md)

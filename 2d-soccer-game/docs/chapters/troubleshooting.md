@@ -4,7 +4,7 @@
 |---|---|---|---|
 | matlab -batch 退出 1、没有有效输出 | 沙箱/继承动态库环境下启动失败；清除 ROS 库变量的独立主机进程可运行 | 使用 run_matlab.sh，检查 MATLAB 可执行路径；不要操作已开桌面 | evidence/0 早期尝试与环境回执 |
 | JSON 字段名非法 | Real-Time_Workshop 含连字符 | MATLAB 字段名用 makeValidName；原许可名保留用于 license 调用 | evidence/0 失败日志 |
-| Git 无作者身份 | 本机未配作者 | 仅本任务命令级 Codex 身份，不改全局配置 | 决策 D007 |
+| Git 无作者身份 | 本机未配作者 | 仅本任务命令级作者身份，不改全局配置 | 决策 D007 |
 | Unit Delay 无 OutDataTypeStr 参数 | 该块不支持这项参数写法 | 用初始总线值推断类型；别照搬 Constant 的参数 | evidence/2/build-02.log |
 | P 同时来自字典与模型工作区 | 数据定义重复 | 字典只存总线，P/初态/回放放模型工作区 | evidence/2/build-03.log |
 | requestId read-before-write | 默认转换未初始化输出 | 初始化全部跨拍数据，保留运行诊断 | evidence/2/build-04.log |
@@ -46,8 +46,8 @@
 
 ## 全场跑完却提示 `TDP:V1SourceDrift`
 
-预检种子 1 完成了 600 秒比赛及重复回放，随后整个分片在最后一次指纹核对时失败。两份清单显示运行期间工作树中的观测适配器有改动。逐场回执的 PASS 只对应那一场；分片回执为 FAIL。这次尝试单独保留。要复现，先提交运行源码，在新目录克隆该提交，再从新 MATLAB 进程运行 `reproduce_v1`。运行时只写新的证据目录。核对 `matches/source-before.json` 和 `matches/source-after.json` 的指纹，确认分片、汇总和外层回执各自通过。[预检失败回执](../../evidence/tactics-v1/matrix-longcheck-01/receipt.json)
+预检种子 1 完成了 600 秒比赛及重复回放，随后整个分片在最后一次指纹核对时失败。两份清单显示运行期间工作树中的观测适配器有改动。逐场回执的 PASS 只对应那一场；分片回执为 FAIL。这次尝试单独保留。要复现，先提交运行源码，在新目录克隆该提交，再从新 MATLAB 进程运行 `reproduce_v1`。运行时只写新的证据目录。核对 `matches/source-before.json` 和 `matches/source-after.json` 的指纹，确认分片、汇总和外层回执各自通过。
 
 ## 按下 Pause 后哪个时刻才可当作停帧
 
-一次真实窗口验收中，六项动画测试通过后，两个按墙钟延迟采集的“暂停”样本仍有不同的比赛时刻。原先按钮一收到请求就显示 `Paused`，而 MATLAB 驱动在下一次事件轮询时才调用 `pause(sm)`。现在点击后显示 `Pausing...`，监测到求解器状态实际为 `paused` 时才显示 `Paused` 并更新停帧。若有兴趣复查，运行图形验证器，在回执 `controls.samples` 对照请求、确认、保持和继续的引擎状态、时间与帧号。确认后的记录及显示时钟在继续之前应完全相同。等待超过 15 秒会将运行标为失败，停止及关窗仍可使用。[修复前的失败记录](../../evidence/tactics-v1/viewer-01/artifacts/receipt.json) · [按钮操作说明](live_animation.md)
+一次真实窗口验收中，六项动画测试通过后，两个按墙钟延迟采集的“暂停”样本仍有不同的比赛时刻。原先按钮一收到请求就显示 `Paused`，而 MATLAB 驱动在下一次事件轮询时才调用 `pause(sm)`。现在点击后显示 `Pausing...`，监测到求解器状态实际为 `paused` 时才显示 `Paused` 并更新停帧。若有兴趣复查，运行图形验证器，在回执 `controls.samples` 对照请求、确认、保持和继续的引擎状态、时间与帧号。确认后的记录及显示时钟在继续之前应完全相同。等待超过 15 秒会将运行标为失败，停止及关窗仍可使用。[按钮操作说明](live_animation.md)

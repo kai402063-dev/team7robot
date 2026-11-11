@@ -1,6 +1,0 @@
-{"spec": {"id": "baseline", "file": "reference/projectA/ballModel.m", "old": "v - P.ballDecel*P.dt", "new": "v - 1.01*P.ballDecel*P.dt", "suite": "tests/test_baseline.m", "evidence": "evidence/0/mutation-01"}, "exitCode": 1, "results": {}, "detected": false}
-Traceback (most recent call last):
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/mutation_check.py", line 22, in <module>
-    print(json.dumps(receipt));assert receipt['detected'],'Mutation was not detected by assertions'
-                                      ~~~~~~~^^^^^^^^^^^^
-AssertionError: Mutation was not detected by assertions

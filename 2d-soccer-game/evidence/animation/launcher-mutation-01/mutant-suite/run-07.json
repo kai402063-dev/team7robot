@@ -1,8 +1,0 @@
-{
-  "command": [
-    "/bin/bash",
-    "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/launcher-check-33ve8k7w/project with spaces & symbols/start_2d.sh"
-  ],
-  "exitCode": 7,
-  "capture": "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/evidence/animation/launcher-mutation-01/mutant-suite/capture-07.json"
-}

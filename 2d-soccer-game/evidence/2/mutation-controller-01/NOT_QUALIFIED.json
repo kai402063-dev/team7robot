@@ -1,4 +1,0 @@
-{
-  "status": "NOT_QUALIFIED",
-  "reason": "Mutation ran before record shape and single-model compile corrections. Several tests errored; this attempt is retained but not counted as valid mutation evidence."
-}

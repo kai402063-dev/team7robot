@@ -10,22 +10,22 @@ TDP 是 Team Design Project（团队设计项目）。这份工程把 A 的 4v4�
 
 要区分红队自己的交还与蓝队对手交还的影响，可在专用模型中一次只切换一队。同种子的四组实验、追球授权定义以及复现命令见[单队对照](chapters/team_ablation.md)。
 
-交付标签为 `baseline-v1`，二维冻结点为 `baseline-2d-v1`。最终干净 clone 的完整一键和可用手工路径均已通过；缺产品门仍为 BLOCKED，默认噪声轨迹分歧和未验证项见下表及[最终回执](../evidence/6/FINAL_RECEIPT.json)。该次冻结基线的运行代码验证目标为 `1f52c4c`。之后的动画与球队 V1 属独立增量。
+交付标签为 `baseline-v1`，二维冻结点为 `baseline-2d-v1`。最终干净 clone 的完整一键和可用手工路径均已通过；缺产品门仍为 BLOCKED，默认噪声轨迹分歧和未验证项见下表。该次冻结基线的运行代码验证目标为 `1f52c4c`。之后的动画与球队 V1 属独立增量。
 
 现在直接执行 `./start_2d.sh` 会用球队 V1 的四个固定角色开赛。每队获得追球授权的机器人有金色外圈。要在独立 MATLAB 进程复现二维战术验收，在工程根目录运行 `./scripts/run_matlab.sh "tdpSetup; reproduce_v1;"`。它从空白建模，执行定向场景，再以 20 个种子分别在 50 ms 和 40 ms 下跑满 600 s。模型接线、教学假设和每项判据见[战术开发章节](chapters/tactics_v1_design.md)。
 
 初次上手建议先跑十秒。要看到动画，在桌面终端执行 `TDP_2D_DURATION=10 ./start_2d.sh`。只想得到物理与战术矩阵，可按[十秒无图形实验](chapters/tactics_v1_design.md#无窗口运行十秒并找到日志)运行并加载 MAT 文件。要复验当前球队策略，使用 `reproduce_v1`；课题各阶段连同 ROS 和 Webots 的综合复现入口为 `reproduce_all`。
 
-最终可执行提交 `a324545` 含暂停确认修复。在另一份新克隆中再次运行同样的种子和控制周期，每一场的物理和战术记录均与原正式矩阵逐元素相同。[交付版逐场核查](../evidence/tactics-v1/release-matrix-01/receipt.json)
+最终可执行提交 `a324545` 含暂停确认修复。在另一份新克隆中再次运行同样的种子和控制周期，每一场的物理和战术记录均与原正式矩阵逐元素相同。
 
-另一位首次阅读手册的验证者在新克隆中照做了十秒实验。两次启动得到完全相同的物理和战术数组，并用已保存的逐场数据重算出相同的 40 场汇总。实际终端输出和日志读法见[独立读者记录](../evidence/tactics-v1/reader-01/README.md)。
+另一位首次阅读手册的验证者在新克隆中照做了十秒实验。两次启动得到完全相同的物理和战术数组，并用已保存的逐场数据重算出相同的 40 场汇总。
 
 ## 1. 当前交付层级
 
 | 项目 | 实际达到的层级 | 证据 / 限制 |
 |---|---|---|
-| 自动交还二维实验（单独入口） | 新克隆重建，默认 V1 对照及自动交还整场运行通过；两个图标对应的真实窗口通过 | [逐场对照与完整回放](generated/recovery_results.md) · [交还与取消练习](chapters/recovery_experiment.md) · [实验验收回执](../evidence/recovery-v1/FINAL_RECEIPT.json) |
-| 球队 V1 二维增量 | 全新克隆重建，25 项定向测试、40 场各 600 s、两个周期的完整重复回放通过 | [球队 V1 整场结果](generated/v1_results.md) · [逐场回执及指标](../evidence/tactics-v1/matrix-final-01/summary/receipt.json) · [首次阅读与操作](chapters/tactics_v1_design.md) |
+| 自动交还二维实验（单独入口） | 新克隆重建，默认 V1 对照及自动交还整场运行通过；两个图标对应的真实窗口通过 | [逐场对照与完整回放](generated/recovery_results.md) · [交还与取消练习](chapters/recovery_experiment.md) |
+| 球队 V1 二维增量 | 全新克隆重建，25 项定向测试、40 场各 600 s、两个周期的完整重复回放通过 | [球队 V1 整场结果](generated/v1_results.md) · [首次阅读与操作](chapters/tactics_v1_design.md) |
 | 阶段 0 原始基线 | 80 场 × 600 s；20 种种子 × 两种噪声 × 两次完全相同 | `evidence/0/FINAL_RECEIPT_v2.json`；首步与 90 步滚动校核通过 |
 | 阶段 1 算法迁移 | 11 个入口各 ≥1000 组；误差 ≤1e-12；screener 零阻塞诊断 | `evidence/1/FINAL_RECEIPT.json`；coder.screener 是代码生成兼容性的静态检查；实际模型编译仍另行验收 |
 | 阶段 2 单机 | 实际 Stateflow、延迟执行层、反馈、超时、失败/拒绝、失球/停赛、去重和迟到反馈；两个周期闭环 | `evidence/2/FINAL_RECEIPT.json` |
@@ -78,7 +78,7 @@ cd '/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated
 6. [测试手册](chapters/testing.md) 和 [已做过的扩展示例](chapters/extensions.md)。
 7. [原问题与修复边界](chapters/defects.md)、[参数表](generated/parameters.md)、[决策记录](DECISIONS.md)、[真实排错记录](chapters/troubleshooting.md)。
 8. [ROS 2标准消息与在线适配](chapters/ros2.md)、[Webots场景/相机/单动作/物理闭环](chapters/webots.md)、[M2实测数字](generated/m2_numbers.md)、[三维参数及假设](generated/webots_parameters.md)。
-9. [课程对应与导师问题](chapters/course_mapping.md)、[AI 声明](AI_PROVENANCE.md)。
+9. [课程对应与导师问题](chapters/course_mapping.md)。
 
 ![脚本生成的比赛快照](generated/match_snapshot.png)
 

@@ -1,3 +1,0 @@
-dbus[186296]: Failed to start message bus: Error in file /home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/d02/bus.conf, line 1, column 81: not well-formed (invalid token)
-
-dbus-run-session: EOF reading address from bus daemon

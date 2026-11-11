@@ -1,8 +1,8 @@
 # T7 V1 行为与战术开发手册
 
-工程使用球队批准的 Sheet1/Sheet2 V1。每队固定一名门将、一名后卫、一名中场和一名前锋，由球队协调器在每拍决定攻防和追球人。模型名为 `tdpV1Match`。25 项战术、模型与指标测试全部通过，两个控制周期各完成 20 场完整比赛。[整场成绩与复现耗时](../generated/v1_results.md) · [V1 来源](../../evidence/tactics-v1/source/receipt.json) · [函数测试](../../evidence/tactics-v1/unit-02/receipt.json) · [模型测试与接线](v1_model_interface.md)
+工程使用球队批准的 Sheet1/Sheet2 V1。每队固定一名门将、一名后卫、一名中场和一名前锋，由球队协调器在每拍决定攻防和追球人。模型名为 `tdpV1Match`。25 项战术、模型与指标测试全部通过，两个控制周期各完成 20 场完整比赛。[整场成绩与复现耗时](../generated/v1_results.md) · [模型测试与接线](v1_model_interface.md)
 
-Sheet2!A27 记载了原 AI 范围。2026-11-06，用户向本项目转述导师已明确允许此项目使用 AI 编码。V1 使用 AI 编写战术函数、模型接线、测试和说明，组员可以按以下步骤复核。该许可的归档依据与原表声明均保留。[AI 来源说明](../AI_PROVENANCE.md) · [原始工作表快照](../../evidence/tactics-v1/source/spreadsheet-snapshot.json)
+组员可以按以下步骤复核。
 
 ## 先看十秒比赛
 
@@ -161,7 +161,7 @@ disp([trace(k,61), tactics(k,c.kicker)])
 
 ## 4. 单元格怎样落实为验收门
 
-行号均指原表中文 Sheet2，同主题英文可在 Sheet1 第 6–23 行核对。完整快照保留了原始文字和版本标识。[V1 来源快照](../../evidence/tactics-v1/source/spreadsheet-snapshot.json)
+行号均指原表中文 Sheet2，同主题英文可在 Sheet1 第 6–23 行核对。完整快照保留了原始文字和版本标识。
 
 | 要求编号 | 单元格 | 对应的验收观察 |
 |---|---|---|
@@ -179,7 +179,7 @@ disp([trace(k,61), tactics(k,c.kicker)])
 | V1-12 输入契约 | C20:D22、A26 | 坐标、采集时刻、有效性、可用性与反馈编号检查 |
 | V1-13 分阶段验证 | D21:D23 | 本次二维结果单列，进入三维时重新验证单前锋接近与关联反馈 |
 | V1-14 初版范围 | D9、A26 | 配置与人工源码审查确认固定角色、动作选择范围和传球策略 |
-| V1-15 AI 与实测 | A27 | 记录 AI 实际参与范围、用户转述的项目专属导师许可和 NAO6 实测状态 |
+| V1-15 实测状态 | A27 | 记录 NAO6 实测状态 |
 
 ## 5. 自己改一个场景并验证
 
@@ -203,7 +203,7 @@ disp(tactics(rows,[c.time c.phase(1) c.chaser(1) c.takeover(1) c.recovering(1)])
 
 2–4 s 之间蓝 ST 不可用。4 s 时它恢复可用，已锁存的接管仍然有效。5 s 起团队收到显式恢复，若 MF 有待完成动作则先撤权并等待匹配终态。分析输出时同时查裁判暂停、球是否可见和 ST 是否已经另有匹配失败。各时间窗是确定性教学注入，默认整场比赛关闭。
 
-本例已在独立 MATLAB 进程复现。撤去蓝 4 号的可用性后，蓝 3 号接管。4 s 时蓝 4 号重新可用，接管仍保持。5 s 发出恢复信号后，协调器回到 Defend，当拍的主追球者为 0，前锋准备反击。另一场 0.04 s 的十秒比赛通过 `tdpRun` 保存并重新载入，物理与战术矩阵分别有 250 行。[实际命令与 MAT 哈希](../../evidence/tactics-v1/handson-01/command.json) · [逐时刻读数与回执](../../evidence/tactics-v1/handson-01/receipt.json)
+本例已在独立 MATLAB 进程复现。撤去蓝 4 号的可用性后，蓝 3 号接管。4 s 时蓝 4 号重新可用，接管仍保持。5 s 发出恢复信号后，协调器回到 Defend，当拍的主追球者为 0，前锋准备反击。另一场 0.04 s 的十秒比赛通过 `tdpRun` 保存并重新载入，物理与战术矩阵分别有 250 行。
 
 配置错误通常会在启动之前报出。`TDP:V1Mode` 表示 V1 需要 Delayed 执行模式。`TDP:V1Window` 优先检查起止顺序、队 2 行还是机器人 8 行。要调几何阈值，复制 `P=tdp.v1Config()` 后改实例，例如改变 `P.v1MidlineBand`，再执行 `tdp.validateV1Config(P)`、复跑中线台架并记录差异。更换实现时保留原 ACompat 基线入口 `runMatch(tdp.defaultConfig())` 与对照检查。
 

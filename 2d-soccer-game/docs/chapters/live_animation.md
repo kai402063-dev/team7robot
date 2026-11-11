@@ -4,7 +4,7 @@
 
 完整测试能输出轨迹和指标，但组员还需要亲眼看机器人怎样接近球、转向和踢球。这个入口把所选比赛模型的逐步输出显示为一块实时更新的球场：蓝队攻右侧，红队攻左侧；圆形代表机器人，短线表示朝向，白色小圆代表球。
 
-在独立 X11 显示上，真实 MATLAB 窗口已完成逐步绘图、暂停/继续、速度切换、停止、重开和运行中关窗验证。带动画的 50 ms、40 ms 轨迹分别与同配置无动画运行对照。查看[实际前后帧及数值](../generated/animation_numbers.md)和[运行回执](../../evidence/animation/display-02/artifacts/receipt.json)。按钮回调由验证脚本触发，未操作用户桌面；原封不动的 `./start_2d.sh` 也已在独占显示上启动实际 MATLAB，确认球场窗口可见、关闭后进程正常退出；见[端到端回执](../../evidence/animation/launch-e2e-01/receipt.json)。本机每个独立启动进程用隔离缓存，冷启动准备可能需要数分钟；同窗口 Restart 可复用本局模型缓存。
+在独立 X11 显示上，真实 MATLAB 窗口已完成逐步绘图、暂停/继续、速度切换、停止、重开和运行中关窗验证。带动画的 50 ms、40 ms 轨迹分别与同配置无动画运行对照。查看[实际前后帧及数值](../generated/animation_numbers.md)。按钮回调由验证脚本触发，未操作用户桌面；原封不动的 `./start_2d.sh` 也已在独占显示上启动实际 MATLAB，确认球场窗口可见、关闭后进程正常退出。本机每个独立启动进程用隔离缓存，冷启动准备可能需要数分钟；同窗口 Restart 可复用本局模型缓存。
 
 动画展示的是二维圆形代理。看到球移动不等于完成 NAO6 步态、足球接触或实机模型验证；本入口也不改变 ROS 2、Webots 各自的验收状态。
 
@@ -23,7 +23,7 @@ cd '/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated
 
 启动终端会先打印 MATLAB 日志路径。这个进程使用自己的偏好目录与缓存标识，不连接用户已经打开的 MATLAB 桌面。比赛结束后窗口保留，便于查看结果和重开；关闭球场窗口会停止当前比赛，写运行记录，再结束这个新进程。
 
-两个桌面图标的 `Exec` 和 `Path` 指向 README 列出的本机安装位置。工程搬家或新 clone 后，在 MATLAB 中打开新目录的对应启动文件点 Run 即可。本机已从两个图标各自的真实启动命令进入独占 X11 显示（独立的图形会话），看到球场窗口可见、八个机器人和球有位移，并在关窗后正常退出。文件管理器首次信任提示由组员在本机处理。[默认入口回执](../../evidence/recovery-v1/default-window-01/receipt.json) · [实验入口回执](../../evidence/recovery-v1/experiment-window-02/receipt.json) · [MATLAB 编辑器无参入口验收](../../evidence/recovery-v1/editor-window-01/receipt.json)
+两个桌面图标的 `Exec` 和 `Path` 指向 README 列出的本机安装位置。工程搬家或新 clone 后，在 MATLAB 中打开新目录的对应启动文件点 Run 即可。本机已从两个图标各自的真实启动命令进入独占 X11 显示（独立的图形会话），看到球场窗口可见、八个机器人和球有位移，并在关窗后正常退出。文件管理器首次信任提示由组员在本机处理。
 
 ## 3. 按钮怎样使用
 

@@ -10,7 +10,7 @@
 4. `V1AuthorizeRequests` 根据本拍决定检查八个原始请求。丢失授权、停赛、失球或过期时，准备中的踢球会被同编号 Stop 取消。队友的合法守位移动可以继续。只有这层的输出进入执行器和下一拍的请求记忆。
 5. `V1Plant2D` 调用共享的二维物理模型。实际踢球事件在执行器完成准备且接触几何仍满足时生成。记录器在物理更新后取得执行反馈及实际踢球者。执行失败、停止取消和球因碰撞或规则重置产生的位移应分别解释。
 
-从空白生成该模型用 `tdpSetup; build_v1_match`。脚本生成 `models/tdpV1Match.slx` 和 `models/TdpV1Types.sldd`，后者引用共享的 `TdpTypes.sldd` 与固定总线。基线以后改生成脚本和 MATLAB 源码，再重新生成并提交模型。可以在新输出目录运行 `python3 scripts/audit_v1_model.py build/v1-structure-check`，检查保存的八条库链接、五个延迟状态、关键连线和代数环诊断。[生成器](../../scripts/build_v1_match.m) · [共享接线](../../scripts/build_match.m) · [实测结构回执](../../evidence/tactics-v1/model-structure-01/receipt.json)
+从空白生成该模型用 `tdpSetup; build_v1_match`。脚本生成 `models/tdpV1Match.slx` 和 `models/TdpV1Types.sldd`，后者引用共享的 `TdpTypes.sldd` 与固定总线。基线以后改生成脚本和 MATLAB 源码，再重新生成并提交模型。可以在新输出目录运行 `python3 scripts/audit_v1_model.py build/v1-structure-check`，检查保存的八条库链接、五个延迟状态、关键连线和代数环诊断。[生成器](../../scripts/build_v1_match.m) · [共享接线](../../scripts/build_match.m)
 
 ## 怎样读战术记录
 

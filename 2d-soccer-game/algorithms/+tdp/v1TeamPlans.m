@@ -1,6 +1,10 @@
-function [plans,m] = v1TeamPlans(obs,team,prev,previousRequests,feedback,recovered,P,health)
+function [plans,m,v11] = v1TeamPlans(obs,team,prev,previousRequests,feedback,recovered,P,health,v11)
 %V1TEAMPLANS Plan four fixed roles using only observed state and feedback.
 % Team-local role numbers are GK=1, DF=2, MF=3, ST=4. Chaser is a global ID.
+% 7 inputs: approved V1. 8 inputs: automatic recovery experiment (health).
+% 9 inputs: approved V1 model, where the 8th input is last tick's 1x8 skill
+% phases and the 9th the V1.1 monitor state (tdp.v11FallbackMemory). The V1.1
+% rule runs only when P.v11Fallback is true; otherwise v11 passes through.
 first = 1+4*(team-1);
 midfielder = first+2;
 striker = first+3;
@@ -25,7 +29,11 @@ for local = 1:4
 end
 m.ballKnown = m.ballSource~=0;
 finishCurrentKick = false;
-if nargin==8
+if nargin<9, v11 = tdp.v11FallbackMemory(); end
+if nargin==9 && isfield(P,'v11Fallback') && P.v11Fallback
+    [m,v11] = updateTakeoverV11(m,prev,striker,midfielder,available(4), ...
+        previousRequests,feedback,recovered,health,v11,t,P);
+elseif nargin==8
     mfEligible = available(3) && validBall(obs(midfielder),t,P) && obs(midfielder).gameRunning;
     m = tdp.updateRecovery(m,prev,striker,midfielder,available(4),mfEligible, ...
         previousRequests,feedback,health,t,P);
@@ -137,7 +145,55 @@ if ~stAvailable || newFailure
     return
 end
 if ~m.takeover || ~(recovered || prev.recovering), return; end
+m = releaseTakeover(m,prev,mf,requests,feedback,t);
+end
 
+function [m,v] = updateTakeoverV11(m,prev,st,mf,stAvailable,requests,feedback,recovered,skills,v,t,P)
+% Draft v1.1 section 6(d): take over after v11FailCount consecutive matched ST
+% kick failures whose stamps span at most v11FailWindow; any matched Done
+% resets the count. Unavailability still takes over at once, as in V1.
+% T7: hand back once ST has been available for v11RecoverSeconds and the MF
+% was not in Align/Kick on the last tick; a pending MF kick is still drained.
+request = requests(st);
+fb = feedback(st);
+matching = kickRequest(request) && prev.chaser==st && fb.requestId==request.requestId && ...
+    fb.stamp>=request.stamp && fb.stamp<=request.validUntil && fb.stamp<=t && ...
+    t-fb.stamp<=P.kickTimeout && t<=request.validUntil+P.dt+1e-12;
+if matching && fb.status==TdpStatus.Done
+    v(1) = 0;
+end
+trigger = false;
+if matching && fb.status==TdpStatus.Failed && fb.requestId>m.handledFailureId
+    m.handledFailureId = fb.requestId;
+    v(1) = min(v(1)+1,8);
+    v(3:9) = v(4:10);
+    v(10) = fb.stamp;
+    k = P.v11FailCount;
+    trigger = v(1)>=k && fb.stamp-v(11-k)<=P.v11FailWindow+1e-9;
+end
+if ~stAvailable || trigger
+    m.takeover = true;
+    m.failed = m.failed || trigger;
+    m.recovering = false;
+    m.releaseId = uint32(0);
+    m.releaseStamp = 0;
+    v(2) = -1;
+    if stAvailable, v(2) = t; end
+    return
+end
+if ~m.takeover, return; end
+if v(2)<0, v(2) = t; end
+busy = skills(mf)==double(TdpPhase.Align) || skills(mf)==double(TdpPhase.Kick);
+stable = t-v(2)+1e-9>=P.v11RecoverSeconds && ~busy;
+if ~(recovered || stable || prev.recovering), return; end
+m = releaseTakeover(m,prev,mf,requests,feedback,t);
+if ~m.takeover
+    v(1) = 0;
+    v(2) = -1;
+end
+end
+
+function m = releaseTakeover(m,prev,mf,requests,feedback,t)
 % A recovery signal cannot authorize a second kick while the MF is preparing.
 request = requests(mf);
 fb = feedback(mf);

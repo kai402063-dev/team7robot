@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-ros-integration-v1/scripts/validate_ros.py", line 77, in <module>
-    run(Path(args.output).resolve())
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/build/mutation-ros-integration-v1/scripts/validate_ros.py", line 31, in run
-    assert 'data: 4.5' in (out / 'scalar-echo.log').read_text()
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError

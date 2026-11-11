@@ -1,8 +1,0 @@
-{
-  "names": [
-    "test_recovery_actuator/testWrongNumberCannotCancelAnActiveKick"
-  ],
-  "passed": false,
-  "failed": true,
-  "incomplete": false
-}

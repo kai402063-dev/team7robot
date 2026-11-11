@@ -1,6 +1,0 @@
-{
-  "suite": "test_webots.py",
-  "mutation": "remove repeated request guard",
-  "detected": true,
-  "exitCode": 1
-}

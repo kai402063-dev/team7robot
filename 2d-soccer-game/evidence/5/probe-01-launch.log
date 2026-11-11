@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/run_webots.py", line 61, in <module>
-    p=argparse.ArgumentParser();p.add_argument('output');p.add_argument('--mode',choices=['probe','closed'],default='closed');a=p.parse_args();run(a.output,a.mode)
-                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/run_webots.py", line 22, in run
-    with PrivateDisplay(display_folder) as display:
-  File "/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1/scripts/private_display.py", line 40, in __enter__
-    raise RuntimeError('Private Wayland startup failed; see compositor.log')
-RuntimeError: Private Wayland startup failed; see compositor.log

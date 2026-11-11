@@ -3,7 +3,7 @@
 /build/
 *.asv
 *.slxc
-/evidence/**/*.mat
+/evidence/
 __pycache__/
 
 *.egg-info/

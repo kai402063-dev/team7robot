@@ -1,7 +1,0 @@
-{
-  "status": "PASS_AVAILABLE_M2_GATES_WITH_DEPENDENCY_BLOCKERS",
-  "exitCode": 0,
-  "completedUtc": "2026-11-05T22:25:03.615321+00:00",
-  "sourceCommit": "1f52c4c6903e80817d2f80bce5795cab2dcda4d7",
-  "runtimeSeconds": 440.8654969999939
-}

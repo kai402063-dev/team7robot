@@ -1,9 +1,0 @@
-{
-  "suite": "test_webots.py",
-  "mutation": "omit frozen camera retransmission while keeping clock publication",
-  "detected": true,
-  "exitCode": 1,
-  "originalSHA256": "a22c6196235da64fb8deb7acb12d1b2821a5b6b3eb883748b90dad53f1f394ba",
-  "mutatedSHA256": "1648776c5ac207681f73871d98c02d2153506da62884b0787bdfa66fa8cb38a8",
-  "scope": "deterministic transport boundary assertions; actual DDS/Webots integration is separate"
-}

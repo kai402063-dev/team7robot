@@ -1,4 +1,0 @@
-{
-  "status": "FAIL",
-  "error": "RuntimeError('Private Wayland startup failed; see compositor.log')"
-}

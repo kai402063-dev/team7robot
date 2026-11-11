@@ -8,7 +8,7 @@
 
 - D006：MATLAB 批处理须清除继承的 ROS LD_LIBRARY_PATH / LD_PRELOAD 和 DISPLAY；第三次已进入脚本，证实不是许可失效。Real-Time_Workshop 含连字符，JSON 字段用 makeValidName 规范化。
 
-- D007：Git 未配置作者；阶段提交使用命令级 Codex <codex@local.invalid>，不改全局配置。
+- D007：Git 未配置作者；阶段提交使用命令级作者身份，不改全局配置。
 - D008：算法迁移保留 A 的浮点运算顺序；kickSkill 的 randn 改成显式 noiseSample，随机数生成留在环境侧。角色和消息改为枚举，数值含义不变。
 
 - D009：类型字典只保存总线；P、初态和回放数据由外层模型工作区持有，避免字典与库实例参数的重复定义冲突。
@@ -47,7 +47,7 @@ ROS Toolbox及两个Coder缺失且禁止安装，原生在线块与生成节点�
 
 ## D026 球队 V1 的适用版本和入口
 
-按用户指定，球队战术采用工作表 Sheet1、Sheet2 的 V1。Sheet3、Sheet4 属后续提案。2026-11-06 用户转述导师明确允许本项目使用 AI 编码，具体参与范围见 [AI 声明](AI_PROVENANCE.md)。直接观看比赛和 `tdpRun()` 使用 V1，需作项目 A 对照的代码显式传入 `tdp.defaultConfig()`。两个模型各有入口，便于复查基线及新增战术。现有基线标签指向历史交付点。
+按用户指定，球队战术采用工作表 Sheet1、Sheet2 的 V1。Sheet3、Sheet4 属后续提案。直接观看比赛和 `tdpRun()` 使用 V1，需作项目 A 对照的代码显式传入 `tdp.defaultConfig()`。两个模型各有入口，便于复查基线及新增战术。现有基线标签指向历史交付点。
 
 ## D027 中线、接管和观测的教学实现
 

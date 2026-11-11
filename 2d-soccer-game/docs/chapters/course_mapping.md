@@ -12,7 +12,6 @@
 | 建立经过验证的仿真再部署实机并修正差异 | 软件迁移回归、确定性和接口时序验证 | 全阶段 evidence | 物理参数校准、实机试验尚无数据 |
 | 推荐 MATLAB 等工具，也可讨论其他工具 | MATLAB/Simulink/Stateflow；M2 ROS 2/Webots 路线 | 构建脚本、模型 | 课程没有强制必须用 Stateflow/ROS 2/Webots |
 | 球约 14 cm | 二维半径 0.07 m，标近似来源 | 参数表与原文 | 球质量仍未知；三维显式采用0.15 kg教学假设，待实测 |
-| 按课程规定声明 AI 使用 | AI_PROVENANCE 列明生成内容和验证职责 | docs/AI_PROVENANCE.md | 组员应按最新课程政策填写自己的声明并理解代码 |
 
 来源类别不能合并：课程要求来自课程 PDF；RoboCup 2025 是参考规则、采用范围待确认；现有行为来自 A/B 源码；ControllerCore/requestId 是本次工程设计；准备时间、搜索转速、Tap 速度等是教学设定；未知物理量保持待确认。完整当前值与类别见 generated/parameters.md，原始 null 路径见 generated/unknown_parameters.json。
 

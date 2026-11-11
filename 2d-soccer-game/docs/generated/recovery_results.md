@@ -22,7 +22,7 @@
 
 “实际踢球”取自二维执行层的出球事件。持续故障、撤销和断线由定向场景另行检验。这里的得分只描述这组种子。
 
-[逐场对照与全部指标](../../evidence/recovery-v1/clean-01/comparison.json) · [定向场景与读数方法](../chapters/recovery_experiment.md)
+[定向场景与读数方法](../chapters/recovery_experiment.md)
 
 ## 八秒练习的逐步输出
 
@@ -32,4 +32,4 @@
 | 2.00 | 1 | 3 | 0 |
 | 4.50 | 0 | 0 | 0 |
 
-最后一行的追球编号为 0，表示这一拍无人获准追球。[独立读者的原始 MATLAB 输出](../../evidence/recovery-v1/reader-01/example-execution.log)
+最后一行的追球编号为 0，表示这一拍无人获准追球。

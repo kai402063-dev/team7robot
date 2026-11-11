@@ -1,8 +1,0 @@
-{
-  "status": "PASS",
-  "matlabVersion": "26.2.0.3386108 (R2026b)",
-  "matches": 80,
-  "pairedCases": 40,
-  "tests": 54,
-  "elapsedSeconds": 1252.521406
-}

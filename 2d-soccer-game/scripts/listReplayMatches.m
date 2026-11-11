@@ -24,7 +24,8 @@ for folder = folders([folders.isdir])'
         sortKeys{end+1} = stamp{1}; %#ok<AGROW>
     end
 end
-[~, order] = sort(sortKeys, 'descend');
+% R2026b rejects sort(cellstr,'descend'); a string array sorts the same stamps.
+[~, order] = sort(string(sortKeys), 'descend');
 matches = matches(order);
 end
 

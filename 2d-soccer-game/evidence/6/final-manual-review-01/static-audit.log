@@ -1,5 +1,0 @@
-Command: python3 scripts/audit_manual.py
-Exit code: 0
-{
-  "errors": []
-}
