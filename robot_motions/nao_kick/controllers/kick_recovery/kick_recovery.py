@@ -357,6 +357,21 @@ class NaoKickRecovery:
         far = math.hypot(gx - x, gy - y) > 0.8 and "Forwards50" in self.motions
         return self.play_until("Forwards50" if far else "Forwards", done)
 
+    def ready_to_kick(self, target=TARGET, foot=KICK_FOOT):
+        """Return True when the ball is already at the kicking foot and aligned."""
+        gx, gy, kick_dir, (bx, by, ux, uy, _, _) = self.stance_target(target, foot)
+        ex, ey, _ = self.errors_to(gx, gy)
+        x, y, _ = self.robot_pose()
+        # The ball must be ahead of the robot; this avoids treating a ball
+        # beside or behind the kicking foot as ready just because the target
+        # stance point happens to be nearby.
+        ball_forward = (bx - x) * ux + (by - y) * uy
+        heading_error = abs(wrap(kick_dir - self.robot_pose()[2]))
+        return (ball_forward > 0.0
+                and abs(ex) <= POS_TOL_X
+                and abs(ey) <= POS_TOL_Y
+                and heading_error <= HEAD_TOL)
+
     def position_for_kick(self, target=TARGET, foot=KICK_FOOT, max_actions=30):
         """Walk until the ball is just in front of the kicking foot, facing the target.
 
@@ -563,7 +578,10 @@ class NaoKickRecovery:
                 ok, t, n = self.recover()
                 print(f"Recovered: {ok} in {t:.1f} s ({n} attempts)")
                 continue
-            if self.position_for_kick():
+            ready = self.ready_to_kick()
+            if ready:
+                print("Ball already in front and aligned; kicking without repositioning.")
+            if ready or self.position_for_kick():
                 speed, fell = self.kick()
                 kicks += 1
                 print(f"Kick {kicks}: peak ball speed {speed:.2f} m/s, fell: {fell}")

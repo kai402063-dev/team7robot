@@ -32,8 +32,84 @@ TexturedBackground {
 }
 TexturedBackgroundLight {
 }
-Floor {
-  size 9 6
+DEF Pitch Solid {
+  translation 0 0 -0.05
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.035 0.36 0.075
+        roughness 1
+        metalness 0
+      }
+      geometry Box { size 11 8 0.1 }
+    }
+  ]
+  name "pitch"
+  boundingObject Box { size 11 8 0.1 }
+}
+# White markings outline the 9 m x 6 m playing area on the larger turf.
+DEF SouthTouchline Solid {
+  translation 0 -3 0.001
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 9 0.04 0.002 } } ]
+  name "south touchline"
+}
+DEF NorthTouchline Solid {
+  translation 0 3 0.001
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 9 0.04 0.002 } } ]
+  name "north touchline"
+}
+DEF LeftGoalLine Solid {
+  translation -4.5 0 0.001
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.04 6 0.002 } } ]
+  name "left goal line"
+}
+DEF RightGoalLine Solid {
+  translation 4.5 0 0.001
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.04 6 0.002 } } ]
+  name "right goal line"
+}
+DEF HalfwayLine Solid {
+  translation 0 0 0.001
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.03 6 0.002 } } ]
+  name "halfway line"
+}
+# Each goal opening is 2.8 m wide and 1.2 m high; the frame sits just
+# behind the goal line, with 0.1 m square posts and crossbar.
+DEF LeftGoalPostSouth Solid {
+  translation -4.55 -1.35 0.6
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 0.1 1.2 } } ]
+  name "left goal post south"
+  boundingObject Box { size 0.1 0.1 1.2 }
+}
+DEF LeftGoalPostNorth Solid {
+  translation -4.55 1.35 0.6
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 0.1 1.2 } } ]
+  name "left goal post north"
+  boundingObject Box { size 0.1 0.1 1.2 }
+}
+DEF LeftGoalCrossbar Solid {
+  translation -4.55 0 1.25
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 2.8 0.1 } } ]
+  name "left goal crossbar"
+  boundingObject Box { size 0.1 2.8 0.1 }
+}
+DEF RightGoalPostSouth Solid {
+  translation 4.55 -1.35 0.6
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 0.1 1.2 } } ]
+  name "right goal post south"
+  boundingObject Box { size 0.1 0.1 1.2 }
+}
+DEF RightGoalPostNorth Solid {
+  translation 4.55 1.35 0.6
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 0.1 1.2 } } ]
+  name "right goal post north"
+  boundingObject Box { size 0.1 0.1 1.2 }
+}
+DEF RightGoalCrossbar Solid {
+  translation 4.55 0 1.25
+  children [ Shape { appearance PBRAppearance { baseColor 1 1 1 roughness 1 } geometry Box { size 0.1 2.8 0.1 } } ]
+  name "right goal crossbar"
+  boundingObject Box { size 0.1 2.8 0.1 }
 }
 DEF NAO Nao {
   controller "kick_recovery"
