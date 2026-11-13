@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "qin-metrics-2",
+  "steps": 1200,
+  "dt": 0.05,
+  "recordedSeconds": 60,
+  "plannedSeconds": 60,
+  "complete": true,
+  "hasTactics": true,
+  "runningSeconds": 60,
+  "analysisSeconds": 60,
+  "goals": [
+    0,
+    0
+  ],
+  "goalEvents": [
+    0,
+    0
+  ],
+  "shots": [
+    5,
+    0
+  ],
+  "resultBlueRed": 0,
+  "halfSeconds": [
+    14.350000000000001,
+    4.6000000000000005,
+    41.050000000000004,
+    0,
+    0,
+    0
+  ],
+  "halfLabels": [
+    "left",
+    "centre",
+    "right",
+    "paused",
+    "restartTransition",
+    "outside"
+  ],
+  "halfFractionOfAnalysis": [
+    0.23916666666666669,
+    0.076666666666666675,
+    0.6841666666666667
+  ],
+  "attackHalfSeconds": [
+    41.050000000000004,
+    14.350000000000001
+  ],
+  "lastTouchSeconds": [
+    15.000000000000078,
+    40.399999999999842
+  ],
+  "thresholds": {
+    "centreToleranceMetres": 1E-9,
+    "movingSpeed": 0.02,
+    "possessionRange": 0.28,
+    "possessionHeading": 0.3490658503988659,
+    "possessionBallSpeed": 0.35
+  },
+  "robotSeconds": [
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      60,
+      48.7,
+      48.7,
+      3.1500000000000004,
+      48,
+      0.05,
+      8.8
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1.6,
+      0,
+      0,
+      58.1
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      0.8,
+      0.70000000000000007,
+      0.70000000000000007,
+      0.15000000000000002,
+      0.70000000000000007,
+      0.05,
+      59.1
+    ],
+    [
+      0,
+      18.6,
+      16.2,
+      16.2,
+      1.55,
+      16.05,
+      0,
+      42.1
+    ]
+  ],
+  "robotLabels": [
+    "idleState",
+    "authorized",
+    "chasingState",
+    "chasingMoving",
+    "possessionEstimate",
+    "exclusiveChasing",
+    "exclusiveIdle",
+    "other"
+  ],
+  "possessionSeconds": [
+    4.75,
+    1.7000000000000002,
+    0.25,
+    53.300000000000004
+  ],
+  "possessionLabels": [
+    "blue",
+    "red",
+    "contested",
+    "free"
+  ],
+  "noAuthorizedChaserSeconds": [
+    0,
+    40.6
+  ],
+  "policyIds": [],
+  "defendSeconds": [
+    0,
+    40.6
+  ],
+  "defendNoChaserSeconds": [
+    0,
+    40.6
+  ],
+  "defendNoChaserRatio": [
+    null,
+    1
+  ],
+  "chasingIncludingKickSeconds": [
+    0,
+    0,
+    52.2,
+    0,
+    0,
+    0,
+    0.70000000000000007,
+    16.95
+  ],
+  "stationarySeconds": [
+    [
+      36,
+      0.1,
+      35.9,
+      0
+    ],
+    [
+      39.1,
+      0.1,
+      39,
+      0
+    ],
+    [
+      11.3,
+      7.0500000000000007,
+      0,
+      4.25
+    ],
+    [
+      59.7,
+      59.7,
+      0,
+      0
+    ],
+    [
+      36.15,
+      0.1,
+      36.050000000000004,
+      0
+    ],
+    [
+      26.200000000000003,
+      0.1,
+      26.1,
+      0
+    ],
+    [
+      7.8000000000000007,
+      0.05,
+      7.7,
+      0.05
+    ],
+    [
+      31.6,
+      2,
+      28.700000000000003,
+      0.9
+    ]
+  ],
+  "stationaryLabels": [
+    "total",
+    "effectiveStop",
+    "effectiveGoto",
+    "otherRequest"
+  ],
+  "decisionHalfSeconds": [
+    14.350000000000001,
+    4.6000000000000005,
+    41
+  ],
+  "decisionHalfUnknownSeconds": 0.05,
+  "decisionHalfOutsideSeconds": 0,
+  "halfSampling": "physical: end-of-step; decision: previous trace row; first pre-state unknown",
+  "notes": [
+    "Possession is an unapproved geometric proxy, not measured control.",
+    "Idle means Stateflow Idle, not physical immobility.",
+    "No-chaser time is descriptive, not automatically a tactical defect.",
+    "Reset rows are excluded because recorded ball coordinates are already reset.",
+    "Missing tactics yields unavailable (NaN), not zero, behaviour and possession."
+  ]
+}

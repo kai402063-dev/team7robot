@@ -1,0 +1,262 @@
+{
+  "schemaVersion": "qin-metrics-2",
+  "steps": 1200,
+  "dt": 0.05,
+  "recordedSeconds": 60,
+  "plannedSeconds": 60,
+  "complete": true,
+  "hasTactics": true,
+  "runningSeconds": 60,
+  "analysisSeconds": 60,
+  "goals": [
+    0,
+    0
+  ],
+  "goalEvents": [
+    0,
+    0
+  ],
+  "shots": [
+    4,
+    0
+  ],
+  "resultBlueRed": 0,
+  "halfSeconds": [
+    23.150000000000002,
+    4.6000000000000005,
+    32.25,
+    0,
+    0,
+    0
+  ],
+  "halfLabels": [
+    "left",
+    "centre",
+    "right",
+    "paused",
+    "restartTransition",
+    "outside"
+  ],
+  "halfFractionOfAnalysis": [
+    0.38583333333333336,
+    0.076666666666666675,
+    0.5375
+  ],
+  "attackHalfSeconds": [
+    32.25,
+    23.150000000000002
+  ],
+  "lastTouchSeconds": [
+    24.450000000000212,
+    30.950000000000305
+  ],
+  "thresholds": {
+    "centreToleranceMetres": 1E-9,
+    "movingSpeed": 0.02,
+    "possessionRange": 0.28,
+    "possessionHeading": 0.3490658503988659,
+    "possessionBallSpeed": 0.35
+  },
+  "robotSeconds": [
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      60,
+      43.900000000000006,
+      43.900000000000006,
+      4.15,
+      42.900000000000006,
+      0.05,
+      12.9
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0.35000000000000003,
+      0,
+      0,
+      59.35
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.05,
+      59.95
+    ],
+    [
+      0.05,
+      2.45,
+      2.35,
+      2.35,
+      4.8500000000000005,
+      2.35,
+      0.05,
+      52.75
+    ],
+    [
+      0,
+      27.3,
+      20.1,
+      20.1,
+      2.95,
+      19,
+      0,
+      37.75
+    ]
+  ],
+  "robotLabels": [
+    "idleState",
+    "authorized",
+    "chasingState",
+    "chasingMoving",
+    "possessionEstimate",
+    "exclusiveChasing",
+    "exclusiveIdle",
+    "other"
+  ],
+  "possessionSeconds": [
+    4.5,
+    7.8000000000000007,
+    3.45,
+    44.25
+  ],
+  "possessionLabels": [
+    "blue",
+    "red",
+    "contested",
+    "free"
+  ],
+  "noAuthorizedChaserSeconds": [
+    0,
+    30.25
+  ],
+  "policyIds": [],
+  "defendSeconds": [
+    0,
+    31.900000000000002
+  ],
+  "defendNoChaserSeconds": [
+    0,
+    30.25
+  ],
+  "defendNoChaserRatio": [
+    null,
+    0.94827586206896541
+  ],
+  "chasingIncludingKickSeconds": [
+    0,
+    0,
+    48.900000000000006,
+    0,
+    0,
+    0,
+    2.35,
+    22.35
+  ],
+  "stationarySeconds": [
+    [
+      40.85,
+      0.1,
+      40.75,
+      0
+    ],
+    [
+      40.7,
+      0.1,
+      40.6,
+      0
+    ],
+    [
+      16.1,
+      10.05,
+      0,
+      6.0500000000000007
+    ],
+    [
+      59.7,
+      59.7,
+      0,
+      0
+    ],
+    [
+      40.85,
+      0.1,
+      40.75,
+      0
+    ],
+    [
+      37.45,
+      0.1,
+      37.35,
+      0
+    ],
+    [
+      2.8000000000000003,
+      0.05,
+      2.7,
+      0.05
+    ],
+    [
+      31.35,
+      5,
+      23.650000000000002,
+      2.7
+    ]
+  ],
+  "stationaryLabels": [
+    "total",
+    "effectiveStop",
+    "effectiveGoto",
+    "otherRequest"
+  ],
+  "decisionHalfSeconds": [
+    23.150000000000002,
+    4.6000000000000005,
+    32.2
+  ],
+  "decisionHalfUnknownSeconds": 0.05,
+  "decisionHalfOutsideSeconds": 0,
+  "halfSampling": "physical: end-of-step; decision: previous trace row; first pre-state unknown",
+  "notes": [
+    "Possession is an unapproved geometric proxy, not measured control.",
+    "Idle means Stateflow Idle, not physical immobility.",
+    "No-chaser time is descriptive, not automatically a tactical defect.",
+    "Reset rows are excluded because recorded ball coordinates are already reset.",
+    "Missing tactics yields unavailable (NaN), not zero, behaviour and possession."
+  ]
+}
