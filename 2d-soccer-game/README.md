@@ -1,38 +1,83 @@
-# TDP 足球迁移基线
+# 2D Soccer Tactics Simulation
 
-## 第一次看比赛：双击就能开球
+[中文说明](README_zh-CN.md)
 
-1. 在 Ubuntu 文件管理器中打开工程文件夹 **`tdp-migrated-r1`**。本机完整路径是 `/home/fayne/Documents/Robotics & AI/Robotics TDP/2d-soccer-game/tdp-migrated-r1`。
-2. 第一次看比赛，**双击 `START_2D.desktop`（TDP 二维足球仿真）**。需要观察中场接管后自动把追球权交还前锋时，双击旁边的 **`START_2D_RECOVERY.desktop`（TDP 二维足球仿真〔自动恢复实验〕）**。两个图标分别启动默认 V1 和实验策略。
-3. 首次打开若桌面询问信任，核对文件名和上述目录后选择“信任并启动”，或右键选择“允许启动”。可能先出现启动日志窗口，无需输入。首次模型编译可能需要几分钟。看到球场上的计时开始增加，蓝红两队和球在移动，就已启动。每次双击会新开一个进程，编译时请等候。
+This project uses MATLAB, Simulink, and Stateflow to simulate 4v4 soccer.
+It includes live matches, team tactics, match replay, and offline behaviour
+analysis.
 
-**已经打开 MATLAB，或者工程放在其他目录？** 在 MATLAB 的“当前文件夹”打开你自己的工程根目录。打开下表对应文件，点编辑器绿色 **Run ▶（运行）** 即可。若弹出工作目录选择框，选 **Change Folder（更改文件夹）**。这也是文件管理器把图标当文本打开时的启动方法。本机两个桌面图标指向上面写出的固定安装目录。
+## Run in MATLAB
 
-| 想看哪一场 | 文件管理器双击 | MATLAB 打开后点 Run |
+Set MATLAB's Current Folder to `2d-soccer-game/` in your checkout and run
+one of the commands below. You can also open the corresponding `.m` file
+and click **Run** in the editor.
+
+| To watch | MATLAB command | Ubuntu desktop launcher |
 | --- | --- | --- |
-| 球队 V1（默认） | `START_2D.desktop` | `start_2d.m` |
-| V1 自动交还实验 | `START_2D_RECOVERY.desktop` | `start_2d_recovery.m` |
+| Default V1 match | `start_2d` | `START_2D.desktop` |
+| Midfielder takeover and handback to the striker | `start_2d_recovery` | `START_2D_RECOVERY.desktop` |
+| A saved match replay | `replay_2d` | `REPLAY_2D.desktop` |
 
-每场默认 **600 秒、1 倍速**。蓝队 1–4 号、红队 5–8 号依次为门将、后卫、中场、前锋。金色外圈标出当前获准追球的队员。可在窗口暂停、继续、切换倍速、停止和重开。双击启动时，关闭球场窗口就会结束该次 MATLAB 进程。
+Live matches default to **600 simulation seconds at 1× speed**. The blue
+team uses robot IDs 1–4, and the red team uses 5–8. Each team is ordered
+goalkeeper, defender, midfielder, striker. A gold ring marks the player
+currently authorised to chase the ball. Use the match window to pause,
+resume, change speed, stop, or restart. The first model build can take a
+few minutes.
 
-只想确认自动交还逻辑？先做[8 秒无画面练习：让中场接管，再看球队恢复正常分工](docs/chapters/recovery_experiment.md#自己制造一次接管并看逐拍日志)。
+The Ubuntu launchers use absolute paths. Check that their `Exec` and
+`Path` entries point to your checkout before using them. If Ubuntu asks
+whether you trust the launcher, confirm the paths before allowing it to
+run. Each launcher opens a separate MATLAB process that exits when you
+close its window.
 
-[动画操作、运行记录和排错](docs/chapters/live_animation.md) · [动画验收与截图](docs/generated/animation_numbers.md) · [中文开发手册](docs/DEV_MANUAL.md) · [开发进度](docs/PROGRESS.md)
+[8-second headless handback exercise (Chinese)](docs/chapters/recovery_experiment.md#自己制造一次接管并看逐拍日志) ·
+[Live viewer, recordings, and troubleshooting (Chinese)](docs/chapters/live_animation.md) ·
+[Animation screenshots and verification](docs/generated/animation_numbers.md)
 
-## 从终端启动或复现
+## Run from a terminal
 
-在工程根目录运行 `./start_2d.sh` 可观看默认 V1，运行 `./start_2d.sh --recovery` 可观看实验策略。无画面复现则使用以下命令：
+From the project folder in an Ubuntu graphical session, run one of the
+following commands. If the launcher cannot find MATLAB, set `MATLAB_BIN`
+to the MATLAB executable.
 
 ```bash
-./scripts/run_matlab.sh "tdpSetup; reproduce_all;"
+./start_2d.sh
+./start_2d.sh --recovery
+./start_2d.sh --replay
 ```
 
-本分支包含冻结 A 基线、纯 MATLAB 算法、Stateflow 控制器、二维环境、测试和证据。ROS/Webots 的实际层级与依赖阻塞以手册状态表为准。
+## Reproduction and development
 
-历史 `robot-soccer-starter/` 保留作结构参考，其原说明见该目录，不是本迁移工程的运行入口。
+The [Chinese development manual](docs/DEV_MANUAL.md) covers dependencies, a
+short match in a clean clone, and the verification records needed for full
+reproduction. [Project progress](docs/PROGRESS.md) records the scope of
+2D, ROS 2, and Webots verification. The project includes the frozen A
+baseline, MATLAB algorithms, Stateflow controllers, a 2D environment, and tests.
 
-只复现新战术的二维验收可运行 `./scripts/run_matlab.sh "tdpSetup; reproduce_v1;"`。它从空白重建模型，测试指定场景，并跑 20 个种子、两种周期的完整比赛。`runMatch(tdp.defaultConfig())` 可用于原策略的对照实验。具体场景、参数和验收指标见[战术开发章节](docs/chapters/tactics_v1_design.md)。 [40 场实测成绩和复现耗时](docs/generated/v1_results.md)
+Before using headless batch commands, check the MATLAB installation path
+in `scripts/run_matlab.sh`.
 
-自动交还实验与默认 V1 的完整同种子对照使用 `./scripts/run_matlab.sh "tdpSetup; reproduce_recovery;"`。本机干净克隆实测约 21 分钟。[交还条件与验证方法](docs/chapters/recovery_experiment.md) · [80 场实测成绩](docs/generated/recovery_results.md)
+| To reproduce | Command |
+| --- | --- |
+| Full workflow | `./scripts/run_matlab.sh "tdpSetup; reproduce_all;"` |
+| V1 tactics validation | `./scripts/run_matlab.sh "tdpSetup; reproduce_v1;"` |
+| Automatic handback comparison | `./scripts/run_matlab.sh "tdpSetup; reproduce_recovery;"` |
 
-要区分“一队自己切换”和“对手切换”的作用，见[单队对照方法](docs/chapters/team_ablation.md)和[双方追球授权、射门与进球实测表](docs/generated/team_ablation.md)。
+- V1 validation rebuilds the model, tests specific scenarios, and runs
+  40 matches across 20 seeds and two time steps. Use
+  `runMatch(tdp.defaultConfig())` to run the original tactics as a control.
+  [Tactics design](docs/chapters/tactics_v1_design.md) ·
+  [40-match results](docs/generated/v1_results.md)
+- The automatic handback experiment compares V1 with the experimental
+  policy using matching seeds. A previous clean-clone run took about
+  21 minutes on the development machine.
+  [Comparison method](docs/chapters/recovery_experiment.md) ·
+  [80-match results](docs/generated/recovery_results.md)
+- The single-team comparison measures the effect of changing each
+  team's policy independently.
+  [Experiment design](docs/chapters/team_ablation.md) ·
+  [Ball pursuit authorisation, shots, and goals](docs/generated/team_ablation.md)
+
+The original 3v3 MATLAB/Simulink teaching example is documented in the
+[archived starter guide](../Archive/robot-soccer-starter/README.md).
